@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Scottish SDI Metadata Portal Documentation's documentation!
+Welcome to the Scottish SDI Metadata Portal's documentation!
 ======================================================================
 
 Contents:
