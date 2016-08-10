@@ -6,20 +6,21 @@
 Welcome to the Scottish SDI Metadata Portal's documentation!
 ======================================================================
 
-Contents:
+* :ref:`user-docs`
+* :ref:`admin-docs`
 
+
+.. _user-docs:
 .. toctree::
    :maxdepth: 2
    :caption: User Documentation
 
    ssdi_guidance
 
+.. _admin-docs:
+.. toctree::
+   :maxdepth: 2
+   :caption: Admin Documentation
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   ssdi_adminguidance
 
