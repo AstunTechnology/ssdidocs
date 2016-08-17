@@ -7,7 +7,7 @@ Overview
 
 This documentation is intended to provide guidance to administrators of the SSDI Catalogue. It assumes familiarity with the user guidance, particularly around the creation and validation of metadata.
 
-The administrative functionality within the catalogue is accessed via the Admin console, on the top menu when you log in with an administrator profile.
+The administrative functionality within the catalogue is accessed via the Admin console, on the top menu when you log in with an administrator profile. Additional functionality, such as  downloading catalogue-wide reports, is available from the advanced search page and also the editing dashboard.
 
 |image0|
 
@@ -18,6 +18,72 @@ Figure 1.1.1: SSDI catalogue main page, showing admin console link
 Figure 1.1.2: SSDI catalogue admin console, for a full administrator
 
 The level of functionality available in the admin console is dependent on the privileges of the logged in user. The above image shows the admin console for a full Administrator. This page also provides a quick "at a glance" view of the number of records available, and the numbers of datasets and services.
+
+Searches
+========
+
+Advanced Search
+---------------
+
+The Advanced Search capabality in the catalogue is accessed by clicking the blue magnifying glass icon on the home page. 
+
+|image-1|
+
+Figure 1.2.1: Search icon on main catalogue page
+
+Filtering options, or search facets, are available to the left of the search results, as a series of check boxes. The results can be sorted by Title, Relevancy, Rating and Popularity, and either lowest or highest scale first. 
+
+|image-2|
+
+Figure 1.2.2: Search facets, or further filtering options on the search page
+
+Further search capabilities can be accessed by clicking the "contribute" button on the main toolbar. This opens the "Editing dashboard", where there are also options to create or import new metadata, and also view privileges for or edit existing records. This page shows different search filtering options or facets, including group, schema, validation status, workflow status and so on.
+
+|image-3|
+
+Figure 1.2.3: Options to Create or Import new data
+
+|image-4|
+
+Figure 1.2.4: Search facets available from Editing dashboard
+
+Advanced Workflow
+=================
+
+The editing dashboard can be used to perform administrative functions on individual or batch metarecords. Tools for acting on individual records are represented by icons to the right of the metadata title. The validation status of a record is indicated by the colour of it's icon:
+
+* Green- validated and passing checks
+* Red- validated but not passing checks
+* Grey- not yet validated
+* White- a template or other record that should not be validated
+
+|image-5|
+
+Figure 2.1.1: Administrative functions that act on individual records, access from the editing dashboard
+
+In order from left to right these are:
+
+* Privileges- set privileges on which groups can access or edit this record
+* Edit- access the metadata editor for this record
+* Delete this record
+* Duplicate record
+* Create a child record
+
+|image-6|
+
+Figure 2.1.2: Administrative functions that act on multiple records
+
+To act on multiple metadata records, use the select function and choose the appropriate function from the dropdown list:
+
+* Export (ZIP)- exports the records in MEF format
+* Export (PDF)- exports as a combined PDF- note this will disregard any templates
+* Export (CSV)- exports as a combined CSV- note this will disregard any templates
+* Update privilges- note that this will *UPDATE* privileges rather than *APPEND* to existing ones
+* Publish/Unpublish- add or remove the "publish" privilege from the "All" group
+* Transfer Ownership
+* Update categories
+* Validate
+* Delete
 
 
 Metadata and Templates
@@ -240,14 +306,134 @@ Directories
 
 TODO
 
+Categories
+----------
+
+This subsection lists the categories that records can be added to, and provides the option to add new categories or delete existing ones.
+
+|image15|
+
+Figure 6.3.1: Category list
+
+Selecting a category from the list brings up a dialogue where it's display name can be edited in each of the languages enabled in the catalogue, along with the options to save changes or delete the category.
+
+|image16|
+
+Figure 6.3.2: Selecting a category and displaying additional options
+
+To add a new category, click the "New category" button shown in Figure 6.3.1 above. Add an unique name for the category and save it. To change it's display name in any of the available languages, select it from the category list and edit as shown in Figure 6.3.2 above.
+
+|image17|
+
+Figure 6.3.3: Adding a new category
+
 Standards
 =========
+
+*This section should only be used by advanced administrators and system maintainers.* It lists the metadata standards or profiles that are loaded into the installation, along with the option to remove a standard, update it, or add a new one.
+
+When adding a new standard or updating an existing one, there are three options:
+
+* Provide the path to the folder containing the standard on the server filesystem
+* Provide the UUID of a metadata record that contains a schema archive as an attached online resource
+* (Not shown in Figure 7.1.1) manually add or update the standard on the server in the schema_plugins location (found in the System Information panel) and restart the server
+
+|image18|
+
+Figure 7.1.1: The standards interface
 
 Users and groups
 ================
 
+This section is where existing users and groups are managed, and new ones are added. There are two subsections, described below.
+
+Manage groups
+-------------
+
+This subsection allows you to list and edit the existing groups in the catalogue, and add new ones. Groups are listed on the left, and selecting a group brings up additional options, shown below, with the option to save any changes or delete this group.
+
+|image19|
+
+Figure 8.1.1: The groups list and top half of the groups editing interface
+
+|image20|
+
+Figure 8.1.2: The middle section of the groups editing interface
+
+|image21|
+
+Figure 8.1.3: The lower section of the groups editing interface (intermediate section on translations for this group name not shown)
+
+To add a new group, click the blue "New group" button below the list (not shown in figure 8.1.1). This brings up the same dialogue shown in figures 8.1.1-8.1.3.
+
+Manage Users
+------------
+
+This subsection allows you to list and edit the existing users in the catalogue, and add new ones. Users are listed on the left, and selecting a user brings up additional options, shown below, with the option to save any changes or delete this user. For exsiting users there is also the option to reset the password.
+
+The settings for editing or creating a user are as follows:
+
+* Enable (default is yes)- allow this user to log in, or not
+* User name (mandatory)- the name the user should use to log in
+* Password (mandatory, not shown for existing users)
+* Name (mandatory)
+* Surname (mandatory)
+* Organisation (optional)
+* Address fields (optional)
+* Is an administrator (default is no)- if checked the user will be a full administrator for the whole catalogue with full access to all functionality for all groups
+* Profiles per group- if not a full administrator then the user needs to be assigned at least one role or profile within the catalogue. Note that a user can be part of multiple groups and have different profiles per group
+	* Registered User: can download protected data
+	* Editor: has rights to create/delete/edit metadata within their group
+	* Reviewer: has rights to authorise publication of metadata within their own group
+	* User administrator: has rights to administer users, and create/delete/edit metadata within their group
+* Records owned by this user (if any)
+
+|image22|
+
+Figure 8.2.1: The users list and top section of user editing interface
+
+|image23|
+
+Figure 8.2.2: The middle section of the user editing interface
+
+|image24|
+
+Figure 8.2.3: The lower section of the user editing interface
+
 Settings
 ========
+
+*This section should be used only by advanced administrators and system maintainers*. This section is where the main configuration of for the installation is set up. It contains a number of subsections, as described below, but in general settings should only be changed by experienced staff as they can have an adverse effect on the running of the site.
+
+Settings
+--------
+
+The settings subsection provides access to the main configuration for the installation. The various elements are described in detail in the Geonetwork documentation at http://geonetwork-opensource.org/manuals/trunk/eng/users/administrator-guide/configuring-the-catalog/index.html but there are some elements that may be useful:
+
+* Log levels- there are two of these, accessed via dropdown lists. The first is at the top of the settings panel, next to the "Save settings" button. The second is in the Catalog server subsection. The default for both is "Production" and this level should only be changed if increased logging is specifically requested. In that case, change to "Dev" and save settings, but remember to set it back to "Production" for normal use!
+* Catalog name- this is used throughout the catalog and can be changed as required
+* Organisation- this is also used throughout the catalog and can be changed as required
+* Catalog server 
+
+TODO
+
+Logo
+----
+
+Sources
+-------
+
+CSW
+---
+
+Virtual CSW
+-----------
+
+CSW test
+--------
+
+Map servers
+-----------
 
 Tools
 =====
@@ -278,9 +464,19 @@ ReStructured Text Syntax
 .. |image12| image:: media/adminimage13.png
 .. |image13| image:: media/adminimage14.png
 .. |image14| image:: media/adminimage15.png
-.. |image15| image:: media/image16.png
-.. |image16| image:: media/image17.png
-.. |image17| image:: media/image18.png
-.. |image18| image:: media/image19.png
-.. |image19| image:: media/image20.png
-.. |image20| image:: media/image21.png
+.. |image-1| image:: media/adminimage-1.png
+.. |image-2| image:: media/adminimage-2.png
+.. |image-3| image:: media/adminimage-3.png
+.. |image-4| image:: media/adminimage-4.png
+.. |image-5| image:: media/adminimage-5.png
+.. |image-6| image:: media/adminimage-6.png
+.. |image15| image:: media/adminimage16.png
+.. |image16| image:: media/adminimage17.png
+.. |image17| image:: media/adminimage18.png
+.. |image18| image:: media/adminimage19.png
+.. |image19| image:: media/adminimage20.png
+.. |image20| image:: media/adminimage21.png
+.. |image21| image:: media/adminimage22.png
+.. |image22| image:: media/adminimage23.png
+.. |image23| image:: media/adminimage24.png
+.. |image24| image:: media/adminimage25.png
