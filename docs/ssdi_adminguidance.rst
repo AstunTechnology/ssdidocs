@@ -78,7 +78,7 @@ To act on multiple metadata records, use the select function and choose the appr
 * Export (ZIP)- exports the records in MEF format
 * Export (PDF)- exports as a combined PDF- note this will disregard any templates
 * Export (CSV)- exports as a combined CSV- note this will disregard any templates
-* Update privilges- note that this will *UPDATE* privileges rather than *APPEND* to existing ones
+* Update privilges- note that this will **UPDATE** privileges rather than **APPEND** to existing ones
 * Publish/Unpublish- add or remove the "publish" privilege from the "All" group
 * Transfer Ownership
 * Update categories
@@ -153,7 +153,7 @@ Common configuration options are:
 * Node name and logo: a unique name and optional logo for this harvesting node
 * Group: The group that the harvester should belong to
 * Schedule: Should the harvester run repeatedly to a schedule or just run the once
-* Delete: delete this harvester node *and all related records*
+* Delete: delete this harvester node **and all related records**
 * Remove records: delete records but leave harvester in place
 * Save: save changes to harvester configuration
 * Harvest: run this harvest
@@ -245,7 +245,7 @@ Figure 4.3.1: Catalog content statistics and Most popular records
 
 Figure 4.3.2: Record statistics by Year
 
-*Note that there is a current known issue with the pie chart breakdowns for records by category and so on as these all currently show the same information. This is being investigated*
+**Note that there is a current known issue with the pie chart breakdowns for records by category and so on as these all currently show the same information. This is being investigated**
 
 Information
 -----------
@@ -293,7 +293,7 @@ Thesauri in rdf (skos) format can be managed or added here. It is also possible 
 
 Figure 6.1.1: The thesaurus subsection showing the customised Scottish Regions thesaurus
 
-Selecting a thesaurus from the list provides further information about it. *The settings here should not be changed as they will affect the working of the catalogue.* 
+Selecting a thesaurus from the list provides further information about it. **The settings here should not be changed as they will affect the working of the catalogue.** 
 
 It is possible to add additional thesauri by clicking the "Add thesaurus" link. The options are as follows:
 
@@ -330,7 +330,7 @@ Figure 6.3.3: Adding a new category
 Standards
 =========
 
-*This section should only be used by advanced administrators and system maintainers.* It lists the metadata standards or profiles that are loaded into the installation, along with the option to remove a standard, update it, or add a new one.
+**This section should only be used by advanced administrators and system maintainers.** It lists the metadata standards or profiles that are loaded into the installation, along with the option to remove a standard, update it, or add a new one.
 
 When adding a new standard or updating an existing one, there are three options:
 
@@ -403,50 +403,205 @@ Figure 8.2.3: The lower section of the user editing interface
 Settings
 ========
 
-*This section should be used only by advanced administrators and system maintainers*. This section is where the main configuration of for the installation is set up. It contains a number of subsections, as described below, but in general settings should only be changed by experienced staff as they can have an adverse effect on the running of the site.
+**This section should be used only by advanced administrators and system maintainers**. This section is where the main configuration of for the installation is set up. It contains a number of subsections, as described below, but in general settings should only be changed by experienced staff as they can have an adverse effect on the running of the site.
 
 Settings
 --------
 
-The settings subsection provides access to the main configuration for the installation. The various elements are described in detail in the Geonetwork documentation at http://geonetwork-opensource.org/manuals/trunk/eng/users/administrator-guide/configuring-the-catalog/index.html but there are some elements that may be useful:
+The settings subsection provides access to the main configuration for the installation. 
+
+|image25|
+
+Figure 9.1.1: The settings panel
+
+
+The various elements are described in detail in the Geonetwork documentation at http://geonetwork-opensource.org/manuals/trunk/eng/users/administrator-guide/configuring-the-catalog/index.html so not all elements are described below, but there are some sections that may be useful:
 
 * Log levels- there are two of these, accessed via dropdown lists. The first is at the top of the settings panel, next to the "Save settings" button. The second is in the Catalog server subsection. The default for both is "Production" and this level should only be changed if increased logging is specifically requested. In that case, change to "Dev" and save settings, but remember to set it back to "Production" for normal use!
-* Catalog name- this is used throughout the catalog and can be changed as required
+* Catalog description- the Catalog name and Organisation are used throughout the catalogue and can be changed as required
 * Organisation- this is also used throughout the catalog and can be changed as required
-* Catalog server 
+* Catalog- shows the version of Geonetwork in use
+* Catalog server- shows the URL and protocol (http or https) being used. **Changing these values will trigger a change to internal URLs within the metadata records**
+* Metadata Search Results- limits how many records can be selected in a single operation. **Increasing this value may have a negative impact on the performance of the server**
+* Catalog Service for the Web (CSW)- should this be enabled (default is yes). **Note that there is a known issue where the option to set a contact to be used for GetCapabilities does not work. This is being investigated, and can be set elsewhere**. In general the default settings for this section should be used.
+* User self-registration- if this option is set (default is no) then visitors to the catalogue can register as users (with the Registered User profile)
+* User feedback- deprecated in version 3.0.0 onwards
+* Search statistics- if enabled (default is yes) then Geonetwork will save statistics on searches in the database
+* INSPIRE Directive configuration- this section enables INSPIRE options in the CSW response from the catalogue and enables the INSPIRE search options in the advanced search panel. 
+* Harvesters- allow editing on harvested records- if this is set (default is no) then records harvested from a remote location can be edited. **Note that, if set, any changes would be overwritten by subsequent harvests**
+* Harvester- this section contains settings to alert if a harvest has succeeded or failed. It is not configured by default
+* Metadata configuration- this section contains settings on which views are available, which is the default, and whether group logos should be used for records. The default values are generally sufficient
+* Metadata workflow- this section includes sections on the publication of invalid metadata. If the publication of invalid metadata is disabled, it is also possible to automatically set the status of invalid records to unpublished, and to force validation when a metadata record is saved.
 
-TODO
+The remaining settings are generally only configured on installation and should only be changed by experienced administrators or system maintainers. 
 
 Logo
 ----
 
+This subsection is where logos are uploaded and/or deleted, and where the main catalogue logo is set. New logos can be uploaded using the green "Choose or drop images here" button, and the current catalog logo is shown on the left. For logos that have been uploaded, there are options (icons, from left to right) to set as the catalogue logo, set as the favicon, or delete.
+
+|image26|
+
+Figure 9.2.1: The logo configuration interface
+
 Sources
 -------
+
+This subsection is only used when a number of different sources are used for loading the data, such as harvesting nodes.
 
 CSW
 ---
 
+This subsection provides more detailed options for configuring the CSW service for the catalogue. In general the default options are sufficient.
+
+The Contact setting allows the choice of a user within the catalogue to populate the contact information in the CSW GetCapabilities request. **A specific user "Metadata Contact", has been set up for this purpose.**
+
+The CSW Service information setting allows the configuration of some of the GetCapabilities elements, such as the Title, Abstract and so on. Fields are selected using a dropdown list, the language is chosen (default is English), and then the Value for the given setting can be added.
+
+|image27|
+
+Figure 9.3.1: The CSW settings interface
+
 Virtual CSW
 -----------
+
+This subsection allows the configuration of Virtual CSW endpoints. These allow for different CSW URLs to be used within the catalogue, such as for different groups or metadata categories. 
+
+To configure a new Virtual CSW endpoint, click the blue "New Virtual CSW" button and then configure the following settings:
+
+* Name- This will be used as the URL endpoint for the virtual CSW. **This must begin with csw-**
+* Description
+* Filters/Query- the filter that should be used to decide on the records that should be published under this endpoint. Choose from the dropdown list, or use the advanced query option. The figure below shows an example endpoint for records belonging to the Aberdeen group
+
+|image28|
+
+Figure 9.4.1: Virtual CSW endpoint set up for Aberdeen group
+
+Once a virtual endpoint has been saved, it's capabilities can be checked using the link shown in figure 9.3.1
+
+**Note that the default contact information, as configured in the CSW subsection, will be used for the GetCapabilities request**
 
 CSW test
 --------
 
+This subsection allows you to test various CSW requests on the standard endpoints or any virtual endpoints configured. The endpoints are displayed as radio boxes and the available requests are accessible from a dropdown list. Where it is necessary to adjust a parameter, such as a search term or record ID, this can be done in the XML section. To run the request click the green "Send CSW request" button. The response will appear below.
+
+|image29|
+
+Figure 9.4.2: Results of CSW "GetRecordById" request to the standard catalogue CSW endpoint, for record with ID 8fc49f46-2d6b-45b0-abd9-79e8aa2233cb
+
+
 Map servers
 -----------
+
+This subsection allows you to set up the catalogue as an OGC publisher for WMS/WFS/WCS. In order to configure this section a Geoserver or Mapserver instance must be installed on the server. **Not currently implemented in this installation.**
 
 Tools
 =====
 
+This section contains some tools that can be run when maintenance is needed on the server. The subsections are as follows:
+
+Index admin
+-----------
+
+In general it is not necessary to run these tools unless transferring a large number of metadata records, changing the catalogue's appearance, or if unexpected search results are reported. The tools are as follows:
+
+* Rebuild index- this rebuilds the lucene search index, used in all operations that perform searches on the metadata
+* Optimize index- this is run nightly but can be run to re-optimise the index if odd search results are spotted
+* Rebuild index configuration- rebuild the index configuration if changes have been made to the catalogue, such as to the search views
+* Clear the XLink cache- if directories are added or changes have been made to the catalogue that would affect the structure of xlinks (such as to the URL or protocol), clear the cache
+* Clear formatter cache- if changes have been made to the catalogue display (schematron views, or text strings), clear the cache
+
+|image30|
+
+Figure 10.1.1: The index admin interface
+
+Batch process
+-------------
+
+This subsection can be used to make xsl transformations on multiple records at once, such as to update contact information in bulk, change internal URLs or update keywords. **It is wise to request a database backup before performing a batch process as there is no way to undo the transformation once it has been started.**
+
+The processes are defined per schema, and new processes can be added as required. The records that the process should be applied to can be filtered by Group, Owner, Category or custom search term, further filtered to include/exclude templates, and then selected using the dropdown selection dialog. 
+
+The available processes are accessed via a dropdown list, which then prompts you to supply the required parameters, such as the Old URL and the New URL. To run the process, click the blue "Run" button. The results of the process will be shown below. **Note that the process may take a long time if there are a large number of records to search.**
+
+|image31|
+
+Figure 10.2.1: The batch processing interface, showing the configuration of the URL replacer for metadata records owned by Transport Scotland
+
+Transfer ownership
+------------------
+
+This subsection allows you to change the owner (user) of a set of records. Choose the user from the dropdown list, noting that this list contains only users with profiles of editor and above.
+
+In the "Target group and editor" list choose the group that your new editor belongs to. The "Target editor" dropdown list will then show all users with editor profile and above in that group, and additionally full administrators for the catalogue. Select the appropriate editor and then click the blue "Transfer" button.
+
+|image32|
+
+Figure 10.3.1: The transfer ownership interface, configured for transferring records currently owned by the Fife Council user to the Admin user.
+
+**Note that changing the ownership of a record applies only to users and does not affect group privileges.** This tool is also available in the Search panel as one of the available actions for selected results.
+
 Editing online documentation
 ============================
 
-Edit on github
---------------
+The source for the online documentation is written in ReStructuredText (rst) syntax and stored in a public repository on GitHub at https://github.com/AstunTechnology/ssdidocs. Every time this source documentation is updated, it is regenerated into html by ReadTheDocs and the generated version is available at http://scottish-sdi-metadata-portal.readthedocs.io/.
+
+There are two sections to the documentation at present, represented by two separate rst files:
+
+* User guidance https://github.com/AstunTechnology/ssdidocs/blob/master/docs/ssdi_guidance.rst
+* Admin guidance https://github.com/AstunTechnology/ssdidocs/blob/master/docs/ssdi_adminguidance.rst
+
+Editing the documentation will require a GitHub account.
 
 ReStructured Text Syntax
 ------------------------
 
+**ReStructured Text documents should be written in a text editor rather than a word processing application**
+
+A guide to syntax can be found at http://docutils.sourceforge.net/docs/user/rst/quickref.html
+
+An online editor and previewer can be found at http://rst.ninjs.org/
+
+Edit on github
+--------------
+
+The documentation can be edited online by either clicking the "Edit on GitHub" link, or navigating to the URLs given above. Note that the procedure outlined here seems complicated but in most cases it's a button-pressing exercise.
+
+Click the edit icon for the document you wish to edit.
+
+|image33|
+
+Figure 11.1.1.: Editing in GitHub
+
+The editing interface has two tabs, one for editing and one for previewing changes. You can use shortcuts like ctrl-f to find text in the document that you wish to change. Check your changes using the preview tab, and then in the "Propose file change" section briefly outline your change. 
+
+|image34|
+
+Figure 11.1.2: Detailing your changes
+
+Click the green "Propose change" button and then in the following window, quickly review your changes and then click the green "Create pull request" button.
+
+|image35|
+
+Figure 11.1.3: Reviewing the pull request 
+
+|image36|
+
+Figure 11.1.4: Creating the pull request
+
+In the following window, if necessary expand on your explanation of the changes and then click the green "Create pull request" button.
+
+The final window provides one further opportunity to make comments about your changes, but there is no requirement to do so. An email is sent to the owner of the repository, who will review the changes you have made and accept or reject them. If the change is accepted you will be notified by email but need take no further action- the new documentation will be automatically updated and pushed to ReadTheDocs. If the change is rejected for some reason then you will be notified of the reason why and the pull request will be closed without your changes being accepted.
+
+**Note that you will not be able to add new images using this method, you'll need to edit locally (or provide Astun with the images).**
+
+Editing locally
+---------------
+
+Editing the files locally requires the installation of a Git client on your local computer. 
+
+TODO
 
 
 .. |image0| image:: media/adminimage01.png
