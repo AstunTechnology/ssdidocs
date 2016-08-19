@@ -599,9 +599,9 @@ The final window provides one further opportunity to make comments about your ch
 Editing locally
 ---------------
 
-Editing the files locally requires the installation of a Git client on your local computer. 
+Editing the files locally requires the installation of a Git client on your local computer. Details on installation and configuring git are beyond the scope of this document, but downloads and instructions for windows can be found at https://git-for-windows.github.io/.
 
-TODO
+You will need a GitHub account to edit files locally.
 
 
 .. |image0| image:: media/adminimage01.png
@@ -635,3 +635,15 @@ TODO
 .. |image22| image:: media/adminimage23.png
 .. |image23| image:: media/adminimage24.png
 .. |image24| image:: media/adminimage25.png
+.. |image25| image:: media/adminimage26.png
+.. |image26| image:: media/adminimage27.png
+.. |image27| image:: media/adminimage28.png
+.. |image28| image:: media/adminimage29.png
+.. |image29| image:: media/adminimage30.png
+.. |image30| image:: media/adminimage31.png
+.. |image31| image:: media/adminimage32.png
+.. |image32| image:: media/adminimage33.png
+.. |image33| image:: media/adminimage34.png
+.. |image34| image:: media/adminimage35.png
+.. |image35| image:: media/adminimage36.png
+.. |image36| image:: media/adminimage37.png
