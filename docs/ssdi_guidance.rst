@@ -218,7 +218,7 @@ function can be accessed in two ways:
 
     - OR -
 
-1. If you know the URL of the service you wish to view, activate the map
+2. If you know the URL of the service you wish to view, activate the map
    tab and then click on the add layer button (left-most button at the
    top of the map table of contents). Select the radio button to
    ‘\ **add by URL**\ ’, paste the URL into the text box and hit the
