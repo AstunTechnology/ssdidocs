@@ -59,7 +59,7 @@ The editing dashboard can be used to perform administrative functions on individ
 
 |image-5|
 
-Figure 2.1.1: Administrative functions that act on individual records, access from the editing dashboard
+Figure 2.1.1: Administrative functions that act on individual records, accessed from the editing dashboard
 
 In order from left to right these are:
 
@@ -93,7 +93,7 @@ The Metadata and Templates button provides access to four subsections, as shown 
 
 |image2|
 
-Figure 2.1.1: Metadata and Templates subsections
+Figure 2.2.1: Metadata and Templates subsections
 
 Metadata and Templates Standards available
 ------------------------------------------
@@ -144,9 +144,11 @@ To add a new harvester node, either clone an existing one by selecting it from t
 
 |image4|
 
+Figure 3.2.1: Common harvester node configuration options, top half of screen
+
 |image5|
 
-Figures 3.2.1/2: Common harvester node configuration options
+Figure 3.2.2: Common harvester node configuration options, bottom half of screen
 
 Common configuration options are:
 
@@ -158,7 +160,7 @@ Common configuration options are:
 * Save: save changes to harvester configuration
 * Harvest: run this harvest
 * Category: set the category that the harvested records should be added to
-* Validate records before import: Reject invalid records before importing them into the catalogue. This has the following options:
+* Validate records before import``: Reject invalid records before importing them into the catalogue. This has the following options``:
 	* Accept all metadata without validation (this option will import all records regardless of validity)
 	* Accept metadata that are XSD valid (this option will cause the harvest to fail on the first invalid record)
 	* Accept metadata that are XSD and Schematron valid (this option will cause the harvest to fail on the first invalid record)
@@ -222,14 +224,14 @@ Content Statistics
 
 This subsection provides more information on content searches. The following options are available, for export as CSV:
 
-* Catalog content statistics, such as the number of harvested records, total number of records, number of public records and so on
-* Metadata records popularity, showing the most popular records searched for (clicking the blue eye icon to the right of a record will take you to it)
-* Best Rated, showing the most highly rated records (if local star ratings are being used)
-* Record statistics, this is a dropdown list with a number of available metrics, for example (but not limited to):
-	* Year
-	* Format
-	* INSPIRE theme(s)
-	* Contact for the resource
+- Catalog content statistics, such as the number of harvested records, total number of records, number of public records and so on
+- Metadata records popularity, showing the most popular records searched for (clicking the blue eye icon to the right of a record will take you to it)
+- Best Rated, showing the most highly rated records (if local star ratings are being used)
+- Record statistics, this is a dropdown list with a number of available metrics, for example (but not limited to):
+	- Year
+	- Format
+	- INSPIRE theme(s)
+	- Contact for the resource
 
 |image11|
 
