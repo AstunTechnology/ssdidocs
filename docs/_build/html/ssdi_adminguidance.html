@@ -50,13 +50,64 @@
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>This documentation is intended to provide guidance to administrators of the SSDI Catalogue. It assumes familiarity with the user guidance, particularly around the creation and validation of metadata.</p>
-<p>The administrative functionality within the catalogue is accessed via the Admin console, on the top menu when you log in with an administrator profile.</p>
+<p>The administrative functionality within the catalogue is accessed via the Admin console, on the top menu when you log in with an administrator profile. Additional functionality, such as  downloading catalogue-wide reports, is available from the advanced search page and also the editing dashboard.</p>
 <p><img alt="image0" src="_images/adminimage01.png" /></p>
 <p>Figure 1.1.1: SSDI catalogue main page, showing admin console link</p>
 <p><img alt="image1" src="_images/adminimage02.png" /></p>
 <p>Figure 1.1.2: SSDI catalogue admin console, for a full administrator</p>
 <p>The level of functionality available in the admin console is dependent on the privileges of the logged in user. The above image shows the admin console for a full Administrator. This page also provides a quick &#8220;at a glance&#8221; view of the number of records available, and the numbers of datasets and services.</p>
 </div>
+</div>
+<div class="section" id="searches">
+<h1>Searches<a class="headerlink" href="#searches" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="advanced-search">
+<h2>Advanced Search<a class="headerlink" href="#advanced-search" title="Permalink to this headline">¶</a></h2>
+<p>The Advanced Search capabality in the catalogue is accessed by clicking the blue magnifying glass icon on the home page.</p>
+<p><img alt="image-1" src="_images/adminimage-1.png" /></p>
+<p>Figure 1.2.1: Search icon on main catalogue page</p>
+<p>Filtering options, or search facets, are available to the left of the search results, as a series of check boxes. The results can be sorted by Title, Relevancy, Rating and Popularity, and either lowest or highest scale first.</p>
+<p><img alt="image-2" src="_images/adminimage-2.png" /></p>
+<p>Figure 1.2.2: Search facets, or further filtering options on the search page</p>
+<p>Further search capabilities can be accessed by clicking the &#8220;contribute&#8221; button on the main toolbar. This opens the &#8220;Editing dashboard&#8221;, where there are also options to create or import new metadata, and also view privileges for or edit existing records. This page shows different search filtering options or facets, including group, schema, validation status, workflow status and so on.</p>
+<p><img alt="image-3" src="_images/adminimage-3.png" /></p>
+<p>Figure 1.2.3: Options to Create or Import new data</p>
+<p><img alt="image-4" src="_images/adminimage-4.png" /></p>
+<p>Figure 1.2.4: Search facets available from Editing dashboard</p>
+</div>
+</div>
+<div class="section" id="advanced-workflow">
+<h1>Advanced Workflow<a class="headerlink" href="#advanced-workflow" title="Permalink to this headline">¶</a></h1>
+<p>The editing dashboard can be used to perform administrative functions on individual or batch metarecords. Tools for acting on individual records are represented by icons to the right of the metadata title. The validation status of a record is indicated by the colour of it&#8217;s icon:</p>
+<ul class="simple">
+<li>Green- validated and passing checks</li>
+<li>Red- validated but not passing checks</li>
+<li>Grey- not yet validated</li>
+<li>White- a template or other record that should not be validated</li>
+</ul>
+<p><img alt="image-5" src="_images/adminimage-5.png" /></p>
+<p>Figure 2.1.1: Administrative functions that act on individual records, access from the editing dashboard</p>
+<p>In order from left to right these are:</p>
+<ul class="simple">
+<li>Privileges- set privileges on which groups can access or edit this record</li>
+<li>Edit- access the metadata editor for this record</li>
+<li>Delete this record</li>
+<li>Duplicate record</li>
+<li>Create a child record</li>
+</ul>
+<p><img alt="image-6" src="_images/adminimage-6.png" /></p>
+<p>Figure 2.1.2: Administrative functions that act on multiple records</p>
+<p>To act on multiple metadata records, use the select function and choose the appropriate function from the dropdown list:</p>
+<ul class="simple">
+<li>Export (ZIP)- exports the records in MEF format</li>
+<li>Export (PDF)- exports as a combined PDF- note this will disregard any templates</li>
+<li>Export (CSV)- exports as a combined CSV- note this will disregard any templates</li>
+<li>Update privilges- note that this will <strong>UPDATE</strong> privileges rather than <strong>APPEND</strong> to existing ones</li>
+<li>Publish/Unpublish- add or remove the &#8220;publish&#8221; privilege from the &#8220;All&#8221; group</li>
+<li>Transfer Ownership</li>
+<li>Update categories</li>
+<li>Validate</li>
+<li>Delete</li>
+</ul>
 </div>
 <div class="section" id="metadata-and-templates">
 <h1>Metadata and Templates<a class="headerlink" href="#metadata-and-templates" title="Permalink to this headline">¶</a></h1>
@@ -108,7 +159,7 @@
 </li>
 <li><p class="first">Schedule: Should the harvester run repeatedly to a schedule or just run the once</p>
 </li>
-<li><p class="first">Delete: delete this harvester node <em>and all related records</em></p>
+<li><p class="first">Delete: delete this harvester node <strong>and all related records</strong></p>
 </li>
 <li><p class="first">Remove records: delete records but leave harvester in place</p>
 </li>
@@ -219,7 +270,7 @@
 </ul>
 <p><img alt="image12" src="_images/adminimage13.png" /></p>
 <p>Figure 4.3.2: Record statistics by Year</p>
-<p><em>Note that there is a current known issue with the pie chart breakdowns for records by category and so on as these all currently show the same information. This is being investigated</em></p>
+<p><strong>Note that there is a current known issue with the pie chart breakdowns for records by category and so on as these all currently show the same information. This is being investigated</strong></p>
 </div>
 <div class="section" id="information">
 <h2>Information<a class="headerlink" href="#information" title="Permalink to this headline">¶</a></h2>
@@ -258,7 +309,7 @@
 <p>Thesauri in rdf (skos) format can be managed or added here. It is also possible to interrogate the existing thesauri loaded into the catalogue.</p>
 <p><img alt="image14" src="_images/adminimage15.png" /></p>
 <p>Figure 6.1.1: The thesaurus subsection showing the customised Scottish Regions thesaurus</p>
-<p>Selecting a thesaurus from the list provides further information about it. <em>The settings here should not be changed as they will affect the working of the catalogue.</em></p>
+<p>Selecting a thesaurus from the list provides further information about it. <strong>The settings here should not be changed as they will affect the working of the catalogue.</strong></p>
 <p>It is possible to add additional thesauri by clicking the &#8220;Add thesaurus&#8221; link. The options are as follows:</p>
 <ul class="simple">
 <li>New thesaurus- build one from scratch in Geonetwork</li>
@@ -268,28 +319,246 @@
 </div>
 <div class="section" id="directories">
 <h2>Directories<a class="headerlink" href="#directories" title="Permalink to this headline">¶</a></h2>
-<p>TODO</p>
+<p>Directories are snippets of information that can be pre-completed and inserted into metadata records. They are derived from subtemplates that are part of metadata standards. The available subtemplates are shown as tabs across the top of the Directory subsection- for Gemini 2.2 these are <strong>Organizations and contacts</strong> and <strong>Online resources</strong>.</p>
+<p>Selecting <strong>Organizations and contacts</strong> shows the metadata snippet for adding a Points of Contact subtemplate. To create a new record based on this template, click the &#8220;Duplicate&#8221; icon to the right of the template name.</p>
+<p><img alt="image14a" src="_images/adminimage15a.png" /></p>
+<p>Figure 6.2.1: The Organizations and contacts interface</p>
+<p>Along the top of the entry window are, from left to right:</p>
+<ul class="simple">
+<li>Group dropdown- which group should have ownership of this subtemplate</li>
+<li>Sharing settings- which groups should have visibility of this subtemplate</li>
+<li>Save</li>
+<li>Save and close</li>
+</ul>
+<p>It&#8217;s also possible to change the view that is used for completing this subtemplate, from default to xml view.</p>
+<p>Once saved, the contact will be available using the &#8220;search for a contact&#8221; dialogue when creating or editng a metadata record.</p>
+<p><img alt="image14b" src="_images/adminimage15b.png" /></p>
+<p>Figure 6.2.2: Adding a point of contact snippet when editing a record</p>
+<p>The dropdown box next to the contact name allows the user to choose the element where this snippet should be inserted.</p>
+</div>
+<div class="section" id="categories">
+<h2>Categories<a class="headerlink" href="#categories" title="Permalink to this headline">¶</a></h2>
+<p>This subsection lists the categories that records can be added to, and provides the option to add new categories or delete existing ones.</p>
+<p><img alt="image15" src="_images/adminimage16.png" /></p>
+<p>Figure 6.3.1: Category list</p>
+<p>Selecting a category from the list brings up a dialogue where it&#8217;s display name can be edited in each of the languages enabled in the catalogue, along with the options to save changes or delete the category.</p>
+<p><img alt="image16" src="_images/adminimage17.png" /></p>
+<p>Figure 6.3.2: Selecting a category and displaying additional options</p>
+<p>To add a new category, click the &#8220;New category&#8221; button shown in Figure 6.3.1 above. Add an unique name for the category and save it. To change it&#8217;s display name in any of the available languages, select it from the category list and edit as shown in Figure 6.3.2 above.</p>
+<p><img alt="image17" src="_images/adminimage18.png" /></p>
+<p>Figure 6.3.3: Adding a new category</p>
 </div>
 </div>
 <div class="section" id="standards">
 <h1>Standards<a class="headerlink" href="#standards" title="Permalink to this headline">¶</a></h1>
+<p><strong>This section should only be used by advanced administrators and system maintainers.</strong> It lists the metadata standards or profiles that are loaded into the installation, along with the option to remove a standard, update it, or add a new one.</p>
+<p>When adding a new standard or updating an existing one, there are three options:</p>
+<ul class="simple">
+<li>Provide the path to the folder containing the standard on the server filesystem</li>
+<li>Provide the UUID of a metadata record that contains a schema archive as an attached online resource</li>
+<li>(Not shown in Figure 7.1.1) manually add or update the standard on the server in the schema_plugins location (found in the System Information panel) and restart the server</li>
+</ul>
+<p><img alt="image18" src="_images/adminimage19.png" /></p>
+<p>Figure 7.1.1: The standards interface</p>
 </div>
 <div class="section" id="users-and-groups">
 <h1>Users and groups<a class="headerlink" href="#users-and-groups" title="Permalink to this headline">¶</a></h1>
+<p>This section is where existing users and groups are managed, and new ones are added. There are two subsections, described below.</p>
+<div class="section" id="manage-groups">
+<h2>Manage groups<a class="headerlink" href="#manage-groups" title="Permalink to this headline">¶</a></h2>
+<p>This subsection allows you to list and edit the existing groups in the catalogue, and add new ones. Groups are listed on the left, and selecting a group brings up additional options, shown below, with the option to save any changes or delete this group.</p>
+<p><img alt="image19" src="_images/adminimage20.png" /></p>
+<p>Figure 8.1.1: The groups list and top half of the groups editing interface</p>
+<p><img alt="image20" src="_images/adminimage21.png" /></p>
+<p>Figure 8.1.2: The middle section of the groups editing interface</p>
+<p><img alt="image21" src="_images/adminimage22.png" /></p>
+<p>Figure 8.1.3: The lower section of the groups editing interface (intermediate section on translations for this group name not shown)</p>
+<p>To add a new group, click the blue &#8220;New group&#8221; button below the list (not shown in figure 8.1.1). This brings up the same dialogue shown in figures 8.1.1-8.1.3.</p>
+</div>
+<div class="section" id="manage-users">
+<h2>Manage Users<a class="headerlink" href="#manage-users" title="Permalink to this headline">¶</a></h2>
+<p>This subsection allows you to list and edit the existing users in the catalogue, and add new ones. Users are listed on the left, and selecting a user brings up additional options, shown below, with the option to save any changes or delete this user. For exsiting users there is also the option to reset the password.</p>
+<p>The settings for editing or creating a user are as follows:</p>
+<ul>
+<li><p class="first">Enable (default is yes)- allow this user to log in, or not</p>
+</li>
+<li><p class="first">User name (mandatory)- the name the user should use to log in</p>
+</li>
+<li><p class="first">Password (mandatory, not shown for existing users)</p>
+</li>
+<li><p class="first">Name (mandatory)</p>
+</li>
+<li><p class="first">Surname (mandatory)</p>
+</li>
+<li><p class="first">Organisation (optional)</p>
+</li>
+<li><p class="first">Address fields (optional)</p>
+</li>
+<li><p class="first">Is an administrator (default is no)- if checked the user will be a full administrator for the whole catalogue with full access to all functionality for all groups</p>
+</li>
+<li><dl class="first docutils">
+<dt>Profiles per group- if not a full administrator then the user needs to be assigned at least one role or profile within the catalogue. Note that a user can be part of multiple groups and have different profiles per group</dt>
+<dd><ul class="first last simple">
+<li>Registered User: can download protected data</li>
+<li>Editor: has rights to create/delete/edit metadata within their group</li>
+<li>Reviewer: has rights to authorise publication of metadata within their own group</li>
+<li>User administrator: has rights to administer users, and create/delete/edit metadata within their group</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Records owned by this user (if any)</p>
+</li>
+</ul>
+<p><img alt="image22" src="_images/adminimage23.png" /></p>
+<p>Figure 8.2.1: The users list and top section of user editing interface</p>
+<p><img alt="image23" src="_images/adminimage24.png" /></p>
+<p>Figure 8.2.2: The middle section of the user editing interface</p>
+<p><img alt="image24" src="_images/adminimage25.png" /></p>
+<p>Figure 8.2.3: The lower section of the user editing interface</p>
+</div>
 </div>
 <div class="section" id="settings">
 <h1>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h1>
+<p><strong>This section should be used only by advanced administrators and system maintainers</strong>. This section is where the main configuration of for the installation is set up. It contains a number of subsections, as described below, but in general settings should only be changed by experienced staff as they can have an adverse effect on the running of the site.</p>
+<div class="section" id="id1">
+<h2>Settings<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>The settings subsection provides access to the main configuration for the installation.</p>
+<p><img alt="image25" src="_images/adminimage26.png" /></p>
+<p>Figure 9.1.1: The settings panel</p>
+<p>The various elements are described in detail in the Geonetwork documentation at <a class="reference external" href="http://geonetwork-opensource.org/manuals/trunk/eng/users/administrator-guide/configuring-the-catalog/index.html">http://geonetwork-opensource.org/manuals/trunk/eng/users/administrator-guide/configuring-the-catalog/index.html</a> so not all elements are described below, but there are some sections that may be useful:</p>
+<ul class="simple">
+<li>Log levels- there are two of these, accessed via dropdown lists. The first is at the top of the settings panel, next to the &#8220;Save settings&#8221; button. The second is in the Catalog server subsection. The default for both is &#8220;Production&#8221; and this level should only be changed if increased logging is specifically requested. In that case, change to &#8220;Dev&#8221; and save settings, but remember to set it back to &#8220;Production&#8221; for normal use!</li>
+<li>Catalog description- the Catalog name and Organisation are used throughout the catalogue and can be changed as required</li>
+<li>Organisation- this is also used throughout the catalog and can be changed as required</li>
+<li>Catalog- shows the version of Geonetwork in use</li>
+<li>Catalog server- shows the URL and protocol (http or https) being used. <strong>Changing these values will trigger a change to internal URLs within the metadata records</strong></li>
+<li>Metadata Search Results- limits how many records can be selected in a single operation. <strong>Increasing this value may have a negative impact on the performance of the server</strong></li>
+<li>Catalog Service for the Web (CSW)- should this be enabled (default is yes). <strong>Note that there is a known issue where the option to set a contact to be used for GetCapabilities does not work. This is being investigated, and can be set elsewhere</strong>. In general the default settings for this section should be used.</li>
+<li>User self-registration- if this option is set (default is no) then visitors to the catalogue can register as users (with the Registered User profile)</li>
+<li>User feedback- deprecated in version 3.0.0 onwards</li>
+<li>Search statistics- if enabled (default is yes) then Geonetwork will save statistics on searches in the database</li>
+<li>INSPIRE Directive configuration- this section enables INSPIRE options in the CSW response from the catalogue and enables the INSPIRE search options in the advanced search panel.</li>
+<li>Harvesters- allow editing on harvested records- if this is set (default is no) then records harvested from a remote location can be edited. <strong>Note that, if set, any changes would be overwritten by subsequent harvests</strong></li>
+<li>Harvester- this section contains settings to alert if a harvest has succeeded or failed. It is not configured by default</li>
+<li>Metadata configuration- this section contains settings on which views are available, which is the default, and whether group logos should be used for records. The default values are generally sufficient</li>
+<li>Metadata workflow- this section includes sections on the publication of invalid metadata. If the publication of invalid metadata is disabled, it is also possible to automatically set the status of invalid records to unpublished, and to force validation when a metadata record is saved.</li>
+</ul>
+<p>The remaining settings are generally only configured on installation and should only be changed by experienced administrators or system maintainers.</p>
+</div>
+<div class="section" id="logo">
+<h2>Logo<a class="headerlink" href="#logo" title="Permalink to this headline">¶</a></h2>
+<p>This subsection is where logos are uploaded and/or deleted, and where the main catalogue logo is set. New logos can be uploaded using the green &#8220;Choose or drop images here&#8221; button, and the current catalog logo is shown on the left. For logos that have been uploaded, there are options (icons, from left to right) to set as the catalogue logo, set as the favicon, or delete.</p>
+<p><img alt="image26" src="_images/adminimage27.png" /></p>
+<p>Figure 9.2.1: The logo configuration interface</p>
+</div>
+<div class="section" id="sources">
+<h2>Sources<a class="headerlink" href="#sources" title="Permalink to this headline">¶</a></h2>
+<p>This subsection is only used when a number of different sources are used for loading the data, such as harvesting nodes.</p>
+</div>
+<div class="section" id="csw">
+<h2>CSW<a class="headerlink" href="#csw" title="Permalink to this headline">¶</a></h2>
+<p>This subsection provides more detailed options for configuring the CSW service for the catalogue. In general the default options are sufficient.</p>
+<p>The Contact setting allows the choice of a user within the catalogue to populate the contact information in the CSW GetCapabilities request. <strong>A specific user &#8220;Metadata Contact&#8221;, has been set up for this purpose.</strong></p>
+<p>The CSW Service information setting allows the configuration of some of the GetCapabilities elements, such as the Title, Abstract and so on. Fields are selected using a dropdown list, the language is chosen (default is English), and then the Value for the given setting can be added.</p>
+<p><img alt="image27" src="_images/adminimage28.png" /></p>
+<p>Figure 9.3.1: The CSW settings interface</p>
+</div>
+<div class="section" id="virtual-csw">
+<h2>Virtual CSW<a class="headerlink" href="#virtual-csw" title="Permalink to this headline">¶</a></h2>
+<p>This subsection allows the configuration of Virtual CSW endpoints. These allow for different CSW URLs to be used within the catalogue, such as for different groups or metadata categories.</p>
+<p>To configure a new Virtual CSW endpoint, click the blue &#8220;New Virtual CSW&#8221; button and then configure the following settings:</p>
+<ul class="simple">
+<li>Name- This will be used as the URL endpoint for the virtual CSW. <strong>This must begin with csw-</strong></li>
+<li>Description</li>
+<li>Filters/Query- the filter that should be used to decide on the records that should be published under this endpoint. Choose from the dropdown list, or use the advanced query option. The figure below shows an example endpoint for records belonging to the Aberdeen group</li>
+</ul>
+<p><img alt="image28" src="_images/adminimage29.png" /></p>
+<p>Figure 9.4.1: Virtual CSW endpoint set up for Aberdeen group</p>
+<p>Once a virtual endpoint has been saved, it&#8217;s capabilities can be checked using the link shown in figure 9.3.1</p>
+<p><strong>Note that the default contact information, as configured in the CSW subsection, will be used for the GetCapabilities request</strong></p>
+</div>
+<div class="section" id="csw-test">
+<h2>CSW test<a class="headerlink" href="#csw-test" title="Permalink to this headline">¶</a></h2>
+<p>This subsection allows you to test various CSW requests on the standard endpoints or any virtual endpoints configured. The endpoints are displayed as radio boxes and the available requests are accessible from a dropdown list. Where it is necessary to adjust a parameter, such as a search term or record ID, this can be done in the XML section. To run the request click the green &#8220;Send CSW request&#8221; button. The response will appear below.</p>
+<p><img alt="image29" src="_images/adminimage30.png" /></p>
+<p>Figure 9.4.2: Results of CSW &#8220;GetRecordById&#8221; request to the standard catalogue CSW endpoint, for record with ID 8fc49f46-2d6b-45b0-abd9-79e8aa2233cb</p>
+</div>
+<div class="section" id="map-servers">
+<h2>Map servers<a class="headerlink" href="#map-servers" title="Permalink to this headline">¶</a></h2>
+<p>This subsection allows you to set up the catalogue as an OGC publisher for WMS/WFS/WCS. In order to configure this section a Geoserver or Mapserver instance must be installed on the server. <strong>Not currently implemented in this installation.</strong></p>
+</div>
 </div>
 <div class="section" id="tools">
 <h1>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h1>
+<p>This section contains some tools that can be run when maintenance is needed on the server. The subsections are as follows:</p>
+<div class="section" id="index-admin">
+<h2>Index admin<a class="headerlink" href="#index-admin" title="Permalink to this headline">¶</a></h2>
+<p>In general it is not necessary to run these tools unless transferring a large number of metadata records, changing the catalogue&#8217;s appearance, or if unexpected search results are reported. The tools are as follows:</p>
+<ul class="simple">
+<li>Rebuild index- this rebuilds the lucene search index, used in all operations that perform searches on the metadata</li>
+<li>Optimize index- this is run nightly but can be run to re-optimise the index if odd search results are spotted</li>
+<li>Rebuild index configuration- rebuild the index configuration if changes have been made to the catalogue, such as to the search views</li>
+<li>Clear the XLink cache- if directories are added or changes have been made to the catalogue that would affect the structure of xlinks (such as to the URL or protocol), clear the cache</li>
+<li>Clear formatter cache- if changes have been made to the catalogue display (schematron views, or text strings), clear the cache</li>
+</ul>
+<p><img alt="image30" src="_images/adminimage31.png" /></p>
+<p>Figure 10.1.1: The index admin interface</p>
+</div>
+<div class="section" id="batch-process">
+<h2>Batch process<a class="headerlink" href="#batch-process" title="Permalink to this headline">¶</a></h2>
+<p>This subsection can be used to make xsl transformations on multiple records at once, such as to update contact information in bulk, change internal URLs or update keywords. <strong>It is wise to request a database backup before performing a batch process as there is no way to undo the transformation once it has been started.</strong></p>
+<p>The processes are defined per schema, and new processes can be added as required. The records that the process should be applied to can be filtered by Group, Owner, Category or custom search term, further filtered to include/exclude templates, and then selected using the dropdown selection dialog.</p>
+<p>The available processes are accessed via a dropdown list, which then prompts you to supply the required parameters, such as the Old URL and the New URL. To run the process, click the blue &#8220;Run&#8221; button. The results of the process will be shown below. <strong>Note that the process may take a long time if there are a large number of records to search.</strong></p>
+<p><img alt="image31" src="_images/adminimage32.png" /></p>
+<p>Figure 10.2.1: The batch processing interface, showing the configuration of the URL replacer for metadata records owned by Transport Scotland</p>
+</div>
+<div class="section" id="transfer-ownership">
+<h2>Transfer ownership<a class="headerlink" href="#transfer-ownership" title="Permalink to this headline">¶</a></h2>
+<p>This subsection allows you to change the owner (user) of a set of records. Choose the user from the dropdown list, noting that this list contains only users with profiles of editor and above.</p>
+<p>In the &#8220;Target group and editor&#8221; list choose the group that your new editor belongs to. The &#8220;Target editor&#8221; dropdown list will then show all users with editor profile and above in that group, and additionally full administrators for the catalogue. Select the appropriate editor and then click the blue &#8220;Transfer&#8221; button.</p>
+<p><img alt="image32" src="_images/adminimage33.png" /></p>
+<p>Figure 10.3.1: The transfer ownership interface, configured for transferring records currently owned by the Fife Council user to the Admin user.</p>
+<p><strong>Note that changing the ownership of a record applies only to users and does not affect group privileges.</strong> This tool is also available in the Search panel as one of the available actions for selected results.</p>
+</div>
 </div>
 <div class="section" id="editing-online-documentation">
 <h1>Editing online documentation<a class="headerlink" href="#editing-online-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="edit-on-github">
-<h2>Edit on github<a class="headerlink" href="#edit-on-github" title="Permalink to this headline">¶</a></h2>
-</div>
+<p>The source for the online documentation is written in ReStructuredText (rst) syntax and stored in a public repository on GitHub at <a class="reference external" href="https://github.com/AstunTechnology/ssdidocs">https://github.com/AstunTechnology/ssdidocs</a>. Every time this source documentation is updated, it is regenerated into html by ReadTheDocs and the generated version is available at <a class="reference external" href="http://scottish-sdi-metadata-portal.readthedocs.io/">http://scottish-sdi-metadata-portal.readthedocs.io/</a>.</p>
+<p>There are two sections to the documentation at present, represented by two separate rst files:</p>
+<ul class="simple">
+<li>User guidance <a class="reference external" href="https://github.com/AstunTechnology/ssdidocs/blob/master/docs/ssdi_guidance.rst">https://github.com/AstunTechnology/ssdidocs/blob/master/docs/ssdi_guidance.rst</a></li>
+<li>Admin guidance <a class="reference external" href="https://github.com/AstunTechnology/ssdidocs/blob/master/docs/ssdi_adminguidance.rst">https://github.com/AstunTechnology/ssdidocs/blob/master/docs/ssdi_adminguidance.rst</a></li>
+</ul>
+<p>Editing the documentation will require a GitHub account.</p>
 <div class="section" id="restructured-text-syntax">
 <h2>ReStructured Text Syntax<a class="headerlink" href="#restructured-text-syntax" title="Permalink to this headline">¶</a></h2>
+<p><strong>ReStructured Text documents should be written in a text editor rather than a word processing application</strong></p>
+<p>A guide to syntax can be found at <a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">http://docutils.sourceforge.net/docs/user/rst/quickref.html</a></p>
+<p>An online editor and previewer can be found at <a class="reference external" href="http://rst.ninjs.org/">http://rst.ninjs.org/</a></p>
+</div>
+<div class="section" id="edit-on-github">
+<h2>Edit on github<a class="headerlink" href="#edit-on-github" title="Permalink to this headline">¶</a></h2>
+<p>The documentation can be edited online by either clicking the &#8220;Edit on GitHub&#8221; link, or navigating to the URLs given above. Note that the procedure outlined here seems complicated but in most cases it&#8217;s a button-pressing exercise.</p>
+<p>Click the edit icon for the document you wish to edit.</p>
+<p><img alt="image33" src="_images/adminimage34.png" /></p>
+<p>Figure 11.1.1.: Editing in GitHub</p>
+<p>The editing interface has two tabs, one for editing and one for previewing changes. You can use shortcuts like ctrl-f to find text in the document that you wish to change. Check your changes using the preview tab, and then in the &#8220;Propose file change&#8221; section briefly outline your change.</p>
+<p><img alt="image34" src="_images/adminimage35.png" /></p>
+<p>Figure 11.1.2: Detailing your changes</p>
+<p>Click the green &#8220;Propose change&#8221; button and then in the following window, quickly review your changes and then click the green &#8220;Create pull request&#8221; button.</p>
+<p><img alt="image35" src="_images/adminimage36.png" /></p>
+<p>Figure 11.1.3: Reviewing the pull request</p>
+<p><img alt="image36" src="_images/adminimage37.png" /></p>
+<p>Figure 11.1.4: Creating the pull request</p>
+<p>In the following window, if necessary expand on your explanation of the changes and then click the green &#8220;Create pull request&#8221; button.</p>
+<p>The final window provides one further opportunity to make comments about your changes, but there is no requirement to do so. An email is sent to the owner of the repository, who will review the changes you have made and accept or reject them. If the change is accepted you will be notified by email but need take no further action- the new documentation will be automatically updated and pushed to ReadTheDocs. If the change is rejected for some reason then you will be notified of the reason why and the pull request will be closed without your changes being accepted.</p>
+<p><strong>Note that you will not be able to add new images using this method, you&#8217;ll need to edit locally (or provide Astun with the images).</strong></p>
+</div>
+<div class="section" id="editing-locally">
+<h2>Editing locally<a class="headerlink" href="#editing-locally" title="Permalink to this headline">¶</a></h2>
+<p>Editing the files locally requires the installation of a Git client on your local computer. Details on installation and configuring git are beyond the scope of this document, but downloads and instructions for windows can be found at <a class="reference external" href="https://git-for-windows.github.io/">https://git-for-windows.github.io/</a>.</p>
+<p>You will need a GitHub account to edit files locally.</p>
 </div>
 </div>
 
@@ -305,6 +574,11 @@
 <li><a class="reference internal" href="#overview">Overview</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#searches">Searches</a><ul>
+<li><a class="reference internal" href="#advanced-search">Advanced Search</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#advanced-workflow">Advanced Workflow</a></li>
 <li><a class="reference internal" href="#metadata-and-templates">Metadata and Templates</a><ul>
 <li><a class="reference internal" href="#metadata-and-templates-standards-available">Metadata and Templates Standards available</a></li>
 <li><a class="reference internal" href="#formatter">Formatter</a></li>
@@ -329,15 +603,35 @@
 <li><a class="reference internal" href="#classification-systems">Classification Systems</a><ul>
 <li><a class="reference internal" href="#thesaurus">Thesaurus</a></li>
 <li><a class="reference internal" href="#directories">Directories</a></li>
+<li><a class="reference internal" href="#categories">Categories</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#standards">Standards</a></li>
-<li><a class="reference internal" href="#users-and-groups">Users and groups</a></li>
-<li><a class="reference internal" href="#settings">Settings</a></li>
-<li><a class="reference internal" href="#tools">Tools</a></li>
+<li><a class="reference internal" href="#users-and-groups">Users and groups</a><ul>
+<li><a class="reference internal" href="#manage-groups">Manage groups</a></li>
+<li><a class="reference internal" href="#manage-users">Manage Users</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#settings">Settings</a><ul>
+<li><a class="reference internal" href="#id1">Settings</a></li>
+<li><a class="reference internal" href="#logo">Logo</a></li>
+<li><a class="reference internal" href="#sources">Sources</a></li>
+<li><a class="reference internal" href="#csw">CSW</a></li>
+<li><a class="reference internal" href="#virtual-csw">Virtual CSW</a></li>
+<li><a class="reference internal" href="#csw-test">CSW test</a></li>
+<li><a class="reference internal" href="#map-servers">Map servers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tools">Tools</a><ul>
+<li><a class="reference internal" href="#index-admin">Index admin</a></li>
+<li><a class="reference internal" href="#batch-process">Batch process</a></li>
+<li><a class="reference internal" href="#transfer-ownership">Transfer ownership</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#editing-online-documentation">Editing online documentation</a><ul>
-<li><a class="reference internal" href="#edit-on-github">Edit on github</a></li>
 <li><a class="reference internal" href="#restructured-text-syntax">ReStructured Text Syntax</a></li>
+<li><a class="reference internal" href="#edit-on-github">Edit on github</a></li>
+<li><a class="reference internal" href="#editing-locally">Editing locally</a></li>
 </ul>
 </li>
 </ul>

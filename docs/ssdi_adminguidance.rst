@@ -304,7 +304,30 @@ It is possible to add additional thesauri by clicking the "Add thesaurus" link. 
 Directories
 -----------
 
-TODO
+Directories are snippets of information that can be pre-completed and inserted into metadata records. They are derived from subtemplates that are part of metadata standards. The available subtemplates are shown as tabs across the top of the Directory subsection- for Gemini 2.2 these are **Organizations and contacts** and **Online resources**.
+
+Selecting **Organizations and contacts** shows the metadata snippet for adding a Points of Contact subtemplate. To create a new record based on this template, click the "Duplicate" icon to the right of the template name.
+
+|image14a|
+
+Figure 6.2.1: The Organizations and contacts interface
+
+Along the top of the entry window are, from left to right:
+
+* Group dropdown- which group should have ownership of this subtemplate
+* Sharing settings- which groups should have visibility of this subtemplate
+* Save
+* Save and close
+
+It's also possible to change the view that is used for completing this subtemplate, from default to xml view.
+
+Once saved, the contact will be available using the "search for a contact" dialogue when creating or editng a metadata record.
+
+|image14b|
+
+Figure 6.2.2: Adding a point of contact snippet when editing a record
+
+The dropdown box next to the contact name allows the user to choose the element where this snippet should be inserted.
 
 Categories
 ----------
@@ -619,6 +642,8 @@ You will need a GitHub account to edit files locally.
 .. |image12| image:: media/adminimage13.png
 .. |image13| image:: media/adminimage14.png
 .. |image14| image:: media/adminimage15.png
+.. |image14a| image:: media/adminimage15a.png
+.. |image14b| image:: media/adminimage15b.png
 .. |image-1| image:: media/adminimage-1.png
 .. |image-2| image:: media/adminimage-2.png
 .. |image-3| image:: media/adminimage-3.png

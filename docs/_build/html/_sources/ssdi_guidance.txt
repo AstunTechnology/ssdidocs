@@ -117,86 +117,51 @@ Accessing the SSDI
 The Scottish SDI Metadata catalogue can be accessed from the following
 link:
 
-http://scotgovsdi.edina.ac.uk/srv/en/main.home
+https://www.spatialdata.gov.scot
 
-The main page consists of three panels: the header section (1), the main
-search panel (2) and the INSPIRE search panel (3).
+The main page comprises a menu that allows you to reach the advanced search panel, the map interface, the sign in button and a dropdown for languages. The main body of the page comprises a simple search bar, the option to browse by topics (default) or inspire themes, and below that the latest and most popular datasets. Clicking the SSDI logo on the top menu will return the user to the home page.
 
 |image0|
 
 Figure 3.1.1: SSDI catalogue main page
 
-Along the header section there is a login button on the left and links
-to *Contacts, INSPIRE, Data.gov.uk* and *Help* to the right. Once a user
-has logged in, they will be presented with further buttons for **Sign
-Out**, **New Metadata**, **Import Metadata**, and **My Metadata**.
+Once a user of editor or reviewer profile or above has logged in, they will be presented with further buttons on the top menu for **Contribute**, **Admin Console** and **Sign out**. **Contrbute** has a dropdown option that gives access to **Add new record**,**Import new records** and **Manage directory**.
 
-*Contacts* allow users to leave feedback on or comments about the site.
-Though if users have any specific issues around login and passwords then
-they should contact Kate Trafford
-(`Kate.Trafford@scotland.gsi.gov.uk <mailto:kate.trafford@scotland.gsi.gov.uk>`__)
-directly.
+*Registered users will not see the option to contribute, or the admin console.*
 
 Searching for metadata in the SSDI
 ----------------------------------
 
-Quick searches on the SSDI can be performed using the free text box at
-the top centre of the search panel and clicking the ‘\ **Search**\ ’
-button. One of the main functions of the site is to allow users to
-search for both dataset and service metadata. There are two predefined
-searches for ‘\ **Datasets**\ ’ or ‘\ **Services**\ ’, accessed from
-a drop down list under the heading ‘\ **What**\ ’ on the left-hand
-side of the main search panel. Users can also search by organisation and
-keyword here. Note that keyword entries in the drop down list are
-generated from values in the keyword element of existing metadata
-records.
+Quick searches on the SSDI can be performed using the free text box in the centre of the home page and clicking the ‘\ **Search**\ ’
+icon. This will take the user to the search page, showing the resulting records in the centre of the page, with additional filtering options to the left. To the bottom right of the page is a small map view of the search results. Clicking the search button on the top menu of the home page will also bring the user to this page.
+
+One of the main functions of the site is to allow users to
+search for both dataset and service metadata. These are accessed from check boxes to the top of the left-hand filtering options, below which are filters for '\ **Topics**\ ', '\ **INSPIRE Themes**\ ', '\ **Keywords**\ ', '\ **Contact for the resource, **\ ', '\ **Provided by**\ ', '\ **Years**\ ', '\ **Formats**\ ', '\ **Representation Types**\ ', '\ **Update Frequencies**\ ', '\ **Service Types**\ ', '\ **Scale**\ ', and '\ **Resolutions**\ '. Each search filter shows the number of records returned next to it.
 
 |image1|
 
 Figure 3.2.1: SSDI catalogue search options
 
-Other search options are available under the ‘\ **Where**\ ’ and
-‘\ **When**\ ’ headings, and also the INSPIRE search panel at the
-bottom. Each section can be used to limit a user’s search criteria as
+Other search options are available from the three vertical dots icon to the right of the main search text box. This expands to show ‘\ **What**\ ’ and
+‘\ **When**\ ’ options. Each section can be used to limit a user’s search criteria as
 follows:
 
--  **What** – allows users to search by Keywords, Organisation, and
-   Resource type.
-
--  **Where** – the map tool allows users to draw a bounding box to
-   restrict their search.
+-  **What** – allows users to search by Categories, Keywords, and
+   Resource Contact.
 
 -  **When** – allows users to limit the search temporally based on the
-   metadata change date or the temporal extent of the data. Note that
-   this section also provides options for sorting of results.
+   metadata change date. 
 
--  **INSPIRE Search options** – allows users to limit their search by
-   Annex, Service Type, Classification and Theme. Drop down boxes or
-   check lists provide the various options available.
-
-Clicking on the ‘\ **Search**\ ’ button will run a search based on the
-users selected options. To clear search options, hit the ‘\ **Reset**\ ’
-button.
-
-Viewing metadata records on the SSDI
-------------------------------------
-
-Once a search has been performed, users will be presented with a
-‘Result’ tab.
-
-|image2|
-
-Figure 3.3.2: SSDI Results tab
+Clicking on the blue search icon will run a search based on the
+user's selected options. To clear search options, hit the blue cross icon to the right of the search box.
 
 Options to sort by title, relevance, date of change, rating, popularity,
 and scale are available on the top right of the results window. Users
 can also select records and perform a series of actions such as export,
 add the layer to the map, update or delete.
 
-On the left-hand side of the results tab is a map that displays the
-extent of each record in the search result list. Below this are options
-to filter search results by organisation, resource type, service type,
-scale, keywords, and year.
+Click the title of a record to view it.
+
 
 Viewing Spatial Data on the SSDI
 ================================
@@ -218,7 +183,7 @@ function can be accessed in two ways:
 
     - OR -
 
-1. If you know the URL of the service you wish to view, activate the map
+2. If you know the URL of the service you wish to view, activate the map
    tab and then click on the add layer button (left-most button at the
    top of the map table of contents). Select the radio button to
    ‘\ **add by URL**\ ’, paste the URL into the text box and hit the
@@ -1352,7 +1317,7 @@ Annex 1: Example Metadata Record
 +---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |     *Country*                         | United Kingdom                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-|     *Email address*                   | *GI-SAT@scotland.gsi.gov.uk *                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|     *Email address*                   | *GI-SAT@scotland.gsi.gov.uk*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |  **Metadata Date**                    | 2013-07-14T16:48:32                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1360,6 +1325,8 @@ Annex 1: Example Metadata Record
 +---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |  **Resource Type**                    | **Dataset**: Information applies to the dataset                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 +---------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 
 Annex 2: Common SSDI Validation Error Messages
 ==============================================
@@ -1419,7 +1386,7 @@ the SSDI
 
 .. |image0| image:: media/image1.png
 .. |image1| image:: media/image2.png
-.. |image2| image:: media/image3.png
+.. |image2| image:: media/image2.png
 .. |image3| image:: media/image4.png
 .. |image4| image:: media/image5.png
 .. |image5| image:: media/image6.png
