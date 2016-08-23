@@ -59,7 +59,7 @@ The editing dashboard can be used to perform administrative functions on individ
 
 |image-5|
 
-Figure 2.1.1: Administrative functions that act on individual records, access from the editing dashboard
+Figure 2.1.1: Administrative functions that act on individual records, accessed from the editing dashboard
 
 In order from left to right these are:
 
@@ -93,7 +93,7 @@ The Metadata and Templates button provides access to four subsections, as shown 
 
 |image2|
 
-Figure 2.1.1: Metadata and Templates subsections
+Figure 2.2.1: Metadata and Templates subsections
 
 Metadata and Templates Standards available
 ------------------------------------------
@@ -144,9 +144,11 @@ To add a new harvester node, either clone an existing one by selecting it from t
 
 |image4|
 
+Figure 3.2.1: Common harvester node configuration options, top half of screen
+
 |image5|
 
-Figures 3.2.1/2: Common harvester node configuration options
+Figure 3.2.2: Common harvester node configuration options, bottom half of screen
 
 Common configuration options are:
 
@@ -158,7 +160,7 @@ Common configuration options are:
 * Save: save changes to harvester configuration
 * Harvest: run this harvest
 * Category: set the category that the harvested records should be added to
-* Validate records before import: Reject invalid records before importing them into the catalogue. This has the following options:
+* Validate records before import``: Reject invalid records before importing them into the catalogue. This has the following options``:
 	* Accept all metadata without validation (this option will import all records regardless of validity)
 	* Accept metadata that are XSD valid (this option will cause the harvest to fail on the first invalid record)
 	* Accept metadata that are XSD and Schematron valid (this option will cause the harvest to fail on the first invalid record)
@@ -190,7 +192,11 @@ This subsection should be the first port of call if there are any problems with 
 
 Figure 4.1.1: Status page showing catalogue performing optimally
 
-Report any errors shown here to Astun Technology.
+|image7a|
+
+Figure 4.1.2: Status page showing error, with detailed error message accessed by clicking on red link
+
+*Report any errors shown here to Astun Technology.*
 
 The metrics links provide advanced information on the status of the system and should not generally be needed. The Activity "Export (zip)" provides a log file from the server. This may be requested by Astun Technology support staff. This download could be large and may take some time. The Thread Status link provides advanced information on the java installation, and should not generally be needed.
 
@@ -222,14 +228,14 @@ Content Statistics
 
 This subsection provides more information on content searches. The following options are available, for export as CSV:
 
-* Catalog content statistics, such as the number of harvested records, total number of records, number of public records and so on
-* Metadata records popularity, showing the most popular records searched for (clicking the blue eye icon to the right of a record will take you to it)
-* Best Rated, showing the most highly rated records (if local star ratings are being used)
-* Record statistics, this is a dropdown list with a number of available metrics, for example (but not limited to):
-	* Year
-	* Format
-	* INSPIRE theme(s)
-	* Contact for the resource
+- Catalog content statistics, such as the number of harvested records, total number of records, number of public records and so on
+- Metadata records popularity, showing the most popular records searched for (clicking the blue eye icon to the right of a record will take you to it)
+- Best Rated, showing the most highly rated records (if local star ratings are being used)
+- Record statistics, this is a dropdown list with a number of available metrics, for example (but not limited to):
+	- Year
+	- Format
+	- INSPIRE theme(s)
+	- Contact for the resource
 
 |image11|
 
@@ -245,7 +251,6 @@ Figure 4.3.1: Catalog content statistics and Most popular records
 
 Figure 4.3.2: Record statistics by Year
 
-**Note that there is a current known issue with the pie chart breakdowns for records by category and so on as these all currently show the same information. This is being investigated**
 
 Information
 -----------
@@ -306,7 +311,7 @@ Directories
 
 Directories are snippets of information that can be pre-completed and inserted into metadata records. They are derived from subtemplates that are part of metadata standards. The available subtemplates are shown as tabs across the top of the Directory subsection- for Gemini 2.2 these are **Organizations and contacts** and **Online resources**.
 
-Selecting **Organizations and contacts** shows the metadata snippet for adding a Points of Contact subtemplate. To create a new record based on this template, click the "Duplicate" icon to the right of the template name.
+Selecting **Organizations and contacts** shows the metadata snippet for adding a Points of Contact subtemplate. To create a new record based on this template, click the "Duplicate" icon (|image14c|) to the right of the template name.
 
 |image14a|
 
@@ -319,7 +324,7 @@ Along the top of the entry window are, from left to right:
 * Save
 * Save and close
 
-It's also possible to change the view that is used for completing this subtemplate, from default to xml view.
+It's also possible to change the view that is used for completing this subtemplate, from default to xml view by clicking the blue "eye" symbol (|image14d|).
 
 Once saved, the contact will be available using the "search for a contact" dialogue when creating or editng a metadata record.
 
@@ -635,6 +640,7 @@ You will need a GitHub account to edit files locally.
 .. |image5| image:: media/adminimage06.png
 .. |image6| image:: media/adminimage07.png
 .. |image7| image:: media/adminimage08.png
+.. |image7a| image:: media/adminimage08a.png
 .. |image8| image:: media/adminimage09.png
 .. |image9| image:: media/adminimage10.png
 .. |image10| image:: media/adminimage11.png
@@ -644,6 +650,8 @@ You will need a GitHub account to edit files locally.
 .. |image14| image:: media/adminimage15.png
 .. |image14a| image:: media/adminimage15a.png
 .. |image14b| image:: media/adminimage15b.png
+.. |image14c| image:: media/adminimage15c.png
+.. |image14d| image:: media/adminimage15d.png
 .. |image-1| image:: media/adminimage-1.png
 .. |image-2| image:: media/adminimage-2.png
 .. |image-3| image:: media/adminimage-3.png

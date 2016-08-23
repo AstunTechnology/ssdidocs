@@ -173,92 +173,61 @@ Another function of the site is to allow users to view spatial data as
 Web Mapping Services (WMS) in the interactive map client. The viewing
 function can be accessed in two ways:
 
-1. When viewing search results, click on the ‘\ **Add to map**\ ’ button
-   available at the bottom of the record. This will bring the map tab
-   into view, and a dialog box with the URL for the WMS will already be
-   entered. In the folder list the name of the WMS will appear, and the
-   view can be expanded to see all available layers. Click on the layer
-   you wish to add to the map and then click the ‘\ **Add**\ ’ button at
-   the bottom right of the dialog box.
-
-    - OR -
-
-2. If you know the URL of the service you wish to view, activate the map
-   tab and then click on the add layer button (left-most button at the
-   top of the map table of contents). Select the radio button to
-   ‘\ **add by URL**\ ’, paste the URL into the text box and hit the
-   ‘\ **connect**\ ’ button. As above, the chosen service will appear in
-   the folder list and layers can be added via the ‘\ **Add**\ ’ button.
+1. When viewing search results, if a suitable layer or layers are available, an ‘\ **Add to map**\ ’ icon will be visible at the bottom of the record. This can be expanded to add one or all of the available layers to the map. Clicking on the service record title and viewing the metadata will also show the available layers with "Add to map" buttons next to them.
 
 |image3|
 
-**Figure 4.1.1:** Adding a resource to the interactive map
+Figure 4.1.1: The "Add to Map" dialogue accessed from search results
 
-Some services will contain multiple layers (e.g. Scottish Government or
-SEPA services), others only one. To see the layer in the main map click
-on the Add button in the bottom right of the pop up box. Close the pop
-up box and the layer will be visible on the map in the main window. Not
-all layers will appear automatically in the map, depending on the scale
-they are set to be visible at, some will only appear when you have
-zoomed in. Users can add as many layers to the main map as required.
+    - OR -
+
+2. If you know the URL of the service you wish to view, click the Map button from the top menu and click the "add layer" button (the top button on the right-hand side).
+   tab  Select the tab for "WMS" and paste the URL into the text box. The layers available will appear in a dropdown list below the URL and can be selected to be added to the map.
 
 |image4|
 
-**Figure 4.1.2:** The Data Zone layer from the Scottish Government's
-Statistical Units WMS added to the map
+Figure 4.1.2:* Adding a WMS service to the map
 
-Using the main interactive map
+
+Using the interactive map
 ------------------------------
 
-On the left hand side of the interactive map tab is the table of
-contents (see section 1 on figure 4.2.1). Across the top are several
-tools. Reading from left to right these are: Add WMS, Remove layer,
-Layer styles, Metadata, and WMS time. With the exception of the add
-layer tool, these tools require that you have an active layer
-identified. You can make a layer active by clicking on it, only one
-layer may be active at a time. The tool functions are described below:
+The available tools for the interactive map are arranged down the right-hand side of the map, with the exception of the place names search, which is accessed on the left. The available tools are as follows:
 
-    |image5|
+- Add a layer- for adding layers to the map either from searching the catalogue, a service (WMS or WMTS) or a KML file
+- Manage layers- shows the list of layers currently added to the map. Those wtih scale-dependent visibility that are not currently visible will be greyed out. Layers that cannot be added for some other reason will show an exclamation icon. To the right of the layers are options as follows:
+  - Zoom to extent of layer (not visible if you are currently zoomed to the extent)
+  - Layer information- this expands to show options for changing the transparence of the layer, the legend, and the attribution for the metadata
 
--  **Add WMS** – Add a service (or layer within a service) if you
-   already know the URL.
+|image5|
 
--  **Remove Layer** – activate the layer to be removed then click on
-   this button.
+Figure 4.2.1: The Manage layer dialog for the interactive map
 
--  **Layer Styles** – Not available for all WMS layers.
+- Maps- this allows you to reload the default map settings, load a map context file, or download the current map as an xml record. It's also possible to save the current map as a metadata record within the current catalogue by filling in the map title and abstract and clicking "Save map"
 
--  **Metadata** – provides details on the active WMS service.
+|image6|
 
--  **WMS Time** – Not available for all WMS layers.
+Figure 4.2.2: The Map dialog for the interactive map
 
-By clicking the button beside ‘Layer manager’ in the table of contents,
-users can expand or collapse the TOC view. Clicking the arrow buttons at
-the top left or middle of the right-hand side of the table of contents,
-users can expand or collapse the map view.
+- Print current map: Create a pdf of the current map. There are options to add a title and description, plus the ability to change the layout and choose scale and legend options. The area that will be printed will be highlighted on the map.
 
-Layers can be turned on and off by checking or unchecking the tick box
-beside the layer name. Opacity can also be modified using the slide bar
-underneath the layer name.
+|image7|
 
-There are also a range of mapping tools available across the top of the
-interactive map (see section 2 on figure 4.2.1). The functions of each
-tool, again as read from left to right are described below:
+Figure 4.2.3: Printing the map
 
--  **Full Extent** – Click this button to go to the full extent of the
-   map.
+- Measure- draw a line on the map to meaure it's length. Single-click to create a node and double-click to finish.
+- Annotations- draw freehand on the map. Click the "Add" button to choose from Point, Line, Polygon or Text, activating a simple styling dialog for the type that you've chosen. Draw on the map, using a single click to draw a node (where appropriate) and a double click to finish. There are options to modify the annotation or remove it. The resulting annotation can be saved as a json file for use in other applications, or a json file can be loaded for use in this dialog.
 
--  **Zoom In/Zoom Out** – Use these buttons to zoom in or out of the
-   map, by either clicking once or drawing a box.
+|image8|
 
--  **Pan Map** – Use this button to move the map. Click and hold the
-   left mouse button to move the map.
+Figure 4.2.4: Annotating the map
 
--  **Feature Information** – This button returns information about
-   features shown on the map.
+- Change projection- select one of the supported projections from the dropdown list
+- Zoom in and out
+- Zoom to initial map extent- this will zoom to the entirety of Scotland
+- Zoom to your position- this will only work if your location can be calculated by the browser
+- Graticule- add a grid to the map (in lat/long)
 
--  **Previous/Next Extent** – Use these button to return to the previous
-   map extent or go to the next map extent.
 
 Adding Discovery Metadata to the SSDI
 =====================================
@@ -330,23 +299,24 @@ Table 5.0.1: Mandatory and optional information for dataset metadata
 +--------------------------------------+---------------------------------+
 
 To edit or import metadata records, you must be logged in. To log on to
-the metadata tool, go to the top left-hand corner of the header section.
+the metadata tool, go to the top right-hand corner of the header menu.
 Here you can enter the system credentials provided by the system
 administrator and then click the ‘\ **Sign In**\ ’ button. You are now
 logged on and the ‘\ **Sign Out**\ ’ button will now be visible, along
-with buttons for new, import and my metadata.
+with a button "Contribute" that expands to **Add new record**, **Import new records**, and **Manage directory**.
 
-|image6|
+|image9|
 
-|image7|
-
-Figure 4.2.1: Enter login credentials to sign in to the SSDI
+Figure 5.1.1: Enter login credentials to sign in to the SSDI
 
 Creating dataset and service metadata from a template
 -----------------------------------------------------
 
-To add dataset or service metadata to the SSDI, click on the ‘\ **New
-Metadata**\ ’ button. You wil be presented with a list of templates –
+To add dataset or service metadata to the SSDI, click on the ‘\ **Contribute**\ ’ button. This will enable the Editing board, where you can see all the records you have access to, the advanced search interface, and buttons on the right to **Add new record**, **Import new records**, and **Manage directory**.
+
+NEEDS UPDATING FROM HERE DOWNWARDS
+
+Clicking "Add new record" will display a list of available templates. Note there could be multiple with the same name if you are an editor for multiple groups. 
 one UKLP template for ‘Datasets’ and one for ‘Services’. Select the
 appropriate template based on the type of resource that is being
 documented. At the bottom of the popup box, select the group the record
@@ -1387,8 +1357,8 @@ the SSDI
 .. |image0| image:: media/image1.png
 .. |image1| image:: media/image2.png
 .. |image2| image:: media/image2.png
-.. |image3| image:: media/image4.png
-.. |image4| image:: media/image5.png
+.. |image3| image:: media/image3.png
+.. |image4| image:: media/image4.png
 .. |image5| image:: media/image6.png
 .. |image6| image:: media/image7.png
 .. |image7| image:: media/image8.png

@@ -85,7 +85,7 @@
 <li>White- a template or other record that should not be validated</li>
 </ul>
 <p><img alt="image-5" src="_images/adminimage-5.png" /></p>
-<p>Figure 2.1.1: Administrative functions that act on individual records, access from the editing dashboard</p>
+<p>Figure 2.1.1: Administrative functions that act on individual records, accessed from the editing dashboard</p>
 <p>In order from left to right these are:</p>
 <ul class="simple">
 <li>Privileges- set privileges on which groups can access or edit this record</li>
@@ -113,7 +113,7 @@
 <h1>Metadata and Templates<a class="headerlink" href="#metadata-and-templates" title="Permalink to this headline">¶</a></h1>
 <p>The Metadata and Templates button provides access to four subsections, as shown in the image below:</p>
 <p><img alt="image2" src="_images/adminimage03.png" /></p>
-<p>Figure 2.1.1: Metadata and Templates subsections</p>
+<p>Figure 2.2.1: Metadata and Templates subsections</p>
 <div class="section" id="metadata-and-templates-standards-available">
 <h2>Metadata and Templates Standards available<a class="headerlink" href="#metadata-and-templates-standards-available" title="Permalink to this headline">¶</a></h2>
 <p>This shows the metadata standards or profiles loaded onto the system. Selecting one or more of the standards activates the options to Load templates and Load samples for the selected standards.</p>
@@ -149,8 +149,9 @@
 <p>From this section you can see the list of available harvesting nodes, and clone an existing node or add a new one.</p>
 <p>To add a new harvester node, either clone an existing one by selecting it from the dropdown Clone list in the above image, or click the &#8220;Harvest from&#8221; button to access the dropdown list of harvester types. The configuration options available will depend on the type of node selected.</p>
 <p><img alt="image4" src="_images/adminimage05.png" /></p>
+<p>Figure 3.2.1: Common harvester node configuration options, top half of screen</p>
 <p><img alt="image5" src="_images/adminimage06.png" /></p>
-<p>Figures 3.2.1/2: Common harvester node configuration options</p>
+<p>Figure 3.2.2: Common harvester node configuration options, bottom half of screen</p>
 <p>Common configuration options are:</p>
 <ul>
 <li><p class="first">Node name and logo: a unique name and optional logo for this harvesting node</p>
@@ -170,7 +171,7 @@
 <li><p class="first">Category: set the category that the harvested records should be added to</p>
 </li>
 <li><dl class="first docutils">
-<dt>Validate records before import: Reject invalid records before importing them into the catalogue. This has the following options:</dt>
+<dt>Validate records before import``: Reject invalid records before importing them into the catalogue. This has the following options``:</dt>
 <dd><ul class="first last simple">
 <li>Accept all metadata without validation (this option will import all records regardless of validity)</li>
 <li>Accept metadata that are XSD valid (this option will cause the harvest to fail on the first invalid record)</li>
@@ -198,7 +199,9 @@
 <p>This subsection should be the first port of call if there are any problems with the Catalogue. If the catalogue is under a low load and is performing optimally then the status page should look like the one below:</p>
 <p><img alt="image7" src="_images/adminimage08.png" /></p>
 <p>Figure 4.1.1: Status page showing catalogue performing optimally</p>
-<p>Report any errors shown here to Astun Technology.</p>
+<p><img alt="image7a" src="_images/adminimage08a.png" /></p>
+<p>Figure 4.1.2: Status page showing error, with detailed error message accessed by clicking on red link</p>
+<p><em>Report any errors shown here to Astun Technology.</em></p>
 <p>The metrics links provide advanced information on the status of the system and should not generally be needed. The Activity &#8220;Export (zip)&#8221; provides a log file from the server. This may be requested by Astun Technology support staff. This download could be large and may take some time. The Thread Status link provides advanced information on the java installation, and should not generally be needed.</p>
 </div>
 <div class="section" id="search-statistics">
@@ -270,7 +273,6 @@
 </ul>
 <p><img alt="image12" src="_images/adminimage13.png" /></p>
 <p>Figure 4.3.2: Record statistics by Year</p>
-<p><strong>Note that there is a current known issue with the pie chart breakdowns for records by category and so on as these all currently show the same information. This is being investigated</strong></p>
 </div>
 <div class="section" id="information">
 <h2>Information<a class="headerlink" href="#information" title="Permalink to this headline">¶</a></h2>
@@ -320,7 +322,7 @@
 <div class="section" id="directories">
 <h2>Directories<a class="headerlink" href="#directories" title="Permalink to this headline">¶</a></h2>
 <p>Directories are snippets of information that can be pre-completed and inserted into metadata records. They are derived from subtemplates that are part of metadata standards. The available subtemplates are shown as tabs across the top of the Directory subsection- for Gemini 2.2 these are <strong>Organizations and contacts</strong> and <strong>Online resources</strong>.</p>
-<p>Selecting <strong>Organizations and contacts</strong> shows the metadata snippet for adding a Points of Contact subtemplate. To create a new record based on this template, click the &#8220;Duplicate&#8221; icon to the right of the template name.</p>
+<p>Selecting <strong>Organizations and contacts</strong> shows the metadata snippet for adding a Points of Contact subtemplate. To create a new record based on this template, click the &#8220;Duplicate&#8221; icon (<img alt="image14c" src="_images/adminimage15c.png" />) to the right of the template name.</p>
 <p><img alt="image14a" src="_images/adminimage15a.png" /></p>
 <p>Figure 6.2.1: The Organizations and contacts interface</p>
 <p>Along the top of the entry window are, from left to right:</p>
@@ -330,7 +332,7 @@
 <li>Save</li>
 <li>Save and close</li>
 </ul>
-<p>It&#8217;s also possible to change the view that is used for completing this subtemplate, from default to xml view.</p>
+<p>It&#8217;s also possible to change the view that is used for completing this subtemplate, from default to xml view by clicking the blue &#8220;eye&#8221; symbol (<img alt="image14d" src="_images/adminimage15d.png" />).</p>
 <p>Once saved, the contact will be available using the &#8220;search for a contact&#8221; dialogue when creating or editng a metadata record.</p>
 <p><img alt="image14b" src="_images/adminimage15b.png" /></p>
 <p>Figure 6.2.2: Adding a point of contact snippet when editing a record</p>

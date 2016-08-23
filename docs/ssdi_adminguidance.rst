@@ -192,7 +192,11 @@ This subsection should be the first port of call if there are any problems with 
 
 Figure 4.1.1: Status page showing catalogue performing optimally
 
-Report any errors shown here to Astun Technology.
+|image7a|
+
+Figure 4.1.2: Status page showing error, with detailed error message accessed by clicking on red link
+
+*Report any errors shown here to Astun Technology.*
 
 The metrics links provide advanced information on the status of the system and should not generally be needed. The Activity "Export (zip)" provides a log file from the server. This may be requested by Astun Technology support staff. This download could be large and may take some time. The Thread Status link provides advanced information on the java installation, and should not generally be needed.
 
@@ -247,7 +251,6 @@ Figure 4.3.1: Catalog content statistics and Most popular records
 
 Figure 4.3.2: Record statistics by Year
 
-**Note that there is a current known issue with the pie chart breakdowns for records by category and so on as these all currently show the same information. This is being investigated**
 
 Information
 -----------
@@ -308,7 +311,7 @@ Directories
 
 Directories are snippets of information that can be pre-completed and inserted into metadata records. They are derived from subtemplates that are part of metadata standards. The available subtemplates are shown as tabs across the top of the Directory subsection- for Gemini 2.2 these are **Organizations and contacts** and **Online resources**.
 
-Selecting **Organizations and contacts** shows the metadata snippet for adding a Points of Contact subtemplate. To create a new record based on this template, click the "Duplicate" icon to the right of the template name.
+Selecting **Organizations and contacts** shows the metadata snippet for adding a Points of Contact subtemplate. To create a new record based on this template, click the "Duplicate" icon (|image14c|) to the right of the template name.
 
 |image14a|
 
@@ -321,7 +324,7 @@ Along the top of the entry window are, from left to right:
 * Save
 * Save and close
 
-It's also possible to change the view that is used for completing this subtemplate, from default to xml view.
+It's also possible to change the view that is used for completing this subtemplate, from default to xml view by clicking the blue "eye" symbol (|image14d|).
 
 Once saved, the contact will be available using the "search for a contact" dialogue when creating or editng a metadata record.
 
@@ -637,6 +640,7 @@ You will need a GitHub account to edit files locally.
 .. |image5| image:: media/adminimage06.png
 .. |image6| image:: media/adminimage07.png
 .. |image7| image:: media/adminimage08.png
+.. |image7a| image:: media/adminimage08a.png
 .. |image8| image:: media/adminimage09.png
 .. |image9| image:: media/adminimage10.png
 .. |image10| image:: media/adminimage11.png
@@ -646,6 +650,8 @@ You will need a GitHub account to edit files locally.
 .. |image14| image:: media/adminimage15.png
 .. |image14a| image:: media/adminimage15a.png
 .. |image14b| image:: media/adminimage15b.png
+.. |image14c| image:: media/adminimage15c.png
+.. |image14d| image:: media/adminimage15d.png
 .. |image-1| image:: media/adminimage-1.png
 .. |image-2| image:: media/adminimage-2.png
 .. |image-3| image:: media/adminimage-3.png
