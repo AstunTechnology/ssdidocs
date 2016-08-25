@@ -53,7 +53,7 @@ SSDI metadata requirements
 --------------------------
 
 If you publish spatial data on the SSDI then the following
-**operational** commitments** must be followed:
+**operational commitments** must be followed:
 
 -  You will endeavour to adopt a process of continuous improvement for
    the resources you publish, based on the feedback you receive.
