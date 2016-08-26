@@ -1458,30 +1458,66 @@ metadata records on the SSDI against the Gemini 2.2 format. Suggested
 solutions are provided where known. This list is almost not
 comprehensive and some of the solutions may require revising in the
 future following discussion.</p>
+<div class="section" id="unique-resource-identifier">
+<h2>Unique resource identifier<a class="headerlink" href="#unique-resource-identifier" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal"><span class="pre">Gemini2</span> <span class="pre">–</span> <span class="pre">mi36</span> <span class="pre">–</span> <span class="pre">Code</span> <span class="pre">–</span> <span class="pre">NotNillable</span></code></p>
 <p><code class="docutils literal"><span class="pre">i</span> <span class="pre">The</span> <span class="pre">gmd:code</span> <span class="pre">element</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">nillable</span> <span class="pre">and</span> <span class="pre">shall</span> <span class="pre">have</span> <span class="pre">a</span> <span class="pre">value</span></code></p>
 <p>The  <strong>Code</strong>  sub-element is mandatory and cannot be blank. A reference to where the data is held internally must be provided. For example, Scottish Government corporate datasets are held internally on the Spatial Data Management Environment, so the code ‘SDME’ can be applied here.</p>
-<p><code class="docutils literal"><span class="pre">cvc-complex-type.2.4.a:</span> <span class="pre">Invalid</span> <span class="pre">content</span> <span class="pre">was</span> <span class="pre">found</span> <span class="pre">starting</span> <span class="pre">with</span> <span class="pre">element</span> <span class="pre">'gmd:language'.</span> <span class="pre">One</span> <span class="pre">of</span> <span class="pre">'{&quot;http://www.isotc211.org/2005/gmd&quot;:parentIdentifier,</span> <span class="pre">&quot;http://www.isotc211.org/2005/gmd&quot;:hierarchyLevel,</span> <span class="pre">&quot;http://www.isotc211.org/2005/gmd&quot;:hierarchyLevelName,</span> <span class="pre">&quot;http://www.isotc211.org/2005/gmd&quot;:contact}'</span> <span class="pre">is</span> <span class="pre">expected.</span> <span class="pre">(Element:</span> <span class="pre">gmd:language</span> <span class="pre">with</span> <span class="pre">parent</span> <span class="pre">element:</span> <span class="pre">gmd:MD\_Metadata)</span></code></p>
+</div>
+<div class="section" id="dataset-language">
+<h2>Dataset language<a class="headerlink" href="#dataset-language" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><code class="docutils literal"><span class="pre">cvc-complex-type.2.4.a:</span> <span class="pre">Invalid</span> <span class="pre">content</span> <span class="pre">was</span> <span class="pre">found</span> <span class="pre">starting</span> <span class="pre">with</span> <span class="pre">element</span> <span class="pre">'gmd:language'.</span></code>
+<code class="docutils literal"><span class="pre">One</span> <span class="pre">of</span> <span class="pre">'{&quot;http://www.isotc211.org/2005/gmd&quot;:parentIdentifier,</span> <span class="pre">&quot;http://www.isotc211.org/2005/gmd&quot;:hierarchyLevel,</span></code>
+<code class="docutils literal"><span class="pre">&quot;http://www.isotc211.org/2005/gmd&quot;:hierarchyLevelName,</span> <span class="pre">&quot;http://www.isotc211.org/2005/gmd&quot;:contact}'</span> <span class="pre">is</span> <span class="pre">expected.</span></code>
+<code class="docutils literal"><span class="pre">(Element:</span> <span class="pre">gmd:language</span> <span class="pre">with</span> <span class="pre">parent</span> <span class="pre">element:</span> <span class="pre">gmd:MD\_Metadata)</span></code></div></blockquote>
 <p>A known issue is with the character set tag, normally when importing metadata from ESRI systems. In most cases, this can be fixed by deleting the following text in XML View (found near the top, between the file identifier and language tags):</p>
-<p><code class="docutils literal"><span class="pre">&lt;gmd:characterSet&gt;</span></code></p>
-<p><code class="docutils literal"><span class="pre">&lt;gmd:MD\_CharacterSetCode</span> <span class="pre">codeList=&quot;http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/Codelist/gmxCodelists.xml#MD\_CharacterSetCode&quot;</span> <span class="pre">codeListValue=&quot;utf8&quot;&gt;utf8&lt;/gmd:MD\_CharacterSetCode&gt;</span></code></p>
-<p><code class="docutils literal"><span class="pre">&lt;/gmd:characterSet&gt;</span></code></p>
-<p><code class="docutils literal"><span class="pre">cvc-datatype-valid.1.2.1:</span> <span class="pre">'OGC-WMS</span> <span class="pre">Server:</span> <span class="pre">*&lt;provided</span> <span class="pre">URL&gt;*'</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">a</span> <span class="pre">valid</span> <span class="pre">value</span> <span class="pre">for</span> <span class="pre">'anyURI'.</span> <span class="pre">(Element:</span> <span class="pre">gmd:URL</span> <span class="pre">with</span> <span class="pre">parent</span> <span class="pre">element:</span> <span class="pre">gmd:linkage)</span></code></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">gmd</span><span class="p">:</span><span class="n">characterSet</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">gmd</span><span class="p">:</span><span class="n">MD</span>\<span class="n">_CharacterSetCode</span>
+<span class="n">codeList</span><span class="o">=</span><span class="s2">&quot;http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/Codelist/gmxCodelists.xml#MD\_CharacterSetCode&quot;</span>
+<span class="n">codeListValue</span><span class="o">=</span><span class="s2">&quot;utf8&quot;</span><span class="o">&gt;</span><span class="n">utf8</span><span class="o">&lt;/</span><span class="n">gmd</span><span class="p">:</span><span class="n">MD</span>\<span class="n">_CharacterSetCode</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="n">gmd</span><span class="p">:</span><span class="n">characterSet</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="online-resource">
+<h2>OnLine resource<a class="headerlink" href="#online-resource" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">cvc-datatype-valid.1.2.1:</span> <span class="pre">'OGC-WMS</span> <span class="pre">Server:</span> <span class="pre">*&lt;provided</span> <span class="pre">URL&gt;*'</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">a</span> <span class="pre">valid</span> <span class="pre">value</span> <span class="pre">for</span> <span class="pre">'anyURI'.</span></code>
+<code class="docutils literal"><span class="pre">(Element:</span> <span class="pre">gmd:URL</span> <span class="pre">with</span> <span class="pre">parent</span> <span class="pre">element:</span> <span class="pre">gmd:linkage)</span></code></p>
 <p>There is a problem with the URL that has been entered. A valid URL is required.</p>
 <p>In some records, it appears that an extra, empty  <strong>OnLine resource</strong>  entry has been created. Deleting the empty entry should clear the error.</p>
-<p><code class="docutils literal"><span class="pre">i</span> <span class="pre">cvc-data-type-valid</span> <span class="pre">1.2.3</span> <span class="pre">:</span> <span class="pre">“is</span> <span class="pre">not</span> <span class="pre">a</span> <span class="pre">valid</span> <span class="pre">value</span> <span class="pre">of</span> <span class="pre">union</span> <span class="pre">type</span> <span class="pre">‘Date\_type’.</span> <span class="pre">(Element</span> <span class="pre">:</span> <span class="pre">gco:Date</span> <span class="pre">with</span> <span class="pre">parent</span> <span class="pre">element:</span> <span class="pre">gmd:date)</span></code></p>
-<p><code class="docutils literal"><span class="pre">i</span> <span class="pre">cvc-type</span> <span class="pre">3.1.3</span> <span class="pre">:</span> <span class="pre">The</span> <span class="pre">value</span> <span class="pre">“of</span> <span class="pre">element</span> <span class="pre">‘gco:date’</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">valid.</span> <span class="pre">(Element:</span> <span class="pre">gco:Date</span> <span class="pre">with</span> <span class="pre">parent</span> <span class="pre">element</span> <span class="pre">:</span> <span class="pre">gmd:date)</span></code></p>
+</div>
+<div class="section" id="dataset-reference-date">
+<h2>Dataset reference date<a class="headerlink" href="#dataset-reference-date" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal"><span class="pre">i</span> <span class="pre">cvc-data-type-valid</span> <span class="pre">1.2.3</span> <span class="pre">:</span> <span class="pre">“is</span> <span class="pre">not</span> <span class="pre">a</span> <span class="pre">valid</span> <span class="pre">value</span> <span class="pre">of</span> <span class="pre">union</span> <span class="pre">type</span> <span class="pre">‘Date\_type’.</span></code>
+<code class="docutils literal"><span class="pre">(Element</span> <span class="pre">:</span> <span class="pre">gco:Date</span> <span class="pre">with</span> <span class="pre">parent</span> <span class="pre">element:</span> <span class="pre">gmd:date)</span></code></p>
+<p><code class="docutils literal"><span class="pre">i</span> <span class="pre">cvc-type</span> <span class="pre">3.1.3</span> <span class="pre">:</span> <span class="pre">The</span> <span class="pre">value</span> <span class="pre">“of</span> <span class="pre">element</span> <span class="pre">‘gco:date’</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">valid.</span></code>
+<code class="docutils literal"><span class="pre">(Element:</span> <span class="pre">gco:Date</span> <span class="pre">with</span> <span class="pre">parent</span> <span class="pre">element</span> <span class="pre">:</span> <span class="pre">gmd:date)</span></code></p>
 <p>The date was missing from an element associated with publication/creation dates; Both errors will disappear once a valid entry date is entered. The Date Selector may not work so reload metadata record. This ensures compliance to UK Location (Gemini 2.2) rules.</p>
+</div>
+<div class="section" id="keyword">
+<h2>Keyword<a class="headerlink" href="#keyword" title="Permalink to this headline">¶</a></h2>
 <p><em>(Originating controlled vocabulary sub-element)</em></p>
 <p>Situated to the right of the Keyword list. For some datasets (but not all), this box is checked open and appears as three boxes under the title  <strong>Originating controlled vocabulary</strong> . These are - &#8216;Title&#8217;, &#8216;Date&#8217; and &#8216;Date Type&#8217;.
 In order to avoid an error, close this box by clicking on the minus sign to the right of the title.</p>
+</div>
+<div class="section" id="frequency-of-update">
+<h2>Frequency of update<a class="headerlink" href="#frequency-of-update" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal"><span class="pre">Gemini2</span> <span class="pre">–</span> <span class="pre">mi24</span> <span class="pre">–</span> <span class="pre">CodeList</span></code></p>
 <p><code class="docutils literal"><span class="pre">i</span> <span class="pre">The</span> <span class="pre">codeListValue</span> <span class="pre">attribute</span> <span class="pre">does</span> <span class="pre">not</span> <span class="pre">have</span> <span class="pre">a</span> <span class="pre">value</span></code></p>
 <p>The  <strong>Frequency of update</strong>  element is blank. Select appropriate update frequency from drop-down-list.</p>
+</div>
+<div class="section" id="legal-constraints">
+<h2>Legal constraints<a class="headerlink" href="#legal-constraints" title="Permalink to this headline">¶</a></h2>
 <p><em>(Limitations on public access sub-element)</em></p>
 <p><code class="docutils literal"><span class="pre">ISOFTDS</span> <span class="pre">19139:2005</span> <span class="pre">–</span> <span class="pre">Table</span> <span class="pre">A1-</span> <span class="pre">Row</span> <span class="pre">07]</span> <span class="pre">OtherConstrainsts</span> <span class="pre">required</span> <span class="pre">if</span> <span class="pre">otherRestrictions</span></code></p>
-<p><code class="docutils literal"><span class="pre">i</span> <span class="pre">Otherconstraints</span> <span class="pre">should</span> <span class="pre">be</span> <span class="pre">defined</span> <span class="pre">if</span> <span class="pre">access</span> <span class="pre">constraints</span> <span class="pre">is</span> <span class="pre">set</span> <span class="pre">to</span> <span class="pre">“other</span> <span class="pre">restrictions”</span> <span class="pre">otherRestrictions</span> <span class="pre">:</span> <span class="pre">documented</span> <span class="pre">if</span> <span class="pre">accessConstraints</span> <span class="pre">=</span> <span class="pre">‘otherRestrictions’.</span> <span class="pre">Suggestions:</span> <span class="pre">Add</span> <span class="pre">another</span> <span class="pre">constraints</span> <span class="pre">element</span> <span class="pre">and</span> <span class="pre">explain</span> <span class="pre">the</span> <span class="pre">reason</span></code></p>
+<p><code class="docutils literal"><span class="pre">i</span> <span class="pre">Otherconstraints</span> <span class="pre">should</span> <span class="pre">be</span> <span class="pre">defined</span> <span class="pre">if</span> <span class="pre">access</span> <span class="pre">constraints</span> <span class="pre">is</span> <span class="pre">set</span> <span class="pre">to</span> <span class="pre">“other</span> <span class="pre">restrictions”</span></code>
+<code class="docutils literal"><span class="pre">otherRestrictions</span> <span class="pre">:</span> <span class="pre">documented</span> <span class="pre">if</span> <span class="pre">accessConstraints</span> <span class="pre">=</span> <span class="pre">‘otherRestrictions’.</span></code>
+<code class="docutils literal"><span class="pre">Suggestions:</span> <span class="pre">Add</span> <span class="pre">another</span> <span class="pre">constraints</span> <span class="pre">element</span> <span class="pre">and</span> <span class="pre">explain</span> <span class="pre">the</span> <span class="pre">reason</span></code></p>
 <p>The  <strong>Limitations on public access</strong>  element was blank, must input ‘no limitations’ as a value. This ensure compliance to the metadata standard (xml schema).</p>
+</div>
+<div class="section" id="responsible-organisation">
+<h2>Responsible organisation<a class="headerlink" href="#responsible-organisation" title="Permalink to this headline">¶</a></h2>
 <p><em>(Responsible party role sub-element)</em></p>
 <p><code class="docutils literal"><span class="pre">Gemini2</span> <span class="pre">–</span> <span class="pre">mi23</span> <span class="pre">–</span> <span class="pre">Role</span> <span class="pre">–</span> <span class="pre">CodeList</span></code></p>
 <p><code class="docutils literal"><span class="pre">i</span> <span class="pre">The</span> <span class="pre">codeListValue</span> <span class="pre">attribute</span> <span class="pre">does</span> <span class="pre">not</span> <span class="pre">have</span> <span class="pre">a</span> <span class="pre">value</span></code></p>
@@ -1493,6 +1529,7 @@ In order to avoid an error, close this box by clicking on the minus sign to the 
 Only 1 entry permitted, N = Multiple entries permitted.</td></tr>
 </tbody>
 </table>
+</div>
 </div>
 
 
@@ -1536,7 +1573,17 @@ Only 1 entry permitted, N = Multiple entries permitted.</td></tr>
 </ul>
 </li>
 <li><a class="reference internal" href="#annex-1-example-metadata-record">Annex 1: Example Metadata Record</a></li>
-<li><a class="reference internal" href="#annex-2-common-ssdi-validation-error-messages">Annex 2: Common SSDI Validation Error Messages</a></li>
+<li><a class="reference internal" href="#annex-2-common-ssdi-validation-error-messages">Annex 2: Common SSDI Validation Error Messages</a><ul>
+<li><a class="reference internal" href="#unique-resource-identifier">Unique resource identifier</a></li>
+<li><a class="reference internal" href="#dataset-language">Dataset language</a></li>
+<li><a class="reference internal" href="#online-resource">OnLine resource</a></li>
+<li><a class="reference internal" href="#dataset-reference-date">Dataset reference date</a></li>
+<li><a class="reference internal" href="#keyword">Keyword</a></li>
+<li><a class="reference internal" href="#frequency-of-update">Frequency of update</a></li>
+<li><a class="reference internal" href="#legal-constraints">Legal constraints</a></li>
+<li><a class="reference internal" href="#responsible-organisation">Responsible organisation</a></li>
+</ul>
+</li>
 </ul>
 
   <h4>Previous topic</h4>

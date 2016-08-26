@@ -1308,7 +1308,7 @@ comprehensive and some of the solutions may require revising in the
 future following discussion.
 
 Unique resource identifier
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
   
 ``Gemini2 – mi36 – Code – NotNillable``
 
@@ -1317,25 +1317,23 @@ Unique resource identifier
 The  **Code**  sub-element is mandatory and cannot be blank. A reference to where the data is held internally must be provided. For example, Scottish Government corporate datasets are held internally on the Spatial Data Management Environment, so the code ‘SDME’ can be applied here. 
 
 Dataset language
-^^^^^^^^^^^^^^^^
+----------------
 
-``cvc-complex-type.2.4.a: Invalid content was found starting with element 'gmd:language'.``
-One of '{"http://www.isotc211.org/2005/gmd":parentIdentifier, "http://www.isotc211.org/2005/gmd":hierarchyLevel,`` 
-"http://www.isotc211.org/2005/gmd":hierarchyLevelName, "http://www.isotc211.org/2005/gmd":contact}' is expected.`` 
-(Element: gmd:language with parent element: gmd:MD\_Metadata)``
+  ``cvc-complex-type.2.4.a: Invalid content was found starting with element 'gmd:language'.``
+  ``One of '{"http://www.isotc211.org/2005/gmd":parentIdentifier, "http://www.isotc211.org/2005/gmd":hierarchyLevel,`` 
+  ``"http://www.isotc211.org/2005/gmd":hierarchyLevelName, "http://www.isotc211.org/2005/gmd":contact}' is expected.`` 
+  ``(Element: gmd:language with parent element: gmd:MD\_Metadata)``
  
-A known issue is with the character set tag, normally when importing metadata from ESRI systems. In most cases, this can be fixed by deleting the following text in XML View (found near the top, between the file identifier and language tags):  
+A known issue is with the character set tag, normally when importing metadata from ESRI systems. In most cases, this can be fixed by deleting the following text in XML View (found near the top, between the file identifier and language tags)::  
 
-``<gmd:characterSet>``
-
-``<gmd:MD\_CharacterSetCode`` 
-``codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/Codelist/gmxCodelists.xml#MD\_CharacterSetCode"`` 
-``codeListValue="utf8">utf8</gmd:MD\_CharacterSetCode>``
- 
-``</gmd:characterSet>``
+  <gmd:characterSet>
+  <gmd:MD\_CharacterSetCode
+  codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/Codelist/gmxCodelists.xml#MD\_CharacterSetCode"
+  codeListValue="utf8">utf8</gmd:MD\_CharacterSetCode>
+  </gmd:characterSet>
 
 OnLine resource
-^^^^^^^^^^^^^^^
+---------------
 
 ``cvc-datatype-valid.1.2.1: 'OGC-WMS Server: *<provided URL>*' is not a valid value for 'anyURI'.``
 ``(Element: gmd:URL with parent element: gmd:linkage)``
@@ -1345,7 +1343,7 @@ There is a problem with the URL that has been entered. A valid URL is required.
 In some records, it appears that an extra, empty  **OnLine resource**  entry has been created. Deleting the empty entry should clear the error. 
 
 Dataset reference date
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 ``i cvc-data-type-valid 1.2.3 : “is not a valid value of union type ‘Date\_type’.``
 ``(Element : gco:Date with parent element: gmd:date)`` 
@@ -1356,7 +1354,7 @@ Dataset reference date
 The date was missing from an element associated with publication/creation dates; Both errors will disappear once a valid entry date is entered. The Date Selector may not work so reload metadata record. This ensures compliance to UK Location (Gemini 2.2) rules.
 
 Keyword
-^^^^^^^
+-------
 
 *(Originating controlled vocabulary sub-element)* 
  
@@ -1364,7 +1362,7 @@ Situated to the right of the Keyword list. For some datasets (but not all), this
 In order to avoid an error, close this box by clicking on the minus sign to the right of the title. 
 
 Frequency of update 
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 ``Gemini2 – mi24 – CodeList``
  
@@ -1373,7 +1371,7 @@ Frequency of update
 The  **Frequency of update**  element is blank. Select appropriate update frequency from drop-down-list.
 
 Legal constraints
-^^^^^^^^^^^^^^^^^
+-----------------
 
 *(Limitations on public access sub-element)* 
 
@@ -1386,7 +1384,7 @@ Legal constraints
 The  **Limitations on public access**  element was blank, must input ‘no limitations’ as a value. This ensure compliance to the metadata standard (xml schema). 
 
 Responsible organisation
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 *(Responsible party role sub-element)*
 
