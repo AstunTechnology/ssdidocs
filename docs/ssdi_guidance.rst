@@ -1411,7 +1411,7 @@ The  **Responsible party role**  element in section relating to  **Responsible O
 .. |image10| image:: media/image11.png
 .. |image11| image:: media/image12.png
 .. |image12| image:: media/image13.png
-.. |image13| image:: media/image14.jpeg
+.. |image13| image:: media/image14.png
 .. |image14| image:: media/image15.png
 .. |image15| image:: media/image16.png
 .. |image16| image:: media/image17.png
