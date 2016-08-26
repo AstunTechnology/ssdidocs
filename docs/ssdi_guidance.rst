@@ -1303,7 +1303,7 @@ Annex 2: Common SSDI Validation Error Messages
 
 The following list identifies the common errors received when validating
 metadata records on the SSDI against the Gemini 2.2 format. Suggested
-solutions are provided where known. This list is almost not
+solutions are provided where known. This list is almost certainly not
 comprehensive and some of the solutions may require revising in the
 future following discussion.
 
