@@ -1319,20 +1319,26 @@ The  **Code**  sub-element is mandatory and cannot be blank. A reference to wher
 Dataset language
 ^^^^^^^^^^^^^^^^
 
-``cvc-complex-type.2.4.a: Invalid content was found starting with element 'gmd:language'. One of '{"http://www.isotc211.org/2005/gmd":parentIdentifier, "http://www.isotc211.org/2005/gmd":hierarchyLevel, "http://www.isotc211.org/2005/gmd":hierarchyLevelName, "http://www.isotc211.org/2005/gmd":contact}' is expected. (Element: gmd:language with parent element: gmd:MD\_Metadata)``
+``cvc-complex-type.2.4.a: Invalid content was found starting with element 'gmd:language'.``
+One of '{"http://www.isotc211.org/2005/gmd":parentIdentifier, "http://www.isotc211.org/2005/gmd":hierarchyLevel,`` 
+"http://www.isotc211.org/2005/gmd":hierarchyLevelName, "http://www.isotc211.org/2005/gmd":contact}' is expected.`` 
+(Element: gmd:language with parent element: gmd:MD\_Metadata)``
  
 A known issue is with the character set tag, normally when importing metadata from ESRI systems. In most cases, this can be fixed by deleting the following text in XML View (found near the top, between the file identifier and language tags):  
 
 ``<gmd:characterSet>``
 
-``<gmd:MD\_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/Codelist/gmxCodelists.xml#MD\_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD\_CharacterSetCode>``
+``<gmd:MD\_CharacterSetCode`` 
+``codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO\_19139\_Schemas/resources/Codelist/gmxCodelists.xml#MD\_CharacterSetCode"`` 
+``codeListValue="utf8">utf8</gmd:MD\_CharacterSetCode>``
  
 ``</gmd:characterSet>``
 
 OnLine resource
 ^^^^^^^^^^^^^^^
 
-``cvc-datatype-valid.1.2.1: 'OGC-WMS Server: *<provided URL>*' is not a valid value for 'anyURI'. (Element: gmd:URL with parent element: gmd:linkage)``
+``cvc-datatype-valid.1.2.1: 'OGC-WMS Server: *<provided URL>*' is not a valid value for 'anyURI'.``
+``(Element: gmd:URL with parent element: gmd:linkage)``
 
 There is a problem with the URL that has been entered. A valid URL is required. 
 
@@ -1341,9 +1347,11 @@ In some records, it appears that an extra, empty  **OnLine resource**  entry has
 Dataset reference date
 ^^^^^^^^^^^^^^^^^^^^^^
 
-``i cvc-data-type-valid 1.2.3 : “is not a valid value of union type ‘Date\_type’. (Element : gco:Date with parent element: gmd:date)`` 
+``i cvc-data-type-valid 1.2.3 : “is not a valid value of union type ‘Date\_type’.``
+``(Element : gco:Date with parent element: gmd:date)`` 
 
-``i cvc-type 3.1.3 : The value “of element ‘gco:date’ is not valid. (Element: gco:Date with parent element : gmd:date)``
+``i cvc-type 3.1.3 : The value “of element ‘gco:date’ is not valid.``
+``(Element: gco:Date with parent element : gmd:date)``
 
 The date was missing from an element associated with publication/creation dates; Both errors will disappear once a valid entry date is entered. The Date Selector may not work so reload metadata record. This ensures compliance to UK Location (Gemini 2.2) rules.
 
@@ -1371,7 +1379,9 @@ Legal constraints
 
 ``ISOFTDS 19139:2005 – Table A1- Row 07] OtherConstrainsts required if otherRestrictions``
 
-``i Otherconstraints should be defined if access constraints is set to “other restrictions” otherRestrictions : documented if accessConstraints = ‘otherRestrictions’. Suggestions: Add another constraints element and explain the reason``
+``i Otherconstraints should be defined if access constraints is set to “other restrictions”``
+``otherRestrictions : documented if accessConstraints = ‘otherRestrictions’.``
+``Suggestions: Add another constraints element and explain the reason``
 
 The  **Limitations on public access**  element was blank, must input ‘no limitations’ as a value. This ensure compliance to the metadata standard (xml schema). 
 
