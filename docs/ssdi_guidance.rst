@@ -1407,10 +1407,10 @@ The  **Responsible party role**  element in section relating to  **Responsible O
 .. |image6| image:: media/image7.png
 .. |image7| image:: media/image8.png
 .. |image8| image:: media/image9.png
-.. |image9| image:: media/image10.jpeg
-.. |image10| image:: media/image11.jpeg
-.. |image11| image:: media/image12.gif
-.. |image12| image:: media/image13.gif
+.. |image9| image:: media/image10.png
+.. |image10| image:: media/image11.png
+.. |image11| image:: media/image12.png
+.. |image12| image:: media/image13.png
 .. |image13| image:: media/image14.jpeg
 .. |image14| image:: media/image15.png
 .. |image15| image:: media/image16.png
