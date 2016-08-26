@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>&lt;no title&gt; &mdash; Scottish SDI Metadata Portal Documentation 1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Scottish SDI Metadata Portal Documentation 1 documentation" href="index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">Scottish SDI Metadata Portal Documentation 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <blockquote>
+<div><p><strong>Metadata Element</strong>
+<strong>Error Message</strong>
+<strong>Solution</strong></p>
+<blockquote>
+<div><strong>Unique resource identifier</strong></div></blockquote>
+<p>Gemini2 – mi36 – Code – NotNillable
+i The gmd:code element is not nillable and shall have a value
+The  <strong>Code</strong>  sub-element is mandatory and cannot be blank. A reference to where the data is held internally must be provided. For example, Scottish Government corporate datasets are held internally on the Spatial Data Management Environment, so the code ‘SDME’ can be applied here.</p>
+<blockquote>
+<div><strong>Dataset language</strong></div></blockquote>
+<p>cvc-complex-type.2.4.a: Invalid content was found starting with element &#8216;gmd:language&#8217;. One of &#8216;{&#8220;http://www.isotc211.org/2005/gmd&#8221;:parentIdentifier, &#8220;http://www.isotc211.org/2005/gmd&#8221;:hierarchyLevel, &#8220;http://www.isotc211.org/2005/gmd&#8221;:hierarchyLevelName, &#8220;http://www.isotc211.org/2005/gmd&#8221;:contact}&#8217; is expected. (Element: gmd:language with parent element: gmd:MD_Metadata)
+A known issue is with the character set tag, normally when importing metadata from ESRI systems. In most cases, this can be fixed by deleting the following text in XML View (found near the top, between the file identifier and language tags):
+<em>&lt;gmd:characterSet&gt;</em></p>
+<blockquote>
+<div><em>&lt;gmd:MD_CharacterSetCode codeList=&#8221;http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode&#8221; codeListValue=&#8221;utf8&#8221;&gt;utf8&lt;/gmd:MD_CharacterSetCode&gt;</em></div></blockquote>
+<p><em>&lt;/gmd:characterSet&gt;</em></p>
+<blockquote>
+<div><strong>OnLine resource</strong></div></blockquote>
+<p>cvc-datatype-valid.1.2.1: &#8216;OGC-WMS Server: <em>&lt;provided URL&gt;</em>&#8216; is not a valid value for &#8216;anyURI&#8217;. (Element: gmd:URL with parent element: gmd:linkage)
+There is a problem with the URL that has been entered. A valid URL is required.
+In some records, it appears that an extra, empty  <strong>OnLine resource</strong>  entry has been created. Deleting the empty entry should clear the error.</p>
+<blockquote>
+<div><strong>Dataset reference date</strong></div></blockquote>
+<p>i cvc-data-type-valid 1.2.3 : “is not a valid value of union type ‘Date_type’. (Element : gco:Date with parent element: gmd:date)
+i cvc-type 3.1.3 : The value “of element ‘gco:date’ is not valid. (Element: gco:Date with parent element : gmd:date)
+The date was missing from an element associated with publication/creation dates; Both errors will disappear once a valid entry date is entered. The Date Selector may not work so reload metadata record. This ensures compliance to UK Location (Gemini 2.2) rules.</p>
+<blockquote>
+<div><strong>Keyword</strong>
+<em>(Originating controlled vocabulary sub-element)</em></div></blockquote>
+<p>Situated to the right of the Keyword list. For some datasets (but not all), this box is checked open and appears as three boxes under the title  <strong>Originating controlled vocabulary</strong> . These are - &#8216;Title&#8217;, &#8216;Date&#8217; and &#8216;Date Type&#8217;.
+In order to avoid an error, close this box by clicking on the minus sign to the right of the title.</p>
+<blockquote>
+<div><strong>Frequency of update</strong></div></blockquote>
+<p>Gemini2 – mi24 – CodeList
+i The codeListValue attribute does not have a value
+The  <strong>Frequency of update</strong>  element is blank. Select appropriate update frequency from drop-down-list.</p>
+<blockquote>
+<div><strong>Legal constraints</strong>
+<em>(Limitations on public access sub-element)</em></div></blockquote>
+<p>ISOFTDS 19139:2005 – Table A1- Row 07] OtherConstrainsts required if otherRestrictions
+i Otherconstraints should be defined if access constraints is set to “other restrictions” otherRestrictions : documented if accessConstraints = ‘otherRestrictions’. Suggestions: Add another constraints element and explain the reason
+The  <strong>Limitations on public access</strong>  element was blank, must input ‘no limitations’ as a value. This ensure compliance to the metadata standard (xml schema).</p>
+<blockquote>
+<div><strong>Responsible organisation</strong>
+<em>(Responsible party role sub-element)</em></div></blockquote>
+<p>Gemini2 – mi23 – Role – CodeList
+i The codeListValue attribute does not have a value
+The  <strong>Responsible party role</strong>  element in section relating to  <strong>Responsible Organisation</strong>  or  <strong>Metadata contact</strong>  is missing. Select the relevant role for the drop-down-list.</p>
+</div></blockquote>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/A2.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">Scottish SDI Metadata Portal Documentation 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2016, Astun Technology.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.
+    </div>
+  </body>
+</html>
