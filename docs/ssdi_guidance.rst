@@ -588,6 +588,119 @@ commitments of the SSDI, as set out on `page
 Metadata element definition
 ---------------------------
 
+Test Table Sections
+-------------------
+
+Description of what will be in the following table, and obligation and service key.
+
+Title
+-----
+**Definition:** 
+A unique and readily recognisable name for the resource.  The title should be the formal name if one exists.  
+
+**Dataset obligation:** M-1
+
+**Service obligation:** M-1
+
+**Guidance:** The Title will be a searchable field in both a UK and European context and as such should be clear and concise. 
+
+**Example:**
+
+    *• Nitrate Vulnerable Zones*
+
+Alternative title
+-----------------
+**Definition:** Any short name, other name, acronym or alternative language title for the resource.
+
+**Dataset obligation:** O-N
+
+**Service obligation:** O-N
+
+**Guidance:** Should be provided when the data resource has more than one Title.  It can also be helpful to include title with spatial or temporal coverage if applicable. Alternative titles will be searchable in the UK context.
+
+**Example:**
+
+    *• NVZ*
+
+Abstract
+--------
+
+**Definition:** A brief narrative summary of the data resource.
+
+**Dataset obligation:** M-1
+
+**Service obligation:** M-1
+
+**Guidance:** The Abstract should provide a clear and concise statement of the content of the dataset (i.e. the ‘what’ aspect of the dataset), and not general background information. Jargon and abbreviations should be avoided, as this element should be understood by non-experts.
+
+**Example:**
+
+    *•“Agricultural parishes are based on Civil Parishes which were abolished as an administrative unit in Scotland in 1975. Agricultural parishes continue to be used for boundary and statistical purposes. There are 891 agricultural parishes in Scotland and they are used in the Agricultural Census and for the payment of farming grants and subsidies. The dataset contains parish boundaries, parish names and parish codes.”*
+
+Unique Resource Identifier
+--------------------------
+
+**Definition:** A value uniquely identifying the data resource within your organisation (i.e. how your organisation references the dataset).  
+
+**Dataset obligation:** M-1
+
+**Service obligation:** O-1
+
+**Guidance:** The Code element is mandatory, and should be a recognisable identifier within the context of your organisation (i.e. a unique code of numbers, letters or combination of referring to a single dataset).  If it is not guaranteed to be unique across UK Location and INSPIRE, then the Codespace sub-element must be specified; this should be the internet domain of the data provider/owner.  The Authority and Version sub-elements can be ignored.
+
+NOTE: When inserting a new Unique resource identifier, it is best to select “Identifier (gmd:RS_Identifier)” before clicking the ‘+’, as the alternative (gmd:MD_Identifier) does not allow for the Codespace.
+
+
+**Example:**
+
+    *• For the Designated Bathing Waters dataset provided by Scottish Government: Code: SDME_SG_DESBATHING_WATERS, Codespace: www.scotland.gov.uk*
+    
+    *• For the Trunk Road Network service provided by Transport Scotland: Code: Trunk_Road_Network_WMS_service, Codespace: www.transportscotland.gov.uk* 
+
+Dataset Language
+----------------
+
+**Definition:** The language used within the dataset (assuming the data resource contains text/written information, e.g. in attribute tables).
+
+**Dataset obligation:** C-N
+
+**Service obligation:** C-N
+
+**Guidance:** It is recommended to select a value from a controlled vocabulary, for example ISO 639-2 which uses three-letter primary tags with optional subtags.  The values for UK languages are:
+
+•	English – eng
+•	Welsh – cym
+•	Gaelic (Irish) – gle
+•	Gaelic (Scots) – gla
+•	Cornish – cor
+•	Ulster Scots - sco
+
+This element is set to ‘eng’ in the SSDI templates.  In the majority of cases no change to this will be required. Where Scottish Gaelic is used within the dataset (i.e. place names), this can also be added.
+
+NOTE:  For records covered under INSPIRE, the language must be one of the 24 official languages of the European Union, which for UK purposes would be English (eng).  If the dataset is also available in another language (e.g. Scots Gaelic), then a second metadata record must be provided for that language.
+
+
+**Example:** 
+
+    *• eng*
+
+OnLine Resource (Resource locator sub element)
+----------------------------------------------
+
+**Definition:** Location (address) for on-line access using a Uniform Resource Locator (URL) address scheme. The resource locator has to be an http URL.  
+
+**Dataset obligation:** C-N
+
+**Service obligation:** *See Coupled resource*
+
+**Guidance:** This element of the dataset metadata should contain the WMS/WFS service URL. The URL should be the location the data can be downloaded and may be different from where it can be ordered. Multiple entries are allowed if more than one service is provided.
+
+The three additional sub-elements (Name, Description and Function) are optional, but provide helpful details for users.
+
+**Example:** 
+
+    *• http://inspirescotland.org/cgi-bin/mapserv.exe?map=E:/ms4w/apps/sg_inspire/inspire.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&*
+
 The following table describes the individual metadata elements.
 
 Table 6.2.1: SSDI Metadata elements and definitions
