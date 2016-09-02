@@ -217,7 +217,6 @@ Figure 4.2.4: Annotating the map
 - Zoom to your position- this will only work if your location can be calculated by the browser
 - Graticule- add a grid to the map (in lat/long)
 
-
 Adding Discovery Metadata to the SSDI
 =====================================
 
@@ -225,8 +224,8 @@ This section guides you through the process of adding new metadata
 records into the SSDI catalogue using either the online metadata editor
 or the metadata insert tool, based on XML documents. To add or edit data
 and metadata, you must be registered as an Editor in the SSDI catalogue.
-Contact Kate Trafford
-(`Kate.Trafford@scotland.gsi.gov.uk <mailto:kate.trafford@scotland.gsi.gov.uk>`__)
+Contact Kate Newton
+(`Kate.Newton@gov.scot <mailto:Kate.Newton@gov.scot>`__)
 if you would like to become a registered editor for the SSDI.
 
 To produce a good metadata record, always try to gather as much details
@@ -292,7 +291,7 @@ the metadata tool, go to the top right-hand corner of the header menu.
 Here you can enter the system credentials provided by the system
 administrator and then click the ‘\ **Sign In**\ ’ button. You are now
 logged on and the ‘\ **Sign Out**\ ’ button will now be visible, along
-with a button "Contribute" that expands to **Add new record**, **Import new records**, and **Manage directory**.
+with a button **Contribute** that expands to **Add new record**, **Import new records**, and **Manage directory**.
 
 |image9|
 
@@ -305,12 +304,9 @@ To add dataset or service metadata to the SSDI, click on the ‘\ **Contribute**
 
 NEEDS UPDATING FROM HERE DOWNWARDS
 
-Clicking "Add new record" will display a list of available templates. Note there could be multiple with the same name if you are an editor for multiple groups. 
-one UKLP template for ‘Datasets’ and one for ‘Services’. Select the
-appropriate template based on the type of resource that is being
-documented. At the bottom of the popup box, select the group the record
-is to be added to (for all but site administrators, there will only be
-one choice here). Then click on the ‘\ **Create**\ ’ button.
+Clicking **Contribute** in the header menu, and then clicking **Add new record** will display a list of available templates. Note there could be multiple with the same name if you are an editor for multiple groups. 
+Select the appropriate template based on the type of resource that is being
+documented. Then select your organisation's folder and click **Create**.
 
 Users can then enter UK Gemini 2.2 compliant metadata in the form
 provided. More help on the various meanings of the metadata elements can
@@ -325,57 +321,48 @@ Note that the templates for dataset and service metadata are slightly
 different. Metadata for a service has extra elements for the spatial
 data service type (i.e. view, download, etc.) and for coupled resources.
 
+Assigning a category
+--------------------
+
+A new Metadata record has to be categorised. This is done via **'Categories'** button, the left-most button of the menu at the top of the page.
+All *dataset* records should be categorised as **'Datasets'** and all *service* records should be categorised as **'Interactive resources'**.
+Once a category is selected it should appear highlighted, and a second click on the menu button will close the menu.
+
 The templates have a |image9| where you can add an element or another
 occurrence of an element (or section). For example, you could have a
 range of Alternative Titles. Where an |image10| appears, you can delete
 the associated metadata element or section.
 
-The arrows (|image11| or |image12|) allow you to move that section up or
-down the document order. Note that Gemini 2.2 is not concerned with the
-order that sections appear in.
 
-Mandatory fields (e.g. Abstract) that are empty are outlined in red.
+Mandatory fields (e.g. Abstract) that are highlighted with a red asterisk.
 Note that for sub-elements, this only indicates that the sub-element is
 mandatory within its context. For example, the Vertical Extent is an
 optional element, but if you have one, then the minimum and maximum
 values are mandatory.
 
-The binoculars (|image13|) allow you to add information from a
-pre-existing dictionary. For example, if you click on the binoculars
-beside the Keywords section a pop up box will appear. This contains a
-drop down list (top left) with the various thesaurus’ available. The
-thesaurus choices available for the Keyword element are INSPIRE theme or
-Regions. There is also a thesaurus available for coordinate reference
-systems.
+The arrows (|image11| or |image12|) allow you to move that section up or
+down the document order. Note that Gemini 2.2 is not concerned with the
+order that sections appear in.
 
-Select the appropriate thesaurus and then click on any of key words
-below. Using the arrows in the middle of the pop up box, add your
-selection to the Selected keywords list and when finished click ‘add’ at
-bottom of the menu to add them to them all to your metadata.
+Content, such as keywords, can be added either manually by clicking **'Add new keywords'** or from pre-existing thesauri by clicking
+on the the icon **'or select them in a thesuarus'**. Thesauri are available for INSPIRE themes (GEMET) or Regions.
+
+Select the appropriate thesaurus. This will add a new section, with the title of the selected thesaurus.
+Clicking the 'Search' box will display a drop-down list of keywords, which you simply click to add to your metadata record.
+
 
 |image14|
 
 **Figure 5.1.2:** Inspire theme thesaurus
 
-For some sections, where there is likely to be a range of commonly used
-values, a ‘suggestion’ drop down list is available to the right of the
-text entry box. Selecting values form these drop down lists will auto
-fill the entry for you.
-
-Finally, each section heading has some help associated with it (or ‘tool
-tip’). When the mouse is hovered over the section heading, a ‘?’ will
-appear. Click on the heading and a box showing the definition of that
-heading will appear. Click on the box again to remove the element
-definition.
 
 Uploading metadata from an existing XML file
 --------------------------------------------
 
 To upload a record (such as an xml exported from ArcCatalog), click on
-the **‘Import Metadata’** button from the header menu. Leave the
-**‘Insert Mode’** set to ‘file upload’ and use the ’Browse’ button to
-navigate to the xml file to be uploaded. From the **‘Type’** drop down
-menu, choose ‘Metadata’.
+**Contribute** in the header menu and select **Import new records**.
+This page gives you the option to upload from your computer, copy/paste or import a record from the server.
+The page also gives you the option to select the file type, type of record,
 
 |image15|
 
@@ -386,7 +373,7 @@ uploading to create a new metadata record then choose the ‘Generate UUID
 for inserted metadata’. If you are uploading in order to refine or
 change an existing record on the SSDI, then choose the ‘Overwrite
 metadata with the same UUID’. If the older version of the record has
-already been deleted then the ‘No action on import’ option may be
+already been deleted then the **'None'** option may be
 selected.
 
 The UUID is a generated automatically by whatever internal system (i.e.
@@ -398,9 +385,10 @@ together with the metadata date stamp, are used to ensure records are
 unique within the SSDI, `data.gov.uk <http://data.gov.uk/>`__ and other
 metadata catalogues like MEDIN.
 
-For an xml that is already in Gemini 2.2 format, leave all the
-**‘StyleSheet’** set at none. To upload a non-Gemini 2.2 xml, select
-from the **‘StyleSheet’** drop down box the appropriate converter
+Users should also consider an appropriate XSL Transformation.
+For an xml that is already in Gemini 2.2 format, leave
+**‘Apply XSLT conversion’** option blank. To upload a non-Gemini 2.2 xml, select
+from the **‘Apply XSLT conversion’** drop down box the appropriate converter
 (e.g. ESRI-to-GEMINI\_21).
 
 Users should **NOT** check the **‘Validate’** box during upload - if
@@ -409,8 +397,8 @@ uploaded. The recommended validation technique is to upload without
 validation, and then go through the SSDI validation process described in
 the `next section <#_Saving_and_validating>`__.
 
-Click Insert and the record will be uploaded. Once the metadata has been
-uploaded you will still need to edit this record to make it fully Gemini
+Click **Import** and the record will be uploaded, generating an Import Report. 
+Once the metadata has been uploaded you will still need to edit this record to make it fully Gemini
 2.2 complaint. Common issues encountered when converting between ESRI
 ISO and Gemini 2.2 can be found in the `Annex
 2 <#_Annex_2:_Common_1>`__.
@@ -424,7 +412,7 @@ Saving and validating metadata
 ------------------------------
 
 As the user works through the template filling in required elements, the
-**‘Save’** button at the top or bottom of the screen may be used to
+**‘Save metadata’** button at the top right of the screen may be used to
 save the record in progress. Once the record has been completed, the
 user may click **‘Save and Close’** to save the record and exit the
 editing mode. Users should note that this action will not save a copy of
@@ -434,14 +422,14 @@ own system.**
 
 Once all elements for a new record have been completed or changes have
 been made to an existing record, it should be validated against the
-Gemini 2.2 standard rules. This can be done by clicking on the **‘Save
-and Check’** button at the top or bottom of the page, or refreshing the
+Gemini 2.2 standard rules. This can be done by clicking on the **‘Validate’** 
+button at the top or bottom of the page, or refreshing the
 validation report in the panel on the right hand side of the editor
 window.
 
-A dialogue box will appear in the top right corner of the screen
-highlighting any errors that need to be corrected (Note: tick the box at
-the top to see only errors). Solutions to errors are not always obvious
+A Validation dialogue box will appear on the right of the screen
+highlighting any errors that need to be corrected (Note: click on the red thumbs-down icon to see only errors). 
+Solutions to errors are not always obvious
 from the messages given; `Annex 2 <#_Annex_2:_Common_1>`__ of this
 document provides a list of common error messages encountered and how to
 resolve them. Users can still save a metadata record that has not been
@@ -461,38 +449,22 @@ Publishing a metadata record
 Once a metadata record has been saved and successfully validated, it can
 then be published, making it publicly viewable on the SSDI.
 
-Clicking on the actions drop down from either the record view tab or
-results list, choose ‘\ **Other Actions**\ ’, and then
-‘\ **Privileges**\ ’.
+Click on **Contribute** in the header menu, and locate your metadata record in the list below.
+The **privileges** pane is accessed by clicking on the grey padlock that appear in line with the title of the record.
+
+|image18|
+Figure 5.4.1: Publishing a metadata record
+
+Alternatively, click on the record to go to its individual page in the SSDI.
+**Privileges** can be selected from the drop down menu accessed by clicking the down-pointing arrow next to the 
+Edit and Delete icons at the top right of the screen.
 
 |image17|
 
-|image18|
-
-Figure 5.4.1: Publishing a metadata record
-
-When the ‘\ **Privileges**\ ’ option is selected a pop up box will
-appear. In the row for ‘All’ groups, check each of the tick boxes (or
-click **‘Set All’**). This means the record is now publicly viewable
+Within the **privileges** pane, check each of the tick boxes in the row marked **'All'**. 
+This means the record is now publicly viewable
 on the SSDI and that the metadata record is available for harvesting to
 `data.gov.uk <http://data.gov.uk/>`__.
-
-Assigning a category
---------------------
-
-As a final step to entering metadata, it should be assigned a category;
-this will determine the category the map will display under on the home
-page.
-
-To assign a category for a map, under **‘Other actions’** menu, select
-the **‘Categories’** button. This will open up a new pop up box. You
-can assign the metadata to either the *Interactive resource* or
-*Dataset* categories by clicking on the check box next to the category.
-An interactive resource is a view or download service etc., and will
-show up in the results when searching the SSDI using the ‘Interactive
-resources’ option for resource type (left panel of the search window,
-under the heading ‘What’). Conversely, if the *Dataset* category is
-assigned, the record will appear when only datasets are searched.
 
 Click **‘Submit’** to complete the action.
 
@@ -501,7 +473,7 @@ Editing and deleting a metadata record
 
 When you search for a metadata record, and assuming you have the login
 rights, you will be able to edit or delete the record using the edit or
-delete buttons (under the ‘Actions’ menu).
+delete buttons at the top right hand side of the page.
 
 Once in editing mode, the options are identical to those of metadata
 creation. To delete the metadata record, select the Delete button and
