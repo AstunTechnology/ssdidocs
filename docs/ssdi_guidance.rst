@@ -517,16 +517,16 @@ carrying out the following steps:
 Metadata Elements
 =================
 
-The following section provides guidance on how to fill in each Gemini
-2.2 metadata element. It is recommended that users also consult the full
+The following sub-sections provide guidance on how to fill in each Gemini
+2.2 metadata element. Use the navigation bar to jump to a particular element. 
+Each section is named by the GEMINI element, but the INSPIRE and ISO 19115 elements are also named, along with the obligation, definition, guidance and examples.
+
+It is recommended that users also consult the full
 guidance on Gemini 2.2, which can be found at:
 
-http://www.agi.org.uk/storage/standards/uk-gemini/GEMINI2.2.pdf.
+`http://www.agi.org.uk/about/resources/category/81-gemini?download=18:gemini-2-2 <http://www.agi.org.uk/about/resources/category/81-gemini?download=18:gemini-2-2>`__ 
 
-There are a number of elements that need to be specifically mentioned.
-Following the guidance set out below will reduce the number of metadata
-errors and ensure your organisation is correctly identifying in the SSDI
-metadata if it’s datasets are covered by the INSPIRE directive.
+The `How to define INSPIRE compliant data in the SSDI <#how-to-define-inspire-compliant-data-in-the-ssdi>`__ sub-section below is important to note if your datasets are covered by the INSPIRE directive.
 
 How to define INSPIRE compliant data in the SSDI
 ------------------------------------------------
@@ -537,22 +537,14 @@ dataset is covered by INSPIRE (e.g. parts of it are within the Scope of
 an INSPIRE Annex data specification), then the **first keyword**
 should be from the GEMET INSPIRE themes which can be found at:
 
-http://www.eionet.europa.eu/gemet
+`http://www.eionet.europa.eu/gemet <http://www.eionet.europa.eu/gemet>`__
 
 If another controlled vocabulary is used as the first keyword, such as
 the IPVS – Integrated Public Sector Vocabulary (version 2), then the
 dataset is not covered by INSPIRE. That said, the dataset and service
 metadata will still be required to comply with the operation and service
 commitments of the SSDI, as set out on `page
-3 <#_SSDI_Metadata_Requirements>`__.
-
-Metadata element definition
----------------------------
-
-The following table describes the individual metadata elements.
-
-Description of what will be in the following table, and obligation and service key. State these are GEMINI titles.
-
+3 <#ssdi-metadata-requirements>`__.
 
 Title
 -----
@@ -566,7 +558,7 @@ Title
 
 **Definition:** A unique and readily recognisable name for the resource.  The title should be the formal name if one exists.  
 
-**Guidance:** The Title will be a searchable field in both a UK and European context and as such should be clear and concise. 
+**Guidance:** The *Title* will be a searchable field in both a UK and European context and as such should be clear and concise. 
 
 **Example:** 
 
@@ -584,7 +576,7 @@ Alternative Title
 
 **Definition:** Any short name, other name, acronym or alternative language title for the resource.
 
-**Guidance:** Should be provided when the data resource has more than one Title.  It can also be helpful to include title with spatial or temporal coverage if applicable. Alternative titles will be searchable in the UK context.
+**Guidance:** Should be provided when the data resource has more than one *Title*.  It can also be helpful to include title with spatial or temporal coverage if applicable. *Alternative titles* will be searchable in the UK context.
 
 **Example:** 
 
@@ -603,11 +595,11 @@ Abstract
 
 **Definition:** A brief narrative summary of the data resource.
 
-**Guidance:** The Abstract should provide a clear and concise statement of the content of the dataset (i.e. the ‘what’ aspect of the dataset), and not general background information. Jargon and abbreviations should be avoided, as this element should be understood by non-experts.
+**Guidance:** The *Abstract* should provide a clear and concise statement of the content of the dataset (i.e. the ‘what’ aspect of the dataset), and not general background information. Jargon and abbreviations should be avoided, as this element should be understood by non-experts.
 
 **Example:** 
 
-    *•“Agricultural parishes are based on Civil Parishes which were abolished as an administrative unit in Scotland in 1975. Agricultural parishes continue to be used for boundary and statistical purposes. There are 891 agricultural parishes in Scotland and they are used in the Agricultural Census and for the payment of farming grants and subsidies. The dataset contains parish boundaries, parish names and parish codes.”*
+    *•“Data zone centroids are point features that represent the population weighted centre of data zones – the key geography for the dissemination of small area statistics in Scotland. These centroids are used to link data zones to other (higher level) geographies and produce a 'best-fit' match. Data zones can then be aggregated to approximate this larger area of interest or higher level geography that statistics wouldn’t normally be available for. Data zones also represent a relatively stable geography that can be used to analyse change over time, with changes only occurring after a Census. Following the update to data zones using 2011 Census data, there are now 6,976 data zones covering the whole of Scotland.”*
 
 Unique Resource Identifier
 --------------------------
@@ -621,15 +613,14 @@ Unique Resource Identifier
 
 **Definition:** A value uniquely identifying the data resource within your organisation (i.e. how your organisation references the dataset).
 
-**Guidance:** The Code element is mandatory, and should be a recognisable identifier within the context of your organisation (i.e. a unique code of numbers, letters or combination of referring to a single dataset).  If it is not guaranteed to be unique across UK Location and INSPIRE, then the Codespace sub-element must be specified; this should be the internet domain of the data provider/owner.  The Authority and Version sub-elements can be ignored.
+**Guidance:** The *Code* element is mandatory, and should be a recognisable identifier within the context of your organisation (i.e. a *unique* code of numbers, letters or combination of referring to a single dataset).  If it is not guaranteed to be unique across UK Location and INSPIRE, then the *Codespace* sub-element must be specified; this should be the internet domain of the data provider/owner.  The *Authority* and *Version* sub-elements can be ignored.
 
-NOTE: When inserting a new Unique resource identifier, it is best to select “Identifier (gmd:RS_Identifier)” before clicking the ‘+’, as the alternative (gmd:MD_Identifier) does not allow for the Codespace.
+NOTE: When inserting a new Unique resource identifier, it is best to select “Identifier (gmd:RS_Identifier)” before clicking the ‘+’, as the alternative (gmd:MD_Identifier) does not allow for the *Codespace*.
 
 **Example:** 
 
-    *• For the Designated Bathing Waters dataset provided by Scottish Government: Code: SDME_SG_DESBATHING_WATERS, Codespace: www.scotland.gov.uk*
-    
-    *• For the Trunk Road Network service provided by Transport Scotland: Code: Trunk_Road_Network_WMS_service, Codespace: www.transportscotland.gov.uk* 
+    *• For the Data Zone Centroids 2011 dataset provided by Scottish Government: Code: SG_DataZone_Cent_2011, Codespace:* `www.gov.scot <http://www.gov.scot/>`__
+
 	
 Dataset Language
 ----------------
@@ -654,31 +645,29 @@ Dataset Language
 
 This element is set to ‘eng’ in the SSDI templates.  In the majority of cases no change to this will be required. Where Scottish Gaelic is used within the dataset (i.e. place names), this can also be added.
 
-NOTE:  For records covered under INSPIRE, the language must be one of the 24 official languages of the European Union, which for UK purposes would be English (eng).  If the dataset is also available in another language (e.g. Scots Gaelic), then a second metadata record must be provided for that language.
+NOTE:  For records covered under INSPIRE, the language must be one of the `24 official languages of the European Union <http://ec.europa.eu/languages/policy/linguistic-diversity/official-languages-eu_en.htm>`__, which for UK purposes would be English (eng).  If the dataset is also available in another language (e.g. Scots Gaelic), then a second metadata record must be provided for that language.
 
-**Example:** 
-
-    *• eng*
-	
 OnLine Resource (Resource locator sub element)
 ----------------------------------------------
 **Equivalent INSPIRE element:** 
 
 **Equivalent ISO 19115 element:** 
 
-**Dataset obligation:** 
+**Dataset obligation:** C-N
 
-**Service obligation:** 
+**Service obligation:** See *Coupled resource*
 
 **Definition:** Location (address) for on-line access using a Uniform Resource Locator (URL) address scheme. The resource locator has to be an http URL.  
 
 **Guidance:** This element of the dataset metadata should contain the WMS/WFS service URL. The URL should be the location the data can be downloaded and may be different from where it can be ordered. Multiple entries are allowed if more than one service is provided.
 
-The three additional sub-elements (Name, Description and Function) are optional, but provide helpful details for users.
+The three additional sub-elements (*Name*, *Description* and *Function*) are optional, but provide helpful details for users. 
+
+NOTE: WMS, WMTS and KML can be added to the map view in the SSDI. For the layer picker in the map view to display the layer name correctly, the Name sub-element should match the name of the layer in the service. This can be found in the <Name> tag of the service XML.
 
 **Example:** 
 
-    *• http://inspirescotland.org/cgi-bin/mapserv.exe?map=E:/ms4w/apps/sg_inspire/inspire.map&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetCapabilities&*
+• `http://sedsh127.sedsh.gov.uk/arcgis/rest/services/ScotGov/StatisticalUnits/MapServer/exts/InspireView/service?Service=WMS&request=GetCapabilities&version=1.3.0 <http://sedsh127.sedsh.gov.uk/arcgis/rest/services/ScotGov/StatisticalUnits/MapServer/exts/InspireView/service?Service=WMS&request=GetCapabilities&version=1.3.0>`__ *with Name as Broad_Rental_Market_Areas__2009_*
 
 Coupled Resource
 ----------------
@@ -693,9 +682,10 @@ Coupled Resource
 
 **Definition:** Unique Resource Identifier (URI) of the datasets that the service operates on.
 
-**Guidance:** Applicable to service metadata only. This must be completed for every dataset included in the service (i.e. portrayed as a view service layer). Additional Coupled resource sections can be added by clicking on the ‘+’.
+**Guidance:** Applicable to service metadata only. This must be completed for every dataset included in the service (i.e. portrayed as a view service layer). 
 
-Click on the binocular icon to search for a dataset and add to the coupled resource.  This will auto fill the xlink and Metadata uuid fields.
+*Coupled resource* sections can be added by clicking on the ‘+’ in the right hand pane. Further instructions can be found in the 
+`How to create Related Resources Section <#how-to-create-related-resources>`__.
 
 Spatial Reference System
 ------------------------
@@ -712,9 +702,7 @@ Spatial Reference System
 
 **Guidance:** Identify the spatial reference system used to spatially reference the data in the data resource. 
 
-The UK Location encoding recommendation is to use the URN form of reference to an EPSG code. EPSG codes can be accessed At:
-
-http://epsg-registry.org/
+The UK Location encoding recommendation is to use the URN form of reference to an EPSG code. EPSG codes can be accessed at the `EPSG Geodetic Parameter Dataset site <http://epsg-registry.org/>`__.
 
 For the SSDI, suggested coordinate reference systems can be added using the drop down list, or by clicking on the binocular icon and adding an entry from the CRS thesaurus.
 
@@ -746,7 +734,7 @@ This should be used to link to other sources of descriptive information about th
 
 **Example:** 
 
-    *• For Data Zones 2001, a link to the document outlining how they were created was provided: http://www.scotland.gov.uk/library5/society/sndata-00.asp*
+    *• For Data Zones 2001, a link to the document outlining how they were created was provided:* `http://www.scotland.gov.uk/library5/society/sndata-00.asp <http://www.scotland.gov.uk/library5/society/sndata-00.asp>`__
 
 Topic Category
 --------------
@@ -761,7 +749,9 @@ Topic Category
 
 **Definition:** Describes the main theme(s) of the dataset.
 
-**Guidance:** Select from the drop down list one or more categories that most closely represent the topic of the data resource. If more than one topic is applicable then the ‘+’ icon should be used to add another Topic category element.  Choices available in the dropdown list are:
+**Guidance:** Select from the drop down list one or more categories that most closely represent the topic of the data resource. This will dictate which categories the dataset is listed within from "Topics" tab on the SSDI homepage. If more than one topic is applicable then the ‘+’ icon should be used to add another *Topic category* element.  
+
+Choices available in the dropdown list are:
 
 •	Biota
 •	Boundaries
@@ -783,7 +773,7 @@ Topic Category
 •	Transportation
 •	Utilities and communication
 
-Greater detail for the topic of a particular dataset can be given through the Keyword element. Not all sectors are included (i.e. Historic) and some form of agreement needs to be made as to which topic these sectors are assigned.
+Greater detail for the topic of a particular dataset can be given through the *Keyword* element. Not all sectors are included (i.e. Historic) and some form of agreement needs to be made as to which topic these sectors are assigned.
 
 Keyword
 -------
@@ -796,9 +786,9 @@ Keyword
 
 **Service obligation:** M-N
 
-**Definition:** The topic of the content of the data.  These should be more specific than those entered under Topic category.
+**Definition:** The topic of the content of the data.  These should be more specific than those entered under *Topic category*.
 
-A sub-element of this is the Originating controlled vocabulary, which is the name of the formally registered thesaurus or a similar authoritative source of keywords.
+A sub-element of this is the *Originating controlled vocabulary*, which is the name of the formally registered thesaurus or a similar authoritative source of keywords.
 
 **Guidance:** Keyword values should be taken from a list standard subject categories, identified in the ‘originating controlled vocabulary’ element. If the dataset is covered under INSPIRE, then the first keyword should be from the General Environmental Multi-Lingual Thesaurus (GEMET), which can be found at:
 
@@ -829,7 +819,7 @@ Extent (Geographic Element)
 
 **Guidance:** Select a pre-defined extent from the drop down box to the right of the map or draw a rectangle on the map. Values for the North, East, West, and South bounding coordinates will then be automatically filled.
 
-It is also recommended that the extent be described using the ISO 3166-2 standard for subdivisions of countries (i.e. for Scotland, the Code would be SCT).  To enter this, select “Identifier (gmd:MD_Identifier)” from the drop down before clicking the ‘+’ next to Geographic Identifier.  This will allow you to enter the Code, along with the Citation (e.g. Title: ISO 3166-2, Date: 2007/12/13 (2nd edition), Date Type: Revision).
+It is also recommended that the extent be described using the ISO 3166-2 standard for subdivisions of countries (i.e. for Scotland, the *Code* would be SCT).  To enter this, select “Identifier (gmd:MD_Identifier)” from the drop down before clicking the ‘+’ next to Geographic Identifier.  This will allow you to enter the *Code*, along with the *Citation* (e.g. Title: ISO 3166-2, Date: 2007/12/13 (2nd edition), Date Type: Revision).
 
 West Bounding Longitude
 -----------------------
@@ -915,7 +905,7 @@ Vertical Extent Information
 
 **Definition:** Describes the vertical domain (height range) of the data resource.
 
-**Guidance:** This element should be completed where relevant (e.g. geology, mining, etc.). Sub-elements are the minimum, maximum value and the coordinate reference system to which the minimum and maximum were measured.
+**Guidance:** This element should be completed where relevant (e.g. geology, mining, etc.). Sub-elements are the *minimum*, *maximum* value and the *coordinate reference system* to which the minimum and maximum were measured.
 
 If the vertical extent does not apply to the data resource, then users should delete this section of the metadata record as it will not be validated by the SSDI.
 
@@ -932,14 +922,14 @@ Temporal Extent
 
 **Definition:** This is the date(s) that describes the time period covered by the content of the dataset.  It may refer to the (1) period of collection of the data or (2) the date at which it is deemed to be current.
 
-**Guidance:** Temporal extent is the date of the validity of the data, and is different from the Dataset reference date.
+**Guidance:** *Temporal extent* is the date of the validity of the data, and is different from the *Dataset reference date*.
 
 Dates may be to any degree of precision, from century (YY) to full date and time. The extended date format (YYYY-MM-DD) should be used, where YYYY is the year, MM the month, and DD the day. If required, time (HH:MM:SS, where HH is the hour, MM the minute, and SS the second) may be added, with ‘T’ separating the two parts. Periods are recorded as {fromdate/todate} (e.g. 2006-04-01/2007-03-31).  Either the from date or the to date (but not both) may be left blank to indicate uncertainty.
 
 
 **Example:** 
 
-    *•	For the Urban Rural Classification, the Temporal extent can be entered as 2011 to 2012.*
+    *•	For the Urban Rural Classification, the Temporal extent can be entered as 2013 to 2014.*
 
 Dataset Reference Date
 ----------------------
@@ -956,16 +946,16 @@ Dataset Reference Date
 
 (NOTE: for services, this date relates to the creation, publication, and/or revision of the service, not the dataset(s) within it.)
 
-**Guidance:** The Dataset reference date is a notional date of “publication” of the data resource. It is different from the Temporal extent, which is the date of currency of the data. Multiple dataset reference dates can be defined but there can only be one ‘creation date’.
+**Guidance:** The *Dataset reference date* is a notional date of “publication” of the data resource. It is different from the *Temporal extent*, which is the date of currency of the data. Multiple dataset reference dates can be defined but there can only be one ‘creation date’.
 
 Dates may be to any degree of precision, from century (YY) to full date and time. The extended date format (YYYY-MM-DD) should be used, where YYYY is the year, MM the month, and DD the day. If required, time (HH:MM:SS, where HH is the hour, MM the minute, and SS the second) may be added, with ‘T’ separating the two parts. Periods are recorded as {fromdate/todate} (e.g. 2006-04-01/2007-03-31).  Either the ‘from date’ or the ‘to date’ (but not both) may be left blank to indicate uncertainty.
 
 
 **Example:** 
 
-    *•	If the dataset has been created as part of legislation the date should be the date of enactment of that piece of legislation.  For example, the establishment of Community Health Partnerships (CHPs) was designated in the National Health Service Reform (Scotland) Act, which received Royal Assent on June 11th, 2004; therefore this date was entered as the original ‘creation’ date whereas October 2012 is used as the date for the particular version of the dataset.*
+    *•	If the dataset has been created as part of legislation the date should be the date of enactment of that piece of legislation.  For example, the Broad Rental Market Area boundaries were defined in accordance with the Rent Officers (Housing Benefit Functions) (Amendment) Order 2008, which came into force on January 5th, 2009; therefore this date was entered as the original ‘creation’ date whereas July 2015 is used as the date for the particular version of the dataset.*
 
-    *• If the dataset has been created in support of a publication the date of the publication should be used.  For example, the Urban Rural Classification 2011-2012 was published on August 28th, 2012.*
+    *• If the dataset has been created in support of a publication the date of the publication should be used.  For example, the Urban Rural Classification 2013-2014 was published on November 28th, 2014.*
 
 Frequency of Update
 -------------------
@@ -1010,7 +1000,7 @@ urn:ogc:def:uom:EPSG::9001
 
 **Example:** 
 
-    *•	For Aerial Photography, the Units of measure is specified as urn:ogc:def:uom:EPSG::9001, and the value for the Spatial Resolution is 0.25*
+    *•	For Aerial Photography, the *Units of measure* is specified as urn:ogc:def:uom:EPSG::9001, and the value for the *Spatial Resolution* is 0.25*
 
 Equivalent Scale
 ----------------
@@ -1045,7 +1035,7 @@ Hierarchy Level
 
 **Service obligation:** O-1
 
-**Definition:** A sub-element of Data quality information, the specific extent of the data to which the data quality information applies.
+**Definition:** A sub-element of *Data quality information*, the specific extent of the data to which the data quality information applies.
 
 **Guidance:** Not required for GEMINI, and is currently ignored within UK Location.  Select options from the drop down list.
 
@@ -1064,11 +1054,11 @@ Conformity
 
 **Service obligation:** C-N
 
-**Definition:** Nested within Data quality information, this is the degree of conformity with the product specification or user requirement against which the data is being evaluated (i.e. degree of conformity to INSPIRE). Comprised of the Specification, Explanation, and degree sub-elements.
+**Definition:** Nested within *Data quality information*, this is the degree of conformity with the product specification or user requirement against which the data is being evaluated (i.e. degree of conformity to INSPIRE). Comprised of the *Specification*, *Explanation*, and *Degree* sub-elements.
 
 **Guidance:** To be conformant to INSPIRE data specifications, provide the title and date for the specification, explanation and degree. For the explanation, a URL for the specification can be entered.  Then, to claim conformance, check the box labelled Degree.  
 
-If users are not claiming conformity with INSPIRE, then this element can be removed by clicking on the ‘x’ at the Report level. If the tick box is not available, or you wish to reintroduce, choose "Domain consistency" when adding the "Report", then "Conformity" for the "Result". Then you can provide the title and date for the specification, explanation and degree.
+If users are not claiming conformity with INSPIRE, then this element can be removed by clicking on the ‘x’ at the Report level. If the tick box is not available, or you wish to reintroduce, choose "Domain consistency" when adding the "Report", then "Conformity" for the "Result". Then you can provide the title and date for the *Specification*, *Explanation* and *Degree*.
 
 NOTE: at present a dataset is unlikely to be fully conformant, until mapping of the data to an INSPIRE data specification schema (i.e. mapping to GML) has occurred for full interoperability, which will come in future phases of INSPIRE implementation.
 
@@ -1088,16 +1078,16 @@ Lineage
 
 **Service obligation:** O-1
 
-**Definition:** A sub-element of Data quality information. This section should describe how the dataset was created.   Brief technical description should be given noting any sources and processes used.  This will be useful in determining whether the data is fit for purpose.
+**Definition:** A sub-element of *Data quality information*. This section should describe how the dataset was created.   Brief technical description should be given noting any sources and processes used.  This will be useful in determining whether the data is fit for purpose.
 
-**Guidance:** Information regarding methods of updating, quality controls and resolution should be recorded under this element.  The Lineage differs from the Abstract in that it covers ‘how’ the dataset was created as opposed the ‘what’ and ‘why’ of the dataset.  
+**Guidance:** Information regarding methods of updating, quality controls and resolution should be recorded under this element.  The *Lineage* differs from the *Abstract* in that it covers ‘how’ the dataset was created as opposed the ‘what’ and ‘why’ of the dataset.  
 
 Notes on any coding and order of features should be made.  Further, it is helpful to list any attributes with a brief description of their meaning.  Any procedures or protocol associated with the update of the dataset should also be noted, along with notes on previous updates.
 
 
 **Example:** 
 
-    *•	For Nitrate Vulnerable Zones: The dataset was derived from a geological study of the groundwater of Scotland by British Geological Survey (BGS).  From the study three catchments were determined to be Nitrate Vulnerable Zones. The dataset was adjusted to suit farm field boundaries at 1:10000 scale by the Scottish Executive Rural Affairs Agricultural staff.  The dataset was also extended to the low water mark on any seaward NVZ boundaries.*
+    *•	For Nitrate Vulnerable Zones: The Nitrate Vulnerable Zone boundaries were delineated by the Geographic Information Science and Analysis Team (GI-SAT) on behalf of the Environmental Quality Division. The first step was to look at the previous NVZ boundaries from 2002 and compare them with ground water body data from BGS and Scottish Water. This information was used to produce a first draft of the new boundaries, which were then clipped to field boundaries and put out to consultation. Following responses amendments were made and also consideration of estimated borehole catchment from Scottish Water. Next, boundaries were re-adjusted to fields and the mean high water spring (unless fields fell below the mean high water spring). An amendment was made to the River Nith and Lochar Water, such that field and mean high water boundaries are followed further up the estuary.*
 
 Data Format
 -----------
@@ -1112,16 +1102,15 @@ Data Format
 
 **Definition:** This is the format in which the digital data can be provided.
 
-**Guidance:** The name of the format and the version can be entered. Entries should be recognised formats for data transfer, either standard or proprietary. If the data is not transferable (e.g. view only), then this should be stated.
+**Guidance:** The name of the format and the version can be selected from a drop down list. Entries should be recognised formats for data transfer, either standard or proprietary. If the data is not transferable (e.g. view only), then this should be stated.
 
-Recommended best practice is to select a value from a controlled vocabulary, such as PRONOM (see http://www.nationalarchives.gov.uk/PRONOM/Default.aspx). 
-
+Recommended best practice is to select a value from a controlled vocabulary, such as PRONOM (see `http://www.nationalarchives.gov.uk/PRONOM/Default.aspx <http://www.nationalarchives.gov.uk/PRONOM/Default.aspx>`__). 
 
 **Example:** 
 
-    *•	For services: WMS, Version 1.3.*
+    *•	For services: WMS, Version 1.3.0*
 
-    *• ESRI Arc/View Shapefile, Version 10.0*
+    *• ESRI Arc/View Shapefile, Version 1.0*
 
 Legal constraints
 -----------------
@@ -1134,7 +1123,7 @@ Legal constraints
 
 **Service obligation:** M-N
 
-**Definition:** Restrictions on access to the data that are imposed for security and other reasons (i.e. who can see the data).  Sub-elements are Use constraints, Access constraints, and Limitations on public access.
+**Definition:** Restrictions on access to the data that are imposed for security and other reasons (i.e. who can see the data).  Sub-elements are *Use constraints*, *Access constraints*, and *Limitations on public access*.
 
 **Guidance:** Provide information on any constraints to using the dataset or series, e.g. licensing, fees, usage restrictions, or refer to a URL where this information is available, e.g. a licence document. If no conditions apply, enter “no conditions apply”.
 
@@ -1142,7 +1131,7 @@ Legal constraints
 
     *•	The following attribution statement must be used to acknowledge the source of the information: Copyright Scottish Government, contains Ordnance Survey data © Crown copyright and database right (insert year)*
 
-    *•	Available under the Ordnance Survey (OS) Open Data Licence (www.ordnancesurvey.co.uk/opendata/licence)*
+    *•	Available under the Open Government Licence* `(http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)  <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/>`__
 
     *•	OSMA Inspire End User licence.*
 
@@ -1180,9 +1169,9 @@ Responsible Organisation
 
 **Guidance:** This has 8 sub-elements (see below).
 
-At least one Responsible Party Role should be entered that is either the Owner (for UK Location Data Provider role) and/or Publisher (for UK Location Data Publisher role). If the data was created by someone other than the data provider, this should also be recorded, using the role value Originator. If only Publisher is entered, then the assumption will be that they are the creator, provider and publisher of the resource.
+At least one Responsible Party Role should be entered that is either the *Owner* (for UK Location Data Provider role) and/or *Publisher* (for UK Location Data Publisher role). If the data was created by someone other than the data provider, this should also be recorded, using the role value *Originator*. If only *Publisher* is entered, then the assumption will be that they are the creator, provider and publisher of the resource.
 
-The Responsible organisation element does not allow for multiple roles to be attached to a single organisation – to achieve this, the whole section must be repeated.  Further, where there are several Distributors, a separate entry should be provided for each. Other entries should only be given where relevant and known.
+The *Responsible organization* element does not allow for multiple roles to be attached to a single organisation – to achieve this, the whole section must be repeated.  Further, where there are several *Distributors*, a separate entry should be provided for each. Other entries should only be given where relevant and known.
 
 
 **Example:** 
@@ -1200,7 +1189,7 @@ Organisation Name
 
 **Service obligation:** M-1
 
-**Definition:** Sub-element of Responsible organisation. Name of the responsible organisation.
+**Definition:** Sub-element of *Responsible organization*. Name of the responsible organisation.
 
 **Guidance:** The name of the organisation should be given in full, without abbreviations.
 
@@ -1219,7 +1208,7 @@ Contact Position
 
 **Service obligation:** CHECK THIS!!!
 
-**Definition:** Sub-element of Responsible organisation. Role or position of the responsible person.
+**Definition:** Sub-element of *Responsible organization*. Role or position of the responsible person.
 
 **Guidance:** A general job title or generic role should be identified.  Do not identify an individual by name, as this is subject to change without warning and the information is difficult to keep up to date.  
 
@@ -1230,9 +1219,9 @@ NOTE: For Scottish Government datasets, it can be helpful to identify the contac
 
     *•	Geographic Information Manager*
 
-    *•	Geographic Information Science and Analysis Team (GI-SAT), Digital Public Services, DG Enterprise, Environment and Digital*
+    *•	Geographic Information Science and Analysis Team (GI-SAT)*
 
-    *•	Geographic Information Science and Analysis Team (GI-SAT), Digital Public Services, DG Enterprise, Environment and Digital*
+    *•	Spatial Data Management Team*
 
 Responsible Party Role
 ----------------------
@@ -1245,23 +1234,23 @@ Responsible Party Role
 
 **Service obligation:** M-1
 
-**Definition:** Sub-element of Responsible organisation. Role of the responsible organisation.
+**Definition:** Sub-element of *Responsible organization*. Role of the responsible organisation.
 
-**Guidance:** At least one Responsible Party Role should be entered that is either the Owner (for UK Location Data Provider role) and/or Publisher (for UK Location Data Publisher role). If the data was created by someone other than the data provider, this should also be recorded, using the role value Originator. If only Publisher is entered, then the assumption will be that they are the creator, provider and publisher of the resource.
+**Guidance:** At least one Responsible Party Role should be entered that is either the *Owner* (for UK Location Data Provider role) and/or *Publisher* (for UK Location Data Publisher role). If the data was created by someone other than the data provider, this should also be recorded, using the role value *Originator*. If only *Publisher* is entered, then the assumption will be that they are the creator, provider and publisher of the resource.
 
-The Responsible organisation element does not allow for multiple roles to be attached to a single organisation – to achieve this, the whole section must be repeated.  Further, where there are several Distributors, a separate entry should be provided for each. Other entries (listed below) should only be given where relevant and known.
+The *Responsible organization* element does not allow for multiple roles to be attached to a single organisation – to achieve this, the whole section must be repeated.  Further, where there are several *Distributors*, a separate entry should be provided for each. Other entries (listed below) should only be given where relevant and known.
 
-•	Resource Provider: Party that supplies the resource.
-•	Custodian: Party that accepts accountability and responsibility for the data and ensures appropriate care and maintenance of the resource.
-•	Owner: Party that owns the resource.
-•	User: Party who uses the resource.
-•	Distributor: Party who distributes the resource.
-•	Originator: Party who created the resource.
-•	Point of Contact: Party who can be contacted for acquiring knowledge about or acquisition of the resource.
-•	Principle Investigator: Key party responsible for gathering information about or acquisition of the resource.
-•	Processor: Party who has processed the data in a manor such that the resource has been modified.
-•	Publisher: Party who published the resource.
-•	Author: Party who authored the resource.
+•	*Resource Provider:* Party that supplies the resource.
+•	*Custodian:* Party that accepts accountability and responsibility for the data and ensures appropriate care and maintenance of the resource.
+•	*Owner:* Party that owns the resource.
+•	*User:* Party who uses the resource.
+•	*Distributor:* Party who distributes the resource.
+•	*Originator:* Party who created the resource.
+•	*Point of Contact:* Party who can be contacted for acquiring knowledge about or acquisition of the resource.
+•	*Principle Investigator:* Key party responsible for gathering information about or acquisition of the resource.
+•	*Processor:* Party who has processed the data in a manor such that the resource has been modified.
+•	*Publisher:* Party who published the resource.
+•	*Author:* Party who authored the resource.
 
 Telephone Number
 ----------------
@@ -1274,7 +1263,7 @@ Telephone Number
 
 **Service obligation:** O-1
 
-**Definition:** Sub-element of Responsible organisation. Telephone number by which the responsible party can be reached.
+**Definition:** Sub-element of *Responsible organization*. Telephone number by which the responsible party can be reached.
 
 **Guidance:** The full telephone number should be given
 
@@ -1293,7 +1282,7 @@ Facsimile Number
 
 **Service obligation:** O-1
 
-**Definition:** Sub-element of Responsible organisation. Telephone number by which the responsible party can be reached by facsimile communication.
+**Definition:** Sub-element of *Responsible organization*. Telephone number by which the responsible party can be reached by facsimile communication.
 
 **Guidance:** The full facsimile number should be given.
 
@@ -1312,7 +1301,7 @@ Postal address
 
 **Service obligation:** CHECK THIS!
 
-**Definition:** Sub-element of Responsible organisation. Postal address of the responsible organisation.
+**Definition:** Sub-element of *Responsible organization*. Postal address of the responsible organisation.
 
 **Guidance:** The full formal postal address (as defined by Royal Mail) should be given, including the postcode.
 
@@ -1343,11 +1332,11 @@ Email Address
 
 **Example:** 
 
-    *• SDMT@scotland.gsi.gov.uk*
+    *• SDMT@gov.scot*
 
-    *• GI-SAT@scotland.gsi.gov.uk*
+    *• GI-SAT@gov.scot*
 
-    *• neighbourhood.statistics@scotland.gsi.gov.uk*
+    *• neighbourhood.statistics@gov.scot*
 
 Web Address
 -----------
@@ -1360,13 +1349,13 @@ Web Address
 
 **Service obligation:** O-1
 
-**Definition:** Sub-element of Responsible organisation. World wide web address of the responsible organisation.
+**Definition:** Sub-element of *Responsible organization*. World wide web address of the responsible organisation.
 
 **Guidance:** A valid World Wide Web address should be given.
 
 **Example:** 
 
-    *•	www.scotland.gov.uk*
+    *•* `www.gov.scot <www.gov.scot>`__
 
 Metadata Date
 -------------
@@ -1422,9 +1411,9 @@ Metadata Point of Contact
 
 **Definition:** The party responsible for the creation and maintenance of the metadata record.
 
-**Guidance:** This should include the organisation name and a contact email address. The structure is the same as the Responsible organisation section. There is no way to simply cross reference, so you must repeat the section.
+**Guidance:** This should include the organisation name and a contact email address. The structure is the same as the *Responsible organization* section. There is no way to simply cross reference, so you must repeat the section.
 
-Generic (team, branch etc.) contact details are preferred.  Avoid identifying individuals by name, as this information is subject to change without notice and is difficult to maintain.  For Responsible Party Role, UK Location requires that ‘point of contact’ be entered.
+Generic (team, branch etc.) contact details are preferred.  Avoid identifying individuals by name, as this information is subject to change without notice and is difficult to maintain.  For *Responsible Party Role*, UK Location requires that ‘point of contact’ be entered.
 
 
 **Example:** 
@@ -1445,7 +1434,7 @@ Generic (team, branch etc.) contact details are preferred.  Avoid identifying in
 
     *•	Country: United Kingdom*
 
-    *•	Email address: GI-SAT@scotland.gsi.gov.uk*
+    *•	Email address: GI-SAT@gov.scot*
 
 Resource Type
 -------------
@@ -1460,10 +1449,9 @@ Resource Type
 
 **Definition:** Defines whether the data resource is a ‘dataset’, a ‘series’ (collection of datasets with a common specification), or a ‘service’.
 
-**Guidance:** This is set by the choice of template, if you need to change it, the structure of the metadata record will change.  If creating metadata from a template, ensure the correct template is used at the outset. The choices available are:
+**Guidance:** This is set by the choice of template, and should not be changed as it will affect the structure of the record.  If creating metadata from a template, ensure the correct template is used at the outset. The choices available are:
 
 •	Dataset
-•	Series
 •	Service
 
 
