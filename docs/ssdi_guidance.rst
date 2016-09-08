@@ -533,7 +533,7 @@ guidance on Gemini 2.2, which can be found at:
 
 `http://www.agi.org.uk/about/resources/category/81-gemini?download=18:gemini-2-2 <http://www.agi.org.uk/about/resources/category/81-gemini?download=18:gemini-2-2>`__ 
 
-The `How to define INSPIRE compliant data in the SSDI <#how-to-define-inspire-compliant-data-in-the-ssdi>`__ sub-section below is important to note if your datasets are covered by the INSPIRE directive.
+The `How to define INSPIRE compliant data in the SSDI <#how-to-define-inspire-compliant-data-in-the-ssdi>`__ sub-section is important to note if your datasets are covered by the INSPIRE directive.
 
 How to define INSPIRE compliant data in the SSDI
 ------------------------------------------------
@@ -550,18 +550,17 @@ If another controlled vocabulary is used as the first keyword, such as
 the IPVS – Integrated Public Sector Vocabulary (version 2), then the
 dataset is not covered by INSPIRE. That said, the dataset and service
 metadata will still be required to comply with the operation and service
-commitments of the SSDI, as set out on `page
-3 <#ssdi-metadata-requirements>`__.
+commitments of the SSDI, as set out on `SSDI Metadata Requirements <#ssdi-metadata-requirements>`__.
 
 Title
 -----
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Resource title
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_DataIdentification.citation > CI_Citation.title
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** M-1
+**Service obligation:** Mandatory (one)
 
 **Definition:** A unique and readily recognisable name for the resource.  The title should be the formal name if one exists.  
 
@@ -571,15 +570,15 @@ Title
 
     *• Nitrate Vulnerable Zones*
 
-Alternative Title
+Alternative title
 -----------------
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** *none*
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_DataIdentification.citation > CI_Citation.alternateTitle
 
-**Dataset obligation:** O-N
+**Dataset obligation:** Optional (many)
 
-**Service obligation:** O-N
+**Service obligation:** Optional (many)
 
 **Definition:** Any short name, other name, acronym or alternative language title for the resource.
 
@@ -592,13 +591,13 @@ Alternative Title
 
 Abstract
 --------
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Abstract
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:**  MD_DataIdentification.abstract
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** M-1
+**Service obligation:** Mandatory (one)
 
 **Definition:** A brief narrative summary of the data resource.
 
@@ -608,15 +607,15 @@ Abstract
 
     *•“Data zone centroids are point features that represent the population weighted centre of data zones – the key geography for the dissemination of small area statistics in Scotland. These centroids are used to link data zones to other (higher level) geographies and produce a 'best-fit' match. Data zones can then be aggregated to approximate this larger area of interest or higher level geography that statistics wouldn’t normally be available for. Data zones also represent a relatively stable geography that can be used to analyse change over time, with changes only occurring after a Census. Following the update to data zones using 2011 Census data, there are now 6,976 data zones covering the whole of Scotland.”*
 
-Unique Resource Identifier
+Unique resource identifier
 --------------------------
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Unique resource identifier
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_DataIdentification.citation > CI_Citation.identifier
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** O-1
+**Service obligation:** Optional (one)
 
 **Definition:** A value uniquely identifying the data resource within your organisation (i.e. how your organisation references the dataset).
 
@@ -629,15 +628,15 @@ NOTE: When inserting a new Unique resource identifier, it is best to select “I
     *• For the Data Zone Centroids 2011 dataset provided by Scottish Government: Code: SG_DataZone_Cent_2011, Codespace:* `www.gov.scot <http://www.gov.scot/>`__
 
 	
-Dataset Language
+Dataset language
 ----------------
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Resource language
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_DataIdentification.language
 
-**Dataset obligation:** C-N
+**Dataset obligation:** Conditional (many)
 
-**Service obligation:** C-N
+**Service obligation:** Conditional (many)
 
 **Definition:** The language used within the dataset (assuming the data resource contains text/written information, e.g. in attribute tables).
 
@@ -654,13 +653,13 @@ This element is set to ‘eng’ in the SSDI templates.  In the majority of case
 
 NOTE:  For records covered under INSPIRE, the language must be one of the `24 official languages of the European Union <http://ec.europa.eu/languages/policy/linguistic-diversity/official-languages-eu_en.htm>`__, which for UK purposes would be English (eng).  If the dataset is also available in another language (e.g. Scots Gaelic), then a second metadata record must be provided for that language.
 
-OnLine Resource (Resource locator sub element)
+OnLine resource (Resource locator sub element)
 ----------------------------------------------
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Resource locator
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Distribution > MD_DigitalTransferOptions.online > CI_OnlineResource.linkage
 
-**Dataset obligation:** C-N
+**Dataset obligation:** Conditional (many)
 
 **Service obligation:** See *Coupled resource*
 
@@ -676,34 +675,34 @@ NOTE: WMS, WMTS and KML can be added to the map view in the SSDI. For the layer 
 
 • `http://sedsh127.sedsh.gov.uk/arcgis/rest/services/ScotGov/StatisticalUnits/MapServer/exts/InspireView/service?Service=WMS&request=GetCapabilities&version=1.3.0 <http://sedsh127.sedsh.gov.uk/arcgis/rest/services/ScotGov/StatisticalUnits/MapServer/exts/InspireView/service?Service=WMS&request=GetCapabilities&version=1.3.0>`__ *with Name as Broad_Rental_Market_Areas__2009_*
 
-Coupled Resource
+Coupled resource
 ----------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Coupled resource
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** operatesOn
 
-**Dataset obligation:** -
+**Dataset obligation:** *N/A*
 
-**Service obligation:** C-N
+**Service obligation:** Conditional (many)
 
 **Definition:** Unique Resource Identifier (URI) of the datasets that the service operates on.
 
 **Guidance:** Applicable to service metadata only. This must be completed for every dataset included in the service (i.e. portrayed as a view service layer). 
 
 *Coupled resource* sections can be added by clicking on the ‘+’ in the right hand pane. Further instructions can be found in the 
-`How to create Related Resources Section <#how-to-create-related-resources>`__.
+`How to create Related Resources section <#how-to-create-related-resources>`__.
 
-Spatial Reference System
+Spatial reference system
 ------------------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** *none*
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_ReferenceSystem.referenceSystemIdentifier > RS_Identifier.code
 
-**Dataset obligation:** 
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** 
+**Service obligation:** Conditional (one)
 
 **Definition:** Identifier of the system of spatial referencing.
 
@@ -722,16 +721,16 @@ For the SSDI, suggested coordinate reference systems can be added using the drop
 
     *• urn:ogc:def:crs:EPSG::27700 for British National Grid*
 
-Additional Information
+Additional information
 ----------------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** *none*
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification > MD_DataIdentification.supplementalInformation
 
-**Dataset obligation:** O-1
+**Dataset obligation:** Optional (one)
 
-**Service obligation:** O-1
+**Service obligation:** Optional (one)
 
 **Definition:** Other descriptive information about the data resource.
 
@@ -743,16 +742,16 @@ This should be used to link to other sources of descriptive information about th
 
     *• For Data Zones 2001, a link to the document outlining how they were created was provided:* `http://www.scotland.gov.uk/library5/society/sndata-00.asp <http://www.scotland.gov.uk/library5/society/sndata-00.asp>`__
 
-Topic Category
+Topic category
 --------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Resource topic category
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_DataIdentification.topicCategory
 
-**Dataset obligation:** M-N
+**Dataset obligation:** Mandatory (many)
 
-**Service obligation:** O-N
+**Service obligation:** Optional (many)
 
 **Definition:** Describes the main theme(s) of the dataset.
 
@@ -785,13 +784,13 @@ Greater detail for the topic of a particular dataset can be given through the *K
 Keyword
 -------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Keyword
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification.descriptiveKeywords > MD_Keywords
 
-**Dataset obligation:** M-N
+**Dataset obligation:** Mandatory (many)
 
-**Service obligation:** M-N
+**Service obligation:** Mandatory (many)
 
 **Definition:** The topic of the content of the data.  These should be more specific than those entered under *Topic category*.
 
@@ -799,11 +798,11 @@ A sub-element of this is the *Originating controlled vocabulary*, which is the n
 
 **Guidance:** Keyword values should be taken from a list standard subject categories, identified in the ‘originating controlled vocabulary’ element. If the dataset is covered under INSPIRE, then the first keyword should be from the General Environmental Multi-Lingual Thesaurus (GEMET), which can be found at:
 
-http://www.eionet.europa.eu/gemet.
+`http://www.eionet.europa.eu/gemet <http://www.eionet.europa.eu/gemet>`__
 
 If another controlled vocabulary is used then this should be stated.
 
-NOTE: Users will be unable to edit this section once a keyword has been added, they will have to delete and add the correct one in.
+The `Assigning a category <#assigning-a-category>`__ section describes how to add a keyword from a thesaurus.
 
 **Example:** 
 
@@ -811,33 +810,31 @@ NOTE: Users will be unable to edit this section once a keyword has been added, t
 
     *• Keyword: Farming, Originating controlled vocabulary: IPVS – Integrated Public Sector Vocabulary version 2, revision date 2006-04-02*
 
-Extent (Geographic Element)
+Extent (Geographic element)
 ---------------------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** *none*
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_DataIdentification.extent > EX_Extent > EX_GeographicExtent > EX_GeographicDescription.geographicIdentifier
 
-**Dataset obligation:** O-N
+**Dataset obligation:** Optional (many)
 
-**Service obligation:** O-N
+**Service obligation:** Optional (many)
 
 **Definition:** The spatial extent or coverage of the data resource. 
 
 **Guidance:** Select a pre-defined extent from the drop down box to the right of the map or draw a rectangle on the map. Values for the North, East, West, and South bounding coordinates will then be automatically filled.
 
-It is also recommended that the extent be described using the ISO 3166-2 standard for subdivisions of countries (i.e. for Scotland, the *Code* would be SCT).  To enter this, select “Identifier (gmd:MD_Identifier)” from the drop down before clicking the ‘+’ next to Geographic Identifier.  This will allow you to enter the *Code*, along with the *Citation* (e.g. Title: ISO 3166-2, Date: 2007/12/13 (2nd edition), Date Type: Revision).
-
-West Bounding Longitude
+West bounding longitude
 -----------------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Geographic bounding box
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_DataIdentification.extent > EX_Extent > EX_GeographicExtent > EX_GeographicBoundingBox
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** M-1
+**Service obligation:** Mandatory (one)
 
 **Definition:** Western most limit of the dataset expressed in longitude in decimal degrees (positive east)
 
@@ -846,16 +843,16 @@ West Bounding Longitude
 The west bounding longitude should be less than the east bounding longitude.
 
 
-East Bounding Longitude
+East bounding longitude
 -----------------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Geographic bounding box
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_DataIdentification.extent > EX_Extent > EX_GeographicExtent > EX_GeographicBoundingBox 
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** M-1
+**Service obligation:** Mandatory (one)
 
 **Definition:** Eastern most limit of the dataset expressed in longitude in decimal degrees (positive east)
 
@@ -864,16 +861,16 @@ East Bounding Longitude
 The east bounding longitude should have a greater value than the west bounding longitude.
 
 
-North Bounding Latitude
+North bounding latitude
 -----------------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Geographic bounding box
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_DataIdentification.extent > EX_Extent > EX_GeographicExtent > EX_GeographicBoundingBox
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** M-1
+**Service obligation:** Mandatory (one)
 
 **Definition:** Northern most limit of the dataset expressed in latitude in decimal degrees (positive north)
 
@@ -882,16 +879,16 @@ North Bounding Latitude
 The north bounding latitude must be greater than the south bounding longitude.
 
 
-South Bounding Latitude
+South bounding latitude
 -----------------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Geographic bounding box
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_DataIdentification.extent > EX_Extent > EX_GeographicExtent > EX_GeographicBoundingBox
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** M-1
+**Service obligation:** Mandatory (one)
 
 **Definition:** Southern most limit of the dataset expressed in latitude in decimal degrees (positive north)
 
@@ -899,16 +896,16 @@ South Bounding Latitude
 
 The south bounding latitude must be smaller than the north bounding latitude.
 
-Vertical Extent Information
+Vertical extent information
 ---------------------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** *none*
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_DataIdentification.extent > EX_Extent > EX_VerticalExtent
 
-**Dataset obligation:** O-1
+**Dataset obligation:** Optional (one)
 
-**Service obligation:** O-1
+**Service obligation:** Optional (one)
 
 **Definition:** Describes the vertical domain (height range) of the data resource.
 
@@ -916,16 +913,16 @@ Vertical Extent Information
 
 If the vertical extent does not apply to the data resource, then users should delete this section of the metadata record as it will not be validated by the SSDI.
 
-Temporal Extent
+Temporal extent
 ---------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Temporal extent
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** EX_Extent > EX_TemporalExtent.extent
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** C-1
+**Service obligation:** Conditional (one)
 
 **Definition:** This is the date(s) that describes the time period covered by the content of the dataset.  It may refer to the (1) period of collection of the data or (2) the date at which it is deemed to be current.
 
@@ -938,16 +935,16 @@ Dates may be to any degree of precision, from century (YY) to full date and time
 
     *•	For the Urban Rural Classification, the Temporal extent can be entered as 2013 to 2014.*
 
-Dataset Reference Date
+Dataset reference date
 ----------------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:**  Date of publication
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification.citation > CI_Citation.date
 
-**Dataset obligation:** M-N
+**Dataset obligation:** Mandatory (many)
 
-**Service obligation:** M-N
+**Service obligation:** Mandatory (many)
 
 **Definition:** Reference date for the data resource, indicating the date of publication, creation or last revision.
 
@@ -964,16 +961,16 @@ Dates may be to any degree of precision, from century (YY) to full date and time
 
     *• If the dataset has been created in support of a publication the date of the publication should be used.  For example, the Urban Rural Classification 2013-2014 was published on November 28th, 2014.*
 
-Frequency of Update
+Frequency of update
 -------------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** *none*
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_MaintenanceInformation.maintenanceAndUpdateFrequency
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** C-1
+**Service obligation:** Conditional (one)
 
 **Definition:** Describes the frequency with which modifications and deletions are made to the data resource.
 
@@ -983,16 +980,16 @@ Frequency of Update
 
     *•	For datasets that are updated on request, choose “As needed”.*
 
-Spatial Resolution
+Spatial resolution
 ------------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Spatial resolution
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification.spatialResolution > MD_Resolution.distance
 
-**Dataset obligation:** C-1
+**Dataset obligation:** Conditional (one)
 
-**Service obligation:** C-1 (only when there is a restriction on the resolution of the service)
+**Service obligation:** Conditional (one) (only when there is a restriction on the resolution of the service)
 
 **Definition:** A distance measure of the granularity of the data (in metres), giving an indication of how detailed it is.
 
@@ -1009,16 +1006,16 @@ urn:ogc:def:uom:EPSG::9001
 
     *•	For Aerial Photography, the *Units of measure* is specified as urn:ogc:def:uom:EPSG::9001, and the value for the *Spatial Resolution* is 0.25*
 
-Equivalent Scale
+Equivalent scale
 ----------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Spatial resolution
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification.spatialResolution > MD_Resolution.equivalentScale > MD_RepresentativeFraction.denominator
 
-**Dataset obligation:** O-1
+**Dataset obligation:** Optional (one)
 
-**Service obligation:** O-1
+**Service obligation:** Optional (one)
 
 **Definition:** The level of detail expressed as the scale denominator of a comparable hardcopy map or chart.
 
@@ -1031,16 +1028,16 @@ Expression of spatial resolution by distance is preferred (see Spatial resolutio
 
     *•	For data captured from Ordnance Survey 1:10,000 Raster, the Denominator can be entered as 10000*
 
-Hierarchy Level
+Hierarchy level
 ---------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Hierarchy level 
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Metadata.hierarchyLevel
 
-**Dataset obligation:** O-1
+**Dataset obligation:** Optional (one)
 
-**Service obligation:** O-1
+**Service obligation:** Optional (one)
 
 **Definition:** A sub-element of *Data quality information*, the specific extent of the data to which the data quality information applies.
 
@@ -1053,13 +1050,13 @@ Hierarchy Level
 Conformity
 ----------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Conformity - degree
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** DQ_DataQuality > DQ_Element.result > DQ_ConformanceResult
 
-**Dataset obligation:** C-N
+**Dataset obligation:** Conditional (many)
 
-**Service obligation:** C-N
+**Service obligation:** Conditional (many)
 
 **Definition:** Nested within *Data quality information*, this is the degree of conformity with the product specification or user requirement against which the data is being evaluated (i.e. degree of conformity to INSPIRE). Comprised of the *Specification*, *Explanation*, and *Degree* sub-elements.
 
@@ -1077,13 +1074,13 @@ NOTE: at present a dataset is unlikely to be fully conformant, until mapping of 
 Lineage
 --------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Lineage
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** DQ_DataQuality.lineage > LI_Lineage.statement
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** O-1
+**Service obligation:** Optional (one)
 
 **Definition:** A sub-element of *Data quality information*. This section should describe how the dataset was created.   Brief technical description should be given noting any sources and processes used.  This will be useful in determining whether the data is fit for purpose.
 
@@ -1096,16 +1093,16 @@ Notes on any coding and order of features should be made.  Further, it is helpfu
 
     *•	For Nitrate Vulnerable Zones: The Nitrate Vulnerable Zone boundaries were delineated by the Geographic Information Science and Analysis Team (GI-SAT) on behalf of the Environmental Quality Division. The first step was to look at the previous NVZ boundaries from 2002 and compare them with ground water body data from BGS and Scottish Water. This information was used to produce a first draft of the new boundaries, which were then clipped to field boundaries and put out to consultation. Following responses amendments were made and also consideration of estimated borehole catchment from Scottish Water. Next, boundaries were re-adjusted to fields and the mean high water spring (unless fields fell below the mean high water spring). An amendment was made to the River Nith and Lochar Water, such that field and mean high water boundaries are followed further up the estuary.*
 
-Data Format
+Data format
 -----------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** *none*
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Distribution.distributionFormat > MD_Format
 
-**Dataset obligation:** O-N
+**Dataset obligation:** Optional (many)
 
-**Service obligation:** O-N
+**Service obligation:** Optional (many)
 
 **Definition:** This is the format in which the digital data can be provided.
 
@@ -1122,13 +1119,13 @@ Recommended best practice is to select a value from a controlled vocabulary, suc
 Legal constraints
 -----------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Limitations on public access
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification > MD_Constraints > MD_LegalConstraints.otherConstraints
 
-**Dataset obligation:** M-N
+**Dataset obligation:** Mandatory (many)
 
-**Service obligation:** M-N
+**Service obligation:** Mandatory (many)
 
 **Definition:** Restrictions on access to the data that are imposed for security and other reasons (i.e. who can see the data).  Sub-elements are *Use constraints*, *Access constraints*, and *Limitations on public access*.
 
@@ -1145,13 +1142,13 @@ Legal constraints
 Use constraints
 ---------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Conditions applying to access and use
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification > MD_Constraints.useLimitation
 
-**Dataset obligation:** M-N
+**Dataset obligation:** Mandatory (many)
 
-**Service obligation:** M-N
+**Service obligation:** Mandatory (many)
 
 **Definition:** Restrictions on data that may impact its fitness for use.
 
@@ -1161,16 +1158,16 @@ Use constraints
 
     *•	This dataset was digitised at 1:50K scale and follows the textual description in the Countryside Commission for Scotland publication 'Scotland's Scenic Heritage’, published in 1978*
 
-Responsible Organisation
+Responsible organisation
 ------------------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Responsible party
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification.pointOfContact
 
-**Dataset obligation:** M-N
+**Dataset obligation:** Mandatory (many)
 
-**Service obligation:** M-N
+**Service obligation:** Mandatory (many)
 
 **Definition:** This element records the details of the organisation(s) responsible for the creation, maintenance and distribution of the data resource.
 
@@ -1185,16 +1182,16 @@ The *Responsible organization* element does not allow for multiple roles to be a
 
     *•	See sub-elements below.*
 
-Organisation Name
+Organisation name
 -----------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Responsible party
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification.pointOfContact
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** M-1
+**Service obligation:** Mandatory (one)
 
 **Definition:** Sub-element of *Responsible organization*. Name of the responsible organisation.
 
@@ -1204,16 +1201,16 @@ Organisation Name
 
     *•	Scottish Government*
 
-Contact Position
+Contact position
 ----------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Responsible party
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification.pointOfContact
 
-**Dataset obligation:** O-1
+**Dataset obligation:** Optional (one)
 
-**Service obligation:** CHECK THIS!!!
+**Service obligation:** Optional (one)
 
 **Definition:** Sub-element of *Responsible organization*. Role or position of the responsible person.
 
@@ -1230,16 +1227,16 @@ NOTE: For Scottish Government datasets, it can be helpful to identify the contac
 
     *•	Spatial Data Management Team*
 
-Responsible Party Role
+Responsible party role
 ----------------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Responsible party
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification.pointOfContact
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** M-1
+**Service obligation:** Mandatory (one)
 
 **Definition:** Sub-element of *Responsible organization*. Role of the responsible organisation.
 
@@ -1259,16 +1256,16 @@ The *Responsible organization* element does not allow for multiple roles to be a
 •	*Publisher:* Party who published the resource.
 •	*Author:* Party who authored the resource.
 
-Telephone Number
+Telephone number
 ----------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Responsible party
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification.pointOfContact
 
-**Dataset obligation:** O-1
+**Dataset obligation:** Optional (one)
 
-**Service obligation:** O-1
+**Service obligation:** Optional (one)
 
 **Definition:** Sub-element of *Responsible organization*. Telephone number by which the responsible party can be reached.
 
@@ -1278,16 +1275,16 @@ Telephone Number
 
     *•	0131 244 1441*
 
-Facsimile Number
+Facsimile number
 ----------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Responsible party
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification.pointOfContact
 
-**Dataset obligation:** O-1
+**Dataset obligation:** Optional (one)
 
-**Service obligation:** O-1
+**Service obligation:** Optional (one)
 
 **Definition:** Sub-element of *Responsible organization*. Telephone number by which the responsible party can be reached by facsimile communication.
 
@@ -1300,13 +1297,13 @@ Facsimile Number
 Postal address
 --------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Responsible party
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification.pointOfContact
 
-**Dataset obligation:** O-1
+**Dataset obligation:** Optional (one)
 
-**Service obligation:** CHECK THIS!
+**Service obligation:** Optional (one)
 
 **Definition:** Sub-element of *Responsible organization*. Postal address of the responsible organisation.
 
@@ -1322,16 +1319,16 @@ Postal address
 
     *• Country: United Kingdom*
 
-Email Address
+Email address
 -------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Responsible party
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification.pointOfContact
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** M-1
+**Service obligation:** Mandatory (one)
 
 **Definition:** Sub-element of Responsible organisation. Internet email address which individuals can use to contact the individual or organisation.
 
@@ -1345,16 +1342,16 @@ Email Address
 
     *• neighbourhood.statistics@gov.scot*
 
-Web Address
+Web address
 -----------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Responsible party
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Identification.pointOfContact
 
-**Dataset obligation:** O-1
+**Dataset obligation:** Optional (one)
 
-**Service obligation:** O-1
+**Service obligation:** Optional (one)
 
 **Definition:** Sub-element of *Responsible organization*. World wide web address of the responsible organisation.
 
@@ -1364,16 +1361,16 @@ Web Address
 
     *•* `www.gov.scot <www.gov.scot>`__
 
-Metadata Date
+Metadata date
 -------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Metadata date
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Metadata.dataStamp
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** M-1
+**Service obligation:** Mandatory (one)
 
 **Definition:** The date on which the metadata was last updated.
 
@@ -1381,16 +1378,16 @@ Metadata Date
 
 A single date is specified in the extended format YYYY-MM-DD, where YYYY is the year, MM is the month and DD is the day.
 
-Metadata Language
+Metadata language
 -----------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Metadata language
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Metadata.language
 
-**Dataset obligation:** C-1
+**Dataset obligation:** Conditional (one)
 
-**Service obligation:** C-1
+**Service obligation:** Conditional (one)
 
 **Definition:** The language that the metadata is written in.
 
@@ -1405,16 +1402,16 @@ Metadata Language
 
 This element is set to ‘eng’ in the SSDI templates.  For the SSDI, this element must be English (eng).
 
-Metadata Point of Contact
+Metadata point of contact
 -------------------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Metadata point of contact
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Metadata.contact > CI_ResponsibleParty
 
-**Dataset obligation:** M-N
+**Dataset obligation:** Mandatory (many)
 
-**Service obligation:** M-N
+**Service obligation:** Mandatory (many)
 
 **Definition:** The party responsible for the creation and maintenance of the metadata record.
 
@@ -1443,16 +1440,16 @@ Generic (team, branch etc.) contact details are preferred.  Avoid identifying in
 
     *•	Email address: GI-SAT@gov.scot*
 
-Resource Type
+Resource type
 -------------
 
-**Equivalent INSPIRE element:** 
+**Equivalent INSPIRE element:** Resource type
 
-**Equivalent ISO 19115 element:** 
+**Equivalent ISO 19115 element:** MD_Metadata.hierarchyLevel
 
-**Dataset obligation:** M-1
+**Dataset obligation:** Mandatory (one)
 
-**Service obligation:** M-1
+**Service obligation:** Mandatory (one)
 
 **Definition:** Defines whether the data resource is a ‘dataset’, a ‘series’ (collection of datasets with a common specification), or a ‘service’.
 
@@ -1460,7 +1457,6 @@ Resource Type
 
 •	Dataset
 •	Service
-
 
 Annex 1: Example Metadata Record
 ================================
