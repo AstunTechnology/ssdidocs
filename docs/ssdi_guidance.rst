@@ -326,7 +326,7 @@ provided. More help on the various meanings of the metadata elements can
 be found in the next section (`Metadata
 Elements <#metadata-elements>`__).
 
- **ADD IMAGE HERE: IMAGE_Template_For_Metadata_Record.png**
+  |Template_For_Metadata_Record|
 
 **Figure 4.1.1:** Blank dataset metadata template form
 
@@ -533,7 +533,7 @@ which should automatically populate with a list of service records. Finally clic
 the online resource has been added. This step should be repeated for every online resource affiliated
 with the dataset.
  
- **ADD IMAGE HERE: IMAGE_Link_To_Online_Resource.png**
+ |Link_To_Online_Resource|
  
 **Figure 4.7.2:** Linking an online resource to the current metadata
  
@@ -565,7 +565,7 @@ To manage a directory entry, firstly duplicate an existing record. By then click
 the duplicate entry you can alter the fields with information relevant to an individual
 within your organisation.
 
- **ADD IMAGE HERE: IMAGE_Duplicate_Directory_Entry.png **
+ |Duplicate_Directory_Entry|
  
 **Figure 4.8.1:** Duplicate an existing directory entry
 
