@@ -326,7 +326,7 @@ provided. More help on the various meanings of the metadata elements can
 be found in the next section (`Metadata
 Elements <#metadata-elements>`__).
 
-  |Template_for_metadata_record|
+|Template_For_Metadata_Record|
 
 **Figure 4.1.1:** Blank dataset metadata template form
 
@@ -533,7 +533,7 @@ which should automatically populate with a list of service records. Finally clic
 the online resource has been added. This step should be repeated for every online resource affiliated
 with the dataset.
  
- |Link_to_online_resource|
+|Link_To_Online_Resource|
  
 **Figure 4.7.2:** Linking an online resource to the current metadata
  
@@ -565,7 +565,7 @@ To manage a directory entry, firstly duplicate an existing record. By then click
 the duplicate entry you can alter the fields with information relevant to an individual
 within your organisation.
 
- |Duplicate_directory_entry|
+|Duplicate_Directory_Entry|
  
 **Figure 4.8.1:** Duplicate an existing directory entry
 
@@ -1898,10 +1898,6 @@ Responsible organisation
 
 The  **Responsible party role**  element in section relating to  **Responsible Organisation**  or  **Metadata contact**  is missing. Select the relevant role for the drop-down-list.  
 
-.. [1]
-   **Obligation Key:** M = Mandatory, C = Conditional, O = Optional, 1 =
-   Only 1 entry permitted, N = Multiple entries permitted.
-
 .. |image0| image:: media/image1.png
 .. |image1| image:: media/image2.png
 .. |image2| image:: media/image2.png
@@ -1923,6 +1919,6 @@ The  **Responsible party role**  element in section relating to  **Responsible O
 .. |image18| image:: media/image19.png
 .. |image19| image:: media/image20.png
 .. |image20| image:: media/image21.png
-.. |Template_for_metadata_record| image:: media/Template_for_metadata_record.png
-.. |Link_to_online_resource| image:: media/Link_to_online_resource.png
-.. |Duplicate_directory_entry| image:: media/Duplicate_directory_entry.png
+.. |Template_For_Metadata_Record| image:: media/Template_for_metadata_record.png
+.. |Link_To_Online_Resource| image:: media/Link_to_online_resource.png
+.. |Duplicate_Directory_Entry| image:: media/Duplicate_directory_entry.png
