@@ -225,7 +225,7 @@ records into the SSDI catalogue using either the online metadata editor
 or the metadata insert tool, based on XML documents. To add or edit data
 and metadata, you must be registered as an Editor in the SSDI catalogue.
 Contact Kate Newton
-(`Kate.Newton@gov.scot <mailto:Kate.Newton@gov.scot>`__)
+(`Kate.Newton@gov.scot <mailto:kate.Newton@gov.scot>`__)
 if you would like to become a registered editor for the SSDI.
 
 To produce a good metadata record, always try to gather as much details
@@ -238,7 +238,7 @@ the same time avoiding duplication of information throughout the form.
 The table below indicates the mandatory and optional fields according to
 the UK Gemini 2.2 standard.
 
-Table 5.0.1: Mandatory and optional information for dataset metadata
+Table 4.0.1: Mandatory and optional information for dataset metadata
 
 +--------------------------------------+---------------------------------+
 |  **Mandatory Fields**                |  **Optional Fields**            |
@@ -295,14 +295,12 @@ with a button **Contribute** that expands to **Add new record**, **Import new re
 
 |image9|
 
-Figure 5.1.1: Enter login credentials to sign in to the SSDI
+Figure 4.1.1: Enter login credentials to sign in to the SSDI
 
 Creating dataset and service metadata from a template
 -----------------------------------------------------
 
 To add dataset or service metadata to the SSDI, click on the ‘\ **Contribute**\ ’ button. This will enable the Editing board, where you can see all the records you have access to, the advanced search interface, and buttons on the right to **Add new record**, **Import new records**, and **Manage directory**.
-
-NEEDS UPDATING FROM HERE DOWNWARDS
 
 Clicking **Contribute** in the header menu, and then clicking **Add new record** will display a list of available templates. Note there could be multiple with the same name if you are an editor for multiple groups. 
 Select the appropriate template based on the type of resource that is being
@@ -315,7 +313,7 @@ Elements <#_Metadata_Elements>`__).
 
 |image8|
 
-**Figure 5.1.1:** Blank dataset metadata template form
+**Figure 4.1.1:** Blank dataset metadata template form
 
 Note that the templates for dataset and service metadata are slightly
 different. Metadata for a service has extra elements for the spatial
@@ -328,11 +326,13 @@ A new Metadata record has to be categorised. This is done via **'Categories'** b
 All *dataset* records should be categorised as **'Datasets'** and all *service* records should be categorised as **'Interactive resources'**.
 Once a category is selected it should appear highlighted, and a second click on the menu button will close the menu.
 
+Creating a metadata record
+--------------------------
+
 The templates have a |image9| where you can add an element or another
 occurrence of an element (or section). For example, you could have a
 range of Alternative Titles. Where an |image10| appears, you can delete
 the associated metadata element or section.
-
 
 Mandatory fields (e.g. Abstract) that are highlighted with a red asterisk.
 Note that for sub-elements, this only indicates that the sub-element is
@@ -347,13 +347,15 @@ order that sections appear in.
 Content, such as keywords, can be added either manually by clicking **'Add new keywords'** or from pre-existing thesauri by clicking
 on the the icon **'or select them in a thesuarus'**. Thesauri are available for INSPIRE themes (GEMET) or Regions.
 
+
+
 Select the appropriate thesaurus. This will add a new section, with the title of the selected thesaurus.
 Clicking the 'Search' box will display a drop-down list of keywords, which you simply click to add to your metadata record.
 
 
 |image14|
 
-**Figure 5.1.2:** Inspire theme thesaurus
+**Figure 4.1.2:** Inspire theme thesaurus
 
 
 Uploading metadata from an existing XML file
@@ -366,7 +368,7 @@ The page also gives you the option to select the file type, type of record,
 
 |image15|
 
-Figure 5.2.1: the Import Metadata Record menu
+Figure 4.2.1: the Import Metadata Record menu
 
 Users must consider the appropriate **‘Import Actions’**. If you are
 uploading to create a new metadata record then choose the ‘Generate UUID
@@ -380,7 +382,7 @@ The UUID is a generated automatically by whatever internal system (i.e.
 ESRI ArcGIS ArcCatalog) was used to write and manage your metadata. In
 xml, it can be found at the top of the page under the file identifier
 section. Within the SSDI, the UUID or File Identifier can be found at
-the bottom of the metadata record display (see Figure 5.2.2). This UUID,
+the bottom of the metadata record display (see Figure 4.2.2). This UUID,
 together with the metadata date stamp, are used to ensure records are
 unique within the SSDI, `data.gov.uk <http://data.gov.uk/>`__ and other
 metadata catalogues like MEDIN.
@@ -405,7 +407,7 @@ ISO and Gemini 2.2 can be found in the `Annex
 
 |image16|
 
-Figure 5.2.2: the UUID is located under the fileIdentifier tag in XML,
+Figure 4.2.2: the UUID is located under the fileIdentifier tag in XML,
 and at the bottom of the metadata entry on the SSDI
 
 Saving and validating metadata
@@ -453,7 +455,7 @@ Click on **Contribute** in the header menu, and locate your metadata record in t
 The **privileges** pane is accessed by clicking on the grey padlock that appear in line with the title of the record.
 
 |image18|
-Figure 5.4.1: Publishing a metadata record
+Figure 4.4.1: Publishing a metadata record
 
 Alternatively, click on the record to go to its individual page in the SSDI.
 **Privileges** can be selected from the drop down menu accessed by clicking the down-pointing arrow next to the 
@@ -474,45 +476,50 @@ Editing and deleting a metadata record
 When you search for a metadata record, and assuming you have the login
 rights, you will be able to edit or delete the record using the edit or
 delete buttons at the top right hand side of the page.
-
 Once in editing mode, the options are identical to those of metadata
 creation. To delete the metadata record, select the Delete button and
 you will be prompted to confirm.
 
 |image19|
 
-**Figure 5.6.1:** A confirmation screen is displayed when deleting a
+**Figure 4.6.1:** A confirmation screen is displayed when deleting a
 metadata record
 
 Users should note that the metadata record may continue to appear on the
 screen until you move to another page (i.e. Home).
 
-How to create Related Resources
--------------------------------
+Associating resources
+---------------------
+
+A record can be associated  coupled resources using the
+**'associated resource'** panel. 
 
 A related resource refers to a relationship between a dataset metadata
 record, and that for a service. In editing mode, related resources can
 be viewed in the top right hand panel. Related resources can be added by
 carrying out the following steps:
 
-1. In the dataset metadata, ensure that the **‘Resource locator’**
-   element contains the URL for the service. Service links can be added
-   by clcicking the plus button on the upper right of the related
-   resources panel, and choosing ‘Link to a Service’. A popup window
-   will open with a list of service records. Check the box beside the
-   record that you want to create a relationship and hit the ‘\ **Create
-   Link**\ ’ button at the bottom of the window.
+In the dataset metadata, ensure that the **‘Resource locator’**
+element contains the URL for the service. Service links can be added
+by clicking the plus button on the upper right of the related
+resources panel, and choosing **‘Link to a Service’**. A popup window
+will open with a list of service records. Check the box beside the
+record that you want to create a relationship and hit the ‘\ **Create
+Link**\ ’ button at the bottom of the window.
 
-2. In the service metadata, related resources are added in a similar
-   manner by choosing ‘Link to a Dataset’ option. A popup window will
-   present a list of datasets, which can be filtered using the search
-   box at the top of the window. Again, once the desired dataset record
-   has been chosen, hit the ‘\ **Create Link**\ ’ button at the bottom
-   of the window.
+In the service metadata, related resources are added in a similar
+manner by choosing ‘Link to a Dataset’ option. A popup window will
+present a list of datasets, which can be filtered using the search
+box at the top of the window. Again, once the desired dataset record
+has been chosen, hit the ‘\ **Create Link**\ ’ button at the bottom
+of the window.
+   
+In order to add or edit associated resources, open the editor.
+On the top right, manage associated resources with the wizard panel.
 
 |image20|
 
-**Figure 5.7.1:** Creating the coupled resource relationship
+**Figure 4.7.1:** Creating the coupled resource relationship
 
 Metadata Elements
 =================
