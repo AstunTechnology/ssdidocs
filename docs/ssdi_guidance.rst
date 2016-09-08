@@ -1,6 +1,19 @@
 Introduction
 ============
 
+How To Use This Guide
+---------------------
+This documentation has been written using Read The Docs. It can be navigated through 
+by scrolling, or clicking the sections in the navigation bar. The subsections can be
+explored by clicking the plus sign next to each section.
+A PDF copy of this guidance can be exported by clicking on **'v: latest'** at the bottom
+of the navigation panel, then you will see the options to download the document
+in PDF and other formats.
+
+The GeoNetwork framework also has `documentation <http://geonetwork-opensource.org/manuals/trunk/eng/users/index.html>`__ 
+which is linked to within some pages of the SSDI. This is more generic guidance than you will find in the SSDI
+documents, but may be of use if you can't find your answer here.
+
 The Scottish SDI Metadata Catalogue (SSDI)
 ------------------------------------------
 
@@ -22,22 +35,6 @@ Harvest of the metadata in the SSDI to the
 `data.gov.uk <http://data.gov.uk/>`__ site is performed automatically on a daily basis, therefore record amendments should appear on `data.gov.uk <http://data.gov.uk/>`__ within 24 hours. Users should contact
 `SSDI.metadata@gov.scot <mailto:SSDI.metadata@gov.scot>`__
 if they believe their records are not being harvested correctly.
-
-Scottish marine data in the SSDI
---------------------------------
-
-MEDIN is another format for metadata that relates to marine data and was
-created for a domain specific purpose. The format of metadata held in
-the SSDI is sufficient for MEDIN purposes, the additional metadata
-elements included in MEDIN remain once the metadata has been added to
-the SSDI). MEDIN metadata can be thought of as a superset of the
-information held in the SSDI.
-
-The SSDI and `data.gov.uk <http://data.gov.uk/>`__ can use MEDIN records (which come as slight but
-valid and complete supersets of Gemini 2.2 records). It is recommended
-that for Marine datasets that have metadata in MEDIN format, Scottish
-organisations should provide the appropriate metadata to both the SSDI
-and the MEDIN portal.
 
 SSDI metadata requirements
 --------------------------
@@ -87,7 +84,7 @@ visiting the `UK Location <http://data.gov.uk/location>`__ web site. Guidance th
 you would like to contact the UK Location Coordination Unit, please use
 the contact form at:
 
-http://data.gov.uk/location/contact_points
+`http://data.gov.uk/location/contact_points <http://data.gov.uk/location/contact_points>`__
 
 Further information on INSPIRE is also circulated on `Knowledge
 Hub <https://knowledgehub.local.gov.uk/>`__, within the Scottish SDI
@@ -95,7 +92,23 @@ Strategy Group, SDI/Inspire forum. The Scottish Government has also
 published guidance on the delivery of Inspire conformant web map
 services. The first instalment of this guidance can be accessed at:
 
-http://www.scotland.gov.uk/Publications/2010/05/06161701/0
+`http://www.scotland.gov.uk/Publications/2010/05/06161701/0 <http://www.scotland.gov.uk/Publications/2010/05/06161701/0>`__
+
+Scottish marine data in the SSDI
+--------------------------------
+
+MEDIN is another format for metadata that relates to marine data and was
+created for a domain specific purpose. The format of metadata held in
+the SSDI is sufficient for MEDIN purposes, the additional metadata
+elements included in MEDIN remain once the metadata has been added to
+the SSDI). MEDIN metadata can be thought of as a superset of the
+information held in the SSDI.
+
+The SSDI and `data.gov.uk <http://data.gov.uk/>`__ can use MEDIN records (which come as slight but
+valid and complete supersets of Gemini 2.2 records). It is recommended
+that for Marine datasets that have metadata in MEDIN format, Scottish
+organisations should provide the appropriate metadata to both the SSDI
+and the MEDIN portal.
 
 General Introduction to the SSDI
 ================================
@@ -106,33 +119,46 @@ Accessing the SSDI
 The Scottish SDI Metadata catalogue can be accessed from the following
 link:
 
-https://www.spatialdata.gov.scot
+`https://www.spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__
 
-The main page comprises a menu that allows you to reach the advanced search panel, the map interface, the sign in button and a dropdown for languages. The main body of the page comprises a simple search bar, the option to browse by topics (default) or inspire themes, and below that the latest and most popular datasets. Clicking the SSDI logo on the top menu will return the user to the home page.
+The main page comprises a menu that allows you to reach the advanced search panel, 
+the map interface, the sign in button and a dropdown for languages. The main body of 
+the page comprises a simple search bar, the option to browse by topics (default) or 
+inspire themes, and below that the latest and most popular datasets. Clicking the SSDI 
+logo on the top menu will return the user to the home page.
 
 |image0|
 
-Figure 3.1.1: SSDI catalogue main page
+**Figure 2.1.1:** SSDI catalogue main page
 
-Once a user of editor or reviewer profile or above has logged in, they will be presented with further buttons on the top menu for **Contribute**, **Admin Console** and **Sign out**. **Contrbute** has a dropdown option that gives access to **Add new record**,**Import new records** and **Manage directory**.
+Once a user of editor or reviewer profile or above has logged in, they will be presented 
+with further buttons on the top menu for **Contribute**, **Admin Console** and **Sign out**. 
+**Contribute** has a dropdown option that gives access to **Add new record**, **Import new records** 
+and **Manage directory**.
 
-*Registered users will not see the option to contribute, or the admin console.*
+*Unregistered users will not see the option to contribute, or the admin console.*
 
 Searching for metadata in the SSDI
 ----------------------------------
 
-Quick searches on the SSDI can be performed using the free text box in the centre of the home page and clicking the ‘\ **Search**\ ’
-icon. This will take the user to the search page, showing the resulting records in the centre of the page, with additional filtering options to the left. To the bottom right of the page is a small map view of the search results. Clicking the search button on the top menu of the home page will also bring the user to this page.
+Quick searches on the SSDI can be performed using the free text box in the centre of the home page and clicking the blue **Search**
+icon. This will take the user to the advanced search panel, showing the resulting records in the centre of 
+the page, with additional filtering options to the left. To the bottom right of the page is a small 
+map view of the search results. Clicking the search button on the top menu of the home page will also bring the user to this page.
 
 One of the main functions of the site is to allow users to
-search for both dataset and service metadata. These are accessed from check boxes to the top of the left-hand filtering options, below which are filters for '\ **Topics**\ ', '\ **INSPIRE Themes**\ ', '\ **Keywords**\ ', '\ **Contact for the resource, **\ ', '\ **Provided by**\ ', '\ **Years**\ ', '\ **Formats**\ ', '\ **Representation Types**\ ', '\ **Update Frequencies**\ ', '\ **Service Types**\ ', '\ **Scale**\ ', and '\ **Resolutions**\ '. Each search filter shows the number of records returned next to it.
+search for both dataset and service metadata. The results can be limited to either of these using top filtering option on the left-hand panel, '\ **Type of Resources**\ '. Below this are filters for '\ **Topics**\ ', '\ **INSPIRE Themes**\ ', 
+'\ **Keywords**\ ', '\ **Contact for the resource**\ ', '\ **Provided by**\ ', '\ **Years**\ ', 
+'\ **Formats**\ ', '\ **Representation Types**\ ', '\ **Update Frequencies**\ ', '\ **Service Types**\ ', 
+'\ **Scale**\ ', and '\ **Resolutions**\ '. Each search filter shows the number of records returned next to it.
 
 |image1|
 
-Figure 3.2.1: SSDI catalogue search options
+**Figure 2.2.1:** SSDI catalogue search options
 
-Other search options are available from the three vertical dots icon to the right of the main search text box. This expands to show ‘\ **What**\ ’ and
-‘\ **When**\ ’ options. Each section can be used to limit a user’s search criteria as
+Other search options are available from the three vertical dots icon to the right of the main search 
+text box. This expands to show **What** and
+**When** options. Each section can be used to limit a user’s search criteria as
 follows:
 
 -  **What** – allows users to search by Categories, Keywords, and
@@ -151,7 +177,6 @@ add the layer to the map, update or delete.
 
 Click the title of a record to view it.
 
-
 Viewing Spatial Data on the SSDI
 ================================
 
@@ -162,83 +187,77 @@ Another function of the site is to allow users to view spatial data as
 Web Mapping Services (WMS) in the interactive map client. The viewing
 function can be accessed in two ways:
 
-1. When viewing search results, if a suitable layer or layers are available, an ‘\ **Add to map**\ ’ icon will be visible at the bottom of the record. This can be expanded to add one or all of the available layers to the map. Clicking on the service record title and viewing the metadata will also show the available layers with "Add to map" buttons next to them.
+1. When viewing search results, if a suitable layer or layers are available, an 
+**Add to map** icon will be visible at the bottom of the record. This can be 
+expanded to add one or all of the available layers to the map. Clicking on the service 
+record title and viewing the metadata will also show the available layers with "Add to map" 
+buttons next to them.
 
 |image3|
 
-Figure 4.1.1: The "Add to Map" dialogue accessed from search results
+**Figure 3.1.1:** The Add to Map dialogue accessed from search results
 
-    - OR -
-
-2. If you know the URL of the service you wish to view, click the Map button from the top menu and click the "add layer" button (the top button on the right-hand side).
-   tab  Select the tab for "WMS" and paste the URL into the text box. The layers available will appear in a dropdown list below the URL and can be selected to be added to the map.
+2. You can add layers to the map straight from the **Map** page. Using the the **Add a layer** button (the top button on the right-hand side), you can either **Search** for the service you want to add to map, or add the layer by typing a **WMS**, **WMTS** or **KML** service URL. If you use a service URL, the layers available within the service will appear in a dropdown list below the URL and can be selected to be added to the map.
 
 |image4|
 
-Figure 4.1.2:* Adding a WMS service to the map
-
+**Figure 3.1.2:** Adding a WMS service to the map using the URL
 
 Using the interactive map
 ------------------------------
 
-The available tools for the interactive map are arranged down the right-hand side of the map, with the exception of the place names search, which is accessed on the left. The available tools are as follows:
+The available tools for the interactive map are arranged down the right-hand side of the 
+map, with the exception of the place names search, which is accessed on the left. The available tools are as follows:
 
-- Add a layer- for adding layers to the map either from searching the catalogue, a service (WMS or WMTS) or a KML file
-- Manage layers- shows the list of layers currently added to the map. Those wtih scale-dependent visibility that are not currently visible will be greyed out. Layers that cannot be added for some other reason will show an exclamation icon. To the right of the layers are options as follows:
-  - Zoom to extent of layer (not visible if you are currently zoomed to the extent)
-  - Layer information- this expands to show options for changing the transparence of the layer, the legend, and the attribution for the metadata
+- **Add a layer**- for adding layers to the map either from searching the catalogue, a service (WMS or WMTS) or a KML file
+- **Manage layers**- shows the list of layers currently added to the map. Those with scale-dependent visibility that are not currently visible will be greyed out. Layers that cannot be added for some other reason will show an exclamation icon. To the right of the layers are **Zoom to extent of layer** (not visible if you are currently zoomed to the extent) and **Layer information** (this expands to show options for changing the transparence of the layer, the legend, and the attribution for the metadata).
+- **Maps**- this allows you to reload the default map settings, load a map context file, or download the current map as an xml record. It's also possible to save the current map as a metadata record within the current catalogue by filling in the map title and abstract and clicking "Save map"
 
 |image5|
 
-Figure 4.2.1: The Manage layer dialog for the interactive map
+**Figure 3.2.1:** The Map dialog for the interactive map
 
-- Maps- this allows you to reload the default map settings, load a map context file, or download the current map as an xml record. It's also possible to save the current map as a metadata record within the current catalogue by filling in the map title and abstract and clicking "Save map"
+- **Print current map**- Create a pdf of the current map. There are options to add a title and description,  plus the ability to change the layout and choose scale and legend options. The area that will be printed will be highlighted on the map.
 
 |image6|
 
-Figure 4.2.2: The Map dialog for the interactive map
+**Figure 3.2.2:** Printing the map
 
-- Print current map: Create a pdf of the current map. There are options to add a title and description, plus the ability to change the layout and choose scale and legend options. The area that will be printed will be highlighted on the map.
+- **Measure**- draw a line on the map to measure it's length. Single-click to create a node and double-click to finish.
+- **Annotations**- draw freehand on the map. Click the **Add** button to choose from Point, Line, Polygon or Text, activating a simple styling dialog for the type that you've chosen. Draw on the map, using a single click to draw a node (where appropriate) and a double click to finish. There are options to modify the annotation or remove it. The resulting annotation can be saved as a json file for use in other applications, or a json file can be loaded for use in this dialog.
 
 |image7|
 
-Figure 4.2.3: Printing the map
+**Figure 3.2.3:** Annotating the map
 
-- Measure- draw a line on the map to meaure it's length. Single-click to create a node and double-click to finish.
-- Annotations- draw freehand on the map. Click the "Add" button to choose from Point, Line, Polygon or Text, activating a simple styling dialog for the type that you've chosen. Draw on the map, using a single click to draw a node (where appropriate) and a double click to finish. There are options to modify the annotation or remove it. The resulting annotation can be saved as a json file for use in other applications, or a json file can be loaded for use in this dialog.
-
-|image8|
-
-Figure 4.2.4: Annotating the map
-
-- Change projection- select one of the supported projections from the dropdown list
-- Zoom in and out
-- Zoom to initial map extent- this will zoom to the entirety of Scotland
-- Zoom to your position- this will only work if your location can be calculated by the browser
-- Graticule- add a grid to the map (in lat/long)
+- **Change projection**- select one of the supported projections from the dropdown list
+- **Zoom in and out**
+- **Zoom to initial map extent**- this will zoom to the entirety of Scotland
+- **Zoom to your position**- this will only work if your location can be calculated by the browser
+- **Graticule**- add a grid to the map (in lat/long)
 
 Adding Discovery Metadata to the SSDI
 =====================================
 
 This section guides you through the process of adding new metadata
 records into the SSDI catalogue using either the online metadata editor
-or the metadata insert tool, based on XML documents. To add or edit data
+or the metadata import tool, based on XML documents. To add or edit data
 and metadata, you must be registered as an Editor in the SSDI catalogue.
-Contact Kate Newton
-(`Kate.Newton@gov.scot <mailto:kate.Newton@gov.scot>`__)
+Contact the Scottish Government SSDI Metadata email address
+(`SSDI.Metadata@gov.scot <mailto:SSDI.Metadata@gov.scot>`__)
 if you would like to become a registered editor for the SSDI.
 
-To produce a good metadata record, always try to gather as much details
+To produce a good metadata record, always try to gather as many details
 as possible on the resource that you want to describe, taking into
 account the metadata elements that are explained in the next section
-(`Metadata Elements <#_Metadata_Elements>`__). The next step is to
+(`Metadata Elements <#metadata-elements>`__). The next step is to
 properly fill out the fields provided by the metadata template, while at
 the same time avoiding duplication of information throughout the form.
 
 The table below indicates the mandatory and optional fields according to
 the UK Gemini 2.2 standard.
 
-Table 4.0.1: Mandatory and optional information for dataset metadata
+**Table 4.0.1:** Mandatory and optional information for dataset metadata
 
 +--------------------------------------+---------------------------------+
 |  **Mandatory Fields**                |  **Optional Fields**            |
@@ -289,18 +308,14 @@ Table 4.0.1: Mandatory and optional information for dataset metadata
 To edit or import metadata records, you must be logged in. To log on to
 the metadata tool, go to the top right-hand corner of the header menu.
 Here you can enter the system credentials provided by the system
-administrator and then click the ‘\ **Sign In**\ ’ button. You are now
-logged on and the ‘\ **Sign Out**\ ’ button will now be visible, along
+administrator and then click the **Sign In** button. You are now
+logged on and the **Sign Out** button will now be visible, along
 with a button **Contribute** that expands to **Add new record**, **Import new records**, and **Manage directory**.
-
-|image9|
-
-Figure 4.1.1: Enter login credentials to sign in to the SSDI
 
 Creating dataset and service metadata from a template
 -----------------------------------------------------
 
-To add dataset or service metadata to the SSDI, click on the ‘\ **Contribute**\ ’ button. This will enable the Editing board, where you can see all the records you have access to, the advanced search interface, and buttons on the right to **Add new record**, **Import new records**, and **Manage directory**.
+To add dataset or service metadata to the SSDI, click on the **Contribute** button. This will enable the **Editing** board, where you can see all the records you have access to, the advanced search interface, and buttons on the right to **Add new record**, **Import new records**, and **Manage directory**.
 
 Clicking **Contribute** in the header menu, and then clicking **Add new record** will display a list of available templates. Note there could be multiple with the same name if you are an editor for multiple groups. 
 Select the appropriate template based on the type of resource that is being
@@ -309,9 +324,9 @@ documented. Then select your organisation's folder and click **Create**.
 Users can then enter UK Gemini 2.2 compliant metadata in the form
 provided. More help on the various meanings of the metadata elements can
 be found in the next section (`Metadata
-Elements <#_Metadata_Elements>`__).
+Elements <#metadata-elements>`__).
 
-|image8|
+  |Template_For_Metadata_Record|
 
 **Figure 4.1.1:** Blank dataset metadata template form
 
@@ -322,8 +337,8 @@ data service type (i.e. view, download, etc.) and for coupled resources.
 Assigning a category
 --------------------
 
-A new Metadata record has to be categorised. This is done via **'Categories'** button, the left-most button of the menu at the top of the page.
-All *dataset* records should be categorised as **'Datasets'** and all *service* records should be categorised as **'Interactive resources'**.
+A new Metadata record has to be categorised. This is done via **Categories** button, the left-most button of the menu at the top of the page.
+All *dataset* records should be categorised as **Datasets** and all *service* records should be categorised as **Interactive resources**.
 Once a category is selected it should appear highlighted, and a second click on the menu button will close the menu.
 
 Creating a metadata record
@@ -344,8 +359,8 @@ The arrows (|image11| or |image12|) allow you to move that section up or
 down the document order. Note that Gemini 2.2 is not concerned with the
 order that sections appear in.
 
-Content, such as keywords, can be added either manually by clicking **'Add new keywords'** or from pre-existing thesauri by clicking
-on the the icon **'or select them in a thesuarus'**. Thesauri are available for INSPIRE themes (GEMET) or Regions.
+Content, such as keywords, can be added either manually by clicking **Add new keywords** or from pre-existing thesauri by clicking
+on the the icon or **select them in a thesuarus**. Thesauri are available for INSPIRE themes (GEMET) or Regions.
 
 
 
@@ -368,14 +383,14 @@ The page also gives you the option to select the file type, type of record,
 
 |image15|
 
-Figure 4.2.1: the Import Metadata Record menu
+**Figure 4.2.1:** the Import Metadata Record menu
 
-Users must consider the appropriate **‘Import Actions’**. If you are
+Users must consider the appropriate  **Import Actions**. If you are
 uploading to create a new metadata record then choose the ‘Generate UUID
 for inserted metadata’. If you are uploading in order to refine or
 change an existing record on the SSDI, then choose the ‘Overwrite
 metadata with the same UUID’. If the older version of the record has
-already been deleted then the **'None'** option may be
+already been deleted then the **None** option may be
 selected.
 
 The UUID is a generated automatically by whatever internal system (i.e.
@@ -389,34 +404,34 @@ metadata catalogues like MEDIN.
 
 Users should also consider an appropriate XSL Transformation.
 For an xml that is already in Gemini 2.2 format, leave
-**‘Apply XSLT conversion’** option blank. To upload a non-Gemini 2.2 xml, select
-from the **‘Apply XSLT conversion’** drop down box the appropriate converter
+**Apply XSLT conversion** option blank. To upload a non-Gemini 2.2 xml, select
+from the  **Apply XSLT conversion** drop down box the appropriate converter
 (e.g. ESRI-to-GEMINI\_21).
 
-Users should **NOT** check the **‘Validate’** box during upload - if
+Users should **NOT** check the **Validate** box during upload - if
 there are errors in the validation process, the metadata will not be
 uploaded. The recommended validation technique is to upload without
 validation, and then go through the SSDI validation process described in
-the `next section <#_Saving_and_validating>`__.
+the `next section <#saving-and-validating-metadata>`__.
 
 Click **Import** and the record will be uploaded, generating an Import Report. 
 Once the metadata has been uploaded you will still need to edit this record to make it fully Gemini
 2.2 complaint. Common issues encountered when converting between ESRI
 ISO and Gemini 2.2 can be found in the `Annex
-2 <#_Annex_2:_Common_1>`__.
+2 <#annex-2-common-ssdi-validation-error-messages>`__.
 
 |image16|
 
-Figure 4.2.2: the UUID is located under the fileIdentifier tag in XML,
+**Figure 4.2.2:** the UUID is located under the fileIdentifier tag in XML,
 and at the bottom of the metadata entry on the SSDI
 
 Saving and validating metadata
 ------------------------------
 
 As the user works through the template filling in required elements, the
-**‘Save metadata’** button at the top right of the screen may be used to
+**Save metadata** button at the top right of the screen may be used to
 save the record in progress. Once the record has been completed, the
-user may click **‘Save and Close’** to save the record and exit the
+user may click **Save and Close** to save the record and exit the
 editing mode. Users should note that this action will not save a copy of
 the metadata locally, only on the server. **It is recommended that all
 master copies of metadata should be stored within the data provider’s
@@ -424,7 +439,7 @@ own system.**
 
 Once all elements for a new record have been completed or changes have
 been made to an existing record, it should be validated against the
-Gemini 2.2 standard rules. This can be done by clicking on the **‘Validate’** 
+Gemini 2.2 standard rules. This can be done by clicking on the **Validate** 
 button at the top or bottom of the page, or refreshing the
 validation report in the panel on the right hand side of the editor
 window.
@@ -432,18 +447,18 @@ window.
 A Validation dialogue box will appear on the right of the screen
 highlighting any errors that need to be corrected (Note: click on the red thumbs-down icon to see only errors). 
 Solutions to errors are not always obvious
-from the messages given; `Annex 2 <#_Annex_2:_Common_1>`__ of this
+from the messages given; `Annex 2 <#annex-2-common-ssdi-validation-error-messages>`__ of this
 document provides a list of common error messages encountered and how to
 resolve them. Users can still save a metadata record that has not been
 validated and come back to it later.
 
 The validation check should be repeated once amendments have been made
 until no errors are detected. Once validation is successfully completed,
-click on the **‘Save and Close’** button. When viewing the record (not
+click on the **Save and Close** button. When viewing the record (not
 in an editing session) there is an option to save as an XML file
 clicking on the actions drop down menu (top left) and selecting ‘save as
 XML’. The metadata record will appear in a new tab in XML format and
-users can then save by going to File then **‘Save as’**.
+users can then save by going to File then  **Save as**.
 
 Publishing a metadata record
 ----------------------------
@@ -452,10 +467,11 @@ Once a metadata record has been saved and successfully validated, it can
 then be published, making it publicly viewable on the SSDI.
 
 Click on **Contribute** in the header menu, and locate your metadata record in the list below.
-The **privileges** pane is accessed by clicking on the grey padlock that appear in line with the title of the record.
+The **Privileges** pane is accessed by clicking on the grey padlock that appear in line with the title of the record.
 
 |image18|
-Figure 4.4.1: Publishing a metadata record
+
+**Figure 4.4.1:** Publishing a metadata record
 
 Alternatively, click on the record to go to its individual page in the SSDI.
 **Privileges** can be selected from the drop down menu accessed by clicking the down-pointing arrow next to the 
@@ -463,12 +479,14 @@ Edit and Delete icons at the top right of the screen.
 
 |image17|
 
-Within the **privileges** pane, check each of the tick boxes in the row marked **'All'**. 
+**Figure 4.4.2:** Menu to alter privileges and access other settings
+
+Within the **Privileges** pane, check each of the tick boxes in the row marked **All**. 
 This means the record is now publicly viewable
 on the SSDI and that the metadata record is available for harvesting to
 `data.gov.uk <http://data.gov.uk/>`__.
 
-Click **‘Submit’** to complete the action.
+Click **Submit** to complete the action.
 
 Editing and deleting a metadata record
 --------------------------------------
@@ -491,35 +509,65 @@ screen until you move to another page (i.e. Home).
 Associating resources
 ---------------------
 
-A record can be associated  coupled resources using the
-**'associated resource'** panel. 
+An associated or related resource is used to link a **dataset's** metadata record 
+to both the **service** directly and the corresponding **metadata record for the service**. 
+Linking a **dataset** metadata record to a **service** metadata record automatically generates 
+a related resource within the **service** metadata record. A **service** metadata record will 
+therefore have one related resource per Dataset or layer in the **service**. 
 
-A related resource refers to a relationship between a dataset metadata
-record, and that for a service. In editing mode, related resources can
-be viewed in the top right hand panel. Related resources can be added by
-carrying out the following steps:
+Users should firstly link a Dataset metedata record to the related service metadata record 
+by clicking firstly on the **Associated resources** menu and selecting the
+**Link to a service** option. Use the search function to look up the metadata record for 
+every service that the Dataset is included in. Once added these should appear under the 
+**Service** heading at the right hand side.
 
-In the dataset metadata, ensure that the **‘Resource locator’**
-element contains the URL for the service. Service links can be added
-by clicking the plus button on the upper right of the related
-resources panel, and choosing **‘Link to a Service’**. A popup window
-will open with a list of service records. Check the box beside the
-record that you want to create a relationship and hit the ‘\ **Create
-Link**\ ’ button at the bottom of the window.
-
-In the service metadata, related resources are added in a similar
-manner by choosing ‘Link to a Dataset’ option. A popup window will
-present a list of datasets, which can be filtered using the search
-box at the top of the window. Again, once the desired dataset record
-has been chosen, hit the ‘\ **Create Link**\ ’ button at the bottom
-of the window.
-   
-In order to add or edit associated resources, open the editor.
-On the top right, manage associated resources with the wizard panel.
-
-|image20|
+ |image20|
 
 **Figure 4.7.1:** Creating the coupled resource relationship
+ 
+Secondly users should link the same dataset metadata record to the online resource.
+**Associated resources** menu select **Add link**. This will open a new screen. Users
+should firstly select the correct Protocol for their service, then enter in the url of 
+their service. Then select the appropriate layer for the service from the **Resource name** field,
+which should automatically populate with a list of service records. Finally click **Add Link**, and check that
+the online resource has been added. This step should be repeated for every online resource affiliated
+with the dataset.
+ 
+ |Link_To_Online_Resource|
+ 
+**Figure 4.7.2:** Linking an online resource to the current metadata
+ 
+ 
+Note that if you add a non-WMS service then the SSDI won't automatically take the name of the service, so give it a 
+suitable resource name.
+
+You can check the relationship between shared resources by viewing the metadata record of the service related
+through the steps above. Within the front page of the **Service** metadata record you should see the related
+Dataset listed under **Associated resources**. The process above *does* work in reverse; individual Datasets
+can be registered as related resources within the metadata record of a service.
+
+Note also that for some dataset metadata records when using the **Add to map** function the layer name
+may be blank. To resolve this you must delete and re-add the url to the WMS using the steps outlined above,
+and select the correct resource name.
+
+Managing directories
+--------------------
+The SSDI supports metadata records that are composed from fragments of metadata. 
+The idea is that the fragments of metadata can be used in more than one metadata record.
+Directories allow a user create records for individuals that can then be used
+across multiple metadata records. Users may wish to create one or a number of directory
+entries prior to creating any metadata records.
+
+Directories are managed by clicking on the drop-down menu next to 
+the **Contribute** button and clicking **Manage directory**.
+
+To manage a directory entry, firstly duplicate an existing record. By then clicking on
+the duplicate entry you can alter the fields with information relevant to an individual
+within your organisation.
+
+ |Duplicate_Directory_Entry|
+ 
+**Figure 4.8.1:** Duplicate an existing directory entry
 
 Metadata Elements
 =================
