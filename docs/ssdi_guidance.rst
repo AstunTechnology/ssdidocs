@@ -187,11 +187,7 @@ Another function of the site is to allow users to view spatial data as
 Web Mapping Services (WMS) in the interactive map client. The viewing
 function can be accessed in two ways:
 
-1. When viewing search results, if a suitable layer or layers are available, an 
-**Add to map** icon will be visible at the bottom of the record. This can be 
-expanded to add one or all of the available layers to the map. Clicking on the service 
-record title and viewing the metadata will also show the available layers with "Add to map" 
-buttons next to them.
+1. When viewing search results, if a suitable layer or layers are available, an **Add to map** icon will be visible at the bottom of the record. This can be expanded to add one or all of the available layers to the map. Clicking on the service record title and viewing the metadata will also show the available layers with "Add to map" buttons next to them.
 
 |image3|
 
@@ -202,6 +198,8 @@ buttons next to them.
 |image4|
 
 **Figure 3.1.2:** Adding a WMS service to the map using the URL
+
+Note than when adding straight from the **Map** page (method two), using the **Search**, you may see layers with no name. This is caused by the web service layers not being referenced properly in the associated resources part of the metadata record. Users of the SSDI should update their metadata records so their WMS resources in the dataset metadata are named with the layer name as it appears in the service. See the `Associated Resources <#associated-resources>`__ section for guidance on how to set up associated resources.
 
 Using the interactive map
 ------------------------------
@@ -510,7 +508,7 @@ metadata record
 Users should note that the metadata record may continue to appear on the
 screen until you move to another page (i.e. Home).
 
-Associating resources
+Associated resources
 ---------------------
 
 An associated or related resource is used to link a **dataset's** metadata record 
@@ -532,8 +530,9 @@ every service that the Dataset is included in. Once added these should appear un
 Secondly users should link the same dataset metadata record to the online resource.
 **Associated resources** menu select **Add link**. This will open a new screen. Users
 should firstly select the correct Protocol for their service, then enter in the url of 
-their service. Then select the appropriate layer for the service from the **Resource name** field,
-which should automatically populate with a list of service records. Finally click **Add Link**, and check that
+their service. For WMS, select the appropriate layer for the service from the **Resource name** field,
+which should automatically populate with a list of layers. For a non-WMS service the SSDI won't automatically 
+take the name of the service, so give it a suitable resource name. Finally click **Add Link**, and check that
 the online resource has been added. This step should be repeated for every online resource affiliated
 with the dataset.
  
@@ -541,9 +540,7 @@ with the dataset.
  
 **Figure 4.7.2:** Linking an online resource to the current metadata
  
- 
-Note that if you add a non-WMS service then the SSDI won't automatically take the name of the service, so give it a 
-suitable resource name.
+Note that the previous SSDI website did not require the WMS associated resources to point to the correct layer name from the service. However the present site requires this for the layer to be searched for and added into the **Map** view. If you can't see the layer name in the **Map** view, then you should re-add the WMS as an associated resource in the dataset metadata record and choose the correct layer in the **Resource name** field.
 
 You can check the relationship between shared resources by viewing the metadata record of the service related
 through the steps above. Within the front page of the **Service** metadata record you should see the related
