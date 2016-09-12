@@ -317,7 +317,7 @@ Creating dataset and service metadata from a template
 
 To add dataset or service metadata to the SSDI, click on the **Contribute** button. This will enable the **Editing** board, where you can see all the records you have access to, the advanced search interface, and buttons on the right to **Add new record**, **Import new records**, and **Manage directory**.
 
-Clicking **Contribute** in the header menu, and then clicking **Add new record** will display a list of available templates. Note there could be multiple with the same name if you are an editor for multiple groups. 
+Clicking **Contribute** in the header menu, and then clicking **Add new record** will display a list of available templates. Note there could be multiple templates with the same name if you are an editor for multiple groups. 
 Select the appropriate template based on the type of resource that is being
 documented. Then select your organisation's folder and click **Create**.
 
@@ -468,6 +468,7 @@ then be published, making it publicly viewable on the SSDI.
 
 Click on **Contribute** in the header menu, and locate your metadata record in the list below.
 The **Privileges** pane is accessed by clicking on the grey padlock that appear in line with the title of the record.
+Note that if this padlock is locked, your metadata record is unpublished, and if it is unlocked, it is published.
 
 |image18|
 
@@ -487,6 +488,9 @@ on the SSDI and that the metadata record is available for harvesting to
 `data.gov.uk <http://data.gov.uk/>`__.
 
 Click **Submit** to complete the action.
+
+You will also note that the drop down menu has a **publish/unpublish** option: this is a shortcut to publish the record. 
+After pressing this, you should see the changes in the **Privileges** pane.
 
 Editing and deleting a metadata record
 --------------------------------------
