@@ -319,10 +319,11 @@ Clicking **Contribute** in the header menu, and then clicking **Add new record**
 Select the appropriate template based on the type of resource that is being
 documented. Then select your organisation's folder and click **Create**.
 
-Users can then enter UK Gemini 2.2 compliant metadata in the form
-provided. More help on the various meanings of the metadata elements can
-be found in the next section (`Metadata
-Elements <#metadata-elements>`__).
+Users can then enter UK Gemini 2.2 compliant metadata in the editable form
+provided. This will load in the simple **Default** view, or can be changed to
+**Advanced** or **XML** view by clicking the eye icon on the top right of the page.
+More help on the various meanings of the metadata elements can
+be found in the section (`Metadata Elements <#metadata-elements>`__).
 
 |Template_For_Metadata_Record|
 
@@ -370,6 +371,10 @@ Clicking the 'Search' box will display a drop-down list of keywords, which you s
 
 **Figure 4.1.2:** Inspire theme thesaurus
 
+For detailed guidance on filling out each element, see the `metadata elements section <#metadata-elements>`__. 
+Note that although the basic functionality you need to fill in the metadata records 
+is available in the **Default** view, additional functionality can be found in the 
+**Advanced** view.
 
 Uploading metadata from an existing XML file
 --------------------------------------------
@@ -383,13 +388,13 @@ The page also gives you the option to select the file type, type of record,
 
 **Figure 4.2.1:** the Import Metadata Record menu
 
-Users must consider the appropriate  **Import Actions**. If you are
+Users must consider the appropriate **Import Actions**. If you are
 uploading to create a new metadata record then choose the ‘Generate UUID
 for inserted metadata’. If you are uploading in order to refine or
 change an existing record on the SSDI, then choose the ‘Overwrite
-metadata with the same UUID’. If the older version of the record has
-already been deleted then the **None** option may be
-selected.
+metadata with the same UUID’.  If the XML contains a UUID that does not 
+already exist on the SSDI but you would like to keep this UUID then the 
+**None** option should be selected.
 
 The UUID is a generated automatically by whatever internal system (i.e.
 ESRI ArcGIS ArcCatalog) was used to write and manage your metadata. In
@@ -413,8 +418,12 @@ validation, and then go through the SSDI validation process described in
 the `next section <#saving-and-validating-metadata>`__.
 
 Click **Import** and the record will be uploaded, generating an Import Report. 
-Once the metadata has been uploaded you will still need to edit this record to make it fully Gemini
-2.2 complaint. Common issues encountered when converting between ESRI
+To review, edit and validate the metadata record you have imported, click on 
+the **Contribute button** and your new metadata record should be at the top 
+of the list. Click the pencil icon to reach the editing page, where you should 
+validate the record using the steps in the `following section <#saving-and-validating-metadata>`__. 
+You may need to edit the record to make it fully Gemini 2.2 compliant.
+Common issues encountered when converting between ESRI
 ISO and Gemini 2.2 can be found in the `Annex
 2 <#annex-2-common-ssdi-validation-error-messages>`__.
 
@@ -442,10 +451,11 @@ button at the top or bottom of the page, or refreshing the
 validation report in the panel on the right hand side of the editor
 window.
 
-A Validation dialogue box will appear on the right of the screen
-highlighting any errors that need to be corrected (Note: click on the red thumbs-down icon to see only errors). 
-Solutions to errors are not always obvious
-from the messages given; `Annex 2 <#annex-2-common-ssdi-validation-error-messages>`__ of this
+A **Validation** dialogue box will appear on the right of the screen
+highlighting any errors that need to be corrected. Click on the red 
+thumbs-down icon to see details of the errors, organised in sections by schematron. 
+Solutions to errors are not always obvious from the messages given; 
+`Annex 2 <#annex-2-common-ssdi-validation-error-messages>`__ of this
 document provides a list of common error messages encountered and how to
 resolve them. Users can still save a metadata record that has not been
 validated and come back to it later.
@@ -517,8 +527,9 @@ Linking a **dataset** metadata record to a **service** metadata record automatic
 a related resource within the **service** metadata record. A **service** metadata record will 
 therefore have one related resource per Dataset or layer in the **service**. 
 
-Users should firstly link a Dataset metedata record to the related service metadata record 
-by clicking firstly on the **Associated resources** menu and selecting the
+Users should firstly link a Dataset metadata record to the related service metadata record 
+by clicking firstly on the **Associated resources** menu (at the right hand side of the page, 
+or at the bottom of the page if you are accessing the SSDI on a small screen) and selecting the
 **Link to a service** option. Use the search function to look up the metadata record for 
 every service that the Dataset is included in. Once added these should appear under the 
 **Service** heading at the right hand side.
@@ -739,8 +750,8 @@ Coupled resource
 
 **Guidance:** Applicable to service metadata only. This must be completed for every dataset included in the service (i.e. portrayed as a view service layer). 
 
-*Coupled resource* sections can be added by clicking on the ‘+’ in the right hand pane. Further instructions can be found in the 
-`How to create Related Resources section <#how-to-create-related-resources>`__.
+*Coupled resource* sections can be added by clicking on the ‘+’ in the *Associated Resources* pane. Further instructions can be found in the 
+`Associated Resources section <#associated-resources>`__.
 
 Spatial reference system
 ------------------------
@@ -757,18 +768,9 @@ Spatial reference system
 
 **Guidance:** Identify the spatial reference system used to spatially reference the data in the data resource. 
 
-The UK Location encoding recommendation is to use the URN form of reference to an EPSG code. EPSG codes can be accessed at the `EPSG Geodetic Parameter Dataset site <http://epsg-registry.org/>`__.
+Each coordinate reference system has an EPSG code, which can be accessed at the `EPSG Geodetic Parameter Dataset site <http://epsg-registry.org/>`__.
 
-For the SSDI, suggested coordinate reference systems can be added using the drop down list, or by clicking on the binocular icon and adding an entry from the CRS thesaurus.
-
-
-**Example:** 
-
-    *• urn:ogc:def:crs:EPSG::4258 for ETRS89*
-
-    *• urn:ogc:def:crs:EPSG::4326 for WGS84*
-
-    *• urn:ogc:def:crs:EPSG::27700 for British National Grid*
+For the SSDI, the two most common spatial reference systems are pre-populated in the templates: OSGB 1936 and ETRS89. You should remove the one you do not need. If any other spatial reference system is required, in the advanced metadata editor view (accessed by clicking the eye icon in the top left), the *Ref system* tab has a reference system picker where you can search for any spatial reference system.
 
 Additional information
 ----------------------
@@ -872,7 +874,7 @@ Extent (Geographic element)
 
 **Definition:** The spatial extent or coverage of the data resource. 
 
-**Guidance:** Select a pre-defined extent from the drop down box to the right of the map or draw a rectangle on the map. Values for the North, East, West, and South bounding coordinates will then be automatically filled.
+**Guidance:** Select a pre-defined extent from the drop down box at the top of the map, either by country or local authority, or draw a rectangle on the map. Values for the North, East, West, and South bounding coordinates will then be automatically filled. The default is Scotland. You can also change the coordinate system of this field using the drop down at the top of the map.
 
 West bounding longitude
 -----------------------
@@ -958,9 +960,8 @@ Vertical extent information
 
 **Definition:** Describes the vertical domain (height range) of the data resource.
 
-**Guidance:** This element should be completed where relevant (e.g. geology, mining, etc.). Sub-elements are the *minimum*, *maximum* value and the *coordinate reference system* to which the minimum and maximum were measured.
+**Guidance:** This element should be completed where relevant (e.g. geology, mining, etc.). This can be added within the *Identification* tab of the *Advanced* editor view.  Sub-elements are the *minimum*, *maximum* value and the *coordinate reference system* to which the minimum and maximum were measured.
 
-If the vertical extent does not apply to the data resource, then users should delete this section of the metadata record as it will not be validated by the SSDI.
 
 Temporal extent
 ---------------
@@ -1090,7 +1091,7 @@ Hierarchy level
 
 **Definition:** A sub-element of *Data quality information*, the specific extent of the data to which the data quality information applies.
 
-**Guidance:** Not required for GEMINI, and is currently ignored within UK Location.  Select options from the drop down list.
+**Guidance:** Not required for GEMINI, and is currently ignored within UK Location.  Default is set to dataset, or other options can be selected from the dropdown list.
 
 **Example:** 
 
