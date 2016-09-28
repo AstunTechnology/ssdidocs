@@ -631,6 +631,16 @@ Editing the files locally requires the installation of a Git client on your loca
 
 You will need a GitHub account to edit files locally.
 
+Advanced Troubleshooting
+========================
+
+Changes to stylesheets and layout configuration occasionally require the GeoNetwork cache to be rebuilt. This may result in partially displayed or completely blank pages. If the "Clear Formatter Cache" tool in the Admin Console does not resolve the issue, or is not reachable, then running the following two services will resolve the problem. You will need to reload the problematic page once you have run these two services.
+
+* Reload Model: https://www.spatialdata.gov.scot/geonetwork/static/wroAPI/reloadModel
+* Reload Cache: https://www.spatialdata.gov.scot/geonetwork/static/wroAPI/reloadCache
+
+Note that the services don't return a result, just a blank page. Note also that the pages will take a long time to load after these services have been run, as the cache is being completely rebuilt.
+
 
 .. |image0| image:: media/adminimage01.png
 .. |image1| image:: media/adminimage02.png
