@@ -593,7 +593,7 @@ This icon looks like two overlapping sheets of paper, and is shown below.
 Clicking this icon will generate a new record with the title as the record copied. By then clicking on the duplicate entry you can 
 alter the fields with information relevant to an individual within your organisation.
 
-**Note:** The**individual name** field, as part of the **Metadata point of contact** section in a metadata record, is not mandatory, and 
+**Note:** The **individual name** field, as part of the **Metadata point of contact** section in a metadata record, is not mandatory, and 
 for a record to meet the requirements of the Gemini 2.2 standard this field should be left empty. The **Metadata point of contact** 
 section should only to refer to the organisation responsible for the creation and maintenance of the metadata, and the contact position within the
 organisation. 
