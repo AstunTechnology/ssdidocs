@@ -408,8 +408,9 @@ metadata catalogues like MEDIN.
 Users should also consider an appropriate XSL Transformation.
 For an xml that is already in Gemini 2.2 format, leave
 **Apply XSLT conversion** option blank. To upload a non-Gemini 2.2 xml, select
-from the  **Apply XSLT conversion** drop down box the appropriate converter
-(e.g. ESRI-to-GEMINI\_21).
+from the  **Apply XSLT conversion** drop down box the appropriate converter. For
+example, a metadata record created in ESRI ArcCatalog needs to be converted using
+the **ESRI_ISO_to_GEMINI_22** CSLT conversion.
 
 Users should **NOT** check the **Validate** box during upload - if
 there are errors in the validation process, the metadata will not be
@@ -460,6 +461,9 @@ document provides a list of common error messages encountered and how to
 resolve them. Users can still save a metadata record that has not been
 validated and come back to it later.
 
+**Note:** In order to validate, each dataset metadata record must have a keyword from the *GEMET - INSPIRE themes, version 1.0* 
+thesaurus and each service metadata record must have a keyword from the *INSPIRE Service taxonomy* thesaurus.
+
 The validation check should be repeated once amendments have been made
 until no errors are detected. Once validation is successfully completed,
 click on the **Save and Close** button. When viewing the record (not
@@ -467,6 +471,8 @@ in an editing session) there is an option to save as an XML file
 clicking on the actions drop down menu (top left) and selecting ‘save as
 XML’. The metadata record will appear in a new tab in XML format and
 users can then save by going to File then  **Save as**.
+
+
 
 Publishing a metadata record
 ----------------------------
@@ -543,9 +549,10 @@ Secondly users should link the same dataset metadata record to the online resour
 should firstly select the correct Protocol for their service, then enter in the url of 
 their service. For WMS, select the appropriate layer for the service from the **Resource name** field,
 which should automatically populate with a list of layers. For a non-WMS service the SSDI won't automatically 
-take the name of the service, so give it a suitable resource name. Finally click **Add Link**, and check that
-the online resource has been added. This step should be repeated for every online resource affiliated
-with the dataset.
+take the name of the service, so give it a suitable resource name. **Note:** Having pasted in the url for the WMS,
+and having generated a list of resources, make sure that the selected resource is highlighted **green**. Finally click 
+**Add Link**, and check that the online resource has been added. This step should be repeated for every online 
+resource affiliated with the dataset.
  
 |Link_To_Online_Resource|
  
@@ -564,22 +571,32 @@ and select the correct resource name.
 
 Managing directories
 --------------------
-The SSDI supports metadata records that are composed from fragments of metadata. 
-The idea is that the fragments of metadata can be used in more than one metadata record.
-Directories allow a user create records for individuals that can then be used
-across multiple metadata records. Users may wish to create one or a number of directory
-entries prior to creating any metadata records.
+
+Directories are a means of automatically populating fieldsm such as those for the **Metadata point of contact**
+section of a metadata record with pre-written values. This is useful if you have to create multiple records that share
+the same point of contact. Note that while directory entries allow a user to add a field identiying an individual 
+as a point of contact, this field should be left empty. For additional details see below.
 
 Directories are managed by clicking on the drop-down menu next to 
-the **Contribute** button and clicking **Manage directory**.
+the **Contribute** button and clicking **Manage directory**, or by selecting **Manage directory**
+from within the **Contribute** page.
 
-To manage a directory entry, firstly duplicate an existing record. By then clicking on
-the duplicate entry you can alter the fields with information relevant to an individual
-within your organisation.
+To create a directory entry, firstly duplicate an existing record. These appear under **Entries**, and one should have
+a reference to it being a template within its title. Alternatively you can duplicate a previous record
+you have created yourself. To duplicate a record, click the icon at the bottom right of an existing entry. 
+This icon looks like two overlapping sheets of paper, and is shown below. 
 
 |Duplicate_Directory_Entry|
  
 **Figure 4.8.1:** Duplicate an existing directory entry
+
+Clicking this icon will generate a new record with the title as the record copied. By then clicking on the duplicate entry you can 
+alter the fields with information relevant to an individual within your organisation.
+
+**Note:** The**individual name** field, as part of the **Metadata point of contact** section in a metadata record, is not mandatory, and 
+for a record to meet the requirements of the Gemini 2.2 standard this field should be left empty. The **Metadata point of contact** 
+section should only to refer to the organisation responsible for the creation and maintenance of the metadata, and the contact position within the
+organisation. 
 
 Metadata Elements
 =================
@@ -1924,3 +1941,4 @@ The  **Responsible party role**  element in section relating to  **Responsible O
 .. |Template_For_Metadata_Record| image:: media/Template_for_metadata_record.png
 .. |Link_To_Online_Resource| image:: media/Link_to_online_resource.png
 .. |Duplicate_Directory_Entry| image:: media/Duplicate_directory_entry.png
+
