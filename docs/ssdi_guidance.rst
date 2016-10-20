@@ -359,7 +359,7 @@ down the document order. Note that Gemini 2.2 is not concerned with the
 order that sections appear in.
 
 Content, such as keywords, can be added either manually by clicking **Add new keywords** or from pre-existing thesauri by clicking
-on the the icon or **select them in a thesuarus**. Thesauri are available for INSPIRE themes (GEMET) or Regions.
+on the icon or by **selecting them in a thesuarus**. Thesauri are available for INSPIRE themes (GEMET) or Regions.
 
 
 
@@ -379,7 +379,10 @@ is available in the **Default** view, additional functionality can be found in t
 Uploading metadata from an existing XML file
 --------------------------------------------
 
-To upload a record (such as an xml exported from ArcCatalog), click on
+Please read the guidance below, and review `Annex3 <#annex-3-required-xml-for-records-to-be-correctly-identified-as-gemini-2.2>`__. before importing metadata into the catalogue.
+
+
+To upload a record (such as an xml exported from ArcCatalog, click on
 **Contribute** in the header menu and select **Import new records**.
 This page gives you the option to upload from your computer, copy/paste or import a record from the server.
 The page also gives you the option to select the file type, type of record,
@@ -406,11 +409,15 @@ unique within the SSDI, `data.gov.uk <http://data.gov.uk/>`__ and other
 metadata catalogues like MEDIN.
 
 Users should also consider an appropriate XSL Transformation.
-For an xml that is already in Gemini 2.2 format, leave
-**Apply XSLT conversion** option blank. To upload a non-Gemini 2.2 xml, select
-from the  **Apply XSLT conversion** drop down box the appropriate converter. For
+For an xml that is already in Gemini 2.2 format, review the guidance in `Annex3 <#annex-3-required-xml-for-records-to-be-correctly-identified-as-gemini-2.2>`__. If the record contains these elements, leave
+**Apply XSLT conversion** option blank. 
+
+If the metadata does not contain these elements but is otherwise in Gemini 2.2 format, then select the **custom-update-schema** conversion in the  **Apply XSLT conversion** drop down box. 
+
+To upload a non-Gemini 2.2 xml, select the appropriate conversion
+from the  **Apply XSLT conversion** drop down box. For
 example, a metadata record created in ESRI ArcCatalog needs to be converted using
-the **ESRI_ISO_to_GEMINI_22** CSLT conversion.
+the **ESRI_ISO_to_GEMINI_22** XSLT conversion.
 
 Users should **NOT** check the **Validate** box during upload - if
 there are errors in the validation process, the metadata will not be
@@ -524,50 +531,56 @@ metadata record
 Users should note that the metadata record may continue to appear on the
 screen until you move to another page (i.e. Home).
 
-Associated resources
+Associated Resources
 ---------------------
 
-An associated or related resource is used to link a **dataset's** metadata record 
+The Associated Resource wizard can be used in place of the standard editing interface to create both **Coupled Resources** and **Online Resource Locators**.
+
+A **Coupled Resource** is used to link a **dataset's** metadata record 
 to both the **service** directly and the corresponding **metadata record for the service**. 
 Linking a **dataset** metadata record to a **service** metadata record automatically generates 
-a related resource within the **service** metadata record. A **service** metadata record will 
-therefore have one related resource per Dataset or layer in the **service**. 
+a Coupled Resource within the **service** metadata record. A **service** metadata record will 
+therefore have one Coupled Resource per Dataset or layer in the **service**. 
 
-Users should firstly link a Dataset metadata record to the related service metadata record 
-by clicking firstly on the **Associated resources** menu (at the right hand side of the page, 
-or at the bottom of the page if you are accessing the SSDI on a small screen) and selecting the
+Users can create the **Coupled Resources** relationship either from the dataset, or from the service, using the **Associated resources** wizard (at the right hand side of the page, 
+or at the bottom of the page if you are accessing the SSDI on a small screen). For a dataset, select the
 **Link to a service** option. Use the search function to look up the metadata record for 
-every service that the Dataset is included in. Once added these should appear under the 
+every service that the Dataset is included in. Once added, these should appear under the 
 **Service** heading at the right hand side.
 
  |image20|
 
-**Figure 4.7.1:** Creating the coupled resource relationship
+**Figure 4.7.1:** Creating the Coupled Resource relationship
  
-Secondly users should link the same dataset metadata record to the online resource.
-**Associated resources** menu select **Add link**. This will open a new screen. Users
+Secondly, users should create an Online Resource Locator for the dataset. From the
+**Associated resources** wizard select **Add link**. This will open a new screen. Users
 should firstly select the correct Protocol for their service, then enter in the url of 
-their service. For WMS, select the appropriate layer for the service from the **Resource name** field,
-which should automatically populate with a list of layers. For a non-WMS service the SSDI won't automatically 
-take the name of the service, so give it a suitable resource name. **Note:** Having pasted in the url for the WMS,
-and having generated a list of resources, make sure that the selected resource is highlighted **green**. Finally click 
-**Add Link**, and check that the online resource has been added. This step should be repeated for every online 
-resource affiliated with the dataset.
+their service. For WMS, if the URL is correctly entered a list of layers will be generated, with the format WMS Title(WMS Name). Select the correct layer, so that it is highlighted in green. This will populate the **Resource Name** and **Description** elements for the Online Resource Locator with the WMS Layer Name and Title respectively.
+
+ **Note:** Having pasted in the url for the WMS, and having generated a list of resources, please  ensure that the selected resource is highlighted **green**. 
+
+Finally, click **Add Link**, and check that the online resource has been added. This step should be repeated for every online resource affiliated with the dataset.
+
+To edit the link, or to add the optional **Function** element, use the standard editing interface and go to the **Distribution/Online resource** section.
+
  
 |Link_To_Online_Resource|
  
 **Figure 4.7.2:** Linking an online resource to the current metadata
  
-Note that the previous SSDI website did not require the WMS associated resources to point to the correct layer name from the service. However the present site requires this for the layer to be searched for and added into the **Map** view. If you can't see the layer name in the **Map** view, then you should re-add the WMS as an associated resource in the dataset metadata record and choose the correct layer in the **Resource name** field.
+Note that the previous SSDI website did not require the WMS Online Resource Locator to point to the correct layer name from the service. However the present site requires this for the layer to be searched for and added into the **Map** view. If you can't see the layer name in the **Map** view, then you should re-add the WMS using the Associated Resource wizard in the dataset metadata record and ensure the Resource Name and Description fields are populated as described above.
 
-You can check the relationship between shared resources by viewing the metadata record of the service related
+Note also that for some dataset metadata records when using the **Add to map** function the layer name
+may be blank. To resolve this you must delete and re-add the url to the WMS using the steps outlined above,
+and select the correct resource name, or edit the Resource in the standard editing interface.
+
+You can check the relationship between Coupled Resources by viewing the metadata record of the service related
 through the steps above. Within the front page of the **Service** metadata record you should see the related
 Dataset listed under **Associated resources**. The process above *does* work in reverse; individual Datasets
 can be registered as related resources within the metadata record of a service.
 
-Note also that for some dataset metadata records when using the **Add to map** function the layer name
-may be blank. To resolve this you must delete and re-add the url to the WMS using the steps outlined above,
-and select the correct resource name.
+ **Note:** The Associated Resources wizard cannot currently be used to add GetCapabilities Online Resource Locators for Services. This process must be done using the standard editing interface. For services, the **Add to Map** button will be present but will not work. To add a service to the Map, go to the Map page and add the GetCapabilities URL in the **Add Layers** dialogue, from where you will be able to pick layers to display on the map. 
+
 
 Managing directories
 --------------------
@@ -738,7 +751,7 @@ OnLine resource (Resource locator sub element)
 
 **Dataset obligation:** Conditional (many)
 
-**Service obligation:** See *Coupled resource*
+**Service obligation:** Conditional (many)
 
 **Definition:** Location (address) for on-line access using a Uniform Resource Locator (URL) address scheme. The resource locator has to be an http URL.  
 
@@ -767,7 +780,7 @@ Coupled resource
 
 **Guidance:** Applicable to service metadata only. This must be completed for every dataset included in the service (i.e. portrayed as a view service layer). 
 
-*Coupled resource* sections can be added by clicking on the ‘+’ in the *Associated Resources* pane. Further instructions can be found in the 
+*Coupled resource* sections can be added by clicking on the ‘+’ in the *Associated Resources* wizard. Further instructions can be found in the 
 `Associated Resources section <#associated-resources>`__.
 
 Spatial reference system
@@ -1916,6 +1929,38 @@ Responsible organisation
 ``i The codeListValue attribute does not have a value`` 
 
 The  **Responsible party role**  element in section relating to  **Responsible Organisation**  or  **Metadata contact**  is missing. Select the relevant role for the drop-down-list.  
+
+Annex 3: Required XML for records to be correctly identified as Gemini 2.2
+==========================================================================
+
+For records imported into the SSDI catalogue rather than created within the catalogue from the templates, including the following XML will ensure that your record is correctly identified on import:
+
+Root Element
+------------
+
+The root element should include a link to the gml 3.2 namespace and should not include xsi:schemalocation as this is handled internally::
+
+   <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd"
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:gts="http://www.isotc211.org/2005/gts"
+                 xmlns:gco="http://www.isotc211.org/2005/gco"
+                 xmlns:geonet="http://www.fao.org/geonetwork"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+Metadata Standard Name and Version
+----------------------------------
+
+The correct metadata standard name and version should be included. Note these are case-sensitive::
+
+   <gmd:metadataStandardName>
+      <gco:CharacterString>UK GEMINI</gco:CharacterString>
+   </gmd:metadataStandardName>
+   <gmd:metadataStandardVersion>
+      <gco:CharacterString>2.2</gco:CharacterString>
+   </gmd:metadataStandardVersion>
+
+
 
 .. |image0| image:: media/image1.png
 .. |image1| image:: media/image2.png
