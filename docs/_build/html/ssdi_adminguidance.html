@@ -563,6 +563,15 @@
 <p>You will need a GitHub account to edit files locally.</p>
 </div>
 </div>
+<div class="section" id="advanced-troubleshooting">
+<h1>Advanced Troubleshooting<a class="headerlink" href="#advanced-troubleshooting" title="Permalink to this headline">¶</a></h1>
+<p>Changes to stylesheets and layout configuration occasionally require the GeoNetwork cache to be rebuilt. This may result in partially displayed or completely blank pages. If the &#8220;Clear Formatter Cache&#8221; tool in the Admin Console does not resolve the issue, or is not reachable, then running the following two services will resolve the problem. You will need to reload the problematic page once you have run these two services.</p>
+<ul class="simple">
+<li>Reload Model: <a class="reference external" href="https://www.spatialdata.gov.scot/geonetwork/static/wroAPI/reloadModel">https://www.spatialdata.gov.scot/geonetwork/static/wroAPI/reloadModel</a></li>
+<li>Reload Cache: <a class="reference external" href="https://www.spatialdata.gov.scot/geonetwork/static/wroAPI/reloadCache">https://www.spatialdata.gov.scot/geonetwork/static/wroAPI/reloadCache</a></li>
+</ul>
+<p>Note that the services don&#8217;t return a result, just a blank page. Note also that the pages will take a long time to load after these services have been run, as the cache is being completely rebuilt.</p>
+</div>
 
 
           </div>
@@ -636,6 +645,7 @@
 <li><a class="reference internal" href="#editing-locally">Editing locally</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#advanced-troubleshooting">Advanced Troubleshooting</a></li>
 </ul>
 
   <h4>Previous topic</h4>
