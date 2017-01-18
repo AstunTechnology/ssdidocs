@@ -1933,7 +1933,7 @@ The  **Responsible party role**  element in section relating to  **Responsible O
 Annex 3: Required XML for records to be correctly identified as Gemini 2.2
 ==========================================================================
 
-For records imported into the SSDI catalogue rather than created within the catalogue from the templates, including the following XML will ensure that your record is correctly identified on import:
+For records imported into the SSDI catalogue rather than created within the catalogue from the templates, including the following XML will ensure that your record is correctly identified as Gemini 2.2 on import:
 
 Root Element
 ------------
@@ -1941,12 +1941,16 @@ Root Element
 The root element should include a link to the gml 3.2 namespace and should not include xsi:schemalocation as this is handled internally::
 
    <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd"
-                 xmlns:gml="http://www.opengis.net/gml/3.2"
-                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:srv="http://www.isotc211.org/2005/srv"
                  xmlns:gts="http://www.isotc211.org/2005/gts"
                  xmlns:gco="http://www.isotc211.org/2005/gco"
-                 xmlns:geonet="http://www.fao.org/geonetwork"
-                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+                 xmlns:gml="http://www.opengis.net/gml/3.2"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 xmlns:gmx="http://www.isotc211.org/2005/gmx"
+                 xmlns:gsr="http://www.isotc211.org/2005/gsr"
+                 xmlns:gss="http://www.isotc211.org/2005/gss"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:geonet="http://www.fao.org/geonetwork">
 
 Metadata Standard Name and Version
 ----------------------------------
