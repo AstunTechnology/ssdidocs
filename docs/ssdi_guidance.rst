@@ -1196,8 +1196,8 @@ Recommended best practice is to select a value from a controlled vocabulary, suc
 
     *• ESRI Arc/View Shapefile, Version 1.0*
 
-Legal constraints
------------------
+Limitations on public access
+----------------------------
 
 **Equivalent INSPIRE element:** Limitations on public access
 
@@ -1207,17 +1207,35 @@ Legal constraints
 
 **Service obligation:** Mandatory (many)
 
-**Definition:** Restrictions on access to the data that are imposed for security and other reasons (i.e. who can see the data).  Sub-elements are *Use constraints*, *Access constraints*, and *Limitations on public access*.
+**Definition:** Restrictions imposed on access to the data resource for security and other reasons (i.e. who can see the data).  Sub-elements are *Access constraints* and *Other constraints*.
 
-**Guidance:** Provide information on any constraints to using the dataset or series, e.g. licensing, fees, usage restrictions, or refer to a URL where this information is available, e.g. a licence document. If no conditions apply, enter “no conditions apply”.
+**Guidance:** This element shall **only** include information regarding access to the resource (not the use of the data, which is documented under use constraints). When Member States limit public access to spatial data sets and spatial data services under Article 13 of Directive 2007/2/EC, this metadata element shall provide information on the limitations and the reasons for them.  If there are no limitations on public access, this metadata element shall indicate that fact.
+
+Article 13 of the Directive contains a list of cases where limitations to public access can be set. Concerning providing the metadata for the datasets and services through Discovery services, the limitations on public access can be set on the base of reasons of international relations, public security or national defence.  Concerning providing View, Download or Transformation Services, or e-commerce services, limitations on public access can be set on the base of the following reasons:
+
+*(a) the confidentiality of the proceedings of public authorities, where such confidentiality is provided for by law;*
+
+*(b) international relations, public security or national defence;*
+
+*(c) the course of justice, the ability of any person to receive a fair trial or the ability of a public authority to conduct an enquiry of a criminal or disciplinary nature;*
+
+*(d) the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy;*
+
+*(e) intellectual property rights;*
+
+*(f) the confidentiality of personal data and/or files relating to a natural person where that person has not consented to the disclosure of the information to the public, where such confidentiality is provided for by national or Community law;*
+
+*(g) the interests or protection of any person who supplied the information requested on a voluntary basis without being under, or capable of being put under, a legal obligation to do so, unless that person has consented to the release of the information concerned;*
+
+*(h) the protection of the environment to which such information relates, such as the location of rare species.*
+
+This element has two sub-elements, *Access constraints* and *Other constraints*. For INSPIRE purposes the *Access constraints* dropdown box must be set to *other restrictions*. The *Other constraints* free text box must then be populated with an appropriate label from the `INSPIRE code list for Limitations on public access <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/>`__. If there are no restrictions on access, the text box should be populated with *no limitations on public access*.
 
 **Example:** 
-
-    *•	The following attribution statement must be used to acknowledge the source of the information: Copyright Scottish Government, contains Ordnance Survey data © Crown copyright and database right (insert year)*
-
-    *•	Available under the Open Government Licence* `(http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)  <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/>`__
-
-    *•	OSMA Inspire End User licence.*
+    
+    *• no limitations on public access*
+    
+    *• public access limited according to Article 13(1)(a) of the INSPIRE Directive*
 
 Use constraints
 ---------------
@@ -1230,14 +1248,20 @@ Use constraints
 
 **Service obligation:** Mandatory (many)
 
-**Definition:** Restrictions on data that may impact its fitness for use.
+**Definition:** Restrictions and legal restraints on using the data resource.
 
-**Guidance:** Provide any information on use constraints for the data resource that may impact its fitness for use, such as data quality, coverage, resolution, etc.
+**Guidance:** This metadata element defines the conditions for access and use of spatial data sets and services, and any corresponding fees as required by Article 5(2)(b) and Article 11(2)(f) of Directive 2007/2/EC. This element shall provide information on any licencing restrictions or fees necessary to access and use the resource, if applicable, or refer to a uniform resource locator (URL) where such information is available.
 
-**Example:** 
+Where are URL is referenced, this should be entered using the anchor type *use limitation* element. If no conditions apply, then ‘no conditions apply’ shall be used to populate the free text type *use limitation* element. It can also helpful to include any information on use constraints for the data resource that may impact its fitness for use, such as data quality, coverage, resolution, etc.
 
-    *•	This dataset was digitised at 1:50K scale and follows the textual description in the Countryside Commission for Scotland publication 'Scotland's Scenic Heritage’, published in 1978*
+**Example:**
 
+    *•	The following attribution statement must be used to acknowledge the source of the information: Copyright Scottish Government, contains Ordnance Survey data © Crown copyright and database right (insert year)*
+
+    *•	Open Government Licence* `(http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)  <http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/>`__
+
+    *•	This dataset was digitised at 1:50K scale and coverage is not complete for Scotland.*
+    
 Responsible organisation
 ------------------------
 
