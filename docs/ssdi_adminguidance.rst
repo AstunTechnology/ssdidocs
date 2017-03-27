@@ -25,7 +25,7 @@ Searches
 Advanced Search
 ---------------
 
-The Advanced Search capabality in the catalogue is accessed by clicking the blue magnifying glass icon on the home page. 
+The Advanced Search capability in the catalogue is accessed by clicking the blue magnifying glass icon on the home page. 
 
 |image-1|
 
