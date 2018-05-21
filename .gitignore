@@ -2,3 +2,5 @@ lib
 *.swp
 _build
 local
+bin
+include
