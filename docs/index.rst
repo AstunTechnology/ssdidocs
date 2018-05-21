@@ -8,6 +8,7 @@ Welcome to the Scottish SDI Metadata Portal's documentation!
 
 * :ref:`user-docs`
 * :ref:`admin-docs`
+* :ref:`privacy`
 
 
 .. _user-docs:
@@ -24,4 +25,9 @@ Welcome to the Scottish SDI Metadata Portal's documentation!
 
    ssdi_adminguidance
 
+.. _privacy:
+.. toctree::
+   :maxdepth: 2
+   :caption: Privacy Statement (draft)
 
+   privacy
