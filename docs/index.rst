@@ -28,6 +28,6 @@ Welcome to the Scottish SDI Metadata Portal's documentation!
 .. _privacy:
 .. toctree::
    :maxdepth: 2
-   :caption: Privacy Statement (draft)
+   :caption: Privacy Statement
 
    privacy
