@@ -1,0 +1,129 @@
+Registered Users
+================
+
+This section will guide registered users on how to sign in and manage their accounts.
+
+Becoming a registered user
+--------------------------
+To add or edit metadata on the SSDI, your organisation must be registered on the site. The SSDI does not currently allow self registration, and therefore 
+interested parties should contact (`SSDI.Metadata@gov.scot <mailto:SSDI.Metadata@gov.scot>`__). Currently, user accounts are created for organisations 
+as a whole rather than individuals.
+
+Registered user obligations
+---------------------------
+
+When an organisation becomes a registered user and submits metadata to the SSDI, they commit to the following **operational and service requirements**:
+
+-  Maintaining the discovery metadata added to the SSDI by the organisation:
+
+   -  by **assuring its quality** against appropriate standards
+
+   -  by reviewing it, **updating it regularly**, and ensuring it is updated when new versions of data, data series or on-line services are published.
+
+   -  **maintaining metadata file identifiers** (GUID) throughout the life of the metadata resource (new GUIDs should only be created when new resources are published, to prevent duplicate metadata resources).
+
+-  Adopting a process of **continuous improvement** for the resources published by the organisation, based on the feedback received.
+
+-  **Compliance with the INSPIRE** Metadata Regulation operational requirements, as set out in this guide.
+
+-  To publish INSPIRE compliant **view services** for a given dataset or data series and reference them appropriately in the metadata, as set out in this guide.
+
+-  Legal compliance with the INSPIRE Directive when publishing data that comes under an **INSPIRE Theme** and contains features listed in the INSPIRE Data Specifications.
+
+-  Compliance with the INSPIRE Network Services Regulation when publishing INSPIRE Network Services.
+
+Signing in
+----------
+
+To sign in to an existing account:
+
+	**1|** Click the |button_signin| in the header menu.
+
+	**2|** Enter your organisations' account user name and password.
+	
+	**3|** Click the |button_signin_confirm| button.
+	
+	*Note: user names and passwords are case sensitive.*
+
+|userdoc_fig_4_3_1_SignIn|
+
+**Figure 4.3.1:** Signing in to a registered account	
+
+To recover a forgotten password:
+
+	**1|** Click the |button_signin_forgotten| on the right-hand side of the sign in page.
+	
+	**2|** Enter the account user name.
+	
+	**3|** Click the |button_signin_sendlink| button. This will send an email to the address registered to that user account providing a link to reset the password.
+
+	*Note: user names are case sensitive. The password recovery function requires that a valid email address (accessible by the user) is registered 
+	with the user account in question. If you have not registered an email address or do not have access to the relevant mailbox, you will not be 
+	able to receive password reset emails from the SSDI.*
+
+|userdoc_fig_4_3_2_ResetPassword|
+
+**Figure 4.3.2:** Resetting a forgotten password
+
+User account management
+-----------------------
+
+Once logged in, users can manage their account details by clicking on their profile name displayed in the header. This will take the user to the 
+account admin page. From this page users can enter contact details and reset passwords.
+
+To reset an account password:
+
+	**1|** Click on the user profile name in the header.
+	
+	**2|** Click the |button_account_resetpass| button.
+	
+	**3|** Enter a new password in the Password text box. Repeat the password in the box below.
+	
+	**4|** Click the |button_account_resetpassconfirm| button to confirm the change.
+	
+	*Note: passwords are case sensitive and must be at least 8 characters long.*
+	
+When amending details, users should click the |button_account_save| button to save changes.
+
+|userdoc_fig_4_4_1_ManageAccount|
+
+**Figure 4.4.1:** The account management page
+
+Users and groups
+----------------
+
+The SSDI employs the concept of users, groups and profiles. *Users* are those accounts registered on the portal, and can be part of one or more 
+*groups* (which are collections of users corresponding to logical units, such as teams within an organisation). The *group* and *profile* (or role)
+of a user defines what tasks they can perform on the SSDI or on specific metadata records.
+
+The rights associated with the various profiles are as follows:
+
+:1) Administrator Profile:
+	The Administrator has special privileges that give access to all available functions. These include:
+		- Full rights for creating new groups and new users
+		- Rights to change users/groups profiles
+		- Full rights for creating/editing/deleting new/old metadata
+		- Perform system administration and configuration tasks.
+:2) User Administrator Profile:
+	The User Administrator is the administrator of his/her own group with the following privileges:
+		- Full rights on creating new users within the own group
+		- Rights to change users profiles within the own group
+		- Full rights on creating/editing/ deleting new/old data within the own group
+:3) Content Reviewer Profile:
+	The content reviewer is the only person allowed to give final clearance on the metadata publication on the Intranet and/or on the Internet:
+		- Rights on reviewing metadata content within the own group and authorising its publication
+:4) Editor Profile:
+	The editor works on metadata with following privileges:
+		- Full rights on creating/editing/ deleting new/old data within the own group
+:5) Registered User Profile:
+	The Registered User has more access privileges than non-authenticated Guest users:
+		- Right to download protected data
+
+*Note: profiles (or roles) are hierarchicaland based on inheritance. This means that a user with an Editor profile can create and modify new 
+metadata records, but can also use all functions a Registered user can use.*
+
+Normally, organisations registered on the SSDI are given the role of *Content Reviewer* for the purpose of managing their metadata records.
+
+.. |userdoc_fig_4_3_1_SignIn| image:: media/userdoc_fig_4_3_1_SignIn.png
+.. |userdoc_fig_4_3_2_ResetPassword| image:: media/userdoc_fig_4_3_2_ResetPassword.png
+.. |userdoc_fig_4_4_1_ManageAccount| image:: media/userdoc_fig_4_4_1_ManageAccount.png

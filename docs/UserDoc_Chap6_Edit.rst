@@ -1,0 +1,299 @@
+Editing Metadata
+================
+
+This section will guide the user through editing a metadata record on the SSDI, compliant to the `UK Gemini standard <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini>`__. 
+In most cases, the basic functionality provided by the *default view* of an editing sessions will be sufficent for the users need, however, in 
+some instances additional functionality from the *advanced view* may be required. For detailed information on completing each of the individual 
+metadata elements, refer to the `Metadata Elements <#metadata-elements>`__ section.
+
+Starting an editing session
+---------------------------
+
+Users will be able to edit any records they have contributed to the SSDI, or if they have appropriate privileges to edit records submitted by 
+others (e.g. administrators).
+
+To begin an editing session:
+
+	**1|** `Sign in <#signing-in>`__ using your account credentials.
+
+	**2|** Either search for a particular record direct from the home page or click |button_contribute| and search or scroll for the record.
+
+	*Note: users can check the ‘only my records’ box at the top left of the contribute page to limit the record list to only those belonging to that user.*
+	
+	**3|** Click the pencil icon (|button_contribute_pencil|) visible in the search results list, or next to the record name on the contribute board. This will enter the user into an editing session.
+	
+	*Note: the pencil icon is also available in the top right of the page when viewing the record.*
+
+Editing basics
+--------------
+
+Once in an editing session, the user is presented with the simple *default* editing view. In the header menu, buttons are available for modifying 
+the categories, group that the record belongs to, validation, cancelling the edit session, and saving the record. On the right side of the page, 
+the `Associated resources <#associated-resources>`__ panel is visible, showing all related online resources and service records related to the 
+record being edited.
+
+The form displays the metadata elements grouped into relevant sections. The user can navigate through the form using the *table of contents* 
+visible in the lower right of the screen. Clicking an element section will take the user to the relevant section of the form. The user can 
+collapse all elements of the form by clicking the |button_edit_collapse| button visible just below the header. Clicking on a section title will 
+re-expand that section. The |button_edit_arrowup| and |button_edit_arrowdown| buttons allow the user to place the section further up or down the document order. 
+Note that UK Gemini is only concerned with whether the elements (or sections) are present and correct, not with the order they are displayed. For 
+detailed guidance on filling out each element, users should consult the `Metadata Elements <#metadata-elements>`__ section.
+
+Mandatory fields (e.g. `Abstract <#abstract>`__) are highlighted with a red asterisk. Note that for sub-elements, this only indicates that the 
+sub-element is mandatory within its context. For example, the `vertical extent <#extent-vertical-extent>`__ is an optional element, but if the 
+record requires one, then the minimum and maximum values are mandatory.
+
+Where a |button_edit_plus| button is displayed, the user can click this to add another occurance of an element or section. For example, a record 
+could have more than one `alternative title <#alternative-title>`__. When the user hovers over a section and a |button_edit_delete| appears, 
+clicking the cross will delete that element or section.
+
+|userdoc_fig_6_2_1_DefaultEdit|
+
+**Figure 6.2.1:** The default view of the editing session interface
+
+Changing the editing view
+-------------------------
+
+Sometimes it will be necessary for the user to change the view to enable additional functionality. For example, to add a new occurance of an element 
+when the |button_edit_plus| is not visible in the default view.
+
+To change the view of editing session:
+
+	**1|** Click on |button_edit_view| on the top right of the editing board.
+	
+	**2|** From the dropdown menu, choose either advanced or XML. Advanced view is a more detailed version of the default view, where as XML view allows the user to edit the raw XML.
+	
+	*Note: users can also enable tool tips from the view menu.*
+	
+|userdoc_fig_6_3_1_AdvancedEdit| |userdoc_fig_6_3_1_XMLEdit|
+
+**Figure 6.3.1:** Advanced editing and XML view
+
+Assigning a licence category
+----------------------------
+
+Records on the SSDI can be classified based on their licence type (i.e. Open Government, Non-commercial Government, INSPIRE or other) using the 
+assign category function. This classification can be done either in an editing session, via the contribute board, or when a record is imported 
+into the SSDI.
+
+To assign or change the licence category in an editing session:
+
+	**1|** Click on |button_edit_category| in the header.
+	
+	**2|** From the dropdown menu, check the appropriate licence type (Open Government, Non-commercial, INSPIRE or other).
+	
+	**3|** Click anywhere to dismiss the menu.
+
+|userdoc_fig_6_4_1_LicenceCategory|
+
+**Figure 6.4.1:** Assigning a licence category in an editing session
+
+To assign or change the licence category via the contribute board:
+
+	**1|** Click on |button_contribute| in the header.
+	
+	**2|** In the record list, select the record(s) for which the licence category will assigned or amended.
+	
+	*Note: the licence category can be updated for multiple records at a time.*
+	
+	**3|** Click the dropdown labelled ‘selected’ at the top left of the record list and choose ‘Update categories’ from the list. This will display the licence categories dialog.
+	
+	**2|** From the menu, check the appropriate licence type (Open Government, Non-commercial, INSPIRE or other).
+	
+	**3|** Click |button_contribute_replace| to apply the changes.
+
+The licence category can also be assigned using the appropriate option when importing a record to the SSDI. For those organisations which harvest 
+their metadata records into the SSDI, a default licence type can be selected for all records, though any records that differ from the default setting
+would need to be amended post harvest.
+
+Associated resources
+--------------------
+
+The Associated Resources panel allows users to add online resources to their metadata and create relationships between dataset and service records 
+(i.e. coupled resources). When in an editing session, the associated resources panel can be found at the top right of the page.
+
+To add an online resource to *dataset* metadata where a corresponding *service* record exists:
+
+	**1|** Click on the |button_edit_addassocresource| button at the top of the Associated Resources panel.
+	
+	**2|** From the dropdown menu select ‘Link ot a service’. This will display the Link resources dialog.
+	
+	**3|** Search using the free text box and click on the service record in the results list to select it. This will display dataset layers available in the service.
+
+	**4|** Click on the layer in the service that corresponds to the dataset. It will be highlighted in green when selected.
+	
+	**5|** Click on the |button_edit_linkservice| to link the service to the dataset metadata. Once complete the service record name will be visible in the associated resources panel under **Service**. An online resource for the layer will also be added to the dataset record, visible in the online resource section and also the associated resources panel under **Online resources**.
+	
+	**6|** Navigate to the online resource section of the editing form and ensure that the URL, protocol and layer name are correctly identified. For dataset records the URL for for a WMS or WFS should **not** include the GetCapabilities request.
+	
+	*Note: For web services (i.e. WMS and WFS) to correctly display in the map, you must ensure that the URL, protocol and layer name are correctly entered for the online resource (step 6 above). While these elements are not required for Gemini compliance, the are needed to enable previewing on the map.*
+
+|userdoc_fig_6_5_1_AssocDatasetService|
+
+**Figure 6.5.1:** Adding an online resource to a dataset by associating with a service record
+
+To add an online resource to *dataset* metadata where **no** corresponding *service* record exists:
+ 
+	**1|** Click on the |button_edit_addassocresource| button at the top of the Associated Resources panel.
+	
+	**2|** From the dropdown menu, select the first option, ‘Add document’. This will display the Link resources dialog.
+	
+	**3|** Ensure the ‘Add link’ radio button is clicked.
+	
+	**4|** Select the appropriate protocol for the online resource (e.g. for a WMS, select OGC-WMS Web Map Service, for a website choose Web address(URL))
+	
+	**5|** Enter the URL for the resource. If the resource is a web service (e.g. WMS or WFS), layers available in the service should display.
+	
+	*Note: for web services, the URL should not include the GetCapabilities request.*
+	
+	**6|** If the resource is a web service (e.g. WMS or WFS), click the layer which is represented by the dataset record. This should automatically fill the **resource name** and **description** boxes. If the resource is not a web service, enter appropriate text in the **resource name** and **description** boxes.
+	
+	**7|** Click the |button_edit_addlink|.
+	
+	*Note: although only the URL is indicated as being mandatory, users must include the protocol and resource name to ensure the dataset can be previewed in the interactive map. The resource name must match that which is defined in the web service configuration. Refer to the GetCapabilities request of the service to view how the layer name is defined.*
+
+|userdoc_fig_6_5_2_OnlineResourceDataset|
+
+**Figure 6.5.2:** Adding an online resource to a dataset record
+
+To add an online resource (e.g. WMS or WFS) to a *service* metadata record:
+ 
+	**1|** Click on the |button_edit_addassocresource| at the top of the Associated Resources panel.
+	
+	**2|** From the dropdown menu, select the first option, ‘Add document’. This will display the Link resources dialog.
+	
+	**3|** Ensure the ‘Add link’ radio button is clicked.
+	
+	**4|** Select the appropriate protocol for the online resource (e.g. for a WMS, select OGC-WMS Capabilities service)
+	
+	**5|** Enter the URL for the service.
+	
+	*Note: A service may contain multiple layers and these will be displayed when the service URL is entered. As this is a service record, it is not necessary to select a single layer to link to (this is only required for dataset records).
+	
+	**6|** Enter an appropriate name for the service in the **resource name** and **description** boxes.
+	
+	**7|** Click the |button_edit_addlink|.
+	
+	*Note: although only the URL is indicated as being mandatory, users must include the protocol and resource name to ensure the service layers can be previewed in the interactive map.*
+
+|userdoc_fig_6_5_3_OnlineResourceService|
+
+**Figure 6.5.3:** Adding an online resource to a service record
+
+Validating metadata
+-------------------
+
+Once all elements for a new record have been completed or changes have been made to an existing record, it should be validated against the UK Gemini
+standard rules.
+
+To validate a metadata record:
+
+	**1|** In an editing session, click on the |button_edit_validate| button in the header or the refresh button (|button_edit_refresh|) in the validation panel on the right-hand side of the page.
+	
+	**2|** Errors will be highlighted in the validation panel. Click the red thumbs-down icon (|button_edit_thumbsdown|)to see details of the error(s) organised by schematron.
+	
+	**3|** Correct errors as necessary and repeat steps 1 and 2 until no errors are returned by the validator.
+	
+	*Note: users can save an invalid record and return at a later date to correct.*
+
+|userdoc_fig_6_6_1_ValidationPanel|
+
+**Figure 6.6.1:** Validation panel
+
+The validation check should be repeated once amendments have been made until no errors are detected. Error descriptions given by the validator are
+often complex and difficult for the lay user to understand. Consult the `Metadata Elements <#metadata-elements>`__ section for guidance on how to
+complete specific elements.
+
+Saving and exiting an editing session
+-------------------------------------
+
+As the user works through the editing form, it is recommended that progress be saved periodically as the session will time-out after a period of 
+inactivity.
+
+To save a metadata record:
+
+	**1|** Click |button_edit_save| to save the record and continue editing, or click |button_edit_saveclose| to save the record and exit the editing session.
+	
+	*OR*
+	
+	**1|** Click |button_edit_cancel| to exit the editing session without saving the record.
+	
+Users should note that a saved record will be stored on the server only (not locally). The server is periodically backed up, though it is 
+recommended that users store master copies of their metadata records within their own systems. To export copies of metadata created on the SSDI, 
+consult the `exporting metadata <#exporting-metadata-records>`__ section.
+
+Publishing metadata
+-------------------
+
+Once a metadata record has been successfully `validated <#validating-metadata>`__, it can then be published, making it publicly viewable on the 
+SSDI and available for harvesting by other data portals, such as `data.gov.uk <http://data.gov.uk/>`__.
+
+To publish a metadata record:
+
+	**1|** Click on |button_contribute| in the header and locate the metadata record in the list below.
+	
+	**2|** Click on the |button_contribute_locked| next to the record name to access the Privileges dialog.
+	
+	**3|** To make publicly viewable, tick the ‘Set all privileges’ box next to the row marked ‘All’ in the group column.
+	
+	**4|** Click on |button_contribute_replace| to update the privileges for the record.
+
+Once the record is published, the padlock icon displayed on the contribute menu should appear unlocked (|button_contribute_unlocked|).
+
+|userdoc_fig_6_8_1_PrivilegesPanel|
+
+**Figure 6.8.1:** Publishing via the contribute page
+
+Alternatively, there is a shortcut method to publish a record directly from the record's page on the SSDI:
+
+	**1|** Click on the |button_view_managerecord| button at the top right of the record view.
+	
+	**2|** From the dropdown menu, click on |button_view_publish| to publish the record.
+	
+	*Note: the privileges dialog can also be accessed from this dropdown menu.*
+
+|userdoc_fig_6_8_2_PrivilegesRecordView|
+
+**Figure 6.8.2:** Publishing via record view
+
+Batch editing
+-------------
+
+Content for this section is under development.
+
+Deleting metadata
+-----------------
+
+Users with the appropriate privileges will be able to edit or delete records from the SSDI.
+
+To delete a metadata record:
+
+	**1|** Click on |button_contribute| in the header and locate the metadata record in the list below.
+	
+	**2|** Click on the |button_contribute_delete| in the row for the record.
+	
+	**3|** A conformation prompt will be displayed. Click ‘OK’ to confirm the delete.
+
+	*Note: the record may still appear in the list until the page is refreshed.*
+	
+|userdoc_fig_6_10_1_DeleteRecordConfirm|
+
+**Figure 6.10.1:** Confirmation requested to delete a metadata record
+
+Alternatively, the user can delete a record directly from the record's page on the SSDI by clicking the |button_view_delete| button.
+
+Users should note that when deleting a record that had previously been published, that record will not be deleted from other portals which may have 
+harvested the record, such as `data.gov.uk <http://data.gov.uk/>`__. Users should contact `SSDI.Metadata@gov.scot <mailto:SSDI.Metadata@gov.scot>`__
+to have records deleted from `data.gov.uk <http://data.gov.uk/>`__.
+
+.. |userdoc_fig_6_2_1_DefaultEdit| image:: media/userdoc_fig_6_2_1_DefaultEdit.png
+.. |userdoc_fig_6_3_1_AdvancedEdit| image:: media/userdoc_fig_6_3_1_AdvancedEdit.png
+.. |userdoc_fig_6_3_1_XMLEdit| image:: media/userdoc_fig_6_3_1_XMLEdit.png
+.. |userdoc_fig_6_4_1_LicenceCategory| image:: media/userdoc_fig_6_4_1_LicenceCategory.png
+.. |userdoc_fig_6_5_1_AssocDatasetService| image:: media/userdoc_fig_6_5_1_AssocDatasetService.png
+.. |userdoc_fig_6_5_2_OnlineResourceDataset| image:: media/userdoc_fig_6_5_2_OnlineResourceDataset.png
+.. |userdoc_fig_6_5_3_OnlineResourceService| image:: media/userdoc_fig_6_5_3_OnlineResourceService.png
+.. |userdoc_fig_6_6_1_ValidationPanel| image:: media/userdoc_fig_6_6_1_ValidationPanel.png
+.. |userdoc_fig_6_8_1_PrivilegesPanel| image:: media/userdoc_fig_6_8_1_PrivilegesPanel.png
+.. |userdoc_fig_6_8_2_PrivilegesRecordView| image:: media/userdoc_fig_6_8_2_PrivilegesRecordView.png
+.. |userdoc_fig_6_10_1_DeleteRecordConfirm| image:: media/userdoc_fig_6_10_1_DeleteRecordConfirm.png
