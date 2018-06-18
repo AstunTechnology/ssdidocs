@@ -38,13 +38,13 @@ The SSDI and INSPIRE
 
 In order to effectively use spatial data in the delivery of national outcomes, spatial data managed by public sector bodies should be 
 collected and shared in a manner that is open, minimises duplication and encourages re-use. A common way to achieve this is through the 
-development of a Spatial Data Infrastructure (SDI) – which is essentially a framework of connected standards, spatial datasets, metadata 
+development of a Spatial Data Infrastructure (SDI) - which is essentially a framework of connected standards, spatial datasets, metadata 
 and tools for visualisation and analysis that allow for spatial data to be used efficiently.  The main components of an SDI are:
 
-• **Repositories** (to store the information)
-• **Catalogue services** (to discover the information)
-• **Web services** (to access the information)
-• **Desktop GIS/Web Apps** (to interrogate the information)
+* **Repositories** (to store the information)
+* **Catalogue services** (to discover the information)
+* **Web services** (to access the information)
+* **Desktop GIS/Web Apps** (to interrogate the information)
 
 The `EU Inspire Directive <https://inspire.ec.europa.eu/about-inspire>`__ aims to create a spatial data infrastructure for the European Union 
 to enable the sharing of and access to environmental spatial information across Europe and assist in policy-making across boundaries. This EU 
