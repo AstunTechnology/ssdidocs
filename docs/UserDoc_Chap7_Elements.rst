@@ -614,7 +614,7 @@ Topic category
 	Select from the drop down list one or more categories that most closely represent the topic of the data resource. This element is only meant to 
 	represent the general theme of the information. `Keywords <#keywords>`__ should be used to provide greater detail on the nature of the dataset.
 	While more than one topic category can be applied, only a limited number of most relevant should be chosen (e.g. topographic maps should not 
-	be classified as farming). Additional topic categories can be added by clicking the |button_plus| button below the element.
+	be classified as farming). Additional topic categories can be added by clicking the |button_edit_plus| button below the element.
 	
 	Note that the choice of topic category will dictate which categories the data resource is listed under on the **Browse by topics** section of 
 	the SSDI homepage.
@@ -637,7 +637,7 @@ Use constraints
 	data. A data resource can be openly accessible (which all INSPIRE data should be), but have restrictions on its use such as licensing, fees, or 
 	usage limitations. 
 	
-	To add an additional use constraint element, click the |button_plusdrop| button and choose either the *anchor* or *text* option. All records 
+	To add an additional use constraint element, click the |button_edit_plusdrop| button and choose either the *anchor* or *text* option. All records 
 	on the SSDI should document the licencing arrangements for the data resource using the anchor type. Where possible, this should link to a URL 
 	such as the `Open Government Licence <http://www.nationalarchives.gov.uk/doc/open-government-licence/>`__, 
 	`Non-Commercial Government Licence <http://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/>`__,
