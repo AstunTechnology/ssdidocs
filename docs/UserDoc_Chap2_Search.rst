@@ -70,17 +70,17 @@ Filter and sort options
 Search results can be limited using the options available in the left-hand panel. Each search filter shows the number of records returned next to 
 it. Filtering options available are as follows:
 
-• **Type of resource** (i.e. datasets or services)
-• **Topic category**
-• **INSPIRE Theme**
-• **Keywords**
-• **Contact for the resource**
-• **Year**
-• **Format**
-• **Representation Type** (i.e. raster or vector)
-• **Update Frequency**
-• **Scale**
-• **Resolution**
+* **Type of resource** (i.e. datasets or services)
+* **Topic category**
+* **INSPIRE Theme**
+* **Keywords**
+* **Contact for the resource**
+* **Year**
+* **Format**
+* **Representation Type** (i.e. raster or vector)
+* **Update Frequency**
+* **Scale**
+* **Resolution**
 
 At the top right of the search results list is a menu to sort results by **title**, **relevance**, **date of change**, **rating**, **popularity**,
 and **scale**. At the top left of the results list users can select all results, all results on the current page, or none to deselect. Upon
@@ -98,6 +98,9 @@ such as publish `publish <#publishing-metadata>`__ or `delete <#deleting-metadat
 .. |userdoc_fig_2_4_1_SortOptions| image:: media/userdoc_fig_2_4_1_SortOptions.png
 .. |userdoc_fig_2_4_1_SelectOptions| image:: media/userdoc_fig_2_4_1_SelectOptions.png
 .. |userdoc_fig_3_1_1_DefaultViewA| image:: media/userdoc_fig_3_1_1_DefaultViewA.png
+.. |button_contribute| image:: media/button_contribute.png
+.. |button_adminconsole| image:: media/button_adminconsole.png
+.. |button_search_icon| image:: media/button_search_icon.png
 .. |button_search| image:: media/button_search.png
 .. |button_search_advanced| image:: media/button_search_advanced.png
-.. |button_search_icon| image:: media/button_search_icon.png
+.. |button_search_reset| image:: media/button_search_reset.png

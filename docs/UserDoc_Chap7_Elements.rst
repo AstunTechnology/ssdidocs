@@ -29,7 +29,7 @@ Abstract
 	A brief narrative summary of the data resource.
 
 :Guidance:
-	Provide a clear and concise statement of the content of the dataset and its purpose (i.e. the ‘what’ and ‘why’ aspect of the dataset). General 
+	Provide a clear and concise statement of the content of the dataset and its purpose (i.e. the 'what' and 'why' aspect of the dataset). General 
 	background information should not be included, and unexplained abbreviations and jargon should be avoided. The abstract description should be 
 	understood by non-experts. 
 
@@ -125,7 +125,7 @@ Date
 	which is the date of currency of the resource. Multiple dataset reference dates can be defined but there can only be one creation date. Dates 
 	may be to any degree of precision, from century (YY) to full date and time. The extended date format (YYYY-MM-DD) should be used, where YYYY is 
 	the year, MM the month, and DD the day. If required, time (HH:MM:SS, where HH is the hour, MM the minute, and SS the second) may be added, with 
-	‘T’ separating the two parts.
+	'T' separating the two parts.
 
 |userdoc_fig_7_6_1_ReferenceDate|
 
@@ -213,7 +213,7 @@ Extent - Temporal extent
 	
 	Enter a date, or two dates defining the duration of the period, as defined by BS ISO 8601. Dates may be to any degree of precision, from year 
 	(YYYY) to full date and time. The extended date format (YYYY-MM-DD) should be used, where YYYY is the year, MM the month, and DD the day. If 
-	required, time (HH:MM:SS, where HH is the hour, MM the minute, and SS the second) may be added, with ‘T’ separating the two parts. Periods are 
+	required, time (HH:MM:SS, where HH is the hour, MM the minute, and SS the second) may be added, with 'T' separating the two parts. Periods are 
 	recorded as {fromdate/todate} (e.g. 2006-04-01/2007-03-31).  Either the from date or the to date (but not both) of the time period may be left 
 	blank to indicate uncertainty.
 
@@ -306,7 +306,7 @@ Limitations on public access
 :Obligation/Occurance: Mandatory / Multiple
 
 :Definition:
-	Restrictions imposed on **access** to the data resource for security and other reasons (i.e. who can see the data).  Sub-elements are *Access 
+	Restrictions imposed on **access** to the data resource for security and other reasons (i.e. who can see the data). Sub-elements are *Access 
 	constraints* and *Other constraints*.
 
 :Guidance:
@@ -314,28 +314,28 @@ Limitations on public access
 	such as fees or licencing restrictions, rather than the access to it. A data resource can be openly accessible (which all INSPIRE data should 
 	be), but have restrictions on its use such as licensing, fees, or usage limitations.
 	
-	For INSPIRE purposes the *Access constraints* dropdown box must be set to ‘**other restrictions**’. The *Other constraints* free text box must 
+	For INSPIRE purposes the *Access constraints* dropdown box must be set to '**other restrictions**'. The *Other constraints* free text box must 
 	then be populated with an appropriate label from the `INSPIRE code list for Limitations on public access <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/>`__.
-	If there are no restrictions on access, the text box should be populated with ‘**no limitations on public access**’.
+	If there are no restrictions on access, the text box should be populated with '**no limitations on public access**'.
 	
 	This element shall **only** include information regarding access to the resource (not the use of the data, which is documented under the `Use constraints <#use-constraints>`__ section). 
 	When Member States limit public access to spatial data sets and spatial data services under Article 13 of Directive 2007/2/EC, this metadata 
-	element shall provide information on the limitations and the reasons for them.  If there are no limitations on public access, this metadata 
+	element shall provide information on the limitations and the reasons for them. If there are no limitations on public access, this metadata 
 	element shall indicate that fact.
 
 	Article 13 of the Directive contains a list of cases where limitations on public access can be set. With regards to providing the metadata for 
 	the datasets and services through discovery services, the limitations on public access can be set on the base of reasons of international 
-	relations, public security or national defence.  Concerning providing View, Download or Transformation Services, or e-commerce services, 
+	relations, public security or national defence. Concerning providing View, Download or Transformation Services, or e-commerce services, 
 	limitations on public access can be set on the base of the following reasons:
 
-	• the confidentiality of the proceedings of public authorities, where such confidentiality is provided for by law;
-	• international relations, public security or national defence;
-	• the course of justice, the ability of any person to receive a fair trial or the ability of a public authority to conduct an enquiry of a criminal or disciplinary nature;
-	• the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy;
-	• intellectual property rights;
-	• the confidentiality of personal data and/or files relating to a natural person where that person has not consented to the disclosure of the information to the public, where such confidentiality is provided for by national or Community law;
-	• the interests or protection of any person who supplied the information requested on a voluntary basis without being under, or capable of being put under, a legal obligation to do so, unless that person has consented to the release of the information concerned;
-	• the protection of the environment to which such information relates, such as the location of rare species.
+	* the confidentiality of the proceedings of public authorities, where such confidentiality is provided for by law;
+	* international relations, public security or national defence;
+	* the course of justice, the ability of any person to receive a fair trial or the ability of a public authority to conduct an enquiry of a criminal or disciplinary nature;
+	* the confidentiality of commercial or industrial information, where such confidentiality is provided for by national or Community law to protect a legitimate economic interest, including the public interest in maintaining statistical confidentiality and tax secrecy;
+	* intellectual property rights;
+	* the confidentiality of personal data and/or files relating to a natural person where that person has not consented to the disclosure of the information to the public, where such confidentiality is provided for by national or Community law;
+	* the interests or protection of any person who supplied the information requested on a voluntary basis without being under, or capable of being put under, a legal obligation to do so, unless that person has consented to the release of the information concerned;
+	* the protection of the environment to which such information relates, such as the location of rare species.
 
 |userdoc_fig_7_14_1_LimitationsPublicAccess|
 
@@ -350,7 +350,7 @@ Lineage
 	A sub-element of *Data quality* that should provide information about the events or source data used in the creation of the data resource.   This will be useful in determining whether the data is fit for purpose.
 
 :Guidance:
-	The lineage differs from the `abstract <#abstract>`__ in that it covers ‘how’ the dataset was created as opposed the ‘what’ and ‘why’ of the 
+	The lineage differs from the `abstract <#abstract>`__ in that it covers 'how' the dataset was created as opposed the 'what' and 'why' of the 
 	dataset. A brief technical description should be given noting any sources and processes used. Any procedures or protocol associated with the 
 	update of the dataset should also be noted, along with notes on previous updates.
 
@@ -368,7 +368,7 @@ Maintenance and update frequency
 	data resource is made available to the user (for instance a data resource may be updated continuously, but released to the user only monthly).
 
 :Guidance:
-	Choose the appropriate frequency from the drop down list. If the update cycle is unknown, please choose ‘**Unknown**’ from the list.
+	Choose the appropriate frequency from the drop down list. If the update cycle is unknown, please choose '**Unknown**' from the list.
 
 |userdoc_fig_7_16_1_UpdateFrequency|
 
@@ -383,14 +383,14 @@ Metadata Contact
 	This element records the details of the organisation(s) responsible for the creation and maintenance of the metadata record. The structure of 
 	this element is the same as the `Point of contact <#point-of-contact>`__ element. There are eight sub-elements:
 	
-	• Organisation name
-	• Position name (i.e. job role or position of the responsible person or business area)
-	• Voice (i.e. telephone number)
-	• Facsimile (i.e. facsimile number)
-	• Address (i.e. postal address as defined by Royal Mail)
-	• Electronic mail address (i.e. email address)
-	• Resource locator (i.e. web address of the organisation)
-	• Role (of the responsible party with respect to the metadata)
+	* Organisation name
+	* Position name (i.e. job role or position of the responsible person or business area)
+	* Voice (i.e. telephone number)
+	* Facsimile (i.e. facsimile number)
+	* Address (i.e. postal address as defined by Royal Mail)
+	* Electronic mail address (i.e. email address)
+	* Resource locator (i.e. web address of the organisation)
+	* Role (of the responsible party with respect to the metadata)
 
 :Guidance:
 	Of the eight sub-elements, only the **organisation name**, **email address** and **role** are mandatory. All other sub-elements are optional. 
@@ -490,14 +490,14 @@ Point of contact
 	This element records the details of the organisation(s) responsible for the creation, maintenance and distribution of the data resource. The 
 	structure of this element is the same as the `Metadata contact <#metadata-contact>`__ element. There are eight sub-elements:
 	
-	• Organisation name
-	• Position name (i.e. job role or position of the responsible person)
-	• Voice (i.e. telephone number)
-	• Facsimile (i.e. facsimile number)
-	• Address (i.e. postal address as defined by Royal Mail)
-	• Electronic mail address (i.e. email address)
-	• Resource locator (i.e. web address of the organisation)
-	• Role (of the responsible party with respect to the resource)
+	* Organisation name
+	* Position name (i.e. job role or position of the responsible person)
+	* Voice (i.e. telephone number)
+	* Facsimile (i.e. facsimile number)
+	* Address (i.e. postal address as defined by Royal Mail)
+	* Electronic mail address (i.e. email address)
+	* Resource locator (i.e. web address of the organisation)
+	* Role (of the responsible party with respect to the resource)
 
 :Guidance:
 	Of the eight sub-elements, only the **orgnaisation name**, **email address** and **role** are mandatory. All other sub-elements are optional. 
@@ -675,3 +675,8 @@ Use constraints
 .. |userdoc_fig_7_27_1_Title| image:: media/userdoc_fig_7_27_1_Title.png
 .. |userdoc_fig_7_28_1_TopicCategory| image:: media/userdoc_fig_7_28_1_TopicCategory.png
 .. |userdoc_fig_7_29_1_UseConstraints| image:: media/userdoc_fig_7_29_1_UseConstraints.png
+.. |button_edit_plus| image:: media/button_edit_plus.png
+.. |button_edit_delete| image:: media/button_edit_delete.png
+.. |button_edit_plusdrop| image:: media/button_edit_plusdrop.png
+.. |button_edit_selectthesaurus| image:: media/button_edit_selectthesaurus.png
+.. |button_edit_addkeyword| image:: media/button_edit_addkeyword.png

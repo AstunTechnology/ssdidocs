@@ -18,7 +18,7 @@ To begin an editing session:
 
 	**2|** Either search for a particular record direct from the home page or click |button_contribute| and search or scroll for the record.
 
-	*Note: users can check the ‘only my records’ box at the top left of the contribute page to limit the record list to only those belonging to that user.*
+	*Note: users can check the 'only my records' box at the top left of the contribute page to limit the record list to only those belonging to that user.*
 	
 	**3|** Click the pencil icon (|button_contribute_pencil|) visible in the search results list, or next to the record name on the contribute board. This will enter the user into an editing session.
 	
@@ -96,7 +96,7 @@ To assign or change the licence category via the contribute board:
 	
 	*Note: the licence category can be updated for multiple records at a time.*
 	
-	**3|** Click the dropdown labelled ‘selected’ at the top left of the record list and choose ‘Update categories’ from the list. This will display the licence categories dialog.
+	**3|** Click the dropdown labelled 'selected' at the top left of the record list and choose 'Update categories' from the list. This will display the licence categories dialog.
 	
 	**2|** From the menu, check the appropriate licence type (Open Government, Non-commercial, INSPIRE or other).
 	
@@ -116,7 +116,7 @@ To add an online resource to *dataset* metadata where a corresponding *service* 
 
 	**1|** Click on the |button_edit_addassocresource| button at the top of the Associated Resources panel.
 	
-	**2|** From the dropdown menu select ‘Link ot a service’. This will display the Link resources dialog.
+	**2|** From the dropdown menu select 'Link ot a service'. This will display the Link resources dialog.
 	
 	**3|** Search using the free text box and click on the service record in the results list to select it. This will display dataset layers available in the service.
 
@@ -136,9 +136,9 @@ To add an online resource to *dataset* metadata where **no** corresponding *serv
  
 	**1|** Click on the |button_edit_addassocresource| button at the top of the Associated Resources panel.
 	
-	**2|** From the dropdown menu, select the first option, ‘Add document’. This will display the Link resources dialog.
+	**2|** From the dropdown menu, select the first option, 'Add document'. This will display the Link resources dialog.
 	
-	**3|** Ensure the ‘Add link’ radio button is clicked.
+	**3|** Ensure the 'Add link' radio button is clicked.
 	
 	**4|** Select the appropriate protocol for the online resource (e.g. for a WMS, select OGC-WMS Web Map Service, for a website choose Web address(URL))
 	
@@ -160,15 +160,15 @@ To add an online resource (e.g. WMS or WFS) to a *service* metadata record:
  
 	**1|** Click on the |button_edit_addassocresource| at the top of the Associated Resources panel.
 	
-	**2|** From the dropdown menu, select the first option, ‘Add document’. This will display the Link resources dialog.
+	**2|** From the dropdown menu, select the first option, 'Add document'. This will display the Link resources dialog.
 	
-	**3|** Ensure the ‘Add link’ radio button is clicked.
+	**3|** Ensure the 'Add link' radio button is clicked.
 	
 	**4|** Select the appropriate protocol for the online resource (e.g. for a WMS, select OGC-WMS Capabilities service)
 	
 	**5|** Enter the URL for the service.
 	
-	*Note: A service may contain multiple layers and these will be displayed when the service URL is entered. As this is a service record, it is not necessary to select a single layer to link to (this is only required for dataset records).
+	*Note: A service may contain multiple layers and these will be displayed when the service URL is entered. As this is a service record, it is not necessary to select a single layer to link to (this is only required for dataset records).*
 	
 	**6|** Enter an appropriate name for the service in the **resource name** and **description** boxes.
 	
@@ -234,7 +234,7 @@ To publish a metadata record:
 	
 	**2|** Click on the |button_contribute_locked| next to the record name to access the Privileges dialog.
 	
-	**3|** To make publicly viewable, tick the ‘Set all privileges’ box next to the row marked ‘All’ in the group column.
+	**3|** To make publicly viewable, tick the 'Set all privileges' box next to the row marked 'All' in the group column.
 	
 	**4|** Click on |button_contribute_replace| to update the privileges for the record.
 
@@ -272,7 +272,7 @@ To delete a metadata record:
 	
 	**2|** Click on the |button_contribute_delete| in the row for the record.
 	
-	**3|** A conformation prompt will be displayed. Click ‘OK’ to confirm the delete.
+	**3|** A conformation prompt will be displayed. Click 'OK' to confirm the delete.
 
 	*Note: the record may still appear in the list until the page is refreshed.*
 	
@@ -297,3 +297,28 @@ to have records deleted from `data.gov.uk <http://data.gov.uk/>`__.
 .. |userdoc_fig_6_8_1_PrivilegesPanel| image:: media/userdoc_fig_6_8_1_PrivilegesPanel.png
 .. |userdoc_fig_6_8_2_PrivilegesRecordView| image:: media/userdoc_fig_6_8_2_PrivilegesRecordView.png
 .. |userdoc_fig_6_10_1_DeleteRecordConfirm| image:: media/userdoc_fig_6_10_1_DeleteRecordConfirm.png
+.. |button_contribute| image:: media/button_contribute.png
+.. |button_contribute_pencil| image:: media/button_contribute_pencil.png
+.. |button_edit_collapse| image:: media/button_edit_collapse.png
+.. |button_edit_arrowdown| image:: media/button_edit_arrowdown.png
+.. |button_edit_arrowup| image:: media/button_edit_arrowup.png
+.. |button_edit_plus| image:: media/button_edit_plus.png
+.. |button_edit_delete| image:: media/button_edit_delete.png
+.. |button_edit_view| image:: media/button_edit_view.png
+.. |button_edit_category| image:: media/button_edit_category.png
+.. |button_contribute_replace| image:: media/button_contribute_replace.png
+.. |button_edit_addassocresource| image:: media/button_edit_addassocresource.png
+.. |button_edit_linkservice| image:: media/button_edit_linkservice.png
+.. |button_edit_addlink| image:: media/button_edit_addlink.png
+.. |button_edit_validate| image:: media/button_edit_validate.png
+.. |button_edit_refresh| image:: media/button_edit_refresh.png
+.. |button_edit_thumbsdown| image:: media/button_edit_thumbsdown.png
+.. |button_edit_save| image:: media/button_edit_save.png
+.. |button_edit_saveclose| image:: media/button_edit_saveclose.png
+.. |button_edit_cancel| image:: media/button_edit_cancel.png
+.. |button_contribute_locked| image:: media/button_contribute_locked.png
+.. |button_contribute_unlocked| image:: media/button_contribute_unlocked.png
+.. |button_view_managerecord| image:: media/button_view_managerecord.png
+.. |button_view_publish| image:: media/button_view_publish.png
+.. |button_contribute_delete| image:: media/button_contribute_delete.png
+.. |button_view_delete| image:: media/button_view_delete.png

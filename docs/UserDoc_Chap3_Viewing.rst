@@ -24,7 +24,7 @@ record:
 
 	**1|** Click on |button_view_display| at the top right of the record.
 
-	**2|** Choose form either ‘full’ or ‘XML’ view. Full view will display a detailed view of the record while XML view will display the raw XML for the record.
+	**2|** Choose from either 'full' or 'XML' view. Full view will display a detailed view of the record while XML view will display the raw XML for the record.
 
 For detailed descriptions of each of the elements included in the metadata record, consult the `Metadata Elements <#metadata-elements>`__ section.
 
@@ -171,6 +171,7 @@ Other functionality available from the tabs on the main map page is as follows:
 :|button_map_zoomlocation| Zoom to your position: zoom to your location on the map (note: this will only work if your location can be calculated by the browser).
 :|button_map_graticules| Graticule: adds a grid to the map (in lat/long).
 
+.. |userdoc_fig_3_1_1_DefaultViewA| image:: media/userdoc_fig_3_1_1_DefaultViewA.png
 .. |userdoc_fig_3_2_1_ExportMetadata| image:: media/userdoc_fig_3_2_1_ExportMetadata.png
 .. |userdoc_fig_3_3_1_AddtoMapSearch| image:: media/userdoc_fig_3_3_1_AddtoMapSearch.png
 .. |userdoc_fig_3_3_2_AddtoMapRecordView| image:: media/userdoc_fig_3_3_2_AddtoMapRecordView.png
@@ -178,3 +179,28 @@ Other functionality available from the tabs on the main map page is as follows:
 .. |userdoc_fig_3_4_1_ManageLayers| image:: media/userdoc_fig_3_4_1_ManageLayers.png
 .. |userdoc_fig_3_5_1_AnnotateMap| image:: media/userdoc_fig_3_5_1_AnnotateMap.png
 .. |userdoc_fig_3_5_2_PrintMap| image:: media/userdoc_fig_3_5_2_PrintMap.png
+.. |button_view_display| image:: media/button_view_display.png
+.. |button_view_download| image:: media/button_view_download.png
+.. |button_view_globe| image:: media/button_view_globe.png
+.. |button_map| image:: media/button_map.png
+.. |button_map_addlayer| image:: media/button_map_addlayer.png
+.. |button_map_addicon| image:: media/button_map_addicon.png
+.. |button_view_addtomap| image:: media/button_view_addtomap.png
+.. |button_map_managelayers| image:: media/button_map_managelayers.png
+.. |button_map_exclamationicon| image:: media/button_map_exclamationicon.png
+.. |button_map_cogicon| image:: media/button_map_cogicon.png
+.. |button_map_legendicon| image:: media/button_map_legendicon.png
+.. |button_map_anno| image:: media/button_map_anno.png
+.. |button_map_annoadd| image:: media/button_map_annoadd.png
+.. |button_map_annomodify| image:: media/button_map_annomodify.png
+.. |button_map_annoremove| image:: media/button_map_annoremove.png
+.. |button_map_print| image:: media/button_map_print.png
+.. |button_map_printcurrent| image:: media/button_map_printcurrent.png
+.. |button_map_default| image:: media/button_map_default.png
+.. |button_map_measure| image:: media/button_map_measure.png
+.. |button_map_projection| image:: media/button_map_projection.png
+.. |button_map_zoomin| image:: media/button_map_zoomin.png
+.. |button_map_zoomout| image:: media/button_map_zoomout.png
+.. |button_map_zoomextent| image:: media/button_map_zoomextent.png
+.. |button_map_zoomlocation| image:: media/button_map_zoomlocation.png
+.. |button_map_graticules| image:: media/button_map_graticules.png

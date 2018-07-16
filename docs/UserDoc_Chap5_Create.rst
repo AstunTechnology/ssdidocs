@@ -111,7 +111,7 @@ To create a directory entry:
 
 	**2|** Click either |button_contribute_managedirectory| from the contribute drop down or the button on the right hand side of the page. This will bring the user to the manage directories page.
 
-	**3|** Duplicate the entry marked ‘TEMPLATE TO DUPLICATE’ by clicking the |button_contribute_duplicate| icon. Alternately, you could duplicate an existing record you have already created.
+	**3|** Duplicate the entry marked 'TEMPLATE TO DUPLICATE' by clicking the |button_contribute_duplicate| icon. Alternately, you could duplicate an existing record you have already created.
 
 	**4|** Amend the entry as appropriate and click |button_contribute_savedirectory| to save changes.
 	
@@ -127,3 +127,12 @@ To create a directory entry:
 .. |userdoc_fig_5_2_1_CreateTemplate| image:: media/userdoc_fig_5_2_1_CreateTemplate.png
 .. |userdoc_fig_5_3_1_Duplicate| image:: media/userdoc_fig_5_3_1_Duplicate.png
 .. |userdoc_fig_5_5_1_DirectoryEntry| image:: media/userdoc_fig_5_5_1_DirectoryEntry.png
+.. |button_contribute| image:: media/button_contribute.png
+.. |button_contribute_import| image:: media/button_contribute_import.png
+.. |button_contribute_importconfirm| image:: media/button_contribute_importconfirm.png
+.. |button_contribute_addrecord| image:: media/button_contribute_addrecord.png
+.. |button_contribute_create| image:: media/button_contribute_create.png
+.. |button_contribute_duplicate| image:: media/button_contribute_duplicate.png
+.. |button_contribute_managedirectory| image:: media/button_contribute_managedirectory.png
+.. |button_contribute_saveclosedirectory| image:: media/button_contribute_saveclosedirectory.png
+.. |button_contribute_savedirectory| image:: media/button_contribute_savedirectory.png

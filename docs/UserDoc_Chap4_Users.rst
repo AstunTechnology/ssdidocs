@@ -127,3 +127,10 @@ Normally, organisations registered on the SSDI are given the role of *Content Re
 .. |userdoc_fig_4_3_1_SignIn| image:: media/userdoc_fig_4_3_1_SignIn.png
 .. |userdoc_fig_4_3_2_ResetPassword| image:: media/userdoc_fig_4_3_2_ResetPassword.png
 .. |userdoc_fig_4_4_1_ManageAccount| image:: media/userdoc_fig_4_4_1_ManageAccount.png
+.. |button_signin| image:: media/button_signin.png
+.. |button_signin_confirm| image:: media/button_signin_confirm.png
+.. |button_signin_forgotten| image:: media/button_signin_forgotten.png
+.. |button_signin_sendlink| image:: media/button_signin_sendlink.png
+.. |button_account_resetpass| image:: media/button_account_resetpass.png
+.. |button_account_resetpassconfirm| image:: media/button_account_resetpassconfirm.png
+.. |button_account_save| image:: media/button_account_save.png
