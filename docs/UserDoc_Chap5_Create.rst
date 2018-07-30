@@ -1,14 +1,14 @@
 Creating Discovery Metadata
 ===========================
 
-This section will guide the user through the process of creating discovery metadata records on the SSDI. Discovery metadata can be added to the 
-SSDI by `importing an existing metadata <#import-existing-metadata>`__ XML file, `creating a new record from a template <#creating-metadata-from-a-template>`__, 
+This section will guide the user through the process of creating discovery metadata records on `spatialdata.gov.scot <https://spatialdata.gov.scot>`__. Discovery metadata can be added to the 
+portal by `importing an existing metadata <#import-existing-metadata>`__ XML file, `creating a new record from a template <#creating-metadata-from-a-template>`__, 
 `duplicating an existing record <#duplicating-existing-metadata>`__, or `harvesting records <#harvesting-metadata>`__ from other metadata portals. 
 
 Importing existing metadata
 ---------------------------
 
-Prior to following the steps below to import an existing metadata record, please review `Annex 1 <#annex-1-requirements-for-metadata-to-be-correctly-identified-as-uk-gemini>`__.
+Prior to following the steps below to import an existing metadata record, please review `Annex 1 <UserDoc_Chap8_Annex1.rst#annex-1-requirements-for-metadata-to-be-correctly-identified-as-uk-gemini>`__.
 
 To import an existing XML metadata record:
 
@@ -18,9 +18,9 @@ To import an existing XML metadata record:
 	
 	**3|** Select **Metadata** from the type of record dropdown.
 	
-	**4|** Indicate how the unique identifier for the record (UUID) should be treated. If you are uploading in order to refine or change an existing record on the SSDI, then choose the **Overwrite metadata with the same UUID** option. If you are uploading to create a new metadata record then choose the **Generate UUID for inserted metadata** option. If the XML contains a UUID that does not already exist on the SSDI but you would like to keep this UUID then the **None** option should be selected.
+	**4|** Indicate how the unique identifier for the record (UUID) should be treated. If you are uploading in order to refine or change an existing record, then choose the **Overwrite metadata with the same UUID** option. If you are uploading to create a new metadata record then choose the **Generate UUID for inserted metadata** option. If the XML contains a UUID that does not already exist on the portal but you would like to keep this UUID then the **None** option should be selected.
 
-	*Note: The UUID is a generated automatically by whatever internal system (i.e. ESRI ArcGIS) was used to write and manage your metadata. In xml, it can be found at the top of the page under the file identifier section. Within the SSDI, the UUID or File Identifier can be found at the bottom of the metadata record display. This UUID, together with the metadata date stamp, are used to ensure records are unique within the SSDI,* `data.gov.uk <http://data.gov.uk/>`__ *and other metadata catalogues.*
+	*Note: The UUID is a generated automatically by whatever internal system (i.e. ESRI ArcGIS) was used to write and manage your metadata. In xml, it can be found at the top of the page under the file identifier section. Within the portal, the UUID or File Identifier can be found at the bottom of the metadata record display. This UUID, together with the metadata date stamp, are used to ensure records are unique within* `spatialdata.gov.scot <https://spatialdata.gov.scot>`__, `data.gov.uk <http://data.gov.uk/>`__ *and other metadata catalogues.*
 
 	**5|** Under the **Apply XSLT conversion** menu, select which translation option should be used to convert the format of the metadata (e.g. choose ESRI_ISO-to-GEMINI_22 if converting from ArcGIS format to UK Gemini). The option **_to_gemini** should be chosen as the default.
 	
@@ -36,7 +36,7 @@ To import an existing XML metadata record:
 	
 	**9|** Assign the record to the appropriate licence category (i.e. OGL, NCGL, INSPIRE or other).
 	
-	*Note: categories can also be amended at a later date. See* `assigning a licence category <#assigning-a-licence-category>`__.
+	*Note: categories can also be amended at a later date. See* `assigning a licence category <UserDoc_Chap6_Edit.rst#assigning-a-licence-category>`__.
 	
 	**10|** Click the |button_contribute_importconfirm| button.
 	
@@ -46,12 +46,12 @@ To import an existing XML metadata record:
 
 When the import operation has finished, an **Import Report** will be displayed on the right-hand side of the screen, indicating whether or not the 
 import has been successful. Following a successful import, users should verify that their records are valid. Consult the 
-`Validating metadata <#saving-and-validating-metadata>`__ section for details. Amendments to the record may be required to make it fully Gemini compliant.
+`Validating metadata <UserDoc_Chap6_Edit.rst#validating-metadata>`__ section for details. Amendments to the record may be required to make it fully Gemini compliant.
 
 Creating metadata from a template
 ---------------------------------
 
-Basic templates are available for users to create metadata directly on the SSDI.
+Basic templates are available for users to create metadata directly on `spatialdata.gov.scot <https://spatialdata.gov.scot>`__.
 
 To create a metadata record using an available template:
 
@@ -65,7 +65,7 @@ To create a metadata record using an available template:
 	
 	**4|** Click on the template to be used (e.g. for a dataset template, there is an option for a raster or vector data template).
 
-	**5|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the **editing** board where elements of the new record can be modified. See `Editing a metadata record <#editing-metadata>`__ for guidance on documenting the resource.
+	**5|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the editing board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.rst#editing-metadata>`__ for guidance on documenting the resource.
 	
 	*Note: if the user is an editor for multiple groups or an administrator to the site, they may be presented with multiple templates of the same name. Additionally, they will be required to select which group folder to create the metadata record in.*
 
@@ -76,7 +76,7 @@ To create a metadata record using an available template:
 Duplicating existing metadata
 -----------------------------
 
-One of the easiest ways to create metadata on the SSDI is to duplicate an existing record. This is particularly useful for organisations where many
+One of the easiest ways to create metadata on the portal is to duplicate an existing record. This is particularly useful for organisations where many
 of the metadata elements are the same for all records (e.g. points of contact, etc.)
 
 To create a metadata record by duplicating and existing record:
@@ -85,7 +85,7 @@ To create a metadata record by duplicating and existing record:
 
 	**2|** Click the duplicate icon (|button_contribute_duplicate|) next to the record name.
 	
-	**3|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the **editing** board where elements of the new record can be modified. See `Editing a metadata record <#editing-metadata>`__ for guidance on documenting the resource.
+	**3|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the **editing** board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.rst#editing-metadata>`__ for guidance on documenting the resource.
 
 	*Note: if the user is an editor for multiple groups or an administrator to the site, they will be required to select which group folder to create the duplicate metadata record in.*
 
@@ -96,13 +96,13 @@ To create a metadata record by duplicating and existing record:
 Harvesting metadata
 -------------------
 
-The SSDI has the capability to automatically consume metadata from external services on a scheduled basis. Organisations that maintain their own
-spatial data portals which are interested in having their records automatically harvested to the SSDI should contact `SSDI.Metadata@gov.scot <mailto:SSDI.Metadata@gov.scot>`__.
+`Spatialdata.gov.scot <https://spatialdata.gov.scot>`__ has the capability to automatically consume metadata from external services on a scheduled basis. Organisations that maintain their own
+spatial data portals which are interested in having their records automatically harvested should contact `SSDI.Metadata@gov.scot <mailto:SSDI.Metadata@gov.scot>`__.
 
 Creating directory metadata
 ---------------------------
 
-Directory records are a means of automatically populating fields such as those for the `point of contact <#point-of-contact>`__ section of a 
+Directory records are a means of automatically populating fields such as those for the `point of contact <UserDoc_Chap7_Elements.rst#point-of-contact>`__ section of a 
 metadata record with pre-written values. This is useful if you have to create multiple records that share the same point of contact.
 
 To create a directory entry:
