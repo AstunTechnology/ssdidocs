@@ -5,16 +5,16 @@ This section will guide registered users on how to sign in and manage their acco
 
 Becoming a registered user
 --------------------------
-To add or edit metadata on the SSDI, your organisation must be registered on the site. The SSDI does not currently allow self registration, and therefore 
+To add or edit metadata on `spatialdata.gov.scot <https://spatialdata.gov.scot>`__, your organisation must be registered on the site. The portal does not currently allow self registration, and therefore 
 interested parties should contact (`SSDI.Metadata@gov.scot <mailto:SSDI.Metadata@gov.scot>`__). Currently, user accounts are created for organisations 
 as a whole rather than individuals.
 
 Registered user obligations
 ---------------------------
 
-When an organisation becomes a registered user and submits metadata to the SSDI, they commit to the following **operational and service requirements**:
+When an organisation becomes a registered user and submits metadata to `spatialdata.gov.scot <https://spatialdata.gov.scot>`__, they commit to the following **operational and service requirements**:
 
--  Maintaining the discovery metadata added to the SSDI by the organisation:
+-  Maintaining the discovery metadata added by the organisation:
 
    -  by **assuring its quality** against appropriate standards
 
@@ -59,7 +59,7 @@ To recover a forgotten password:
 
 	*Note: user names are case sensitive. The password recovery function requires that a valid email address (accessible by the user) is registered 
 	with the user account in question. If you have not registered an email address or do not have access to the relevant mailbox, you will not be 
-	able to receive password reset emails from the SSDI.*
+	able to receive password reset emails.*
 
 |userdoc_fig_4_3_2_ResetPassword|
 
@@ -92,9 +92,9 @@ When amending details, users should click the |button_account_save| button to sa
 Users and groups
 ----------------
 
-The SSDI employs the concept of users, groups and profiles. *Users* are those accounts registered on the portal, and can be part of one or more 
+`Spatialdata.gov.scot <https://spatialdata.gov.scot>`__ employs the concept of users, groups and profiles. *Users* are those accounts registered on the portal, and can be part of one or more 
 *groups* (which are collections of users corresponding to logical units, such as teams within an organisation). The *group* and *profile* (or role)
-of a user defines what tasks they can perform on the SSDI or on specific metadata records.
+of a user defines what tasks they can perform on the portal or on specific metadata records.
 
 The rights associated with the various profiles are as follows:
 
@@ -122,7 +122,7 @@ The rights associated with the various profiles are as follows:
 *Note: profiles (or roles) are hierarchicaland based on inheritance. This means that a user with an Editor profile can create and modify new 
 metadata records, but can also use all functions a Registered user can use.*
 
-Normally, organisations registered on the SSDI are given the role of *Content Reviewer* for the purpose of managing their metadata records.
+Normally, organisations registered on the site are given the role of *Content Reviewer* for the purpose of managing their metadata records.
 
 .. |userdoc_fig_4_3_1_SignIn| image:: media/userdoc_fig_4_3_1_SignIn.png
 .. |userdoc_fig_4_3_2_ResetPassword| image:: media/userdoc_fig_4_3_2_ResetPassword.png
