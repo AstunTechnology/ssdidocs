@@ -26,12 +26,12 @@ record:
 
 	**2|** Choose from either 'full' or 'XML' view. Full view will display a detailed view of the record while XML view will display the raw XML for the record.
 
-For detailed descriptions of each of the elements included in the metadata record, consult the `Metadata Elements <#metadata-elements>`__ section.
+For detailed descriptions of each of the elements included in the metadata record, consult the `Metadata Elements <UserDoc_Chap7_Elements.rst#metadata-elements>`__ section.
 
 Exporting metadata records
 --------------------------
 
-Metadata records can be exported from the SSDI via the download icon menu at the top right of the record. To export a record:
+Metadata records can be exported from spatialdata.gov.scot via the download icon menu at the top right of the record. To export a record:
 
 	**1|** Click on |button_view_download| at the top right of the record.
 
@@ -70,9 +70,9 @@ To add a layer from the main map page:
 	**4|** Click |button_map_addicon| beside the layer to add it to the map. If adding from a URL, click on the layer name to add it to the map.	 
 	
 	*Note: when adding straight from the map page, using the search tab, you may see layers with no name. This is caused by the 
-	web service layers not being referenced properly in the associated resources part of the metadata record. Contributors to the SSDI should 
+	web service layers not being referenced properly in the associated resources part of the metadata record. Contributors to spatialdata.gov.scot should 
 	update their metadata records so their WMS resources in the dataset metadata are named with the layer name as it appears in the service. 
-	See the `Associated Resources <#associated-resources>`__ section for guidance on how to set up associated resources.*
+	See the* `Associated Resources <UserDoc_Chap6_Edit.rst#associated-resources>`__ *section for guidance on how to set up associated resources.*
 
 	|userdoc_fig_3_3_3_AddtoMapMapPage|
 
@@ -92,7 +92,7 @@ To add a layer to the map from the metadata record view:
 
 	*Note: with respect to WFS, users may experience occasions where the layer appears to have been added to the map, yet does not display. This 
 	occurs when the Access-Control-Allow-Orgin header (CORS access policy) is missing from the remote server, and thus the request is blocked by 
-	the browser. This is out of the control of the SSDI as it is dependent on the organisations' server configuration, however, a request 
+	the browser. This is out of the control of the portal as it is dependent on the organisations' server configuration, however, a request 
 	has been submitted to GeoNetwork to include an error message when this occurs, rather than to fail silently.*
 	
 Managing layers in the map
@@ -104,7 +104,7 @@ To manage layers displayed in the map:
 
 	**1|** Click |button_map_managelayers| on the right-hand side of the map. This will display a list of layers currently added to the map.
 	
-	*Note: those with scale-dependent visibility that are not currently visible will be greyed out. Layers that cannot be added for some other reason, such as an error with the service, will display an exclamation icon (|button_map_exclamationicon|).*
+	*Note: those with scale-dependent visibility that are not currently visible will be greyed out. Layers that cannot be added for some other reason, such as an error with the service, will display an exclamation icon* (|button_map_exclamationicon|).
 
 	**2|** To toggle a layer on or off, click on the layer name or check/uncheck the box.
 	
