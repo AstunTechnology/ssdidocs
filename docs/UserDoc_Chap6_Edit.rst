@@ -1,20 +1,20 @@
 Editing Metadata
 ================
 
-This section will guide the user through editing a metadata record on the SSDI, compliant to the `UK Gemini standard <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini>`__. 
+This section will guide the user through editing a metadata record on `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__, compliant to the `UK Gemini standard <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini>`__. 
 In most cases, the basic functionality provided by the *default view* of an editing sessions will be sufficent for the users need, however, in 
 some instances additional functionality from the *advanced view* may be required. For detailed information on completing each of the individual 
-metadata elements, refer to the `Metadata Elements <#metadata-elements>`__ section.
+metadata elements, refer to the `Metadata Elements <UserDoc_Chap7_Elements.rst#metadata-elements>`__ section.
 
 Starting an editing session
 ---------------------------
 
-Users will be able to edit any records they have contributed to the SSDI, or if they have appropriate privileges to edit records submitted by 
+Users will be able to edit any records they have contributed to the portal, or if they have appropriate privileges to edit records submitted by 
 others (e.g. administrators).
 
 To begin an editing session:
 
-	**1|** `Sign in <#signing-in>`__ using your account credentials.
+	**1|** `Sign in <UserDoc_Chap4_Users.rst#signing-in>`__ using your account credentials.
 
 	**2|** Either search for a particular record direct from the home page or click |button_contribute| and search or scroll for the record.
 
@@ -37,14 +37,14 @@ visible in the lower right of the screen. Clicking an element section will take 
 collapse all elements of the form by clicking the |button_edit_collapse| button visible just below the header. Clicking on a section title will 
 re-expand that section. The |button_edit_arrowup| and |button_edit_arrowdown| buttons allow the user to place the section further up or down the document order. 
 Note that UK Gemini is only concerned with whether the elements (or sections) are present and correct, not with the order they are displayed. For 
-detailed guidance on filling out each element, users should consult the `Metadata Elements <#metadata-elements>`__ section.
+detailed guidance on filling out each element, users should consult the `Metadata Elements <UserDoc_Chap7_Elements.rst#metadata-elements>`__ section.
 
-Mandatory fields (e.g. `Abstract <#abstract>`__) are highlighted with a red asterisk. Note that for sub-elements, this only indicates that the 
-sub-element is mandatory within its context. For example, the `vertical extent <#extent-vertical-extent>`__ is an optional element, but if the 
+Mandatory fields (e.g. `Abstract <UserDoc_Chap7_Elements.rst#abstract>`__) are highlighted with a red asterisk. Note that for sub-elements, this only indicates that the 
+sub-element is mandatory within its context. For example, the `vertical extent <UserDoc_Chap7_Elements.rst#extent-vertical-extent>`__ is an optional element, but if the 
 record requires one, then the minimum and maximum values are mandatory.
 
 Where a |button_edit_plus| button is displayed, the user can click this to add another occurance of an element or section. For example, a record 
-could have more than one `alternative title <#alternative-title>`__. When the user hovers over a section and a |button_edit_delete| appears, 
+could have more than one `alternative title <UserDoc_Chap7_Elements.rst#alternative-title>`__. When the user hovers over a section and a |button_edit_delete| appears, 
 clicking the cross will delete that element or section.
 
 |userdoc_fig_6_2_1_DefaultEdit|
@@ -72,9 +72,9 @@ To change the view of editing session:
 Assigning a licence category
 ----------------------------
 
-Records on the SSDI can be classified based on their licence type (i.e. Open Government, Non-commercial Government, INSPIRE or other) using the 
+Records can be classified based on their licence type (i.e. Open Government, Non-commercial Government, INSPIRE or other) using the 
 assign category function. This classification can be done either in an editing session, via the contribute board, or when a record is imported 
-into the SSDI.
+into `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__.
 
 To assign or change the licence category in an editing session:
 
@@ -102,8 +102,8 @@ To assign or change the licence category via the contribute board:
 	
 	**3|** Click |button_contribute_replace| to apply the changes.
 
-The licence category can also be assigned using the appropriate option when importing a record to the SSDI. For those organisations which harvest 
-their metadata records into the SSDI, a default licence type can be selected for all records, though any records that differ from the default setting
+The licence category can also be assigned using the appropriate option when importing a record. For those organisations which harvest 
+their metadata records into the portal, a default licence type can be selected for all records, though any records that differ from the default setting
 would need to be amended post harvest.
 
 Associated resources
@@ -201,7 +201,7 @@ To validate a metadata record:
 **Figure 6.6.1:** Validation panel
 
 The validation check should be repeated once amendments have been made until no errors are detected. Error descriptions given by the validator are
-often complex and difficult for the lay user to understand. Consult the `Metadata Elements <#metadata-elements>`__ section for guidance on how to
+often complex and difficult for the lay user to understand. Consult the `Metadata Elements <UserDoc_Chap7_Elements.rst#metadata-elements>`__ section for guidance on how to
 complete specific elements.
 
 Saving and exiting an editing session
@@ -219,14 +219,13 @@ To save a metadata record:
 	**1|** Click |button_edit_cancel| to exit the editing session without saving the record.
 	
 Users should note that a saved record will be stored on the server only (not locally). The server is periodically backed up, though it is 
-recommended that users store master copies of their metadata records within their own systems. To export copies of metadata created on the SSDI, 
-consult the `exporting metadata <#exporting-metadata-records>`__ section.
+recommended that users store master copies of their metadata records within their own systems. To export copies of metadata created on the portal, 
+consult the `exporting metadata <UserDoc_Chap3_Viewing.rst#exporting-metadata-records>`__ section.
 
 Publishing metadata
 -------------------
 
-Once a metadata record has been successfully `validated <#validating-metadata>`__, it can then be published, making it publicly viewable on the 
-SSDI and available for harvesting by other data portals, such as `data.gov.uk <http://data.gov.uk/>`__.
+Once a metadata record has been successfully `validated <#validating-metadata>`__, it can then be published, making it publicly viewable and available for harvesting by other data portals, such as `data.gov.uk <http://data.gov.uk/>`__.
 
 To publish a metadata record:
 
@@ -244,7 +243,7 @@ Once the record is published, the padlock icon displayed on the contribute menu 
 
 **Figure 6.8.1:** Publishing via the contribute page
 
-Alternatively, there is a shortcut method to publish a record directly from the record's page on the SSDI:
+Alternatively, there is a shortcut method to publish a record directly from the record's page on `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__:
 
 	**1|** Click on the |button_view_managerecord| button at the top right of the record view.
 	
@@ -264,7 +263,7 @@ Content for this section is under development.
 Deleting metadata
 -----------------
 
-Users with the appropriate privileges will be able to edit or delete records from the SSDI.
+Users with the appropriate privileges will be able to edit or delete records from the portal.
 
 To delete a metadata record:
 
@@ -280,7 +279,7 @@ To delete a metadata record:
 
 **Figure 6.10.1:** Confirmation requested to delete a metadata record
 
-Alternatively, the user can delete a record directly from the record's page on the SSDI by clicking the |button_view_delete| button.
+Alternatively, the user can delete a record directly from the record's page by clicking the |button_view_delete| button.
 
 Users should note that when deleting a record that had previously been published, that record will not be deleted from other portals which may have 
 harvested the record, such as `data.gov.uk <http://data.gov.uk/>`__. Users should contact `SSDI.Metadata@gov.scot <mailto:SSDI.Metadata@gov.scot>`__
