@@ -1,23 +1,23 @@
 Searching for Metadata
 ======================
 
-This section will guide users and guests to the site on how to search and filter metadata provided by data publishers to the SSDI.
+This section will guide users and guests to the site on how to search and filter metadata provided by data publishers to `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__.
 
-Accessing the SSDI
-------------------
+Accessing the portal
+--------------------
 
-The SSDI can be accessed from the following link:
+The portal can be accessed from the following link:
 
 `https://www.spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__
 
 The home page of the portal comprises a basic search bar at the top, and also provides the option to browse by topic category (default) or 
 by INSPIRE theme. Visitors can also browse the newest entries to the site or the most popular using the tabs lower down the page. Tabs in the header 
-menu give access to the main search page, map viewer and sign in page (for registered users). Clicking the SSDI logo on the header menu will 
+menu give access to the main search page, map viewer and sign in page (for registered users). Clicking the portal logo on the header menu will 
 return the user to the home page.
 
 |userdoc_fig_2_1_1_Home|
 
-**Figure 2.1.1:** SSDI main page
+**Figure 2.1.1:** Home page
 
 When logged in, registered users of the site will be presented with further buttons on the header menu for |button_contribute| and |button_adminconsole|. 
 The |button_contribute| menu gives options to `add a new record <#creating-metadata-from-a-template>`__, `import new records <#importing-existing-metadata>`__ and `manage directory <#creating-directory-metadata>`__.
@@ -25,7 +25,7 @@ The |button_contribute| menu gives options to `add a new record <#creating-metad
 Basic searching
 ---------------
 
-Quick searches on the SSDI can be performed directly from the home page using the search box and clicking the search button (|button_search_icon|).
+Quick searches on the portal can be performed directly from the home page using the search box and clicking the search button (|button_search_icon|).
 
 *Note: wildcard characters, such as the asterisk key, can also be used.*
 
@@ -58,7 +58,7 @@ To perform an advanced search:
 	
 	**4|** Click |button_search_icon| to run the search based on the selected options. Results will be displayed in the list below.
 	
-	*Note: search options can be cleared by clicking |button_search_reset|.*
+	*Note: search options can be cleared by clicking* |button_search_reset|.
 
 |userdoc_fig_2_3_1_AdvancedSearch|
 
@@ -89,7 +89,7 @@ such as publish `publish <#publishing-metadata>`__ or `delete <#deleting-metadat
 
 |userdoc_fig_2_4_1_SortOptions| |userdoc_fig_2_4_1_SelectOptions|
 
-**Figure 2.4.1:** sort and select options
+**Figure 2.4.1:** Sort and select options
 
 .. |userdoc_fig_2_1_1_Home| image:: media/userdoc_fig_2_1_1_Home.png
 .. |userdoc_fig_2_2_1_BasicSearch| image:: media/userdoc_fig_2_2_1_BasicSearch.png
