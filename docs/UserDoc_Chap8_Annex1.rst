@@ -1,7 +1,7 @@
 Annex 1: Requirements for metadata to be correctly identified as UK Gemini
 ==========================================================================
 
-Records that are imported into the SSDI (rather than created within the portal using the available templates) must include the following XML elements 
+Records that are imported into `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ (rather than created within the portal using the available templates) must include the following XML elements 
 to ensure that the record is correctly identified as UK Gemini upon import:
 
 Root element
