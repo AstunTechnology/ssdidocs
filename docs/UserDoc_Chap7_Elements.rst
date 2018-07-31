@@ -2,7 +2,7 @@ Metadata Elements
 =================
 
 This section provides guidance with respect to each of the UK Gemini elements. Section headings refer to the label present in the editing form of 
-the SSDI, however, UK Gemini and INSPIRE equivalents are also provided. Links to full element guidance from the AGI are given, which includes information
+`spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__, however, UK Gemini and INSPIRE equivalents are also provided. Links to full element guidance from the AGI are given, which includes information
 on known common errors. Images show examples for each of the elements.
 
 Users may also wish to consult the full UK Gemini 2.2 guidance `UK Gemini 2.2 specification <https://www.agi.org.uk/about/resources/category/81-gemini?download=18:gemini-2-2>`__.
@@ -16,7 +16,7 @@ covered by INSPIRE (e.g. parts of it are within the Scope of an INSPIRE Annex da
 
 If another controlled vocabulary is used as the first keyword, such as the `Integrated Public Sector Vocabulary (IPSV) <http://id.esd.org.uk/list/subjects>`__, 
 then the dataset is not covered by INSPIRE. That said, the dataset and service metadata will still be required to comply with the operation and 
-service commitments, as set out in the `Registered user obligations <#registered-user-obligations>`__ section.
+service commitments, as set out in the `Registered user obligations <UserDoc_Chap4_Users.html#registered-user-obligations>`__ section.
 
 Abstract
 --------
@@ -50,7 +50,7 @@ Alternative title
 	abbreviations and acronyms. It can also be helpful to include title with spatial or temporal coverage if applicable. Entries should remain short
 	and concise.
 	
-	If the element is not visible in the default view of the editing form, it can be added by `switching to advanced view <#changing-the-editing-view>`__ 
+	If the element is not visible in the default view of the editing form, it can be added by `switching to advanced view <UserDoc_Chap6_Edit.html#changing-the-editing-view>`__ 
 	and clicking the |button_edit_plus| button.
 
 |userdoc_fig_7_2_1_AlternativeTitle|
@@ -104,7 +104,7 @@ Data Quality - Hierarchy level
 	Scope to which the metadata applies (i.e. dataset, series, service).
 
 :Guidance:
-	This is not a UK GEMINI element, but required in ISO 19115 encoding.  For metadata created on the SSDI, this element is set by the 
+	This is not a UK GEMINI element, but required in ISO 19115 encoding.  For metadata created on `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__, this element is set by the 
 	choice of template and should not be changed.
 
 |userdoc_fig_7_5_1_HierarchyLevel|
@@ -199,7 +199,7 @@ Extent - Temporal extent
 
 	To add the temporal element to the editing form:
 
-	**1|** Change the editing form display to `advanced editor view <#changing-the-editing-view>`__.
+	**1|** Change the editing form display to `advanced editor view <UserDoc_Chap6_Edit.html#changing-the-editing-view>`__.
 	
 	**2|** Scroll to the extent section (identification tab) and click the |button_edit_plusdrop| button next to the **Temporal element** label.
 	
@@ -207,7 +207,7 @@ Extent - Temporal extent
 	
 	**4|** From the dropdown menu, select the extent type from either time edge, instant, node or period.
 	
-	*Note: if the temporal extent is composed of a begining and an end date, select time period. If it is a single date (e.g. census day) choose time instant. The time edge and node options are not often used in the SSDI.*
+	*Note: if the temporal extent is composed of a begining and an end date, select time period. If it is a single date (e.g. census day) choose time instant. The time edge and node options are not often used.*
 
 	**5|** If the time period option is chosen, use the |button_edit_plusdrop| buttons to add begining and end dates.
 	
@@ -236,7 +236,7 @@ Extent - Vertical extent
 	
 	To add the vertical extent element to the editing form:
 
-	**1|** Change the editing form display to `advanced editor view <#changing-the-editing-view>`__.
+	**1|** Change the editing form display to `advanced editor view <UserDoc_Chap6_Edit.html#changing-the-editing-view>`__.
 	
 	**2|** Scroll to the extent section (identification tab) and click the |button_edit_plus| button next to the **Vertical element** label. This will present the minimum and maximum elements.
 	
@@ -275,7 +275,7 @@ Keywords
 	
 	**3|** Click to select the relevant keyword. The citiation for the originating vocabulary will be pre-populated.
 	
-	*Note: alternately, free text keywords can be added by clicking the |button_edit_addkeyword| button.*
+	*Note: alternately, free text keywords can be added by clicking the* |button_edit_addkeyword| *button.*
 
 |userdoc_fig_7_12_1_Keywords|
 
@@ -292,7 +292,7 @@ Language
 :Guidance:
 	Select a language from the drop down menu listing entries from the ISO 639-2 code list.  For INSPIRE compliance, this has to be an 
 	`official language of the European Community <http://ec.europa.eu/languages/policy/linguistic-diversity/official-languages-eu_en.htm>`__, 
-	of which English (eng) is the only one in common use across the UK (and is the default in the SSDI). For non-INSPIRE metadata records, it can 
+	of which English (eng) is the only one in common use across the UK (and is the default). For non-INSPIRE metadata records, it can 
 	be any ISO 639-2 three letter code, of which the relevant entries for the UK are English (eng), Welsh (cym), Gaelic (Irish) (gle), Gaelic 
 	(Scottish) (gla), Cornish (cor), Ulster Scots (sco).
 
@@ -401,7 +401,7 @@ Metadata Contact
 	notice and difficult to maintain. Likewise, email addresses should be provided for branch or team (i.e. shared) mailboxes where possible rather 
 	than for individuals.
 	
-	If the user has stored contact details in a `directory entry <#creating-directory-metadata>`__ on the SSDI, details can be auto-populated by 
+	If the user has stored contact details in a `directory entry <UserDoc_Chap5_Create.html#creating-directory-metadata>`__ on the portal, details can be auto-populated by 
 	searching for the contact in the search box below the element. 
 	
 |userdoc_fig_7_17_1_MetadataContact|
@@ -417,7 +417,7 @@ Metadata Date stamp
 	The date on which the metadata was last updated.
 
 :Guidance:
-	This element is not editable and is set by the editor when the file is saved. It is used by the SSDI and Data.gov.uk to determine if metadata 
+	This element is not editable and is set by the editor when the file is saved. It is used by `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ and `data.gov.uk <https://data.gov.uk>`__ to determine if metadata 
 	with the same field identifier (UUID) has been changed. A single date is specified in the extended format YYYY-MM-DD, where YYYY is the year, 
 	MM is the month and DD is the day.
 
@@ -434,7 +434,7 @@ Metadata Hierarchy level
 	Name of the hierarchy levels for which the metadata is provided.
 
 :Guidance:
-	This is not a UK GEMINI element, but required in ISO 19115 encoding.  For metadata created on the SSDI, this element is set by the 
+	This is not a UK GEMINI element, but required in ISO 19115 encoding.  For metadata created on `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__, this element is set by the 
 	choice of template and should not be changed.
 
 |userdoc_fig_7_19_1_MetadataHierarchyLevel|
@@ -473,7 +473,7 @@ OnLine resource
 :Guidance:
 	This element should primarily be used to enter URLs for web services (i.e. WMS, WFS, etc.), however, links to web pages offering more 
 	information or other services (e.g. interactive mapping applications) can also be added. To add an online resource, follow the instructions 
-	provided in the `Associated resources <#associated-resources>`__ section. Once an online resource has been added, it can be edited as normal
+	provided in the `Associated resources <UserDoc_Chap6_Edit.html#associated-resources>`__ section. Once an online resource has been added, it can be edited as normal
 	in the editing form. Note that for web services to be displayed in the interactive map, the **protocol**, **layer name** and **description** 
 	must be entered. The layer name **must** match that as defined in the GetCapabilities request of the service.
 	
@@ -509,7 +509,7 @@ Point of contact
 	notice and difficult to maintain. Likewise, email addresses should be provided for branch or team (i.e. shared) mailboxes where possible rather 
 	than for individuals.
 
-	If the user has stored contact details in a `directory entry <#creating-directory-metadata>`__ on the SSDI, details can be auto-populated by 
+	If the user has stored contact details in a `directory entry <UserDoc_Chap5_Create.html#creating-directory-metadata>`__ on the portal, details can be auto-populated by 
 	searching for the contact in the search box below the element.
 
 |userdoc_fig_7_22_1_PointofContact|
@@ -527,9 +527,9 @@ Reference system information
 
 :Guidance:
 	The reference system should be recorded using its associated code in the `EPSG Geodetic Parameter Registry <http://epsg-registry.org/>`__. For
-	metadata created on the SSDI, the two most common spatial reference systems have been pre-populated in the templates: OSGB 1936 and ETRS89. Users 
+	metadata created on `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__, the two most common spatial reference systems have been pre-populated in the templates: OSGB 1936 and ETRS89. Users 
 	should select their required reference system and remove the other. If another spatial reference system is required, this can be added by 
-	accessing the `advanced editor view <#changing-the-editing-view>`__ and searching for the coordinate system tab in the search box below the element.
+	accessing the `advanced editor view <UserDoc_Chap6_Edit.html#changing-the-editing-view>`__ and searching for the coordinate system tab in the search box below the element.
 
 |userdoc_fig_7_23_1_ReferenceSystem|
 
@@ -617,7 +617,7 @@ Topic category
 	be classified as farming). Additional topic categories can be added by clicking the |button_edit_plus| button below the element.
 	
 	Note that the choice of topic category will dictate which categories the data resource is listed under on the **Browse by topics** section of 
-	the SSDI homepage.
+	the homepage.
 
 |userdoc_fig_7_28_1_TopicCategory|
 	
@@ -638,11 +638,11 @@ Use constraints
 	usage limitations. 
 	
 	To add an additional use constraint element, click the |button_edit_plusdrop| button and choose either the *anchor* or *text* option. All records 
-	on the SSDI should document the licencing arrangements for the data resource using the anchor type. Where possible, this should link to a URL 
+	on `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ should document the licencing arrangements for the data resource using the anchor type. Where possible, this should link to a URL 
 	such as the `Open Government Licence <http://www.nationalarchives.gov.uk/doc/open-government-licence/>`__, 
 	`Non-Commercial Government Licence <http://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/>`__,
 	or `INSPIRE (Scotland) End User Licence <https://www.ordnancesurvey.co.uk/business-and-government/public-sector/mapping-agreements/inspire-eul-scotland.html>`__. 
-	Users can further categorise their records in terms of licence type by following the guidance in the `assigning a licence category <#assigning-a-licence-category>`__ section.
+	Users can further categorise their records in terms of licence type by following the guidance in the `assigning a licence category <UserDoc_Chap6_Edit.html#assigning-a-licence-category>`__ section.
 
 |userdoc_fig_7_29_1_UseConstraints|
 
