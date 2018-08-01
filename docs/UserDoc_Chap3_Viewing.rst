@@ -26,7 +26,7 @@ record:
 
 	**2|** Choose from either 'full' or 'XML' view. Full view will display a detailed view of the record while XML view will display the raw XML for the record.
 
-For detailed descriptions of each of the elements included in the metadata record, consult the `Metadata Elements <UserDoc_Chap7_Elements.rst#metadata-elements>`__ section.
+For detailed descriptions of each of the elements included in the metadata record, consult the `Metadata Elements <UserDoc_Chap7_Elements.html#metadata-elements>`__ section.
 
 Exporting metadata records
 --------------------------
@@ -72,7 +72,7 @@ To add a layer from the main map page:
 	*Note: when adding straight from the map page, using the search tab, you may see layers with no name. This is caused by the 
 	web service layers not being referenced properly in the associated resources part of the metadata record. Contributors to spatialdata.gov.scot should 
 	update their metadata records so their WMS resources in the dataset metadata are named with the layer name as it appears in the service. 
-	See the* `Associated Resources <UserDoc_Chap6_Edit.rst#associated-resources>`__ *section for guidance on how to set up associated resources.*
+	See the* `Associated Resources <UserDoc_Chap6_Edit.html#associated-resources>`__ *section for guidance on how to set up associated resources.*
 
 	|userdoc_fig_3_3_3_AddtoMapMapPage|
 
