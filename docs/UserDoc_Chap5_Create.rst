@@ -8,7 +8,7 @@ portal by `importing an existing metadata <#import-existing-metadata>`__ XML fil
 Importing existing metadata
 ---------------------------
 
-Prior to following the steps below to import an existing metadata record, please review `Annex 1 <UserDoc_Chap8_Annex1.rst#annex-1-requirements-for-metadata-to-be-correctly-identified-as-uk-gemini>`__.
+Prior to following the steps below to import an existing metadata record, please review `Annex 1 <UserDoc_Chap8_Annex1.html#annex-1-requirements-for-metadata-to-be-correctly-identified-as-uk-gemini>`__.
 
 To import an existing XML metadata record:
 
@@ -24,7 +24,7 @@ To import an existing XML metadata record:
 
 	**5|** Under the **Apply XSLT conversion** menu, select which translation option should be used to convert the format of the metadata (e.g. choose ESRI_ISO-to-GEMINI_22 if converting from ArcGIS format to UK Gemini). The option **_to_gemini** should be chosen as the default.
 	
-	*Note: For an xml that is already in Gemini 2.2 format, review the guidance in* `Annex 1 <#annex-1-requirements-for-metadata-to-be-correctly-identified-as-uk-gemini>`__. *If the record contains these elements, the* **Apply XSLT conversion** *option can be left blank. If the metadata does not contain these elements but is otherwise in Gemini 2.2 format, then select the* **_to_gemini** *conversion.*
+	*Note: For an xml that is already in Gemini 2.2 format, review the guidance in* `Annex 1 <UserDoc_Chap8_Annex1.html#annex-1-requirements-for-metadata-to-be-correctly-identified-as-uk-gemini>`__. *If the record contains these elements, the* **Apply XSLT conversion** *option can be left blank. If the metadata does not contain these elements but is otherwise in Gemini 2.2 format, then select the* **_to_gemini** *conversion.*
 	
 	**6|** Optionally, select whether to validate the record on import.
 	
@@ -36,7 +36,7 @@ To import an existing XML metadata record:
 	
 	**9|** Assign the record to the appropriate licence category (i.e. OGL, NCGL, INSPIRE or other).
 	
-	*Note: categories can also be amended at a later date. See* `assigning a licence category <UserDoc_Chap6_Edit.rst#assigning-a-licence-category>`__.
+	*Note: categories can also be amended at a later date. See* `assigning a licence category <UserDoc_Chap6_Edit.html#assigning-a-licence-category>`__.
 	
 	**10|** Click the |button_contribute_importconfirm| button.
 	
@@ -46,7 +46,7 @@ To import an existing XML metadata record:
 
 When the import operation has finished, an **Import Report** will be displayed on the right-hand side of the screen, indicating whether or not the 
 import has been successful. Following a successful import, users should verify that their records are valid. Consult the 
-`Validating metadata <UserDoc_Chap6_Edit.rst#validating-metadata>`__ section for details. Amendments to the record may be required to make it fully Gemini compliant.
+`Validating metadata <UserDoc_Chap6_Edit.html#validating-metadata>`__ section for details. Amendments to the record may be required to make it fully Gemini compliant.
 
 Creating metadata from a template
 ---------------------------------
@@ -65,7 +65,7 @@ To create a metadata record using an available template:
 	
 	**4|** Click on the template to be used (e.g. for a dataset template, there is an option for a raster or vector data template).
 
-	**5|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the editing board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.rst#editing-metadata>`__ for guidance on documenting the resource.
+	**5|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the editing board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.html#editing-metadata>`__ for guidance on documenting the resource.
 	
 	*Note: if the user is an editor for multiple groups or an administrator to the site, they may be presented with multiple templates of the same name. Additionally, they will be required to select which group folder to create the metadata record in.*
 
@@ -85,7 +85,7 @@ To create a metadata record by duplicating and existing record:
 
 	**2|** Click the duplicate icon (|button_contribute_duplicate|) next to the record name.
 	
-	**3|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the **editing** board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.rst#editing-metadata>`__ for guidance on documenting the resource.
+	**3|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the **editing** board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.html#editing-metadata>`__ for guidance on documenting the resource.
 
 	*Note: if the user is an editor for multiple groups or an administrator to the site, they will be required to select which group folder to create the duplicate metadata record in.*
 
@@ -102,7 +102,7 @@ spatial data portals which are interested in having their records automatically 
 Creating directory metadata
 ---------------------------
 
-Directory records are a means of automatically populating fields such as those for the `point of contact <UserDoc_Chap7_Elements.rst#point-of-contact>`__ section of a 
+Directory records are a means of automatically populating fields such as those for the `point of contact <UserDoc_Chap7_Elements.html#point-of-contact>`__ section of a 
 metadata record with pre-written values. This is useful if you have to create multiple records that share the same point of contact.
 
 To create a directory entry:
