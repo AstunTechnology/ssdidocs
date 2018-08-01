@@ -20,7 +20,7 @@ return the user to the home page.
 **Figure 2.1.1:** Home page
 
 When logged in, registered users of the site will be presented with further buttons on the header menu for |button_contribute| and |button_adminconsole|. 
-The |button_contribute| menu gives options to `add a new record <#creating-metadata-from-a-template>`__, `import new records <#importing-existing-metadata>`__ and `manage directory <#creating-directory-metadata>`__.
+The |button_contribute| menu gives options to `add a new record <UserDoc_Chap5_Create.html#creating-metadata-from-a-template>`__, `import new records <UserDoc_Chap5_Create.html#importing-existing-metadata>`__ and `manage directory <UserDoc_Chap5_Create.html#creating-directory-metadata>`__.
 
 Basic searching
 ---------------
@@ -85,7 +85,7 @@ it. Filtering options available are as follows:
 At the top right of the search results list is a menu to sort results by **title**, **relevance**, **date of change**, **rating**, **popularity**,
 and **scale**. At the top left of the results list users can select all results, all results on the current page, or none to deselect. Upon
 selection users can choose to export the results to a zip, pdf or csv file. Note that registered users will be able to perform additional actions, 
-such as publish `publish <#publishing-metadata>`__ or `delete <#deleting-metadata>`__, on selected records.
+such as publish `publish <UserDoc_Chap6_Edit.html#publishing-metadata>`__ or `delete <UserDoc_Chap6_Edit.html#deleting-metadata>`__, on selected records.
 
 |userdoc_fig_2_4_1_SortOptions| |userdoc_fig_2_4_1_SelectOptions|
 
