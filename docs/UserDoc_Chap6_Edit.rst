@@ -43,7 +43,7 @@ Mandatory fields (e.g. `Abstract <UserDoc_Chap7_Elements.html#abstract>`__) are 
 sub-element is mandatory within its context. For example, the `vertical extent <UserDoc_Chap7_Elements.html#extent-vertical-extent>`__ is an optional element, but if the 
 record requires one, then the minimum and maximum values are mandatory.
 
-Where a |button_edit_plus| button is displayed, the user can click this to add another occurance of an element or section. For example, a record 
+Where a |button_edit_plus| button is displayed, the user can click this to add another occurrence of an element or section. For example, a record 
 could have more than one `alternative title <UserDoc_Chap7_Elements.html#alternative-title>`__. When the user hovers over a section and a |button_edit_delete| appears, 
 clicking the cross will delete that element or section.
 
@@ -54,7 +54,7 @@ clicking the cross will delete that element or section.
 Changing the editing view
 -------------------------
 
-Sometimes it will be necessary for the user to change the view to enable additional functionality. For example, to add a new occurance of an element 
+Sometimes it will be necessary for the user to change the view to enable additional functionality. For example, to add a new occurrence of an element 
 when the |button_edit_plus| is not visible in the default view.
 
 To change the view of editing session:

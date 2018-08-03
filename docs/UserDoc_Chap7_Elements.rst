@@ -24,7 +24,7 @@ Abstract
 :INSPIRE: Abstract
 :ISO19115:  MD_DataIdentification.abstract
 :Obligation: Mandatory
-:Occurance: One
+:occurrence: One
 
 :Definition:
 	A brief narrative summary of the data resource.
@@ -42,7 +42,7 @@ Alternative title
 :INSPIRE: n/a
 :ISO19115: MD_DataIdentification.citation > CI_Citation.alternateTitle
 :Obligation: Optional
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	Any short name, other name, acronym or alternative language title by which the data resource is known.
@@ -63,7 +63,7 @@ Citation identifier
 :INSPIRE: Unique resource identifier
 :ISO19115: MD_DataIdentification.citation > CI_Citation.identifier
 :Obligation: Mandatory (datasets), Optional (services)
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	A value uniquely identifying the data resource within your organisation (i.e. how your organisation references the dataset).
@@ -81,7 +81,7 @@ Data Quality - Conformance result
 :INSPIRE: Conformity - degree
 :ISO19115: DQ_DataQuality > DQ_Element.result > DQ_ConformanceResult
 :Obligation: Conditional (required if claiming conformance to INSPIRE)
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	Nested within *Data quality*, this is the degree of conformity with the product specification or user requirement against which the data is 
@@ -103,7 +103,7 @@ Data Quality - Hierarchy level
 :INSPIRE: Hierarchy level
 :ISO19115: MD_Metadata.hierarchyLevel
 :Obligation: Mandatory
-:Occurance: One
+:occurrence: One
 
 :Definition:
 	Scope to which the metadata applies (i.e. dataset, series, service).
@@ -120,7 +120,7 @@ Date
 :INSPIRE: Date of publication
 :ISO19115: MD_Identification.citation > CI_Citation.date
 :Obligation: Mandatory
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	Reference date for the data resource, indicating the date of publication, creation and/or last revision. Note that for services, this 
@@ -141,7 +141,7 @@ Distribution format
 :INSPIRE: n/a
 :ISO19115: MD_Distribution.distributionFormat > MD_Format
 :Obligation: Conditional
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	The format(s) in which the digital data is available.
@@ -159,7 +159,7 @@ Extent - Geographic bounding box
 :INSPIRE: Geographic bounding box
 :ISO19115: MD_DataIdentification.extent > EX_Extent > EX_GeographicExtent > EX_GeographicBoundingBox
 :Obligation: Mandatory
-:Occurance: One
+:occurrence: One
 
 :Definition:
 	Rectangle enclosing the extent of the data resource described in latitude and longitude, to enable the resource to be located geographically. 
@@ -177,7 +177,7 @@ Extent - Geographic description
 :INSPIRE: n/a
 :ISO19115: MD_DataIdentification.extent > EX_Extent > EX_GeographicExtent > EX_GeographicDescription.geographicIdentifier
 :Obligation: Optional
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	The geographical extent of the data resource relative to an administrative hierarchy. Note that it is the coverage of the data resource, not 
@@ -197,7 +197,7 @@ Extent - Temporal extent
 :INSPIRE: Temporal extent
 :ISO19115: EX_Extent > EX_TemporalExtent.extent
 :Obligation: Mandatory (dataset), Conditional (service)
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	This is the date(s) that describes the time period covered by the content of the dataset.  It may refer to (a) the period of collection of the 
@@ -235,7 +235,7 @@ Extent - Vertical extent
 :INSPIRE: n/a
 :ISO19115: MD_DataIdentification.extent > EX_Extent > EX_VerticalExtent
 :Obligation: Optional
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	Describes the vertical domain (height range) of the data resource. The element is composed of the minimum value, maximum value and the vertical 
@@ -265,7 +265,7 @@ Keywords
 :INSPIRE: Keyword
 :ISO19115: MD_Identification.descriptiveKeywords > MD_Keywords
 :Obligation: Mandatory
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	Terms covering the subject of the data resource which are more specific than those entered under `topic category <#topic-category>`__.  Ideally, 
@@ -297,7 +297,7 @@ Language
 :INSPIRE: Resource language
 :ISO19115: MD_DataIdentification.language
 :Obligation: Conditional
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	The language used within the dataset (assuming the data resource contains text/written information, e.g. in attribute tables).
@@ -317,7 +317,7 @@ Limitations on public access
 :INSPIRE: Limitations on public access
 :ISO19115: MD_Identification > MD_Constraints > MD_LegalConstraints.otherConstraints
 :Obligation: Mandatory
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	Restrictions imposed on **access** to the data resource for security and other reasons (i.e. who can see the data). Sub-elements are *Access 
@@ -359,7 +359,7 @@ Lineage
 :INSPIRE: Lineage
 :ISO19115: DQ_DataQuality.lineage > LI_Lineage.statement
 :Obligation: Mandatory (dataset), Optional (service)
-:Occurance: One
+:occurrence: One
 
 :Definition:
 	A sub-element of *Data quality* that should provide information about the events or source data used in the creation of the data resource.   This will be useful in determining whether the data is fit for purpose.
@@ -377,7 +377,7 @@ Maintenance and update frequency
 :INSPIRE: n/a
 :ISO19115: MD_MaintenanceInformation.maintenanceAndUpdateFrequency
 :Obligation: Mandatory (dataset), Conditional (service)
-:Occurance: One
+:occurrence: One
 
 :Definition:
 	Describes the frequency with which modifications and deletions are made to the data resource. Note that this identifies how often the updated 
@@ -394,7 +394,7 @@ Metadata Contact
 :INSPIRE: Metadata point of contact
 :ISO19115: MD_Metadata.contact > CI_ResponsibleParty
 :Obligation: Mandatory
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	This element records the details of the organisation(s) responsible for the creation and maintenance of the metadata record. The structure of 
@@ -429,7 +429,7 @@ Metadata Date stamp
 :INSPIRE: Metadata date
 :ISO19115: MD_Metadata.dataStamp
 :Obligation: Mandatory
-:Occurance: One
+:occurrence: One
 
 :Definition:
 	The date on which the metadata was last updated.
@@ -447,7 +447,7 @@ Metadata Hierarchy level
 :INSPIRE: Resource type
 :ISO19115: MD_Metadata.hierarchyLevelName
 :Obligation: Mandatory
-:Occurance: One
+:occurrence: One
 
 :Definition:
 	Name of the hierarchy levels for which the metadata is provided.
@@ -464,7 +464,7 @@ Metadata Metadata language
 :INSPIRE: Metadata language
 :ISO19115: MD_Metadata.language
 :Obligation: Mandatory
-:Occurance: One
+:occurrence: One
 
 :Definition:
 	The language used to document the metadata. The purpose of this element is to identify the language used in a multi-lingual metadata service, 
@@ -485,7 +485,7 @@ OnLine resource
 :INSPIRE: Resource locator
 :ISO19115: MD_Distribution > MD_DigitalTransferOptions.online > CI_OnlineResource.linkage
 :Obligation: Conditional
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	Location (address) for on-line access to the resource using a Uniform Resource Locator (URL). This element should point to where the dataset 
@@ -506,7 +506,7 @@ Point of contact
 :INSPIRE: Responsible party
 :ISO19115: MD_Identification.pointOfContact
 :Obligation: Mandatory
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	This element records the details of the organisation(s) responsible for the creation, maintenance and distribution of the data resource. The 
@@ -542,7 +542,7 @@ Reference system information
 :INSPIRE: n/a
 :ISO19115: MD_ReferenceSystem.referenceSystemIdentifier > RS_Identifier.code
 :Obligation: Mandatory
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	Identifier, name or description of the system of spatial referencing, whether by coordinates or geographic identifiers, used in the data 
@@ -562,7 +562,7 @@ Spatial resolution - Distance
 :INSPIRE: Spatial resolution
 :ISO19115: MD_Identification.spatialResolution > MD_Resolution.distance
 :Obligation: Conditional
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	A distance measure of the granularity (in metres), providing an indication of how detailed the data is. It is equivalent to the ground sample 
@@ -582,7 +582,7 @@ Spatial resolution - Equivalent scale
 :INSPIRE: Equivalent scale
 :ISO19115: MD_Identification.spatialResolution > MD_Resolution.equivalentScale > MD_RepresentativeFraction.denominator
 :Obligation: Optional
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	The level of detail expressed as the scale denominator of a comparable hardcopy map or chart.
@@ -599,7 +599,7 @@ Supplemental information
 :INSPIRE: n/a
 :ISO19115: MD_Identification > MD_DataIdentification.supplementalInformation
 :Obligation: Optional
-:Occurance: One
+:occurrence: One
 
 :Definition:
 	Other descriptive information about the data resource held externally (e.g. a URL to background information).
@@ -616,7 +616,7 @@ Title
 :INSPIRE: Resource title
 :ISO19115: MD_DataIdentification.citation > CI_Citation.title
 :Obligation: Mandatory
-:Occurance: One
+:occurrence: One
 
 :Definition:
 	The name given to the data resource.  
@@ -633,7 +633,7 @@ Topic category
 :INSPIRE: Resource topic category
 :ISO19115: MD_DataIdentification.topicCategory
 :Obligation: Mandatory (datasets), N/A (services)
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	Describes the main theme(s) of the data resource, using `topic categories in accordance with ISO 19115 standard <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory>`__.
@@ -655,7 +655,7 @@ Use constraints
 :INSPIRE: Conditions applying to access and use
 :ISO19115: MD_Identification > MD_Constraints.useLimitation
 :Obligation: Mandatory
-:Occurance: Many
+:occurrence: Many
 
 :Definition:
 	Restrictions and legal constraints on **using** the data resource. This can be entered as a free text statement, or link to a URL containing 
