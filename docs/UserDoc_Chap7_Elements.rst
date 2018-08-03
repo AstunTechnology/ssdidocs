@@ -20,10 +20,11 @@ service commitments, as set out in the `Registered user obligations <UserDoc_Cha
 
 Abstract
 --------
-:UK Gemini element: `Abstract <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#4>`__
-:INSPIRE equivalent: Abstract
-:ISO 19115 equivalent:  MD_DataIdentification.abstract
-:Obligation/Occurance: Mandatory / Single
+:Gemini: `Abstract <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#4>`__
+:INSPIRE: Abstract
+:ISO19115:  MD_DataIdentification.abstract
+:Obligation: Mandatory
+:Occurance: One
 
 :Definition:
 	A brief narrative summary of the data resource.
@@ -37,10 +38,11 @@ Abstract
 
 Alternative title
 -----------------
-:UK Gemini element: `Alternative title <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#2>`__
-:INSPIRE equivalent: n/a
-:ISO 19115 equivalent: MD_DataIdentification.citation > CI_Citation.alternateTitle
-:Obligation/Occurance: Optional / Multiple
+:Gemini: `Alternative title <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#2>`__
+:INSPIRE: n/a
+:ISO19115: MD_DataIdentification.citation > CI_Citation.alternateTitle
+:Obligation: Optional
+:Occurance: Many
 
 :Definition:
 	Any short name, other name, acronym or alternative language title by which the data resource is known.
@@ -57,10 +59,11 @@ Alternative title
 
 Citation identifier
 -------------------
-:UK Gemini element: `Unique resource identifier <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#36>`__
-:INSPIRE equivalent: Unique resource identifier
-:ISO 19115 equivalent: MD_DataIdentification.citation > CI_Citation.identifier
-:Obligation/Occurance: Mandatory (datasets), Optional (services) / Multiple
+:Gemini: `Unique resource identifier <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#36>`__
+:INSPIRE: Unique resource identifier
+:ISO19115: MD_DataIdentification.citation > CI_Citation.identifier
+:Obligation: Mandatory (datasets), Optional (services)
+:Occurance: Many
 
 :Definition:
 	A value uniquely identifying the data resource within your organisation (i.e. how your organisation references the dataset).
@@ -74,10 +77,11 @@ Citation identifier
 
 Data Quality - Conformance result
 ---------------------------------
-:UK Gemini element: `Conformity <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#41>`__
-:INSPIRE equivalent: Conformity - degree
-:ISO 19115 equivalent: DQ_DataQuality > DQ_Element.result > DQ_ConformanceResult
-:Obligation/Occurance: Conditional (required if claiming conformance to INSPIRE) / Multiple
+:Gemini: `Conformity <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#41>`__
+:INSPIRE: Conformity - degree
+:ISO19115: DQ_DataQuality > DQ_Element.result > DQ_ConformanceResult
+:Obligation: Conditional (required if claiming conformance to INSPIRE)
+:Occurance: Many
 
 :Definition:
 	Nested within *Data quality*, this is the degree of conformity with the product specification or user requirement against which the data is 
@@ -95,10 +99,11 @@ Data Quality - Conformance result
 
 Data Quality - Hierarchy level
 ------------------------------
-:UK Gemini element: n/a see `Hierarchy level <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#hierarchy_level>`__
-:INSPIRE equivalent: Hierarchy level
-:ISO 19115 equivalent: MD_Metadata.hierarchyLevel
-:Obligation/Occurance: Mandatory / Single
+:Gemini: n/a see `Hierarchy level <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#hierarchy_level>`__
+:INSPIRE: Hierarchy level
+:ISO19115: MD_Metadata.hierarchyLevel
+:Obligation: Mandatory
+:Occurance: One
 
 :Definition:
 	Scope to which the metadata applies (i.e. dataset, series, service).
@@ -111,10 +116,11 @@ Data Quality - Hierarchy level
 
 Date
 ----
-:UK Gemini element: `Dataset reference date <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#8>`__
-:INSPIRE equivalent: Date of publication
-:ISO 19115 equivalent: MD_Identification.citation > CI_Citation.date
-:Obligation/Occurance: Mandatory / Multiple
+:Gemini: `Dataset reference date <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#8>`__
+:INSPIRE: Date of publication
+:ISO19115: MD_Identification.citation > CI_Citation.date
+:Obligation: Mandatory
+:Occurance: Many
 
 :Definition:
 	Reference date for the data resource, indicating the date of publication, creation and/or last revision. Note that for services, this 
@@ -131,10 +137,11 @@ Date
 
 Distribution format
 -------------------
-:UK Gemini element: `Data format <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#21>`__
-:INSPIRE equivalent: n/a
-:ISO 19115 equivalent: MD_Distribution.distributionFormat > MD_Format
-:Obligation/Occurance: Conditional / Multiple
+:Gemini: `Data format <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#21>`__
+:INSPIRE: n/a
+:ISO19115: MD_Distribution.distributionFormat > MD_Format
+:Obligation: Conditional
+:Occurance: Many
 
 :Definition:
 	The format(s) in which the digital data is available.
@@ -148,10 +155,11 @@ Distribution format
 
 Extent - Geographic bounding box
 --------------------------------
-:UK Gemini element: `Bounding box <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#44>`__
-:INSPIRE equivalent: Geographic bounding box
-:ISO 19115 equivalent: MD_DataIdentification.extent > EX_Extent > EX_GeographicExtent > EX_GeographicBoundingBox
-:Obligation/Occurance: Mandatory / Single
+:Gemini: `Bounding box <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#44>`__
+:INSPIRE: Geographic bounding box
+:ISO19115: MD_DataIdentification.extent > EX_Extent > EX_GeographicExtent > EX_GeographicBoundingBox
+:Obligation: Mandatory
+:Occurance: One
 
 :Definition:
 	Rectangle enclosing the extent of the data resource described in latitude and longitude, to enable the resource to be located geographically. 
@@ -165,10 +173,11 @@ Extent - Geographic bounding box
 
 Extent - Geographic description
 -------------------------------
-:UK Gemini element: `Extent <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#15>`__
-:INSPIRE equivalent: n/a
-:ISO 19115 equivalent: MD_DataIdentification.extent > EX_Extent > EX_GeographicExtent > EX_GeographicDescription.geographicIdentifier
-:Obligation/Occurance: Optional / Multiple
+:Gemini: `Extent <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#15>`__
+:INSPIRE: n/a
+:ISO19115: MD_DataIdentification.extent > EX_Extent > EX_GeographicExtent > EX_GeographicDescription.geographicIdentifier
+:Obligation: Optional
+:Occurance: Many
 
 :Definition:
 	The geographical extent of the data resource relative to an administrative hierarchy. Note that it is the coverage of the data resource, not 
@@ -184,10 +193,11 @@ Extent - Geographic description
 
 Extent - Temporal extent
 ------------------------
-:UK Gemini element: `Temporal extent <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#7>`__
-:INSPIRE equivalent: Temporal extent
-:ISO 19115 equivalent: EX_Extent > EX_TemporalExtent.extent
-:Obligation/Occurance: Mandatory (dataset), Conditional (service) / Multiple
+:Gemini: `Temporal extent <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#7>`__
+:INSPIRE: Temporal extent
+:ISO19115: EX_Extent > EX_TemporalExtent.extent
+:Obligation: Mandatory (dataset), Conditional (service)
+:Occurance: Many
 
 :Definition:
 	This is the date(s) that describes the time period covered by the content of the dataset.  It may refer to (a) the period of collection of the 
@@ -221,10 +231,11 @@ Extent - Temporal extent
 
 Extent - Vertical extent
 ------------------------
-:UK Gemini element: `Vertical extent information <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#16>`__
-:INSPIRE equivalent: n/a
-:ISO 19115 equivalent: MD_DataIdentification.extent > EX_Extent > EX_VerticalExtent
-:Obligation/Occurance: Optional / Multiple
+:Gemini: `Vertical extent information <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#16>`__
+:INSPIRE: n/a
+:ISO19115: MD_DataIdentification.extent > EX_Extent > EX_VerticalExtent
+:Obligation: Optional
+:Occurance: Many
 
 :Definition:
 	Describes the vertical domain (height range) of the data resource. The element is composed of the minimum value, maximum value and the vertical 
@@ -250,10 +261,11 @@ Extent - Vertical extent
 
 Keywords
 --------
-:UK Gemini element: `Keyword <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#6>`__
-:INSPIRE equivalent: Keyword
-:ISO 19115 equivalent: MD_Identification.descriptiveKeywords > MD_Keywords
-:Obligation/Occurance: Mandatory / Multiple
+:Gemini: `Keyword <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#6>`__
+:INSPIRE: Keyword
+:ISO19115: MD_Identification.descriptiveKeywords > MD_Keywords
+:Obligation: Mandatory
+:Occurance: Many
 
 :Definition:
 	Terms covering the subject of the data resource which are more specific than those entered under `topic category <#topic-category>`__.  Ideally, 
@@ -281,10 +293,11 @@ Keywords
 
 Language
 --------
-:UK Gemini element: `Dataset language <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#3>`__
-:INSPIRE equivalent: Resource language
-:ISO 19115 equivalent: MD_DataIdentification.language
-:Obligation/Occurance: Conditional / Multiple
+:Gemini: `Dataset language <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#3>`__
+:INSPIRE: Resource language
+:ISO19115: MD_DataIdentification.language
+:Obligation: Conditional
+:Occurance: Many
 
 :Definition:
 	The language used within the dataset (assuming the data resource contains text/written information, e.g. in attribute tables).
@@ -300,10 +313,11 @@ Language
 
 Limitations on public access
 ----------------------------
-:UK Gemini element: `Limitations on public access <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#25>`__
-:INSPIRE equivalent: Limitations on public access
-:ISO 19115 equivalent: MD_Identification > MD_Constraints > MD_LegalConstraints.otherConstraints
-:Obligation/Occurance: Mandatory / Multiple
+:Gemini: `Limitations on public access <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#25>`__
+:INSPIRE: Limitations on public access
+:ISO19115: MD_Identification > MD_Constraints > MD_LegalConstraints.otherConstraints
+:Obligation: Mandatory
+:Occurance: Many
 
 :Definition:
 	Restrictions imposed on **access** to the data resource for security and other reasons (i.e. who can see the data). Sub-elements are *Access 
@@ -341,10 +355,11 @@ Limitations on public access
 
 Lineage
 --------
-:UK Gemini element: `Lineage <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#10>`__
-:INSPIRE equivalent: Lineage
-:ISO 19115 equivalent: DQ_DataQuality.lineage > LI_Lineage.statement
-:Obligation/Occurance: Mandatory (dataset), Optional (service) / Single
+:Gemini: `Lineage <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#10>`__
+:INSPIRE: Lineage
+:ISO19115: DQ_DataQuality.lineage > LI_Lineage.statement
+:Obligation: Mandatory (dataset), Optional (service)
+:Occurance: One
 
 :Definition:
 	A sub-element of *Data quality* that should provide information about the events or source data used in the creation of the data resource.   This will be useful in determining whether the data is fit for purpose.
@@ -358,10 +373,11 @@ Lineage
 
 Maintenance and update frequency
 --------------------------------
-:UK Gemini element: `Frequency of update <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#24>`__
-:INSPIRE equivalent: n/a
-:ISO 19115 equivalent: MD_MaintenanceInformation.maintenanceAndUpdateFrequency
-:Obligation/Occurance: Mandatory (dataset), Conditional (service) / Single
+:Gemini: `Frequency of update <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#24>`__
+:INSPIRE: n/a
+:ISO19115: MD_MaintenanceInformation.maintenanceAndUpdateFrequency
+:Obligation: Mandatory (dataset), Conditional (service)
+:Occurance: One
 
 :Definition:
 	Describes the frequency with which modifications and deletions are made to the data resource. Note that this identifies how often the updated 
@@ -374,10 +390,11 @@ Maintenance and update frequency
 
 Metadata Contact
 ----------------
-:UK Gemini element: `Metadata point of contact <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#33>`__
-:INSPIRE equivalent: Metadata point of contact
-:ISO 19115 equivalent: MD_Metadata.contact > CI_ResponsibleParty
-:Obligation/Occurance: Mandatory / Multiple
+:Gemini: `Metadata point of contact <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#33>`__
+:INSPIRE: Metadata point of contact
+:ISO19115: MD_Metadata.contact > CI_ResponsibleParty
+:Obligation: Mandatory
+:Occurance: Many
 
 :Definition:
 	This element records the details of the organisation(s) responsible for the creation and maintenance of the metadata record. The structure of 
@@ -408,10 +425,11 @@ Metadata Contact
 
 Metadata Date stamp
 -------------------
-:UK Gemini element: `Metadata date <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#30>`__
-:INSPIRE equivalent: Metadata date
-:ISO 19115 equivalent: MD_Metadata.dataStamp
-:Obligation/Occurance: Mandatory / Single
+:Gemini: `Metadata date <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#30>`__
+:INSPIRE: Metadata date
+:ISO19115: MD_Metadata.dataStamp
+:Obligation: Mandatory
+:Occurance: One
 
 :Definition:
 	The date on which the metadata was last updated.
@@ -425,10 +443,11 @@ Metadata Date stamp
 
 Metadata Hierarchy level
 ------------------------
-:UK Gemini element: n/a see `Hierarchy level name <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#hierarchy_level_name>`__
-:INSPIRE equivalent: Resource type
-:ISO 19115 equivalent: MD_Metadata.hierarchyLevelName
-:Obligation/Occurance: Mandatory / Single
+:Gemini: n/a see `Hierarchy level name <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#hierarchy_level_name>`__
+:INSPIRE: Resource type
+:ISO19115: MD_Metadata.hierarchyLevelName
+:Obligation: Mandatory
+:Occurance: One
 
 :Definition:
 	Name of the hierarchy levels for which the metadata is provided.
@@ -441,10 +460,11 @@ Metadata Hierarchy level
 
 Metadata Metadata language
 --------------------------
-:UK Gemini element: `Metadata language <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#33>`__
-:INSPIRE equivalent: Metadata language
-:ISO 19115 equivalent: MD_Metadata.language
-:Obligation/Occurance: Mandatory / Single
+:Gemini: `Metadata language <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#33>`__
+:INSPIRE: Metadata language
+:ISO19115: MD_Metadata.language
+:Obligation: Mandatory
+:Occurance: One
 
 :Definition:
 	The language used to document the metadata. The purpose of this element is to identify the language used in a multi-lingual metadata service, 
@@ -461,10 +481,11 @@ Metadata Metadata language
 
 OnLine resource
 ---------------
-:UK Gemini element: `Resource locator <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#19>`__
-:INSPIRE equivalent: Resource locator
-:ISO 19115 equivalent: MD_Distribution > MD_DigitalTransferOptions.online > CI_OnlineResource.linkage
-:Obligation/Occurance: Conditional / Multiple
+:Gemini: `Resource locator <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#19>`__
+:INSPIRE: Resource locator
+:ISO19115: MD_Distribution > MD_DigitalTransferOptions.online > CI_OnlineResource.linkage
+:Obligation: Conditional
+:Occurance: Many
 
 :Definition:
 	Location (address) for on-line access to the resource using a Uniform Resource Locator (URL). This element should point to where the dataset 
@@ -481,10 +502,11 @@ OnLine resource
 
 Point of contact
 ----------------
-:UK Gemini element: `Responsible organisation <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#23>`__
-:INSPIRE equivalent: Responsible party
-:ISO 19115 equivalent: MD_Identification.pointOfContact
-:Obligation/Occurance: Mandatory / Multiple
+:Gemini: `Responsible organisation <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#23>`__
+:INSPIRE: Responsible party
+:ISO19115: MD_Identification.pointOfContact
+:Obligation: Mandatory
+:Occurance: Many
 
 :Definition:
 	This element records the details of the organisation(s) responsible for the creation, maintenance and distribution of the data resource. The 
@@ -516,10 +538,11 @@ Point of contact
 
 Reference system information
 ----------------------------
-:UK Gemini element: `Spatial reference system <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#17>`__
-:INSPIRE equivalent: n/a
-:ISO 19115 equivalent: MD_ReferenceSystem.referenceSystemIdentifier > RS_Identifier.code
-:Obligation/Occurance: Mandatory / Multiple
+:Gemini: `Spatial reference system <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#17>`__
+:INSPIRE: n/a
+:ISO19115: MD_ReferenceSystem.referenceSystemIdentifier > RS_Identifier.code
+:Obligation: Mandatory
+:Occurance: Many
 
 :Definition:
 	Identifier, name or description of the system of spatial referencing, whether by coordinates or geographic identifiers, used in the data 
@@ -535,10 +558,11 @@ Reference system information
 
 Spatial resolution - Distance
 -----------------------------
-:UK Gemini element: `Spatial resolution <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#18>`__
-:INSPIRE equivalent: Spatial resolution
-:ISO 19115 equivalent: MD_Identification.spatialResolution > MD_Resolution.distance
-:Obligation/Occurance: Conditional / Multiple
+:Gemini: `Spatial resolution <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#18>`__
+:INSPIRE: Spatial resolution
+:ISO19115: MD_Identification.spatialResolution > MD_Resolution.distance
+:Obligation: Conditional
+:Occurance: Many
 
 :Definition:
 	A distance measure of the granularity (in metres), providing an indication of how detailed the data is. It is equivalent to the ground sample 
@@ -554,10 +578,11 @@ Spatial resolution - Distance
 
 Spatial resolution - Equivalent scale
 -------------------------------------
-:UK Gemini element: `Equivalent scale <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#43>`__
-:INSPIRE equivalent: Equivalent scale
-:ISO 19115 equivalent: MD_Identification.spatialResolution > MD_Resolution.equivalentScale > MD_RepresentativeFraction.denominator
-:Obligation/Occurance: Optional / Multiple
+:Gemini: `Equivalent scale <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#43>`__
+:INSPIRE: Equivalent scale
+:ISO19115: MD_Identification.spatialResolution > MD_Resolution.equivalentScale > MD_RepresentativeFraction.denominator
+:Obligation: Optional
+:Occurance: Many
 
 :Definition:
 	The level of detail expressed as the scale denominator of a comparable hardcopy map or chart.
@@ -570,10 +595,11 @@ Spatial resolution - Equivalent scale
 
 Supplemental information
 ------------------------
-:UK Gemini element: `Additional information source <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#27>`__
-:INSPIRE equivalent: n/a
-:ISO 19115 equivalent: MD_Identification > MD_DataIdentification.supplementalInformation
-:Obligation/Occurance: Optional / Single
+:Gemini: `Additional information source <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#27>`__
+:INSPIRE: n/a
+:ISO19115: MD_Identification > MD_DataIdentification.supplementalInformation
+:Obligation: Optional
+:Occurance: One
 
 :Definition:
 	Other descriptive information about the data resource held externally (e.g. a URL to background information).
@@ -586,10 +612,11 @@ Supplemental information
 
 Title
 -----
-:UK Gemini element: `Title <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#1>`__
-:INSPIRE equivalent: Resource title
-:ISO 19115 equivalent: MD_DataIdentification.citation > CI_Citation.title
-:Obligation/Occurance: Mandatory / Single
+:Gemini: `Title <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#1>`__
+:INSPIRE: Resource title
+:ISO19115: MD_DataIdentification.citation > CI_Citation.title
+:Obligation: Mandatory
+:Occurance: One
 
 :Definition:
 	The name given to the data resource.  
@@ -602,10 +629,11 @@ Title
 
 Topic category
 --------------
-:UK Gemini element: `Topic category <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#5>`__
-:INSPIRE equivalent: Resource topic category
-:ISO 19115 equivalent: MD_DataIdentification.topicCategory
-:Obligation/Occurance: Mandatory (datasets), N/A (services) / Multiple
+:Gemini: `Topic category <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#5>`__
+:INSPIRE: Resource topic category
+:ISO19115: MD_DataIdentification.topicCategory
+:Obligation: Mandatory (datasets), N/A (services)
+:Occurance: Many
 
 :Definition:
 	Describes the main theme(s) of the data resource, using `topic categories in accordance with ISO 19115 standard <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory>`__.
@@ -623,10 +651,11 @@ Topic category
 	
 Use constraints
 ---------------
-:UK Gemini element: `Use constraints <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#26>`__
-:INSPIRE equivalent: Conditions applying to access and use
-:ISO 19115 equivalent: MD_Identification > MD_Constraints.useLimitation
-:Obligation/Occurance: Mandatory / Multiple
+:Gemini: `Use constraints <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#26>`__
+:INSPIRE: Conditions applying to access and use
+:ISO19115: MD_Identification > MD_Constraints.useLimitation
+:Obligation: Mandatory
+:Occurance: Many
 
 :Definition:
 	Restrictions and legal constraints on **using** the data resource. This can be entered as a free text statement, or link to a URL containing 
