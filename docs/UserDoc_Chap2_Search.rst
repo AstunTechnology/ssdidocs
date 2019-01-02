@@ -19,8 +19,8 @@ return the user to the home page.
 
 **Figure 2.1.1:** Home page
 
-When logged in, registered users of the site will be presented with further buttons on the header menu for |button_contribute| and |button_adminconsole|. 
-The |button_contribute| menu gives options to `add a new record <UserDoc_Chap5_Create.html#creating-metadata-from-a-template>`__, `import new records <UserDoc_Chap5_Create.html#importing-existing-metadata>`__ and `manage directory <UserDoc_Chap5_Create.html#creating-directory-metadata>`__.
+When logged in, registered users of the site will be presented with further buttons on the header menu for |button_contribute| and |button_adminconsole| (for user and site administrators). 
+The |button_contribute| menu gives options to `add a new record <UserDoc_Chap5_Create.html#creating-metadata-from-a-template>`__, `import new records <UserDoc_Chap5_Create.html#importing-existing-metadata>`__, `manage directory <UserDoc_Chap5_Create.html#creating-directory-metadata>`__, and `batch editing <UserDoc_Chap6_Edit.html#batch-editing>`__.
 
 Basic searching
 ---------------
@@ -35,7 +35,7 @@ Quick searches on the portal can be performed directly from the home page using 
 
 This will take the user to the main search panel, showing the resulting records in the centre of the page, with additional filtering options to the 
 left. The user can also access the main search panel by clicking |button_search| on the top menu of the home page. To the bottom right of the 
-page is a small map view showing the geographic extents of the queried results. 
+page is a small map view showing the geographic extents of the queried results. This can be minimised by clicking the collapse button on the right of the map.
 
 |userdoc_fig_2_2_2_SearchResults|
 
@@ -71,12 +71,14 @@ Search results can be limited using the options available in the left-hand panel
 it. Filtering options available are as follows:
 
 * **Type of resource** (i.e. datasets or services)
-* **Topic category**
+* **Licence Type**
+* **Topics**
 * **INSPIRE Theme**
 * **Keywords**
 * **Contact for the resource**
 * **Year**
 * **Format**
+* **Available Actions**
 * **Representation Type** (i.e. raster or vector)
 * **Update Frequency**
 * **Scale**
