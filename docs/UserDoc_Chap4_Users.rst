@@ -5,14 +5,14 @@ This section will guide registered users on how to sign in and manage their acco
 
 Becoming a registered user
 --------------------------
-To add or edit metadata on `spatialdata.gov.scot <https://spatialdata.gov.scot>`__, your organisation must be registered on the site. The portal does not currently allow self registration, and therefore 
+To add or edit metadata on `SpatialData.gov.scot <https://spatialdata.gov.scot>`__, your organisation must be registered on the site. The portal does not currently allow self registration, and therefore 
 interested parties should contact (`SSDI.Metadata@gov.scot <mailto:SSDI.Metadata@gov.scot>`__). Currently, user accounts are created for organisations 
 as a whole rather than individuals.
 
 Registered user obligations
 ---------------------------
 
-When an organisation becomes a registered user and submits metadata to `spatialdata.gov.scot <https://spatialdata.gov.scot>`__, they commit to the following **operational and service requirements**:
+When an organisation becomes a registered user and submits metadata to `SpatialData.gov.scot <https://spatialdata.gov.scot>`__, they commit to the following **operational and service requirements**:
 
 -  Maintaining the discovery metadata added by the organisation:
 
@@ -73,7 +73,7 @@ account admin page. From this page users can enter contact details and reset pas
 
 To reset an account password:
 
-	**1|** Click on the user profile name in the header.
+	**1|** Click on the user profile name in the header. Once presented with the manage user page, click the user name on the left hand side under 'Users' to display the user account information.
 	
 	**2|** Click the |button_account_resetpass| button.
 	
@@ -92,7 +92,7 @@ When amending details, users should click the |button_account_save| button to sa
 Users and groups
 ----------------
 
-`Spatialdata.gov.scot <https://spatialdata.gov.scot>`__ employs the concept of users, groups and profiles. *Users* are those accounts registered on the portal, and can be part of one or more 
+`SpatialData.gov.scot <https://spatialdata.gov.scot>`__ employs the concept of users, groups and profiles. *Users* are those accounts registered on the portal, and can be part of one or more 
 *groups* (which are collections of users corresponding to logical units, such as teams within an organisation). The *group* and *profile* (or role)
 of a user defines what tasks they can perform on the portal or on specific metadata records.
 
