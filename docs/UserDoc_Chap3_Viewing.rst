@@ -24,7 +24,7 @@ record:
 
 	**1|** Click on |button_view_display| at the top right of the record.
 
-	**2|** Choose from either 'full' or 'XML' view. Full view will display a detailed view of the record while XML view will display the raw XML for the record.
+	**2|** Choose 'Full view' to display a detailed view of the record.
 
 For detailed descriptions of each of the elements included in the metadata record, consult the `Metadata Elements <UserDoc_Chap7_Elements.html#metadata-elements>`__ section.
 
@@ -45,15 +45,13 @@ Previewing data in the map
 --------------------------
 
 Spatial data can be previewed in the interactive map using the web services referenced in the metadata. This capability can be accessed either from
-the search results page, the metadata record view, or from the interactive map page.
+the search results page, the metadata record view, or from the interactive map tab in the header menu.
 
 To add a layer to the map from the search results page:
 
 	**1|** Click on |button_view_globe| visible at the bottom right of the record.
 
 	**2|** If there are multiple layers in the service, click the desired layer or choose to add all layers to the map.
-
-	**3|** Click on |button_map| in the header menu to view the layer in the map.
 
 	|userdoc_fig_3_3_1_AddtoMapSearch|
 
@@ -65,13 +63,13 @@ To add a layer from the main map page:
 
 	**2|** On the right-hand side of the map, click |button_map_addlayer| at the top of the menu to open the **Add a Layer** dialog.
 
-	**3|** On the **Search** tab of the **Add a Layer** dialog, enter text in the search box to find a layer. Alternately, copy and paste a URL for a service into the **WMS**, **WMTS**, **WFS** or **KML** tabs.
+	**3|** On the **Search** tab of the **Add a Layer** dialog, enter text in the search box to find a layer. Alternately, copy and paste a URL for a service into the **WMS**, **WMTS**, or **WFS** boxes on the **Services** tab. KML can be added to the map via the **Files** tab.
  
 	**4|** Click |button_map_addicon| beside the layer to add it to the map. If adding from a URL, click on the layer name to add it to the map.	 
 	
 	*Note: when adding straight from the map page, using the search tab, you may see layers with no name. This is caused by the 
-	web service layers not being referenced properly in the associated resources part of the metadata record. Contributors to spatialdata.gov.scot should 
-	update their metadata records so their WMS resources in the dataset metadata are named with the layer name as it appears in the service. 
+	web service layer names not being referenced properly in the associated resources part of the dataset metadata record. Contributors to spatialdata.gov.scot should 
+	update their metadata records so their resources in the dataset metadata are named with the layer name as it appears in the service (i.e. as listed in the GetCapabilities request). 
 	See the* `Associated Resources <UserDoc_Chap6_Edit.html#associated-resources>`__ *section for guidance on how to set up associated resources.*
 
 	|userdoc_fig_3_3_3_AddtoMapMapPage|
@@ -92,8 +90,7 @@ To add a layer to the map from the metadata record view:
 
 	*Note: with respect to WFS, users may experience occasions where the layer appears to have been added to the map, yet does not display. This 
 	occurs when the Access-Control-Allow-Orgin header (CORS access policy) is missing from the remote server, and thus the request is blocked by 
-	the browser. This is out of the control of the portal as it is dependent on the organisations' server configuration, however, a request 
-	has been submitted to GeoNetwork to include an error message when this occurs, rather than to fail silently.*
+	the browser. This is out of the control of the portal as it is dependent on the organisations' server configuration, however, an error message shall be displayed.*
 	
 Managing layers in the map
 --------------------------
@@ -104,39 +101,26 @@ To manage layers displayed in the map:
 
 	**1|** Click |button_map_managelayers| on the right-hand side of the map. This will display a list of layers currently added to the map.
 	
-	*Note: those with scale-dependent visibility that are not currently visible will be greyed out. Layers that cannot be added for some other reason, such as an error with the service, will display an exclamation icon* (|button_map_exclamationicon|).
+	*Note: those with scale-dependent visibility that are not currently visible will be greyed out. Layers that cannot be added for some other reason, such as an error with the service, will display the layer name in red next to an error icon* (|button_map_exclamationicon|).
 
 	**2|** To toggle a layer on or off, click on the layer name or check/uncheck the box.
 	
-	**3|** Click the cog icon (|button_map_cogicon|) to access a menu to zoom to the extent of the layer, adjust the opacity, or remove the layer from the map.
+	**3|** Click the cog icon (|button_map_cogicon|) to access a menu to zoom to the extent of the layer, select syle (if available), adjust the opacity, or remove the layer from the map.
 	
-	**4|** To toggle the layer legend on or off, click the |button_map_legendicon| icon.
+	**4|** To toggle the layer legend on or off, click |button_map_legendicon|.
 
 |userdoc_fig_3_4_1_ManageLayers|
 
 **Figure 3.4.1:** Manage layers menu
 
-Annotate and print the map
---------------------------
+Print the map
+-------------
 
-To add annotation to the map:
+Note that there is a known issue with the print fuction wherein service layers that include spaces in the name will not display correctly in the map.
 
-	**1|** Click |button_map_anno| to access the **Annotations** tab.
+|userdoc_fig_3_5_1_PrintLayersError|
 
-	**2|** Click |button_map_annoadd| and choose **text** from the dropdown menu.
-
-	**3|** Enter text for the label in the text box below, and choose desired styling (size, fill and stroke colour, and stroke width).
-	
-	**4|** Move the mouse pointer over the map and click in the desired location to place the label.
-	
-	**5|** Use either the |button_map_annomodify| or |button_map_annoremove| buttons to change or delete the label.
-
-	*Note: the annotation dialog can also be used to add basic shapes to the map. Under the add button choose either point, line or polygon.
-	Add to the map using a single click to add a node and double clicking to finish.*
-
-|userdoc_fig_3_5_1_AnnotateMap|
-
-**Figure 3.5.1:** Adding annotation to the map	
+**Figure 3.5.1:** Error message regarding layer names	
 
 To print the current map:
 
@@ -163,12 +147,11 @@ Other map functions
 
 Other functionality available from the tabs on the main map page is as follows:
 
-:|button_map_default| Maps: allows the user to reload the default map settings (removes all layers, added annotations etc.), load a map context file, or download the current map as an xml record. 
+:|button_map_default| Default Map: via the manage layers tab, allows the user to reload the default map settings (removes all layers, etc.). 
 :|button_map_measure| Measure: allows the user to draw a line on the map to measure it's length. Single-click to create a node and double-click to finish.
-:|button_map_projection| Change projection: change the projection of the map to one of the supported projections in the dropdown list.
+:|button_map_graticules| Projection Switcher: change the projection of the map to one of the supported projections in the dropdown list.
 :|button_map_zoomin| |button_map_zoomout| Zoom in and out: zoom in or out on the map.
 :|button_map_zoomextent| Zoom to initial map extent: zoom to the full extent of the map.
-:|button_map_zoomlocation| Zoom to your position: zoom to your location on the map (note: this will only work if your location can be calculated by the browser).
 :|button_map_graticules| Graticule: adds a grid to the map (in lat/long).
 
 .. |userdoc_fig_3_1_1_DefaultViewA| image:: media/userdoc_fig_3_1_1_DefaultViewA.png
@@ -177,7 +160,7 @@ Other functionality available from the tabs on the main map page is as follows:
 .. |userdoc_fig_3_3_2_AddtoMapRecordView| image:: media/userdoc_fig_3_3_2_AddtoMapRecordView.png
 .. |userdoc_fig_3_3_3_AddtoMapMapPage| image:: media/userdoc_fig_3_3_3_AddtoMapMapPage.png
 .. |userdoc_fig_3_4_1_ManageLayers| image:: media/userdoc_fig_3_4_1_ManageLayers.png
-.. |userdoc_fig_3_5_1_AnnotateMap| image:: media/userdoc_fig_3_5_1_AnnotateMap.png
+.. |userdoc_fig_3_5_1_PrintLayersError| image:: media/error_PrintLayers.png
 .. |userdoc_fig_3_5_2_PrintMap| image:: media/userdoc_fig_3_5_2_PrintMap.png
 .. |button_view_display| image:: media/button_view_display.png
 .. |button_view_download| image:: media/button_view_download.png
@@ -202,5 +185,4 @@ Other functionality available from the tabs on the main map page is as follows:
 .. |button_map_zoomin| image:: media/button_map_zoomin.png
 .. |button_map_zoomout| image:: media/button_map_zoomout.png
 .. |button_map_zoomextent| image:: media/button_map_zoomextent.png
-.. |button_map_zoomlocation| image:: media/button_map_zoomlocation.png
 .. |button_map_graticules| image:: media/button_map_graticules.png
