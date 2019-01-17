@@ -30,15 +30,17 @@ To import an existing XML metadata record:
 	
 	*Note: it is recommended that the validate option be left un-ticked, and users perform a validation of the record after import. If the validation option is ticked and an error is found, the record will fail to import.*
 
-	**7|** Leave the **Assign to current catalog** option ticked.
+	**7|** Optionally, select whether to publish the record on import.
 	
-	**8|** Assign the record to a user group.
+	**8|** Leave the **Assign to current catalog** option ticked.
 	
-	**9|** Assign the record to the appropriate licence category (i.e. OGL, NCGL, INSPIRE or other).
+	**9|** Assign the record to a user group.
 	
-	*Note: categories can also be amended at a later date. See* `assigning a licence category <UserDoc_Chap6_Edit.html#assigning-a-licence-category>`__.
+	**10|** Assign the record to the appropriate licence type (i.e. OGL, NCGL, INSPIRE or other). This will allow for filtered searching based on the licence conditions.
 	
-	**10|** Click the |button_contribute_importconfirm| button.
+	*Note: Licence types can also be amended at a later date. See* `assigning a licence category <UserDoc_Chap6_Edit.html#assigning-a-licence-category>`__.
+	
+	**11|** Click the |button_contribute_importconfirm| button.
 	
 |userdoc_fig_5_1_1_ImportMetadata|
 
@@ -56,14 +58,14 @@ Basic templates are available for users to create metadata directly on `spatiald
 To create a metadata record using an available template:
 
 	**1|** Click the |button_contribute| button in the header menu. This will enable the **Contribute** board, where all records the user has access to will be listed.
-
-	**2|** Click the |button_contribute_addrecord| button to the right of the page.
+	
+	**2|** Click the |button_contribute_addrecord| button.
 	
 	**3|** Choose the type of record to be created based on the type of resource that is being documented, i.e. a dataset, series or service record. When selected available templates for that type are displayed.
 	
-	*Note: templates for dataset and service metadata are slightly different. Metadata for a service has extra elements for the spatial data service type (i.e. view, download, etc.) and for coupled resources.*
+	*Note: templates for dataset and service metadata are slightly different. Metadata for a service has extra elements for the spatial data service type (i.e. view, download, etc.) and for coupled resources. You must choose the correct template for the type of record being documented as it is not possible to change once the record has been created.*
 	
-	**4|** Click on the template to be used (e.g. for a dataset template, there is an option for a raster or vector data template).
+	**4|** Click on the template to be used.
 
 	**5|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the editing board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.html#editing-metadata>`__ for guidance on documenting the resource.
 	
@@ -109,13 +111,15 @@ To create a directory entry:
 
 	**1|** Click the |button_contribute| button in the header menu.
 
-	**2|** Click either |button_contribute_managedirectory| from the contribute drop down or the button on the right hand side of the page. This will bring the user to the manage directories page.
+	**2|** Click either |button_contribute_managedirectory| from the contribute drop down, or the button below the header of the **Contribute** board. This will bring the user to the manage directories page.
 
-	**3|** Duplicate the entry marked 'TEMPLATE TO DUPLICATE' by clicking the |button_contribute_duplicate| icon. Alternately, you could duplicate an existing record you have already created.
-
-	**4|** Amend the entry as appropriate and click |button_contribute_savedirectory| to save changes.
+	**3|** On the entries tab are previously created directory entries. Users can edit or duplicate an existing record or click the templates tab to access available directory templates.
 	
-	**5|** Click |button_contribute_saveclosedirectory| to save and exit.
+	**4|** If creating an entry from the templates tab, under **Actions**, duplicate the entry marked 'TEMPLATE TO DUPLICATE'.
+
+	**5|** Amend the entry as appropriate and click |button_contribute_savedirectory| to save changes.
+	
+	**6|** Click |button_contribute_saveclosedirectory| to save and exit.
 
 	*Note: The individual name field is not mandatory for the UK Gemini standard, however, for directories it can be used to identify teams/business areas if you have a number of different contact details within an organisation (e.g. GIS, Planning, etc.)*
 
