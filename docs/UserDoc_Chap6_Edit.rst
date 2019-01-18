@@ -18,11 +18,11 @@ To begin an editing session:
 
 	**2|** Either search for a particular record direct from the home page or click |button_contribute| and search or scroll for the record.
 
-	*Note: users can check the 'only my records' box at the top left of the contribute page to limit the record list to only those belonging to that user.*
+	*Note: if the 'only my records' box at the top left of the contribute page is checked (default), this will limit the record list to only those belonging to that user.*
 	
 	**3|** Click the pencil icon (|button_contribute_pencil|) visible in the search results list, or next to the record name on the contribute board. This will enter the user into an editing session.
 	
-	*Note: the pencil icon is also available in the top right of the page when viewing the record.*
+	*Note: users can also start an editing session from the record view page by clicking* |button_view_edit| *at the top of the page.*
 
 Editing basics
 --------------
@@ -96,7 +96,7 @@ To assign or change the licence category via the contribute board:
 	
 	*Note: the licence category can be updated for multiple records at a time.*
 	
-	**3|** Click the dropdown labelled 'selected' at the top left of the record list and choose 'Update categories' from the list. This will display the licence categories dialog.
+	**3|** Click the dropdown labelled 'selected' at the top left of the record list and choose 'Update licence' from the list. This will display the licence categories dialog.
 	
 	**2|** From the menu, check the appropriate licence type (Open Government, Non-commercial, INSPIRE or other).
 	
@@ -116,17 +116,23 @@ To add an online resource to *dataset* metadata where a corresponding *service* 
 
 	**1|** Click on the |button_edit_addassocresource| button at the top of the Associated Resources panel.
 	
-	**2|** From the dropdown menu select 'Link ot a service'. This will display the Link resources dialog.
+	**2|** From the dropdown menu select 'Link to a service'. This will display the Link resources dialog.
 	
-	**3|** Search using the free text box and click on the service record in the results list to select it. This will display dataset layers available in the service.
+	**3|** Search using the free text box and click on the service record in the results list to select it.
+	
+	**4|** Click on the |button_edit_linkservice| to link the service to the dataset metadata. This creates a link between the dataset and service records and adds an online resource element to the dataset record. This element must then be edited to ensure the correct layer within the service is referenced.
 
-	**4|** Click on the layer in the service that corresponds to the dataset. It will be highlighted in green when selected.
+	**5|** Click on the pencil icon beside the newly added online resource in the associated resources panel. Alternately scroll to the element in the main editing board and amend manually.
 	
-	**5|** Click on the |button_edit_linkservice| to link the service to the dataset metadata. Once complete the service record name will be visible in the associated resources panel under **Service**. An online resource for the layer will also be added to the dataset record, visible in the online resource section and also the associated resources panel under **Online resources**.
+	**6|** Amend the URL to ensure it points at the service (e.g. www.mapdata.scot/ServiceName/MapServer/WMSServer?). For dataset records the URL for for a WMS or WFS should **not** include the GetCapabilities request.
 	
-	**6|** Navigate to the online resource section of the editing form and ensure that the URL, protocol and layer name are correctly identified. For dataset records the URL for for a WMS or WFS should **not** include the GetCapabilities request.
+	**7|** Set the correct protocol for the service from the drop down (e.g. OGC-WMS Web Map Service). This will then display the layers available in the service.
 	
-	*Note: For web services (i.e. WMS and WFS) to correctly display in the map, you must ensure that the URL, protocol and layer name are correctly entered for the online resource (step 6 above). While these elements are not required for Gemini compliance, the are needed to enable previewing on the map.*
+	**8|** Click on the appropriate layer to select it (it will highlight in green).
+	
+	**9|** Click |button_edit_updatelink|.
+	
+	*Note: For web services (i.e. WMS and WFS) to correctly display in the map, you must ensure that the protocol and layer name are correctly entered for the online resource (steps 7 and 8 above). While these elements are not required for Gemini compliance, the are needed to enable previewing on the map.*
 
 |userdoc_fig_6_5_1_AssocDatasetService|
 
@@ -136,21 +142,19 @@ To add an online resource to *dataset* metadata where **no** corresponding *serv
  
 	**1|** Click on the |button_edit_addassocresource| button at the top of the Associated Resources panel.
 	
-	**2|** From the dropdown menu, select the first option, 'Add document'. This will display the Link resources dialog.
+	**2|** From the dropdown menu, select the first option, 'Link and online resource'. This will display the Link resources dialog.
 	
 	**3|** Ensure the 'Add link' radio button is clicked.
 	
-	**4|** Select the appropriate protocol for the online resource (e.g. for a WMS, select OGC-WMS Web Map Service, for a website choose Web address(URL))
+	**4|** Add the URL to ensure it points at the service (e.g. www.mapdata.scot/ServiceName/MapServer/WMSServer?). For dataset records the URL for for a WMS or WFS should **not** include the GetCapabilities request.
 	
-	**5|** Enter the URL for the resource. If the resource is a web service (e.g. WMS or WFS), layers available in the service should display.
+	**5|** Set the correct protocol for the service from the drop down (e.g. OGC-WMS Web Map Service). This will then display the layers available in the service.
 	
-	*Note: for web services, the URL should not include the GetCapabilities request.*
+	**6|** Click on the appropriate layer to select it (it will highlight in green).
 	
-	**6|** If the resource is a web service (e.g. WMS or WFS), click the layer which is represented by the dataset record. This should automatically fill the **resource name** and **description** boxes. If the resource is not a web service, enter appropriate text in the **resource name** and **description** boxes.
+	**7|** Click |button_edit_addlink|.
 	
-	**7|** Click the |button_edit_addlink|.
-	
-	*Note: although only the URL is indicated as being mandatory, users must include the protocol and resource name to ensure the dataset can be previewed in the interactive map. The resource name must match that which is defined in the web service configuration. Refer to the GetCapabilities request of the service to view how the layer name is defined.*
+	*Note: For web services (i.e. WMS and WFS) to correctly display in the map, you must ensure that the protocol and layer name are correctly entered for the online resource (steps 5 and 6 above). While these elements are not required for Gemini compliance, the are needed to enable previewing on the map.*
 
 |userdoc_fig_6_5_2_OnlineResourceDataset|
 
@@ -160,7 +164,7 @@ To add an online resource (e.g. WMS or WFS) to a *service* metadata record:
  
 	**1|** Click on the |button_edit_addassocresource| at the top of the Associated Resources panel.
 	
-	**2|** From the dropdown menu, select the first option, 'Add document'. This will display the Link resources dialog.
+	**2|** From the dropdown menu, select the first option, 'Link and online resource'. This will display the Link resources dialog.
 	
 	**3|** Ensure the 'Add link' radio button is clicked.
 	
@@ -170,12 +174,6 @@ To add an online resource (e.g. WMS or WFS) to a *service* metadata record:
 	
 	*Note: A service may contain multiple layers and these will be displayed when the service URL is entered. As this is a service record, it is not necessary to select a single layer to link to (this is only required for dataset records).*
 	
-	**6|** Enter an appropriate name for the service in the **resource name** and **description** boxes.
-	
-	**7|** Click the |button_edit_addlink|.
-	
-	*Note: although only the URL is indicated as being mandatory, users must include the protocol and resource name to ensure the service layers can be previewed in the interactive map.*
-
 |userdoc_fig_6_5_3_OnlineResourceService|
 
 **Figure 6.5.3:** Adding an online resource to a service record
@@ -307,6 +305,7 @@ to have records deleted from `data.gov.uk <http://data.gov.uk/>`__.
 .. |button_edit_category| image:: media/button_edit_category.png
 .. |button_contribute_replace| image:: media/button_contribute_replace.png
 .. |button_edit_addassocresource| image:: media/button_edit_addassocresource.png
+.. |button_edit_updatelink| image:: media/button_edit_updatelink.png
 .. |button_edit_linkservice| image:: media/button_edit_linkservice.png
 .. |button_edit_addlink| image:: media/button_edit_addlink.png
 .. |button_edit_validate| image:: media/button_edit_validate.png
@@ -317,6 +316,7 @@ to have records deleted from `data.gov.uk <http://data.gov.uk/>`__.
 .. |button_edit_cancel| image:: media/button_edit_cancel.png
 .. |button_contribute_locked| image:: media/button_contribute_locked.png
 .. |button_contribute_unlocked| image:: media/button_contribute_unlocked.png
+.. |button_view_edit| image:: media/button_view_edit.png
 .. |button_view_managerecord| image:: media/button_view_managerecord.png
 .. |button_view_publish| image:: media/button_view_publish.png
 .. |button_contribute_delete| image:: media/button_contribute_delete.png
