@@ -40,9 +40,9 @@ Welcome to the Spatialdata.gov.scot Metadata Portal's documentation!
 
    privacy
 
-.. licensing:
+.. _licensing:
 .. toctree::
    :maxdepth: 2
-   :caption: Licence
+   :caption: Licencing
 
    licensing
