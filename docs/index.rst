@@ -9,6 +9,7 @@ Welcome to the Spatialdata.gov.scot Metadata Portal's documentation!
 * :ref:`user-docs`
 * :ref:`admin-docs`
 * :ref:`privacy`
+* :ref:`licensing`
 
 
 .. _user-docs:
@@ -38,3 +39,10 @@ Welcome to the Spatialdata.gov.scot Metadata Portal's documentation!
    :caption: Privacy Statement
 
    privacy
+
+.. licensing:
+.. toctree::
+   :maxdepth: 2
+   :caption: Licence
+
+   licensing
