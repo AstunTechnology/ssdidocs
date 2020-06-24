@@ -36,6 +36,20 @@ Abstract
 
 |userdoc_fig_7_1_1_Abstract|
 
+Additional information
+----------------------
+:Gemini: `Additional information <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#27>`__
+:INSPIRE: supplemental information
+:ISO19115:  MD_Identification > MD_DataIdentification.supplementalInformation
+:Obligation: Optional
+:occurrence: One
+
+:Definition:
+	Other descriptive information about the data resource.
+
+:Guidance:
+	Record relevant information that does not clearly belong in any other element. Do not use it to describe how to access the resource, or for any restrictions on access or use. If this element is not visible in the editor, switch to advanced editing view, and the Identification info tab, and use the "Additional information" button at the bottom of the page.
+
 Alternative title
 -----------------
 :Gemini: `Alternative title <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#2>`__
