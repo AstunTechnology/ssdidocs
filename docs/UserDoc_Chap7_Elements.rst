@@ -20,7 +20,7 @@ service commitments, as set out in the `Registered user obligations <UserDoc_Cha
 
 Abstract
 --------
-:Gemini: `Abstract <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#4>`__
+:Gemini: `Abstract <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#4>`__
 :INSPIRE: Abstract
 :ISO19115:  MD_DataIdentification.abstract
 :Obligation: Mandatory
@@ -38,7 +38,7 @@ Abstract
 
 Alternative title
 -----------------
-:Gemini: `Alternative title <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#2>`__
+:Gemini: `Alternative title <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#2>`__
 :INSPIRE: n/a
 :ISO19115: MD_DataIdentification.citation > CI_Citation.alternateTitle
 :Obligation: Optional
@@ -57,30 +57,65 @@ Alternative title
 
 |userdoc_fig_7_2_1_AlternativeTitle|
 
-Citation identifier
+Character encoding
+------------------
+:Gemini: `Character encoding <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#51>`__
+:INSPIRE: Character encoding (metadata/2.0/req/isdss/character-encoding)
+:ISO19115: MD_DataIdentification.characterSet 
+:Obligation: Conditional (mandatory if not UTF-8)
+:occurence: Many
+
+:Definition:
+	The character encoding used in the dataset.
+
+:Guidance:
+	The encoding is assumed to be UTF8 but other options are available using the dropdown list.
+
+Data format
 -------------------
-:Gemini: `Unique resource identifier <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#36>`__
-:INSPIRE: Unique resource identifier
-:ISO19115: MD_DataIdentification.citation > CI_Citation.identifier
-:Obligation: Mandatory (datasets), Optional (services)
+:Gemini: `Data format <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#21>`__
+:INSPIRE: Data encoding
+:ISO19115: MD_Distribution.distributionFormat > MD_Format
+:Obligation: Mandatory
 :occurrence: Many
 
 :Definition:
-	A value uniquely identifying the data resource within your organisation (i.e. how your organisation references the dataset).
+	The format(s) in which the digital data is available.
 
 :Guidance:
-	The *Code* element is mandatory, and should be a recognisable identifier within the context of your organisation (i.e. a unique	code of numbers, 
-	letters or combination of referring to a single dataset).  If it is not guaranteed to be unique across the UK and the wider EU (INSPIRE), 
-	then the *Codespace* sub-element must be specified; this should be the internet domain of the data provider/owner.
+	The name of the format and the version can be selected from common options listed in the drop down menu. Otherwise, entries should 
+	be recognised formats for data transfer, either standard or proprietary. If the data is not transferable (e.g. view only), then this should be 
+	stated. Recommended best practice is to select a value from a controlled vocabulary, such as `PRONOM <http://www.nationalarchives.gov.uk/PRONOM/Default.aspx>`__. 
 
-|userdoc_fig_7_3_1_CitationIdentifier|
+|userdoc_fig_7_7_1_DistributionFormat|
 
-Data Quality - Conformance result
+Data quality
 ---------------------------------
-:Gemini: `Conformity <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#41>`__
+:Gemini: `Data quality <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#52>`__
+:INSPIRE: Topological consistency. Other types are specified in the data specifications
+:ISO19115: DQ_DataQuality.report->DQ_Element
+:Obligation: Conditional. Consult Gemini Guidance.
+:occurrence: Many
+
+:Definition:
+	Quantitative aspects of data quality. To allow quantitative description of the completeness, consistency, accuracy, and correctness of the data
+
+:Guidance:
+	This element comprises two sub-elements:
+
+	**1|** Quality Scope- records the scope that the below report refers to
+
+	**2|** Conformity- the product specification being assessed against
+
+	At least one data quality element must be scoped to the entire data set or series that the metadata refers to. Other quality measures, for example relating to specific feature types may be provided in addition. To add additional Data Quality elements, switch to advanced editing view and the Quality Tab, and add a new Data Quality info element using the plus button at the base of the page.
+	
+
+Data quality - Conformity
+---------------------------------
+:Gemini: `Conformity <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#41>`__
 :INSPIRE: Conformity - degree
 :ISO19115: DQ_DataQuality > DQ_Element.result > DQ_ConformanceResult
-:Obligation: Conditional (required if claiming conformance to INSPIRE)
+:Obligation: Mandatory
 :occurrence: Many
 
 :Definition:
@@ -88,35 +123,56 @@ Data Quality - Conformance result
 	being evaluated (i.e. degree of conformity to INSPIRE).
 
 :Guidance:
-	To be conformant to INSPIRE data specifications, provide the title and date for the specification, and an explanation of the degree of 
-	conformance. If claiming full conformance, click the check box marked *pass*.
+	At least one conformity statement shall be to an INSPIRE specification, even if to simply say that the data set is not conformant or not tested. Template snippets for INSPIRE Spatial data sets, Network services and Spatial data services have been provided. Use the "Search for a quality report" tool to choose the appropriate one.
+
+	To record that a data set or service has not been evaluated, for the Degree choose "Not evaluated". Otherwise choose "Conformant" or "Not conformant" as appropriate.
+
+	To record conformance against an additional report, switch to the Advanced editing view, change to the Quality tab and add a new Result using the plus button within the appropriate Data Quality element.
 	
-	At present a dataset is unlikely to be fully conformant, until mapping of the data to an INSPIRE data specification schema (i.e. mapping to GML) 
-	has occurred for full interoperability, which will come in future phases of INSPIRE implementation. If the resource is not an INSPIRE dataset, or
-	conformity is not being claimed, then this element can be removed by clicking the |button_edit_delete| button at the domain consistency level.
 
 |userdoc_fig_7_4_1_ConformanceResult|
 
-Data Quality - Hierarchy level
-------------------------------
-:Gemini: n/a see `Hierarchy level <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#hierarchy_level>`__
-:INSPIRE: Hierarchy level
-:ISO19115: MD_Metadata.hierarchyLevel
+Data quality - Quality scope
+---------------------------------
+:Gemini: `Quality Scope <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#48>`__
+:INSPIRE: metadata/2.0/req/datasets-and-series/one-data-quality-element
+:ISO19115: DQ_DataQuality.scope
 :Obligation: Mandatory
-:occurrence: One
+:occurrence: Many
 
 :Definition:
-	Scope to which the metadata applies (i.e. dataset, series, service).
+	Nested within *Data quality*, this is specific scope to which the data quality assessment applies.
+
+:Guidance:	
+    At least one Data Quality element scoped to the entire data set or series to which the metadata record refers. For a dataset, set quality scope to 'dataset', for a dataset series, set quality scope 'series'.
+    
+    If using a Data Quality element to describe something other than the whole dataset or series, then provide additional data quality elements with their
+    Scope set appropriately. Switch to the Advanced editing view, change to the Quality tab, and Data Quality info element using the plus button at the base of the page. Set the quality scope to the appropriate level using the dropdown list.
+
+Dataset language
+----------------
+:Gemini: `Dataset language <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#3>`__
+:INSPIRE: Resource language
+:ISO19115: MD_DataIdentification.language
+:Obligation: Conditional
+:occurrence: Many
+
+:Definition:
+	The language used within the dataset (assuming the data resource contains text/written information, e.g. in attribute tables).
 
 :Guidance:
-	This is not a UK GEMINI element, but required in ISO 19115 encoding.  For metadata created on `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__, this element is set by the 
-	choice of template and should not be changed.
+	Select a language from the drop down menu listing entries from the ISO 639-2 code list.  For INSPIRE compliance, this has to be an 
+	`official language of the European Community <http://ec.europa.eu/languages/policy/linguistic-diversity/official-languages-eu_en.htm>`__, 
+	of which EngliDataset lansh (eng) is the only one in common use across the UK (and is the default). For non-INSPIRE metadata records, it can 
+	be any ISO 639-2 three letter code, of which the relevant entries for the UK are English (eng), Welsh (cym), Gaelic (Irish) (gle), Gaelic 
+	(Scottish) (gla), Cornish (cor), Ulster Scots (sco).
 
-|userdoc_fig_7_5_1_HierarchyLevel|
+|userdoc_fig_7_13_1_DatasetLanguage|
 
-Date
-----
-:Gemini: `Dataset reference date <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#8>`__
+
+Dataset reference date
+----------------------
+:Gemini: `Dataset reference date <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#8>`__
 :INSPIRE: Date of publication
 :ISO19115: MD_Identification.citation > CI_Citation.date
 :Obligation: Mandatory
@@ -135,45 +191,28 @@ Date
 
 |userdoc_fig_7_6_1_ReferenceDate|
 
-Distribution format
--------------------
-:Gemini: `Data format <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#21>`__
-:INSPIRE: n/a
-:ISO19115: MD_Distribution.distributionFormat > MD_Format
-:Obligation: Conditional
-:occurrence: Many
-
-:Definition:
-	The format(s) in which the digital data is available.
-
-:Guidance:
-	The name of the format and the version can be selected from common options listed in the drop down menu. Otherwise, entries should 
-	be recognised formats for data transfer, either standard or proprietary. If the data is not transferable (e.g. view only), then this should be 
-	stated. Recommended best practice is to select a value from a controlled vocabulary, such as `PRONOM <http://www.nationalarchives.gov.uk/PRONOM/Default.aspx>`__. 
-
-|userdoc_fig_7_7_1_DistributionFormat|
 
 Extent - Geographic bounding box
 --------------------------------
-:Gemini: `Bounding box <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#44>`__
+:Gemini: `Bounding box <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#44>`__
 :INSPIRE: Geographic bounding box
 :ISO19115: MD_DataIdentification.extent > EX_Extent > EX_GeographicExtent > EX_GeographicBoundingBox
 :Obligation: Mandatory
-:occurrence: One
+:occurrence: Many
 
 :Definition:
 	Rectangle enclosing the extent of the data resource described in latitude and longitude, to enable the resource to be located geographically. 
 	It has four sub-elements: west bounding longitude, east bounding longitude, south bounding latitude, and north bounding latitude.
 
 :Guidance:
-	A pre-defined extent can be chosen using the drop down menu, or bounding coordinates can be manually enetered in the corresponding boxes. The 
-	west bounding longitude should be less than the east bounding longitude, and the north boundaing latitude must be greater than the south.
+	A pre-defined extent can be chosen using the drop down menu, or bounding coordinates can be manually entered in the corresponding boxes. The 
+	west bounding longitude should be less than the east bounding longitude, and the north bounding latitude must be greater than the south.
 
 |userdoc_fig_7_8_1_GeogBoundingBox|
 
 Extent - Geographic description
 -------------------------------
-:Gemini: `Extent <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#15>`__
+:Gemini: `Extent <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#15>`__
 :INSPIRE: n/a
 :ISO19115: MD_DataIdentification.extent > EX_Extent > EX_GeographicExtent > EX_GeographicDescription.geographicIdentifier
 :Obligation: Optional
@@ -193,7 +232,7 @@ Extent - Geographic description
 
 Extent - Temporal extent
 ------------------------
-:Gemini: `Temporal extent <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#7>`__
+:Gemini: `Temporal extent <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#7>`__
 :INSPIRE: Temporal extent
 :ISO19115: EX_Extent > EX_TemporalExtent.extent
 :Obligation: Mandatory (dataset), Conditional (service)
@@ -205,11 +244,7 @@ Extent - Temporal extent
 	`dataset reference date <#date>`__ (i.e. publication).
 
 :Guidance:
-	The user may need to add the temporal element if it is not visible in the editing form.
-
-	To add the temporal element to the editing form:
-
-	**1|** Change the editing form display to `advanced editor view <UserDoc_Chap6_Edit.html#changing-the-editing-view>`__.
+	Enter a Begin date and/or End date as required. Selecting a date will activate a calendar selector. To add additional temporal extents, use the `advanced editor view <UserDoc_Chap6_Edit.html#changing-the-editing-view>`__.
 	
 	**2|** Scroll to the extent section (identification tab) and click the |button_edit_plusdrop| button next to the **Temporal element** label.
 	
@@ -231,7 +266,7 @@ Extent - Temporal extent
 
 Extent - Vertical extent
 ------------------------
-:Gemini: `Vertical extent information <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#16>`__
+:Gemini: `Vertical extent information <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#16>`__
 :INSPIRE: n/a
 :ISO19115: MD_DataIdentification.extent > EX_Extent > EX_VerticalExtent
 :Obligation: Optional
@@ -242,33 +277,59 @@ Extent - Vertical extent
 	coordinate reference system (recorded as a name or code from a recognised thesaurus, i.e. `EPSG Geodetic Parameter Registry <http://www.epsg-registry.org/>`__).
 
 :Guidance:
-	This element should be completed only where the vertical extent is relevant (e.g. geology, mining, etc.). The user may need to add the temporal 
-	element if it is not visible in the editing form.
-	
-	To add the vertical extent element to the editing form:
+	This element should be completed only where the vertical extent is relevant (e.g. geology, mining, etc.), but if it is completed then all elements are required. Use the "+ Vertical Extent" button to add:
 
-	**1|** Change the editing form display to `advanced editor view <UserDoc_Chap6_Edit.html#changing-the-editing-view>`__.
-	
-	**2|** Scroll to the extent section (identification tab) and click the |button_edit_plus| button next to the **Vertical element** label. This will present the minimum and maximum elements.
-	
-	**3|** To document a Coordinate Reference System for the vertical extent, click the  |button_edit_plusdrop| button labeled **Vertical CRS**.
-	
-	**4|** From the dropdown menu, select **Vertical CRS**.
-	
-	**5|** Add further sub-elements as necessary.
+	**1|** Minimum Value in metres.
+
+	**2|** Maximum Value in metres.
+
+	**3|** Vertical CRS- choose from the recommended values in the dropdown list.
 
 |userdoc_fig_7_11_1_VerticalExtent|
 
-Keywords
---------
-:Gemini: `Keyword <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#6>`__
+
+File identifier
+-------------------
+:Gemini: `File identifier <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#45>`__
+:INSPIRE: metadata/2.0/rec/common/fileIdentifier
+:ISO19115: MD_Metadata.fileIdentifier
+:Obligation: Mandatory
+:occurrence: One
+
+:Definition:
+	Unique identifier for this metadata file.
+
+:Guidance:
+	To support the operation of UK Location and INSPIRE, discovery metadata records must include a File Identifier for the resource. This will be auto-generated by the metadata portal and once created cannot be changed.
+
+	File identifier should not be confused with the UK GEMINI2 metadata item Resource identifier, which identifies the data resource being described.
+
+Hierarchy level name
+--------------------
+:Gemini: `Hierarchy level name <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#47>`__
+:INSPIRE: Hierarchy level
+:ISO19115: MD_Metadata.hierarchyLevelName
+:Obligation: Mandatory for series and services, optional for datasets
+:occurrence: One
+
+:Definition:
+	The name of the hierarchy level for which the metadata is provided (eg dataset, series, service).
+
+:Guidance:
+	Set to "service", "series", "dataset" as appropriate. Note that in UK Gemini this element is conditional for datasets.
+
+|userdoc_fig_7_19_1_MetadataHierarchyLevel|
+
+Keyword
+-------
+:Gemini: `Keyword <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#6>`__
 :INSPIRE: Keyword
 :ISO19115: MD_Identification.descriptiveKeywords > MD_Keywords
 :Obligation: Mandatory
 :occurrence: Many
 
 :Definition:
-	Terms covering the subject of the data resource which are more specific than those entered under `topic category <#topic-category>`__.  Ideally, 
+	Terms covering the subject of the data resource that are more specific than those entered under `topic category <#topic-category>`__.  Ideally, 
 	these will be standardised keywords originating from a controlled vocabulary, so that resources can be identified in any search.
 
 :Guidance:
@@ -291,46 +352,26 @@ Keywords
 
 |userdoc_fig_7_12_1_Keywords|
 
-Language
---------
-:Gemini: `Dataset language <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#3>`__
-:INSPIRE: Resource language
-:ISO19115: MD_DataIdentification.language
-:Obligation: Conditional
-:occurrence: Many
-
-:Definition:
-	The language used within the dataset (assuming the data resource contains text/written information, e.g. in attribute tables).
-
-:Guidance:
-	Select a language from the drop down menu listing entries from the ISO 639-2 code list.  For INSPIRE compliance, this has to be an 
-	`official language of the European Community <http://ec.europa.eu/languages/policy/linguistic-diversity/official-languages-eu_en.htm>`__, 
-	of which English (eng) is the only one in common use across the UK (and is the default). For non-INSPIRE metadata records, it can 
-	be any ISO 639-2 three letter code, of which the relevant entries for the UK are English (eng), Welsh (cym), Gaelic (Irish) (gle), Gaelic 
-	(Scottish) (gla), Cornish (cor), Ulster Scots (sco).
-
-|userdoc_fig_7_13_1_DatasetLanguage|
 
 Limitations on public access
 ----------------------------
-:Gemini: `Limitations on public access <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#25>`__
+:Gemini: `Limitations on public access <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#25>`__
 :INSPIRE: Limitations on public access
-:ISO19115: MD_Identification > MD_Constraints > MD_LegalConstraints.otherConstraints
+:ISO19115: MD_Identification.resourceConstraints > MD_LegalConstraints.accessConstraints & otherConstraints
 :Obligation: Mandatory
 :occurrence: Many
 
 :Definition:
-	Restrictions imposed on **access** to the data resource for security and other reasons (i.e. who can see the data). Sub-elements are *Access 
-	constraints* and *Other constraints*.
+	Restrictions imposed on **access** to the data resource for security and other reasons (i.e. who can see the data). 
 
 :Guidance:
-	Limitations on public access is different from the `use constraints <#use-constraints>`__ element which describes limitations on using the data, 
+	Limitations on public access is different from the `use constraints <#use-constraints>`__ element, which describes limitations on using the data, 
 	such as fees or licencing restrictions, rather than the access to it. A data resource can be openly accessible (which all INSPIRE data should 
 	be), but have restrictions on its use such as licensing, fees, or usage limitations.
-	
-	For INSPIRE purposes the *Access constraints* dropdown box must be set to '**other restrictions**'. The *Other constraints* free text box must 
+
+	At least one limitation on public access shall give an INSPIRE reason. For INSPIRE purposes the *Access constraints* dropdown box must be set to '**other restrictions**'. The *Other constraints* free text box must 
 	then be populated with an appropriate label from the `INSPIRE code list for Limitations on public access <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/>`__.
-	If there are no restrictions on access, the text box should be populated with '**no limitations on public access**'.
+	If there are no restrictions on access, the text box should be populated with '**no limitations**'.
 	
 	This element shall **only** include information regarding access to the resource (not the use of the data, which is documented under the `Use constraints <#use-constraints>`__ section). 
 	When Member States limit public access to spatial data sets and spatial data services under Article 13 of Directive 2007/2/EC, this metadata 
@@ -355,10 +396,10 @@ Limitations on public access
 
 Lineage
 --------
-:Gemini: `Lineage <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#10>`__
+:Gemini: `Lineage <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#10>`__
 :INSPIRE: Lineage
 :ISO19115: DQ_DataQuality.lineage > LI_Lineage.statement
-:Obligation: Mandatory (dataset), Optional (service)
+:Obligation: Mandatory
 :occurrence: One
 
 :Definition:
@@ -371,16 +412,16 @@ Lineage
 
 |userdoc_fig_7_15_1_Lineage|
 
-Maintenance and update frequency
+Maintenance information
 --------------------------------
-:Gemini: `Frequency of update <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#24>`__
-:INSPIRE: n/a
+:Gemini: `Maintenance information <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#53>`__
+:INSPIRE: Maintenance information
 :ISO19115: MD_MaintenanceInformation.maintenanceAndUpdateFrequency
-:Obligation: Mandatory (dataset), Conditional (service)
+:Obligation: Optional
 :occurrence: One
 
 :Definition:
-	Describes the frequency with which modifications and deletions are made to the data resource. Note that this identifies how often the updated 
+	Information about the scope and frequency of updating. Note that this identifies how often the updated 
 	data resource is made available to the user (for instance a data resource may be updated continuously, but released to the user only monthly).
 
 :Guidance:
@@ -388,9 +429,48 @@ Maintenance and update frequency
 
 |userdoc_fig_7_16_1_UpdateFrequency|
 
-Metadata Contact
-----------------
-:Gemini: `Metadata point of contact <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#33>`__
+Metadata date stamp
+-------------------
+:Gemini: `Metadata date <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#30>`__
+:INSPIRE: Metadata date
+:ISO19115: MD_Metadata.dataStamp
+:Obligation: Mandatory
+:occurrence: One
+
+:Definition:
+	The date on which the metadata was last updated.
+
+:Guidance:
+	This element is not editable and is set by the editor when the file is saved. It is used by `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ and `data.gov.uk <https://data.gov.uk>`__ to determine if metadata 
+	with the same field identifier (UUID) has been changed. A single date is specified in the extended format YYYY-MM-DD, where YYYY is the year, 
+	MM is the month and DD is the day.
+
+|userdoc_fig_7_18_1_MetadataDate|
+
+Metadata language
+-----------------
+:Gemini: `Metadata language <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#33>`__
+:INSPIRE: Metadata language
+:ISO19115: MD_Metadata.language
+:Obligation: Mandatory
+:occurrence: One
+
+:Definition:
+	The language used to document the metadata. The purpose of this element is to identify the language used in a multi-lingual metadata service, 
+	for example in the INSPIRE geo-portal.
+
+:Guidance:
+	Selected a language from the drop down menu listing entries from the ISO 639-2 code list.  For INSPIRE compliance, this has to be an 
+	`official language of the European Community <http://ec.europa.eu/languages/policy/linguistic-diversity/official-languages-eu_en.htm>`__, 
+	of which English (eng) is the only one in common use across the UK (and is the default in the SSDI). For non-INSPIRE metadata records, it can 
+	be any ISO 639-2 three letter code, of which the relevant entries for the UK are English (eng), Welsh (cym), Gaelic (Irish) (gle), Gaelic 
+	(Scottish) (gla), Cornish (cor), Ulster Scots (sco).
+
+|userdoc_fig_7_20_1_MetadataLanguage|
+
+Metadata point of contact
+-------------------------
+:Gemini: `Metadata point of contact <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#35>`__
 :INSPIRE: Metadata point of contact
 :ISO19115: MD_Metadata.contact > CI_ResponsibleParty
 :Obligation: Mandatory
@@ -423,65 +503,73 @@ Metadata Contact
 	
 |userdoc_fig_7_17_1_MetadataContact|
 
-Metadata Date stamp
+
+Metadata standard name
+----------------------
+:Gemini: `Metadata standard name <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#54>`__
+:INSPIRE: N/A
+:ISO19115: MD_Metadata.metadataStandardName
+:Obligation: Optional in GEMINI but required in `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__
+:occurence: One
+
+:Definition:
+	Name of the metadata standard or profile used, cited with a reference to the appropriate register entry. 
+
+:Guidance:
+	This element is required in `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ and must be set to `<gmx:Anchor xlink:href="http://vocab.nerc.ac.uk/collection/M25/current/GEMINI/">UK GEMINI</gmx:Anchor>` when importing metadata records into the portal. For records created within the portal from templates, this element will be automatically filled in, and will not be editable in the default editing view.
+
+Metadata standard version
+-------------------------
+:Gemini: `Metadata standard version <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#55>`__
+:INSPIRE: N/A
+:ISO19115: MD_Metadata.metadataStandardVersion
+:Obligation: Optional in GEMINI but required in `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__
+:occurence: One
+
+:Definition:
+	Version of the metadata standard (profile) used.
+
+:Guidance:
+	This element is required in `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ and must be set to **2.3** when importing metadata records into the portal. For records created within the portal from templates, this element will be automatically filled in, and will not be editable in the default editing view.
+
+Parent identifier
+-----------------
+:Gemini: `Parent identifier <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#49>`__
+:INSPIRE: N/A
+:ISO19115: MD_parentidentifier.scope
+:Obligation: Optional
+:occurrence: One
+
+:Definition:
+	Only to be used if the dataset is part of a series
+
+:Guidance:
+	To add a parent identifier, click the "Add parent record" button and add the Unique Identifier for the parent record.
+
+
+
+Resource identifier
 -------------------
-:Gemini: `Metadata date <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#30>`__
-:INSPIRE: Metadata date
-:ISO19115: MD_Metadata.dataStamp
-:Obligation: Mandatory
-:occurrence: One
+:Gemini: `Resource identifier <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#36>`__
+:INSPIRE: Unique resource identifier
+:ISO19115: MD_DataIdentification.citation > CI_Citation.identifier
+:Obligation: Mandatory (datasets), Optional (services)
+:occurrence: Many
 
 :Definition:
-	The date on which the metadata was last updated.
+	A value uniquely identifying the data resource within your organisation (i.e. how your organisation references the dataset).
 
 :Guidance:
-	This element is not editable and is set by the editor when the file is saved. It is used by `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ and `data.gov.uk <https://data.gov.uk>`__ to determine if metadata 
-	with the same field identifier (UUID) has been changed. A single date is specified in the extended format YYYY-MM-DD, where YYYY is the year, 
-	MM is the month and DD is the day.
+	The *Code* element is mandatory, and should be a recognisable identifier within the context of your organisation (i.e. a unique	code of numbers, 
+	letters or combination of referring to a single dataset).  If it is not guaranteed to be unique across the UK and the wider EU (INSPIRE), 
+	then the *Codespace* sub-element must be specified; this should be the internet domain of the data provider/owner.
 
-|userdoc_fig_7_18_1_MetadataDate|
+|userdoc_fig_7_3_1_CitationIdentifier|
 
-Metadata Hierarchy level
-------------------------
-:Gemini: n/a see `Hierarchy level name <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#hierarchy_level_name>`__
-:INSPIRE: Resource type
-:ISO19115: MD_Metadata.hierarchyLevelName
-:Obligation: Mandatory
-:occurrence: One
 
-:Definition:
-	Name of the hierarchy levels for which the metadata is provided.
-
-:Guidance:
-	This is not a UK GEMINI element, but required in ISO 19115 encoding.  For metadata created on `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__, this element is set by the 
-	choice of template and should not be changed.
-
-|userdoc_fig_7_19_1_MetadataHierarchyLevel|
-
-Metadata Metadata language
---------------------------
-:Gemini: `Metadata language <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#33>`__
-:INSPIRE: Metadata language
-:ISO19115: MD_Metadata.language
-:Obligation: Mandatory
-:occurrence: One
-
-:Definition:
-	The language used to document the metadata. The purpose of this element is to identify the language used in a multi-lingual metadata service, 
-	for example in the INSPIRE geo-portal.
-
-:Guidance:
-	Selected a language from the drop down menu listing entries from the ISO 639-2 code list.  For INSPIRE compliance, this has to be an 
-	`official language of the European Community <http://ec.europa.eu/languages/policy/linguistic-diversity/official-languages-eu_en.htm>`__, 
-	of which English (eng) is the only one in common use across the UK (and is the default in the SSDI). For non-INSPIRE metadata records, it can 
-	be any ISO 639-2 three letter code, of which the relevant entries for the UK are English (eng), Welsh (cym), Gaelic (Irish) (gle), Gaelic 
-	(Scottish) (gla), Cornish (cor), Ulster Scots (sco).
-
-|userdoc_fig_7_20_1_MetadataLanguage|
-
-OnLine resource
----------------
-:Gemini: `Resource locator <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#19>`__
+Resource locator
+----------------
+:Gemini: `Resource locator <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#19>`__
 :INSPIRE: Resource locator
 :ISO19115: MD_Distribution > MD_DigitalTransferOptions.online > CI_OnlineResource.linkage
 :Obligation: Conditional
@@ -500,9 +588,26 @@ OnLine resource
 	
 |userdoc_fig_7_21_1_OnLineResource|
 
-Point of contact
-----------------
-:Gemini: `Responsible organisation <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#23>`__
+Resource type
+---------------
+:Gemini: `Resource type <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#39>`__
+:INSPIRE: Resource type
+:ISO19115: MD_Metadata.hierarchyLevel
+:Obligation: Mandatory
+:occurrence: One
+
+:Definition:
+	Scope to which the metadata applies (i.e. dataset, series, service).
+
+:Guidance:
+	Identify whether resource is a dataset or a series (collection of datasets with a common specification). For metadata created on `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__, this element is set by the 
+	choice of template and should not be changed.
+
+|userdoc_fig_7_5_1_HierarchyLevel|
+
+Responsible organisation
+------------------------
+:Gemini: `Responsible organisation <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#23>`__
 :INSPIRE: Responsible party
 :ISO19115: MD_Identification.pointOfContact
 :Obligation: Mandatory
@@ -536,9 +641,9 @@ Point of contact
 
 |userdoc_fig_7_22_1_PointofContact|
 
-Reference system information
+Spatial reference system
 ----------------------------
-:Gemini: `Spatial reference system <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#17>`__
+:Gemini: `Spatial reference system <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#17>`__
 :INSPIRE: n/a
 :ISO19115: MD_ReferenceSystem.referenceSystemIdentifier > RS_Identifier.code
 :Obligation: Mandatory
@@ -556,9 +661,32 @@ Reference system information
 
 |userdoc_fig_7_23_1_ReferenceSystem|
 
+Spatial representation type
+----------------------------
+:Gemini: `Spatial representation type <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#50>`__
+:INSPIRE: Spatial representation type
+:ISO19115: MD_DataIdentification.spatialRepresentationType 
+:Obligation: Mandatory
+:occurrence: Many
+
+:Definition:
+	The method used to spatially represent geographic information.
+
+:Guidance:
+	This element uses the MD_SpatialRepresentationTypeCode from ISO 19115. Codes to be used are:
+
+	**1|** vector- use this as the default
+    
+    **2|** grid- use this for images and coverage data
+    
+    **3|** tin- use this for specific Triangulated Irregular Network data sets, which represent a surface
+
+    **4|** textTable- use this for datasets with an indirect spatial reference
+
+
 Spatial resolution - Distance
 -----------------------------
-:Gemini: `Spatial resolution <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#18>`__
+:Gemini: `Spatial resolution <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#18>`__
 :INSPIRE: Spatial resolution
 :ISO19115: MD_Identification.spatialResolution > MD_Resolution.distance
 :Obligation: Conditional
@@ -578,7 +706,7 @@ Spatial resolution - Distance
 
 Spatial resolution - Equivalent scale
 -------------------------------------
-:Gemini: `Equivalent scale <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#43>`__
+:Gemini: `Equivalent scale <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#43>`__
 :INSPIRE: Equivalent scale
 :ISO19115: MD_Identification.spatialResolution > MD_Resolution.equivalentScale > MD_RepresentativeFraction.denominator
 :Obligation: Optional
@@ -593,26 +721,10 @@ Spatial resolution - Equivalent scale
 	
 |userdoc_fig_7_25_1_SpatialResEqScale|
 
-Supplemental information
-------------------------
-:Gemini: `Additional information source <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#27>`__
-:INSPIRE: n/a
-:ISO19115: MD_Identification > MD_DataIdentification.supplementalInformation
-:Obligation: Optional
-:occurrence: One
-
-:Definition:
-	Other descriptive information about the data resource held externally (e.g. a URL to background information).
-
-:Guidance:
-	This should be used to link to other sources of descriptive information about the resource. It should **not** be used to record links to 
-	`online resources <#online-resource>`__ such as web services.
-
-|userdoc_fig_7_26_1_SupplementalInformation|
 
 Title
 -----
-:Gemini: `Title <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#1>`__
+:Gemini: `Title <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#1>`__
 :INSPIRE: Resource title
 :ISO19115: MD_DataIdentification.citation > CI_Citation.title
 :Obligation: Mandatory
@@ -629,7 +741,7 @@ Title
 
 Topic category
 --------------
-:Gemini: `Topic category <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#5>`__
+:Gemini: `Topic category <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#5>`__
 :INSPIRE: Resource topic category
 :ISO19115: MD_DataIdentification.topicCategory
 :Obligation: Mandatory (datasets), N/A (services)
@@ -651,9 +763,9 @@ Topic category
 	
 Use constraints
 ---------------
-:Gemini: `Use constraints <https://www.agi.org.uk/gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#26>`__
+:Gemini: `Use constraints <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#26>`__
 :INSPIRE: Conditions applying to access and use
-:ISO19115: MD_Identification > MD_Constraints.useLimitation
+:ISO19115: MD_Identification.resourceConstraints > MD_LegalConstraints.useConstraints & otherConstraints
 :Obligation: Mandatory
 :occurrence: Many
 
@@ -665,8 +777,14 @@ Use constraints
 	Use constraints are different from `limitations on public access <#limitations-on-public-access>`__ which describe limitations on access to the 
 	data. A data resource can be openly accessible (which all INSPIRE data should be), but have restrictions on its use such as licensing, fees, or 
 	usage limitations. 
+
+	This element comprises two sub-elements:
+
+	**1|** useConstraints- should contain an MD_RestrictionCode element with code list value "otherRestrictions"
+
+	**2|** otherConstraints- a free text element describing the usage restrictions or link to a URL, as below.
 	
-	To add an additional use constraint element, click the |button_edit_plusdrop| button and choose either the *anchor* or *text* option. All records 
+	To link to a URL in the otherConstraints element, click the |button_edit_plusdrop| button and choose either the *anchor* option. All records 
 	on `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ should document the licencing arrangements for the data resource using the anchor type. Where possible, this should link to a URL 
 	such as the `Open Government Licence <http://www.nationalarchives.gov.uk/doc/open-government-licence/>`__, 
 	`Non-Commercial Government Licence <http://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/>`__,
