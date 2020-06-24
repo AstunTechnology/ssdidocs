@@ -4,3 +4,6 @@ _build
 local
 bin
 include
+lib64
+share
+pyvenv.cfg
