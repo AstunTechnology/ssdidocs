@@ -68,9 +68,8 @@ Group, SDI/Inspire forum.
 Metadata Standards on SpatialData.gov.scot
 ------------------------------------------
 
-Metadata on the portal is compliant to the UK Gemini specification, which defines a core set of metadata elements for UK geospatial data, and is
-compatible with the INSPIRE requirements for metadata. The current version of the standard is UK Gemini 2.2, with version 2.3 expected to be implemented by the end of 2019.
-More information on the UK Gemini standard is available from `The Association for Geographic Information (AGI) <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini>`__.
+Metadata on the portal is compliant to the `UK GEMINI <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini>`__ specification, which defines a core set of metadata elements for UK geospatial data, and is
+compatible with the INSPIRE requirements for metadata. The current version of the standard is UK Gemini 2.3. Users should consult `Annex 2 <UserDoc_Chap9_Annex2.html#annex-2-upgrading-to-uk-gemini-2-3>`__ to upgrade their existing metadata to this version if they have not already done so.
 
 The `MEDIN Discovery Metadata Standard <http://www.oceannet.org/marine_data_standards/medin_disc_stnd.html>`__ is a profile of UK Gemini specific to marine data. It can be thought of as a superset of Gemini, including 
 the same core elements, but extending where necessary to include additional information relevant to the marine environment (e.g. marine keyword 
