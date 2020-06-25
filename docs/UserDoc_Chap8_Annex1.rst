@@ -1,10 +1,10 @@
 Annex 1: Requirements for metadata to be correctly identified as UK Gemini
 ==========================================================================
 
-Records that are imported into `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ (rather than created within the portal using the available templates) must include the following XML elements 
-to ensure that the record is correctly identified as UK Gemini upon import.
+Records that are imported into `SpatialData.gov.scot <https://www.spatialdata.gov.scot>`__ (rather than created within the portal using the available templates) must include the following XML elements 
+to ensure that the record is correctly identified as `UK GEMINI <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini>`__ upon import.
 
-.. note:: Using the default `to-gemini23.xsl` transformation when importing will do this for you. 
+*Note: Using the default* **to-gemini23** *transformation when importing will do this for you.*
 
 Root element
 ------------
