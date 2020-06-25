@@ -73,7 +73,7 @@ account admin page. From this page users can enter contact details and reset pas
 
 To reset an account password:
 
-	**1|** Click on the user profile name in the header. Once presented with the manage user page, click the user name on the left hand side under 'Users' to display the user account information.
+	**1|** Click on the user profile name in the header. By default the |button_account_manageusers| page should be presented. Click the user name on the left hand side under 'Users' to display the user account information.
 	
 	**2|** Click the |button_account_resetpass| button.
 	
@@ -88,6 +88,8 @@ When amending details, users should click the |button_account_save| button to sa
 |userdoc_fig_4_4_1_ManageAccount|
 
 **Figure 4.4.1:** The account management page
+
+Note that there is also a |button_account_managegroups| tab. Generally each user account is an administrator for a group of the same name. On this tab users can manage group names and contacts as wells as assign logos for the group (which will appear on record view) - groups can be thought of as the 'publishing body'. Groups can have multiple user accounts associated with them, and users may be a part of a number of groups.
 
 Users and groups
 ----------------
@@ -131,6 +133,8 @@ Normally, organisations registered on the site are given the role of *Content Re
 .. |button_signin_confirm| image:: media/button_signin_confirm.png
 .. |button_signin_forgotten| image:: media/button_signin_forgotten.png
 .. |button_signin_sendlink| image:: media/button_signin_sendlink.png
+.. |button_account_manageusers| image:: media/button_account_manageusers.png
+.. |button_account_managegroups| image:: media/button_account_managegroups.png
 .. |button_account_resetpass| image:: media/button_account_resetpass.png
 .. |button_account_resetpassconfirm| image:: media/button_account_resetpassconfirm.png
 .. |button_account_save| image:: media/button_account_save.png
