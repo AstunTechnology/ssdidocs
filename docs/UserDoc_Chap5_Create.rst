@@ -22,9 +22,9 @@ To import an existing XML metadata record:
 
 	*Note: The UUID is a generated automatically by whatever internal system (i.e. ESRI ArcGIS) was used to write and manage your metadata. In xml, it can be found at the top of the page under the file identifier section. Within the portal, the UUID or File Identifier can be found at the bottom of the metadata record display. This UUID, together with the metadata date stamp, are used to ensure records are unique within* `spatialdata.gov.scot <https://spatialdata.gov.scot>`__, `data.gov.uk <http://data.gov.uk/>`__ *and other metadata catalogues.*
 
-	**5|** Under the **Apply XSLT conversion** menu, select which translation option should be used to convert the format of the metadata (e.g. choose ESRI_ISO-to-GEMINI_22 if converting from ArcGIS format to UK Gemini). The option **_to_gemini** should be chosen as the default.
+	**5|** Under the **Apply XSLT conversion** menu, select the appropriate translation to convert the metadata to the UK Gemini format.
 	
-	*Note: For an xml that is already in Gemini 2.2 format, review the guidance in* `Annex 1 <UserDoc_Chap8_Annex1.html#annex-1-requirements-for-metadata-to-be-correctly-identified-as-uk-gemini>`__. *If the record contains these elements, the* **Apply XSLT conversion** *option can be left blank. If the metadata does not contain these elements but is otherwise in Gemini 2.2 format, then select the* **_to_gemini** *conversion.*
+	*Note: For an xml file that is already in Gemini 2.3 format (and recognised as such, see* `Annex 1 <UserDoc_Chap8_Annex1.html#annex-1-requirements-for-metadata-to-be-correctly-identified-as-uk-gemini>`__), *the* **Apply XSLT conversion** *option can be left blank. To convert an existing Gemini 2.2 record to 2.3, select the* **xml_gemini22gemini23** *conversion.*
 	
 	**6|** Optionally, select whether to validate the record on import.
 	
@@ -113,13 +113,11 @@ To create a directory entry:
 
 	**2|** Click either |button_contribute_managedirectory| from the contribute drop down, or the button below the header of the **Contribute** board. This will bring the user to the manage directories page.
 
-	**3|** On the entries tab are previously created directory entries. Users can edit or duplicate an existing record or click the templates tab to access available directory templates.
+	**3|** On the entries tab are previously created directory entries. Under the **Actions** drop menu, users can choose to edit or duplicate an existing record. Alternately, users can create a blank directory entry using a template by first clicking on the **Templates** tab, and then choosing duplicate from the **Actions** menu of the 'TEMPLATE TO DUPLICATE' entry.
 	
-	**4|** If creating an entry from the templates tab, under **Actions**, duplicate the entry marked 'TEMPLATE TO DUPLICATE'.
-
-	**5|** Amend the entry as appropriate and click |button_contribute_savedirectory| to save changes.
+	**4|** Amend the entry as appropriate and click |button_contribute_savedirectory| to save changes.
 	
-	**6|** Click |button_contribute_saveclosedirectory| to save and exit.
+	**5|** Click |button_contribute_saveclosedirectory| to save and exit.
 
 	*Note: The individual name field is not mandatory for the UK Gemini standard, however, for directories it can be used to identify teams/business areas if you have a number of different contact details within an organisation (e.g. GIS, Planning, etc.)*
 
