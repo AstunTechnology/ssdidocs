@@ -15,7 +15,7 @@ spatial **extent** of the resource can be seen in the map to the right. Access t
 
 **Figure 3.1.1:** Default record view
 
-Scrolling down the page, the **About this resource** and **Technical information** headings details on topic categories and keywords, licencing 
+Scrolling down the page, the **About this resource** and **Technical information** headings provide details on topic categories and keywords, licencing 
 information, contacts, maintenance frequency, coordinate systems and data formats are provided. Information on the history of a resource and how 
 it was created can be found in the **lineage** section.
 
