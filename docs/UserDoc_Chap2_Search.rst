@@ -12,7 +12,7 @@ The portal can be accessed from the following link:
 
 The home page of the portal comprises a basic search bar at the top, and also provides the option to browse by topic category (default) or 
 by INSPIRE theme. Visitors can also browse the newest entries to the site or the most popular using the tabs lower down the page. Tabs in the header 
-menu give access to the main search page, map viewer and sign in page (for registered users). Clicking the portal logo on the header menu will 
+menu give access to the main **search** page, **map** viewer and **sign in** page (for registered users). Clicking the portal name on the header menu will 
 return the user to the home page.
 
 |userdoc_fig_2_1_1_Home|
@@ -87,7 +87,7 @@ it. Filtering options available are as follows:
 At the top right of the search results list is a menu to sort results by **title**, **relevance**, **date of change**, **rating**, **popularity**,
 and **scale**. At the top left of the results list users can select all results, all results on the current page, or none to deselect. Upon
 selection users can choose to export the results to a zip, pdf or csv file. Note that registered users will be able to perform additional actions, 
-such as publish `publish <UserDoc_Chap6_Edit.html#publishing-metadata>`__ or `delete <UserDoc_Chap6_Edit.html#deleting-metadata>`__, on selected records.
+such as `publish <UserDoc_Chap6_Edit.html#publishing-metadata>`__ or `delete <UserDoc_Chap6_Edit.html#deleting-metadata>`__, on selected records.
 
 |userdoc_fig_2_4_1_SortOptions| |userdoc_fig_2_4_1_SelectOptions|
 
@@ -106,3 +106,4 @@ such as publish `publish <UserDoc_Chap6_Edit.html#publishing-metadata>`__ or `de
 .. |button_search| image:: media/button_search.png
 .. |button_search_advanced| image:: media/button_search_advanced.png
 .. |button_search_reset| image:: media/button_search_reset.png
+
