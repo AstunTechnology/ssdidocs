@@ -49,7 +49,7 @@ and tools for visualisation and analysis that allow for spatial data to be used 
 The `EU Inspire Directive <https://inspire.ec.europa.eu/about-inspire>`__ aims to create a spatial data infrastructure for the European Union 
 to enable the sharing of and access to environmental spatial information across Europe and assist in policy-making across boundaries. This EU 
 SDI will be based on the infrastructures established and operated by the individual member states. The Directive came into force on 15 May 2007 
-with full implementation expected by 2021 (note the Directive was `transposed into Scottish law in 2009 <http://www.legislation.gov.uk/ssi/2009/440/contents/made>`__).
+with full implementation expected by 2021. This directive has since been `transposed into Scottish law <http://www.legislation.gov.uk/ssi/2009/440/contents/made>`__) in 2009.
 
 Scotland, in partnership with other administrations of the UK, works to fulfill its INSPIRE obligations by developing its own spatial data 
 infrastructure compliant to the standards specified by the Directive. The Scottish SDI aims to apply the principles of INSPIRE, not just to 
@@ -69,7 +69,7 @@ Metadata Standards on SpatialData.gov.scot
 ------------------------------------------
 
 Metadata on the portal is compliant to the `UK GEMINI <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini>`__ specification, which defines a core set of metadata elements for UK geospatial data, and is
-compatible with the INSPIRE requirements for metadata. The current version of the standard is UK Gemini 2.3. Users should consult `Annex 2 <UserDoc_Chap9_Annex2.html#annex-2-upgrading-to-uk-gemini-2-3>`__ to upgrade their existing metadata to this version if they have not already done so.
+compatible with the INSPIRE requirements for metadata. The current version of the standard is UK Gemini 2.3. Users should consult `Annex 2 <UserDoc_Chap9_Annex2.html#annex-2-upgrading-to-uk-gemini-2-3>`__ of this guidance to upgrade their existing metadata to Gemini 2.3 if the have not already done so.
 
 The `MEDIN Discovery Metadata Standard <http://www.oceannet.org/marine_data_standards/medin_disc_stnd.html>`__ is a profile of UK Gemini specific to marine data. It can be thought of as a superset of Gemini, including 
 the same core elements, but extending where necessary to include additional information relevant to the marine environment (e.g. marine keyword 
