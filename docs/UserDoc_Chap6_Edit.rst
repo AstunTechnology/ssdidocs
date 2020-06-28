@@ -256,7 +256,7 @@ Alternatively, there is a shortcut method to publish a record directly from the 
 Batch editing
 -------------
 
-Content for this section is under development.
+Administrators will have the privileges to perform batch editing on records. See the `Administrator Guidance <ssdi_adminguidance.html#batch-process>`__ for more information.
 
 Deleting metadata
 -----------------
