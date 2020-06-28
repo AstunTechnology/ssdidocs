@@ -35,7 +35,7 @@ To convert an existing record to Gemini 2.3:
 	
 	*Note: the record will be converted to Gemini 2.3 and the editing view will change to show the embedded 2.3 guidance.*
 	
-	**4|** Ensure the record is valid by clicking |button_edit_validate|. See `validating metadata <UserDoc_Chap6_Edit.html#validating-metadata>`__ for more information.
+	**4|** Ensure the record is valid by clicking |button_edit_validate| in the header bar. See `validating metadata <UserDoc_Chap6_Edit.html#validating-metadata>`__ for more information.
 	
 	*Note: The conversion process will not automatically create valid metadata. Users must ensure that the record validates and correct any errors.*
 	
@@ -73,5 +73,5 @@ The following is a list of common errors encountered when converting from Gemini
 
 * **Abstract Length**: Gemini 2.3 requires and abstract with a minimum length of 100 characters.
 
-
+.. |button_edit_validate| image:: media/button_edit_validate.png
 .. |button_edit_saveclose| image:: media/button_edit_saveclose.png
