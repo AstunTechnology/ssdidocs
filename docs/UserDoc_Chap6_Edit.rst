@@ -18,7 +18,7 @@ To begin an editing session:
 
 	**2|** Either search for a particular record direct from the home page or click |button_contribute| and search or scroll for the record.
 
-	*Note: if the 'only my records' box at the top left of the contribute page is checked (default), this will limit the record list to only those belonging to that user.*
+	*Note: if the 'only my records' box at the top left of the contribute page is checked, this will limit the record list to only those belonging to that user.*
 	
 	**3|** Click the pencil icon (|button_contribute_pencil|) visible in the search results list, or next to the record name on the contribute board. This will enter the user into an editing session.
 	
@@ -33,7 +33,7 @@ the `Associated resources <#associated-resources>`__ panel is visible, showing a
 record being edited.
 
 The form displays the metadata elements grouped into relevant sections. The user can navigate through the form using the *table of contents* 
-visible in the lower right of the screen. Clicking an element section will take the user to the relevant section of the form. The user can 
+visible in the lower right of the screen (click |button_edit_toc| to display). Clicking an element section will take the user to the relevant section of the form. The user can 
 collapse all elements of the form by clicking the |button_edit_collapse| button visible just below the header. Clicking on a section title will 
 re-expand that section. The |button_edit_arrowup| and |button_edit_arrowdown| buttons allow the user to place the section further up or down the document order. 
 Note that UK Gemini is only concerned with whether the elements (or sections) are present and correct, not with the order they are displayed. For 
@@ -61,7 +61,7 @@ To change the view of editing session:
 
 	**1|** Click on |button_edit_view| on the top right of the editing board.
 	
-	**2|** From the dropdown menu, choose either advanced or XML. Advanced view is a more detailed version of the default view, where as XML view allows the user to edit the raw XML.
+	**2|** From the dropdown menu, choose either INSPIRE, simple, full or XML. Advanced (full) view is a more detailed version of the default (simple) view, where as XML view allows the user to edit the raw XML.
 	
 	*Note: users can also enable tool tips from the view menu.*
 	
@@ -118,21 +118,17 @@ To add an online resource to *dataset* metadata where a corresponding *service* 
 	
 	**2|** From the dropdown menu select 'Link to a service'. This will display the Link resources dialog.
 	
-	**3|** Search using the free text box and click on the service record in the results list to select it.
+	**3|** Search using the free text box and click on the service record in the results list to select it (when selected it will be highlighted in blue).
 	
-	**4|** Click on the |button_edit_linkservice| to link the service to the dataset metadata. This creates a link between the dataset and service records and adds an online resource element to the dataset record. This element must then be edited to ensure the correct layer within the service is referenced.
+	**4|** This will display the layers available in the service. Click on the appropriate layer to select it (when selected it will be highlighted in green).
+	
+	**5|** Click on the |button_edit_linkservice| to link the service to the dataset metadata. This creates a link between the dataset and service records and adds an online resource element to the dataset record.
 
-	**5|** Click on the pencil icon beside the newly added online resource in the associated resources panel. Alternately scroll to the element in the main editing board and amend manually.
+	**6|** If required, amendments can be made by clicking on the pencil icon beside the newly added online resource in the associated resources panel. Alternately scroll to the element in the main editing board and amend manually.
+
+	**7|** Click |button_edit_updatelink|.
 	
-	**6|** Amend the URL to ensure it points at the service (e.g. www.mapdata.scot/ServiceName/MapServer/WMSServer?). For dataset records the URL for for a WMS or WFS should **not** include the GetCapabilities request.
-	
-	**7|** Set the correct protocol for the service from the drop down (e.g. OGC-WMS Web Map Service). This will then display the layers available in the service.
-	
-	**8|** Click on the appropriate layer to select it (it will highlight in green).
-	
-	**9|** Click |button_edit_updatelink|.
-	
-	*Note: For web services (i.e. WMS and WFS) to correctly display in the map, you must ensure that the protocol and layer name are correctly entered for the online resource (steps 7 and 8 above). While these elements are not required for Gemini compliance, the are needed to enable previewing on the map.*
+	*Note: For web services (i.e. WMS and WFS) to correctly display in the map, you must ensure that the protocol and layer name are correctly entered for the online resource. For dataset records the URL for for a WMS or WFS should* **not** *include the GetCapabilities request. While these elements are not required for Gemini compliance, the are needed to enable previewing on the map.*
 
 |userdoc_fig_6_5_1_AssocDatasetService|
 
@@ -144,7 +140,7 @@ To add an online resource to *dataset* metadata where **no** corresponding *serv
 	
 	**2|** From the dropdown menu, select the first option, 'Link and online resource'. This will display the Link resources dialog.
 	
-	**3|** Ensure the 'Add link' radio button is clicked.
+	**3|** Ensure the 'Add online resource' radio button is clicked.
 	
 	**4|** Add the URL to ensure it points at the service (e.g. www.mapdata.scot/ServiceName/MapServer/WMSServer?). For dataset records the URL for for a WMS or WFS should **not** include the GetCapabilities request.
 	
@@ -166,13 +162,17 @@ To add an online resource (e.g. WMS or WFS) to a *service* metadata record:
 	
 	**2|** From the dropdown menu, select the first option, 'Link and online resource'. This will display the Link resources dialog.
 	
-	**3|** Ensure the 'Add link' radio button is clicked.
+	**3|** Ensure the 'Add online resource' radio button is clicked.
 	
 	**4|** Select the appropriate protocol for the online resource (e.g. for a WMS, select OGC-WMS Capabilities service)
 	
 	**5|** Enter the URL for the service.
 	
 	*Note: A service may contain multiple layers and these will be displayed when the service URL is entered. As this is a service record, it is not necessary to select a single layer to link to (this is only required for dataset records).*
+	
+	**6|** Optionally, provide a name and description for the resource.
+	
+	**7|** Click |button_edit_addlink|.
 	
 |userdoc_fig_6_5_3_OnlineResourceService|
 
@@ -186,7 +186,7 @@ standard rules.
 
 To validate a metadata record:
 
-	**1|** In an editing session, click on the |button_edit_validate| button in the header or the refresh button (|button_edit_refresh|) in the validation panel on the right-hand side of the page.
+	**1|** In an editing session, click on the |button_edit_validate| button in the header bar.
 	
 	**2|** Errors will be highlighted in the validation panel. Click the red thumbs-down icon (|button_edit_thumbsdown|)to see details of the error(s) organised by schematron.
 	
@@ -296,6 +296,7 @@ to have records deleted from `data.gov.uk <http://data.gov.uk/>`__.
 .. |userdoc_fig_6_10_1_DeleteRecordConfirm| image:: media/userdoc_fig_6_10_1_DeleteRecordConfirm.png
 .. |button_contribute| image:: media/button_contribute.png
 .. |button_contribute_pencil| image:: media/button_contribute_pencil.png
+.. |button_edit_toc| image:: media/button_edit_toc.png
 .. |button_edit_collapse| image:: media/button_edit_collapse.png
 .. |button_edit_arrowdown| image:: media/button_edit_arrowdown.png
 .. |button_edit_arrowup| image:: media/button_edit_arrowup.png
