@@ -3,16 +3,16 @@ Metadata Elements
 
 This section provides guidance with respect to each of the UK Gemini elements. Section headings refer to the label present in the editing form of 
 `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__, however, UK Gemini and INSPIRE equivalents are also provided. Links to full element guidance from the AGI are given, which includes information
-on known common errors. Images show examples for each of the elements.
+on known common errors. Images are provided showing example entries for each of the elements.
 
-Users may also wish to consult the full UK Gemini 2.2 guidance `UK Gemini 2.2 specification <https://www.agi.org.uk/about/resources/category/81-gemini?download=18:gemini-2-2>`__.
+Users may also wish to consult the full `UK Gemini 2.3 specification <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series>`__.
 
 Defining INSPIRE compliance
 ---------------------------
 
 To define within the metadata if a dataset is compliant with INSPIRE, users should ensure the **Keyword** section is completed. If the dataset is 
 covered by INSPIRE (e.g. parts of it are within the Scope of an INSPIRE Annex data specification), then the **first keyword** should be from the 
-`GEMET INSPIRE themes <http://www.eionet.europa.eu/gemet/en/inspire-themes/>`__.
+`GEMET INSPIRE themes <http://www.eionet.europa.eu/gemet/en/inspire-themes/>`__ keyword list.
 
 If another controlled vocabulary is used as the first keyword, such as the `Integrated Public Sector Vocabulary (IPSV) <http://id.esd.org.uk/list/subjects>`__, 
 then the dataset is not covered by INSPIRE. That said, the dataset and service metadata will still be required to comply with the operation and 
@@ -21,8 +21,8 @@ service commitments, as set out in the `Registered user obligations <UserDoc_Cha
 Abstract
 --------
 :Gemini: `Abstract <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#4>`__
-:INSPIRE: Abstract
-:ISO19115:  MD_DataIdentification.abstract
+:INSPIRE: Resource abstract
+:ISO19115:  MD_Identification.abstract
 :Obligation: Mandatory
 :occurrence: One
 
@@ -33,8 +33,10 @@ Abstract
 	Provide a clear and concise statement of the content of the dataset and its purpose (i.e. the 'what' and 'why' aspect of the dataset). General 
 	background information should not be included, and unexplained abbreviations and jargon should be avoided. The abstract description should be 
 	understood by non-experts. 
+	*Note: with Gemini 2.3 there is now a requirement for the abstract to be at least 100 characters long, and to be different from the `title <#title>`__ element. Validation will display an error if these conditions are not met.
 
 |userdoc_fig_7_1_1_Abstract|
+
 
 Additional information
 ----------------------
@@ -48,7 +50,10 @@ Additional information
 	Other descriptive information about the data resource.
 
 :Guidance:
-	Record relevant information that does not clearly belong in any other element. Do not use it to describe how to access the resource, or for any restrictions on access or use. If this element is not visible in the editor, switch to advanced editing view, and the Identification info tab, and use the "Additional information" button at the bottom of the page.
+	Record relevant information that does not clearly belong in any other element. A URL may be entered to reference other documents. Do **not** use it to describe how to access the resource (this should be in the `resource locator <#resource-locator>`__ element), or for any restrictions on access or use (use the `limitations on public access <#limitations-on-public-access>`__ and `use constraints <#use-constraints>`__ elements). If this element is not visible in the editor, switch to advanced editing view, and the Identification info tab, and use the "Additional information" button at the bottom of the page.
+
+|userdoc_fig_7_26_1_SupplementalInformation|
+
 
 Alternative title
 -----------------
@@ -83,7 +88,10 @@ Character encoding
 	The character encoding used in the dataset.
 
 :Guidance:
-	The encoding is assumed to be UTF8 but other options are available using the dropdown list.
+	This element enables data in non-standard character encodings to be handled. By default the encoding is set to UTF8, but other options are available using the dropdown list. The majority of users will not need to change this element.
+
+|userdoc_fig_7_30_1_CharacterEncoding|
+
 
 Data format
 -------------------
@@ -103,6 +111,7 @@ Data format
 
 |userdoc_fig_7_7_1_DistributionFormat|
 
+
 Data quality
 ---------------------------------
 :Gemini: `Data quality <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#52>`__
@@ -117,11 +126,12 @@ Data quality
 :Guidance:
 	This element comprises two sub-elements:
 
-	**1|** Quality Scope- records the scope that the below report refers to
+	**1|** Quality Scope - the specific data to which the data quality information applies.
 
-	**2|** Conformity- the product specification being assessed against
+	**2|** Conformity - the product specification being assessed against
 
-	At least one data quality element must be scoped to the entire data set or series that the metadata refers to. Other quality measures, for example relating to specific feature types may be provided in addition. To add additional Data Quality elements, switch to advanced editing view and the Quality Tab, and add a new Data Quality info element using the plus button at the base of the page.
+	At least one data quality element must be scoped to the entire data set or series that the metadata refers to. Other quality measures, for example relating to specific feature types may be provided in addition. To add additional Data Quality elements, `switch to advanced view <UserDoc_Chap6_Edit.html#changing-the-editing-view>`__ 
+	and click the |button_edit_plus| button at the base of the page.
 	
 
 Data quality - Conformity
@@ -142,9 +152,6 @@ Data quality - Conformity
 	To record that a data set or service has not been evaluated, for the Degree choose "Not evaluated". Otherwise choose "Conformant" or "Not conformant" as appropriate.
 
 	To record conformance against an additional report, switch to the Advanced editing view, change to the Quality tab and add a new Result using the plus button within the appropriate Data Quality element.
-	
-
-|userdoc_fig_7_4_1_ConformanceResult|
 
 Data quality - Quality scope
 ---------------------------------
@@ -163,6 +170,9 @@ Data quality - Quality scope
     If using a Data Quality element to describe something other than the whole dataset or series, then provide additional data quality elements with their
     Scope set appropriately. Switch to the Advanced editing view, change to the Quality tab, and Data Quality info element using the plus button at the base of the page. Set the quality scope to the appropriate level using the dropdown list.
 
+|userdoc_fig_7_4_1_ConformanceResult|
+	
+	
 Dataset language
 ----------------
 :Gemini: `Dataset language <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#3>`__
@@ -239,8 +249,8 @@ Extent - Geographic description
 	the designating authority (optional).
 
 :Guidance:
-	Select a pre-defined extent of country or Local Authority based on ISO 3166-2 (sub divisions of countries) from the recommended values list. 
-	The default is Scotland. Note that this element may also be populated using a linked data register entry, for example `http://statistics.gov.scot/id/statistical-geography/S92000003 <http://statistics.gov.scot/id/statistical-geography/S92000003>`__.
+	Enter a pre-defined extent of country or Local Authority using one of the controlled lists available in the drop down above the bounding box element (e.g. Geonames). 
+	Note that this element may also be populated using a linked data register entry, for example `http://statistics.gov.scot/id/statistical-geography/S92000003 <http://statistics.gov.scot/id/statistical-geography/S92000003>`__.
 
 |userdoc_fig_7_9_1_GeogDescription|
 
@@ -318,6 +328,8 @@ File identifier
 
 	File identifier should not be confused with the UK GEMINI2 metadata item Resource identifier, which identifies the data resource being described.
 
+|userdoc_fig_7_31_1_FileIdentifier|	
+
 Hierarchy level name
 --------------------
 :Gemini: `Hierarchy level name <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#47>`__
@@ -369,7 +381,7 @@ Keyword
 
 Limitations on public access
 ----------------------------
-:Gemini: `Limitations on public access <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1068-uk-inspire-v2-2-datasets-and-dataset-series-requirements-and-guidelines#25>`__
+:Gemini: `Limitations on public access <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#25>`__
 :INSPIRE: Limitations on public access
 :ISO19115: MD_Identification.resourceConstraints > MD_LegalConstraints.accessConstraints & otherConstraints
 :Obligation: Mandatory
@@ -383,9 +395,9 @@ Limitations on public access
 	such as fees or licencing restrictions, rather than the access to it. A data resource can be openly accessible (which all INSPIRE data should 
 	be), but have restrictions on its use such as licensing, fees, or usage limitations.
 
-	At least one limitation on public access shall give an INSPIRE reason. For INSPIRE purposes the *Access constraints* dropdown box must be set to '**other restrictions**'. The *Other constraints* free text box must 
+	At least one limitation on public access shall give an INSPIRE reason. For INSPIRE purposes the *Limitations on public access* dropdown box must be set to '**other restrictions**'. The *Other constraints* free text box must 
 	then be populated with an appropriate label from the `INSPIRE code list for Limitations on public access <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/>`__.
-	If there are no restrictions on access, the text box should be populated with '**no limitations**'.
+	If there are no restrictions on access, the text box should be populated with '**no limitations to public access**'.
 	
 	This element shall **only** include information regarding access to the resource (not the use of the data, which is documented under the `Use constraints <#use-constraints>`__ section). 
 	When Member States limit public access to spatial data sets and spatial data services under Article 13 of Directive 2007/2/EC, this metadata 
@@ -531,7 +543,8 @@ Metadata standard name
 
 :Guidance:
 	This element is required in `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ and must be set to `<gmx:Anchor xlink:href="http://vocab.nerc.ac.uk/collection/M25/current/GEMINI/">UK GEMINI</gmx:Anchor>` when importing metadata records into the portal. For records created within the portal from templates, this element will be automatically filled in, and will not be editable in the default editing view.
-
+	
+	
 Metadata standard version
 -------------------------
 :Gemini: `Metadata standard version <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#55>`__
@@ -546,6 +559,9 @@ Metadata standard version
 :Guidance:
 	This element is required in `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ and must be set to **2.3** when importing metadata records into the portal. For records created within the portal from templates, this element will be automatically filled in, and will not be editable in the default editing view.
 
+|userdoc_fig_7_32_1_MetadataStandard|
+	
+	
 Parent identifier
 -----------------
 :Gemini: `Parent identifier <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini/40-gemini/1062-gemini-datasets-and-data-series#49>`__
@@ -560,7 +576,7 @@ Parent identifier
 :Guidance:
 	To add a parent identifier, click the "Add parent record" button and add the Unique Identifier for the parent record.
 
-
+|userdoc_fig_7_33_1_ParentIdentifier|
 
 Resource identifier
 -------------------
@@ -836,6 +852,10 @@ Use constraints
 .. |userdoc_fig_7_27_1_Title| image:: media/userdoc_fig_7_27_1_Title.png
 .. |userdoc_fig_7_28_1_TopicCategory| image:: media/userdoc_fig_7_28_1_TopicCategory.png
 .. |userdoc_fig_7_29_1_UseConstraints| image:: media/userdoc_fig_7_29_1_UseConstraints.png
+.. |userdoc_fig_7_30_1_CharacterEncoding| image:: media/userdoc_fig_7_30_1_CharacterEncoding.png
+.. |userdoc_fig_7_31_1_FileIdentifier| image:: media/userdoc_fig_7_31_1_FileIdentifier.png
+.. |userdoc_fig_7_32_1_MetadataStandard| image:: media/userdoc_fig_7_32_1_MetadataStandard.png
+.. |userdoc_fig_7_33_1_ParentIdentifier| image:: media/userdoc_fig_7_33_1_ParentIdentifier.png
 .. |button_edit_plus| image:: media/button_edit_plus.png
 .. |button_edit_delete| image:: media/button_edit_delete.png
 .. |button_edit_plusdrop| image:: media/button_edit_plusdrop.png
