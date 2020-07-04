@@ -33,7 +33,7 @@ Abstract
 	Provide a clear and concise statement of the content of the dataset and its purpose (i.e. the 'what' and 'why' aspect of the dataset). General 
 	background information should not be included, and unexplained abbreviations and jargon should be avoided. The abstract description should be 
 	understood by non-experts. 
-	*Note: with Gemini 2.3 there is now a requirement for the abstract to be at least 100 characters long, and to be different from the `title <#title>`__ element. Validation will display an error if these conditions are not met.
+	*Note: with Gemini 2.3 there is now a requirement for the abstract to be at least 100 characters long, and to be different from the `title <#title>`__ element. Validation will display an error if these conditions are not met.*
 
 |userdoc_fig_7_1_1_Abstract|
 
