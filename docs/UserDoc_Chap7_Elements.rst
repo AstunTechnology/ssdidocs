@@ -150,7 +150,7 @@ Data quality - Conformity
 :Guidance:
 	At least one conformity statement shall be to an INSPIRE specification, even if to simply say that the data set is not conformant or not tested. Template snippets for INSPIRE Spatial data sets, Network services and Spatial data services have been provided. Use the *Search for a quality report...* search box at the bottom of the element to choose the appropriate one.
 
-	To record that a data set or service has not been evaluated, for the Degree choose ***Not evaluated***. Otherwise choose ***Conformant*** or ***Not conformant*** as appropriate.
+	To record that a data set or service has not been evaluated, for the Degree choose '**Not evaluated**'. Otherwise choose '**Conformant**' or '**Not conformant**' as appropriate.
 
 	To record conformance against an additional report, switch to the Advanced editing view, change to the Quality tab and add a new report using the plus button within the appropriate `Data quality <#data-quality>`__ element.
 
@@ -166,7 +166,7 @@ Data quality - Quality scope
 	A sub-element of `Data quality <#data-quality>`__, this is specific scope to which the data quality assessment applies.
 
 :Guidance:	
-    At least one `Data quality <#data-quality>`__ element scoped to the entire dataset or series to which the metadata record refers. For a dataset, set quality scope to ***dataset***, for a dataset series, set quality scope ***series***.
+    At least one `Data quality <#data-quality>`__ element scoped to the entire dataset or series to which the metadata record refers. For a dataset, set quality scope to '**dataset**', for a dataset series, set quality scope to '**series**'.
     
     If using a `Data quality <#data-quality>`__ element to describe something other than the whole dataset or series, then provide additional data quality elements with their scope set appropriately. Switch to the Advanced editing view, change to the Quality tab, and Data Quality info element using the plus button at the base of the page. Set the quality scope to the appropriate level using the dropdown list.
 
@@ -298,8 +298,8 @@ Extent - Vertical extent
 :occurrence: Many
 
 :Definition:
-	Describes the vertical domain (height range) of the data resource. The element is composed of the ***minimum value***, ***maximum value*** and the ***vertical 
-	coordinate reference system*** (recorded as a name or code from a recognised thesaurus, i.e. `EPSG Geodetic Parameter Registry <http://www.epsg-registry.org/>`__).
+	Describes the vertical domain (height range) of the data resource. The element is composed of the **minimum value**, **maximum value** and the **vertical 
+	coordinate reference system** (recorded as a name or code from a recognised thesaurus, i.e. `EPSG Geodetic Parameter Registry <http://www.epsg-registry.org/>`__).
 
 :Guidance:
 	This element should be completed only where the vertical extent is relevant (e.g. geology, mining, etc.). If it is relevant, then all sub-elements are mandatory.
@@ -347,7 +347,7 @@ Hierarchy level name
 	The name of the hierarchy level for which the metadata is provided (eg dataset, series, service).
 
 :Guidance:
-	Set to "service", "series", "dataset" as appropriate. Note that in UK Gemini this element is conditional for datasets.
+	Set to '**service**', '**series**', or '**dataset**' as appropriate. Note that in UK Gemini this element is conditional for datasets.
 
 |userdoc_fig_7_19_1_MetadataHierarchyLevel|
 
