@@ -33,7 +33,8 @@ Abstract
 	Provide a clear and concise statement of the content of the dataset and its purpose (i.e. the 'what' and 'why' aspect of the dataset). General 
 	background information should not be included, and unexplained abbreviations and jargon should be avoided. The abstract description should be 
 	understood by non-experts. 
-	*Note: with Gemini 2.3 there is now a requirement for the abstract to be at least 100 characters long, and to be different from the `title <#title>`__ element. Validation will display an error if these conditions are not met.*
+	
+	*Note: with Gemini 2.3 there is now a requirement for the abstract to be at least 100 characters long, and to be different from the* `title <#title>`__ *element. Validation will display an error if these conditions are not met.*
 
 |userdoc_fig_7_1_1_Abstract|
 
@@ -126,9 +127,9 @@ Data quality
 :Guidance:
 	This element comprises two sub-elements:
 
-	**1|** Quality Scope - the specific data to which the data quality information applies.
+	**1|** `Scope <#data-quality-scope>`__ - the specific data to which the data quality information applies.
 
-	**2|** Conformity - the product specification being assessed against
+	**2|** `Conformity <#data-quality-conformity>`__ - the product specification being assessed against (e.g. conformance to INSPIRE).
 
 	At least one data quality element must be scoped to the entire data set or series that the metadata refers to. Other quality measures, for example relating to specific feature types may be provided in addition. To add additional Data Quality elements, `switch to advanced view <UserDoc_Chap6_Edit.html#changing-the-editing-view>`__ 
 	and click the |button_edit_plus| button at the base of the page.
@@ -143,15 +144,15 @@ Data quality - Conformity
 :occurrence: Many
 
 :Definition:
-	Nested within *Data quality*, this is the degree of conformity with the product specification or user requirement against which the data is 
+	A sub-element of `Data quality <#data-quality>`__, this is the degree of conformity with the product specification or user requirement against which the data is 
 	being evaluated (i.e. degree of conformity to INSPIRE).
 
 :Guidance:
-	At least one conformity statement shall be to an INSPIRE specification, even if to simply say that the data set is not conformant or not tested. Template snippets for INSPIRE Spatial data sets, Network services and Spatial data services have been provided. Use the "Search for a quality report" tool to choose the appropriate one.
+	At least one conformity statement shall be to an INSPIRE specification, even if to simply say that the data set is not conformant or not tested. Template snippets for INSPIRE Spatial data sets, Network services and Spatial data services have been provided. Use the *Search for a quality report...* search box at the bottom of the element to choose the appropriate one.
 
-	To record that a data set or service has not been evaluated, for the Degree choose "Not evaluated". Otherwise choose "Conformant" or "Not conformant" as appropriate.
+	To record that a data set or service has not been evaluated, for the Degree choose ***Not evaluated***. Otherwise choose ***Conformant*** or ***Not conformant*** as appropriate.
 
-	To record conformance against an additional report, switch to the Advanced editing view, change to the Quality tab and add a new Result using the plus button within the appropriate Data Quality element.
+	To record conformance against an additional report, switch to the Advanced editing view, change to the Quality tab and add a new report using the plus button within the appropriate `Data quality <#data-quality>`__ element.
 
 Data quality - Quality scope
 ---------------------------------
@@ -162,13 +163,12 @@ Data quality - Quality scope
 :occurrence: Many
 
 :Definition:
-	Nested within *Data quality*, this is specific scope to which the data quality assessment applies.
+	A sub-element of `Data quality <#data-quality>`__, this is specific scope to which the data quality assessment applies.
 
 :Guidance:	
-    At least one Data Quality element scoped to the entire data set or series to which the metadata record refers. For a dataset, set quality scope to 'dataset', for a dataset series, set quality scope 'series'.
+    At least one `Data quality <#data-quality>`__ element scoped to the entire dataset or series to which the metadata record refers. For a dataset, set quality scope to ***dataset***, for a dataset series, set quality scope ***series***.
     
-    If using a Data Quality element to describe something other than the whole dataset or series, then provide additional data quality elements with their
-    Scope set appropriately. Switch to the Advanced editing view, change to the Quality tab, and Data Quality info element using the plus button at the base of the page. Set the quality scope to the appropriate level using the dropdown list.
+    If using a `Data quality <#data-quality>`__ element to describe something other than the whole dataset or series, then provide additional data quality elements with their scope set appropriately. Switch to the Advanced editing view, change to the Quality tab, and Data Quality info element using the plus button at the base of the page. Set the quality scope to the appropriate level using the dropdown list.
 
 |userdoc_fig_7_4_1_ConformanceResult|
 	
@@ -187,7 +187,7 @@ Dataset language
 :Guidance:
 	Select a language from the drop down menu listing entries from the ISO 639-2 code list.  For INSPIRE compliance, this has to be an 
 	`official language of the European Community <http://ec.europa.eu/languages/policy/linguistic-diversity/official-languages-eu_en.htm>`__, 
-	of which EngliDataset lansh (eng) is the only one in common use across the UK (and is the default). For non-INSPIRE metadata records, it can 
+	of which English (eng) is the only one in common use across the UK (and is the default). For non-INSPIRE metadata records, it can 
 	be any ISO 639-2 three letter code, of which the relevant entries for the UK are English (eng), Welsh (cym), Gaelic (Irish) (gle), Gaelic 
 	(Scottish) (gla), Cornish (cor), Ulster Scots (sco).
 
@@ -208,8 +208,9 @@ Dataset reference date
 
 :Guidance:
 	This element is a notional date of publication of the data resource. It is different from the `temporal extent <#extent-temporal-extent>`__, 
-	which is the date of currency of the resource. Multiple dataset reference dates can be defined but there can only be one creation date. Dates 
-	may be to any degree of precision, from century (YY) to full date and time. The extended date format (YYYY-MM-DD) should be used, where YYYY is 
+	which is the date of currency of the resource. Multiple dataset reference dates can be defined, but there must only be one of type *creation* and only one of type *revision*.
+	
+	Dates may be to any degree of precision, from year (YYYY) to full date and time. The extended date format (YYYY-MM-DD) should be used, where YYYY is 
 	the year, MM the month, and DD the day. If required, time (HH:MM:SS, where HH is the hour, MM the minute, and SS the second) may be added, with 
 	'T' separating the two parts.
 
@@ -226,10 +227,10 @@ Extent - Geographic bounding box
 
 :Definition:
 	Rectangle enclosing the extent of the data resource described in latitude and longitude, to enable the resource to be located geographically. 
-	It has four sub-elements: west bounding longitude, east bounding longitude, south bounding latitude, and north bounding latitude.
+	It has four sub-elements: *west bounding longitude*, *east bounding longitude*, *south bounding latitude*, and *north bounding latitude*.
 
 :Guidance:
-	A pre-defined extent can be chosen using the drop down menu, or bounding coordinates can be manually entered in the corresponding boxes. The 
+	A pre-defined extent can be chosen from the drop down menu, or bounding coordinates can be manually entered in the corresponding boxes. The 
 	west bounding longitude should be less than the east bounding longitude, and the north bounding latitude must be greater than the south.
 
 |userdoc_fig_7_8_1_GeogBoundingBox|
@@ -245,8 +246,8 @@ Extent - Geographic description
 :Definition:
 	The geographical extent of the data resource relative to an administrative hierarchy. Note that it is the coverage of the data resource, not 
 	the individual objects in the data resource. Thus if the data resource was national parks in Scotland, the extent would be 'Scotland', even 
-	though many parts of Scotland do not have National Parks. Sub-elements of the geographic description are the code identifying the extent and 
-	the designating authority (optional).
+	though many parts of Scotland do not have National Parks. Sub-elements of the geographic description are the *code* identifying the extent and 
+	the *designating authority* (optional).
 
 :Guidance:
 	Enter a pre-defined extent of country or Local Authority using one of the controlled lists available in the drop down above the bounding box element (e.g. Geonames). 
@@ -268,7 +269,7 @@ Extent - Temporal extent
 	`dataset reference date <#date>`__ (i.e. publication).
 
 :Guidance:
-	Enter a Begin date and/or End date as required. Selecting a date will activate a calendar selector. To add additional temporal extents, use the `advanced editor view <UserDoc_Chap6_Edit.html#changing-the-editing-view>`__.
+	Enter a Begin date and/or End date as required. Click on |button_edit_calendar| to activate the calendar selector. To add additional temporal extents, use the `advanced editor view <UserDoc_Chap6_Edit.html#changing-the-editing-view>`__.
 	
 	**2|** Scroll to the extent section (identification tab) and click the |button_edit_plusdrop| button next to the **Temporal element** label.
 	
@@ -297,17 +298,21 @@ Extent - Vertical extent
 :occurrence: Many
 
 :Definition:
-	Describes the vertical domain (height range) of the data resource. The element is composed of the minimum value, maximum value and the vertical 
-	coordinate reference system (recorded as a name or code from a recognised thesaurus, i.e. `EPSG Geodetic Parameter Registry <http://www.epsg-registry.org/>`__).
+	Describes the vertical domain (height range) of the data resource. The element is composed of the ***minimum value***, ***maximum value*** and the ***vertical 
+	coordinate reference system*** (recorded as a name or code from a recognised thesaurus, i.e. `EPSG Geodetic Parameter Registry <http://www.epsg-registry.org/>`__).
 
 :Guidance:
-	This element should be completed only where the vertical extent is relevant (e.g. geology, mining, etc.), but if it is completed then all elements are required. Use the "+ Vertical Extent" button to add:
+	This element should be completed only where the vertical extent is relevant (e.g. geology, mining, etc.). If it is relevant, then all sub-elements are mandatory.
+	
+	To add the vertical extent:
+	
+	**1|** In default (simple) view, scroll to the extent element and click |button_edit_verticalextent|.
+	
+	**2|** Enter a minimum value in metres.
 
-	**1|** Minimum Value in metres.
+	**3|** Enter a maximum value in metres.
 
-	**2|** Maximum Value in metres.
-
-	**3|** Vertical CRS- choose from the recommended values in the dropdown list.
+	**4|** Choose the appropriate vertical CRS from the recommended values dropdown list.
 
 |userdoc_fig_7_11_1_VerticalExtent|
 
@@ -324,9 +329,9 @@ File identifier
 	Unique identifier for this metadata file.
 
 :Guidance:
-	To support the operation of UK Location and INSPIRE, discovery metadata records must include a File Identifier for the resource. This will be auto-generated by the metadata portal and once created cannot be changed.
+	To support the operation of UK Location and INSPIRE, discovery metadata records must include a File Identifier for the resource. This will be auto-generated by a metadata creation tool (e.g. the metadata portal itself or an external metadata editor) and once created cannot be changed.
 
-	File identifier should not be confused with the UK GEMINI2 metadata item Resource identifier, which identifies the data resource being described.
+	File identifier should not be confused with the UK GEMINI2 metadata item `Resource identifier <#resource-identifier>`__, which identifies the data resource being described.
 
 |userdoc_fig_7_31_1_FileIdentifier|	
 
@@ -394,15 +399,8 @@ Limitations on public access
 	Limitations on public access is different from the `use constraints <#use-constraints>`__ element, which describes limitations on using the data, 
 	such as fees or licencing restrictions, rather than the access to it. A data resource can be openly accessible (which all INSPIRE data should 
 	be), but have restrictions on its use such as licensing, fees, or usage limitations.
-
-	At least one limitation on public access shall give an INSPIRE reason. For INSPIRE purposes the *Limitations on public access* dropdown box must be set to '**other restrictions**'. The *Other constraints* free text box must 
-	then be populated with an appropriate label from the `INSPIRE code list for Limitations on public access <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/>`__.
-	If there are no restrictions on access, the text box should be populated with '**no limitations to public access**'.
 	
-	This element shall **only** include information regarding access to the resource (not the use of the data, which is documented under the `Use constraints <#use-constraints>`__ section). 
-	When Member States limit public access to spatial data sets and spatial data services under Article 13 of Directive 2007/2/EC, this metadata 
-	element shall provide information on the limitations and the reasons for them. If there are no limitations on public access, this metadata 
-	element shall indicate that fact.
+	For INSPIRE purposes, the *Limitations on public access* dropdown box must be set to '**other restrictions**'. The anchor element below must then be populated with an appropriate label from the `INSPIRE code list for Limitations on public access <http://inspire.ec.europa.eu/metadata-codelist/LimitationsOnPublicAccess/>`__. Change the anchor label to the appropriate entry from the code list, and ensure the URL points to the corresponding code list URI.
 
 	Article 13 of the Directive contains a list of cases where limitations on public access can be set. With regards to providing the metadata for 
 	the datasets and services through discovery services, the limitations on public access can be set on the base of reasons of international 
@@ -418,6 +416,8 @@ Limitations on public access
 	* the interests or protection of any person who supplied the information requested on a voluntary basis without being under, or capable of being put under, a legal obligation to do so, unless that person has consented to the release of the information concerned;
 	* the protection of the environment to which such information relates, such as the location of rare species.
 
+	This element shall **only** include information regarding access to the resource (not the use of the data, which is documented under the `Use constraints <#use-constraints>`__ section). When Member States limit public 	access to spatial data sets and spatial data services under Article 13 of Directive 2007/2/EC, this metadata element shall provide information on the limitations and the reasons for them. If there are no limitations on public access, this metadata element shall indicate that fact.
+	
 |userdoc_fig_7_14_1_LimitationsPublicAccess|
 
 Lineage
@@ -429,7 +429,7 @@ Lineage
 :occurrence: One
 
 :Definition:
-	A sub-element of *Data quality* that should provide information about the events or source data used in the creation of the data resource.   This will be useful in determining whether the data is fit for purpose.
+	A sub-element of `data quality <#data-quality>`__ that should provide information about the events or source data used in the creation of the data resource.   This will be useful in determining whether the data is fit for purpose.
 
 :Guidance:
 	The lineage differs from the `abstract <#abstract>`__ in that it covers 'how' the dataset was created as opposed the 'what' and 'why' of the 
@@ -542,7 +542,7 @@ Metadata standard name
 	Name of the metadata standard or profile used, cited with a reference to the appropriate register entry. 
 
 :Guidance:
-	This element is required in `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ and must be set to `<gmx:Anchor xlink:href="http://vocab.nerc.ac.uk/collection/M25/current/GEMINI/">UK GEMINI</gmx:Anchor>` when importing metadata records into the portal. For records created within the portal from templates, this element will be automatically filled in, and will not be editable in the default editing view.
+	This element is required in `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ and must be set to `UK GEMINI <http://vocab.nerc.ac.uk/collection/M25/current/GEMINI/>`__ when importing metadata records into the portal. For records created within the portal from templates, this element will be automatically filled in, and will not be editable in the default editing view.
 	
 	
 Metadata standard version
@@ -571,10 +571,10 @@ Parent identifier
 :occurrence: One
 
 :Definition:
-	Only to be used if the dataset is part of a series
+	File identifier of the metadata that is a parent to this child metadata. It supports parent-child relationships in metadata and allows navigation from a dataset record to the series record of which it forms a part. 
 
 :Guidance:
-	To add a parent identifier, click the "Add parent record" button and add the Unique Identifier for the parent record.
+	Only to be used if the dataset is part of a series. To add a parent identifier, click |button_edit_addparent| and add the Unique Identifier for the parent record.
 
 |userdoc_fig_7_33_1_ParentIdentifier|
 
@@ -703,16 +703,9 @@ Spatial representation type
 	The method used to spatially represent geographic information.
 
 :Guidance:
-	This element uses the MD_SpatialRepresentationTypeCode from ISO 19115. Codes to be used are:
+	This element uses the MD_SpatialRepresentationTypeCode from ISO 19115. Available options are *vector* (the defualt), *grid* (for images and coverage data), *tin* (surface data), and *text, table* (for datasets with an indirect spatial reference).
 
-	**1|** vector- use this as the default
-    
-    **2|** grid- use this for images and coverage data
-    
-    **3|** tin- use this for specific Triangulated Irregular Network data sets, which represent a surface
-
-    **4|** textTable- use this for datasets with an indirect spatial reference
-
+|userdoc_fig_7_34_1_SpatialRepresentationType|
 
 Spatial resolution - Distance
 -----------------------------
@@ -784,7 +777,7 @@ Topic category
 	Select from the drop down list one or more categories that most closely represent the topic of the data resource. This element is only meant to 
 	represent the general theme of the information. `Keywords <#keywords>`__ should be used to provide greater detail on the nature of the dataset.
 	While more than one topic category can be applied, only a limited number of most relevant should be chosen (e.g. topographic maps should not 
-	be classified as farming). Additional topic categories can be added by clicking the |button_edit_plus| button below the element.
+	be classified as farming). Multiple topic categories can be added.
 	
 	Note that the choice of topic category will dictate which categories the data resource is listed under on the **Browse by topics** section of 
 	the homepage.
@@ -808,7 +801,7 @@ Use constraints
 	data. A data resource can be openly accessible (which all INSPIRE data should be), but have restrictions on its use such as licensing, fees, or 
 	usage limitations. 
 
-	This element comprises two sub-elements:
+	This element comprises two sub-elements: the 'use constraints' which should be set to *other restrictions*, and 'other constraints' which can be free text or a URL link.
 
 	**1|** useConstraints- should contain an MD_RestrictionCode element with code list value "otherRestrictions"
 
@@ -818,7 +811,7 @@ Use constraints
 	on `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ should document the licencing arrangements for the data resource using the anchor type. Where possible, this should link to a URL 
 	such as the `Open Government Licence <http://www.nationalarchives.gov.uk/doc/open-government-licence/>`__, 
 	`Non-Commercial Government Licence <http://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/>`__,
-	or `INSPIRE (Scotland) End User Licence <https://www.ordnancesurvey.co.uk/business-and-government/public-sector/mapping-agreements/inspire-eul-scotland.html>`__. 
+	or `INSPIRE End User Licence <https://www.ordnancesurvey.co.uk/documents/licensing/inspire-end-user-licence.pdf>`__. 
 	Users can further categorise their records in terms of licence type by following the guidance in the `assigning a licence category <UserDoc_Chap6_Edit.html#assigning-a-licence-category>`__ section.
 
 |userdoc_fig_7_29_1_UseConstraints|
@@ -856,8 +849,12 @@ Use constraints
 .. |userdoc_fig_7_31_1_FileIdentifier| image:: media/userdoc_fig_7_31_1_FileIdentifier.png
 .. |userdoc_fig_7_32_1_MetadataStandard| image:: media/userdoc_fig_7_32_1_MetadataStandard.png
 .. |userdoc_fig_7_33_1_ParentIdentifier| image:: media/userdoc_fig_7_33_1_ParentIdentifier.png
+.. |userdoc_fig_7_34_1_SpatialRepresentationType| image:: media/userdoc_fig_7_33_1_SpatialRepresentationType.png
 .. |button_edit_plus| image:: media/button_edit_plus.png
 .. |button_edit_delete| image:: media/button_edit_delete.png
 .. |button_edit_plusdrop| image:: media/button_edit_plusdrop.png
 .. |button_edit_selectthesaurus| image:: media/button_edit_selectthesaurus.png
 .. |button_edit_addkeyword| image:: media/button_edit_addkeyword.png
+.. |button_edit_addparent| image:: media/button_edit_addparent.png
+.. |button_edit_verticalextent| image:: media/button_edit_verticalextent.png
+.. |button_edit_calendar| image:: media/button_edit_calendar.png
