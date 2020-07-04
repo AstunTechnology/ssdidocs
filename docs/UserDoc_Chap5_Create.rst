@@ -24,7 +24,7 @@ To import an existing XML metadata record:
 
 	**5|** Under the **Apply XSLT conversion** menu, select the appropriate translation to convert the metadata to the UK Gemini format.
 	
-	*Note: For an xml file that is already in Gemini 2.3 format (and recognised as such, see* `Annex 1 <UserDoc_Chap8_Annex1.html#annex-1-requirements-for-metadata-to-be-correctly-identified-as-uk-gemini>`__), *the* **Apply XSLT conversion** *option can be left blank. To convert an existing Gemini 2.2 record to 2.3, select the* **xml_gemini22gemini23** *conversion.*
+	*Note: For an xml file that is already in Gemini 2.3 format and recognised as such (see* `Annex 1 <UserDoc_Chap8_Annex1.html#annex-1-requirements-for-metadata-to-be-correctly-identified-as-uk-gemini>`__), *the* **Apply XSLT conversion** *option can be set to 'None'. Select 'GEMINI 2.2 to GEMINI 2.3' to convert an existing Gemini 2.2 record to 2.3, select 'ESRI to GEMINI 2.3 to convert records created using the ESRI ArcGIS platform. Users providing data in MEDIN format should select the MEDIN to GEMINI conversion.*
 	
 	**6|** Optionally, select whether to validate the record on import.
 	
