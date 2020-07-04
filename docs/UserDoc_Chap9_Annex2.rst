@@ -49,7 +49,7 @@ Metadata records can also be converted from 2.2 to 2.3 on import into `SpatialDa
 
 	**1|** Follow steps 1 to 4 of `importing an existing XML metadata record <UserDoc_Chap6_Edit.html#to-import-an-existing-XML-metadata-record>`__.
 	
-	**2|** For step 5, ensure that xml_gemini22gemini23 is chosen as the XSLT transformation.
+	**2|** For the XSLT transformation, select GEMINI 2.2 to GEMINI 2.3 from the drop down menu.
 	
 	**3|** Follow the remaining steps to import the record.
 	
