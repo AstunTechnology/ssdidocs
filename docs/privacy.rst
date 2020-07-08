@@ -5,7 +5,7 @@ This notice explains how we use any personal information we collect about you wh
 is provided by the `Scottish Government <http://www.gov.scot/>`__ (the *data controller*), however, we use a third party, `Astun Technology <https://astuntechnology.com/>`__, 
 for the hosting and management of the metadata catalogue (the *data processor*).
 
-This privacy notice is kept under regular review and any updates will appear on this page. This notice was last updated on **May 22nd, 2018**.
+This privacy notice is kept under regular review and any updates will appear on this page. This notice was last updated on **July 8th, 2020**.
 
 What is collected and how is it used?
 -------------------------------------
