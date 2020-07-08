@@ -849,7 +849,7 @@ Use constraints
 .. |userdoc_fig_7_31_1_FileIdentifier| image:: media/userdoc_fig_7_31_1_FileIdentifier.png
 .. |userdoc_fig_7_32_1_MetadataStandard| image:: media/userdoc_fig_7_32_1_MetadataStandard.png
 .. |userdoc_fig_7_33_1_ParentIdentifier| image:: media/userdoc_fig_7_33_1_ParentIdentifier.png
-.. |userdoc_fig_7_34_1_SpatialRepresentationType| image:: media/userdoc_fig_7_33_1_SpatialRepresentationType.png
+.. |userdoc_fig_7_34_1_SpatialRepresentationType| image:: media/userdoc_fig_7_34_1_SpatialRepresentationType.png
 .. |button_edit_plus| image:: media/button_edit_plus.png
 .. |button_edit_delete| image:: media/button_edit_delete.png
 .. |button_edit_plusdrop| image:: media/button_edit_plusdrop.png

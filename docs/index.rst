@@ -25,6 +25,8 @@ Welcome to the Spatialdata.gov.scot Metadata Portal's documentation!
    UserDoc_Chap6_Edit
    UserDoc_Chap7_Elements
    UserDoc_Chap8_Annex1
+   UserDoc_Chap9_Annex2
+   UserDoc_Chap10_Annex3
 
 .. _admin-docs:
 .. toctree::
