@@ -42,10 +42,10 @@ The following are not currently compliant with the accessibility regulations:
 
 [List identified issues. Ideally provide suggested alternatives if they exist. Provide an indication of when the issue will be fixed.]
 
-[For example, “Date pickers are not available to or usable by screen readers. The elements are not keyboard operable. You can still enter dates using the text field. This issue will be fixed by September, 2020”
+[For example, "Date pickers are not available to or usable by screen readers. The elements are not keyboard operable. You can still enter dates using the text field. This issue will be fixed by September, 2020"
 Full list of accessibility issues including relevant standards]
 
 Content that is not within the scope of regulations 
 ---------------------------------------------------
 
-[List content or sections which are exempt from the regulations. For example, “PDFs or other documents published before 23 September 2018 are not in scope. If the document is essential to providing our service then we have made the PDF accessible or converted it to an accessible HTML page.”]
+[List content or sections which are exempt from the regulations. For example, "PDFs or other documents published before 23 September 2018 are not in scope. If the document is essential to providing our service then we have made the PDF accessible or converted it to an accessible HTML page.""]

@@ -48,3 +48,10 @@ Welcome to the Spatialdata.gov.scot Metadata Portal's documentation!
    :caption: Licencing
 
    licensing
+
+.. _accessibility:
+.. toctree::
+   :maxdepth: 2
+   :caption: Accessibility Statement (in progress)
+
+   accessibility

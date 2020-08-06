@@ -6,4 +6,11 @@ inform policy decisions. Further, it is noted that most users search for data th
 
 This section aims to provide users with best practice guidance on how to improve their metadata quality to improve data discoverability.
 
+* Title
+* Abstract
+* Links in records:
+	* http rather than https
+	* 404s
+	* Protocol
+
 This section is currently under development.
