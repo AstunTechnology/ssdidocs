@@ -123,7 +123,12 @@ The following example extracts the uuid and title from the metadata records, usi
 
 (note that the above query will result in some blank rows- these are generally template records)
 
+Adding new queries to Zeppelin
+------------------------------
 
+To add a new query or paragraph, scroll to the very bottom of the notebook and start typing your SQL query at the prompt. When you are ready to run it, click the **run this paragraph** button. If there are any errors in your query they will be shown in the output. 
+
+To give your query a title, click the **settings** button and select **show title**, then type the title in the text area that appears (generally pre-filled with "Untitled").
 
 
 
