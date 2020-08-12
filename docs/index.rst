@@ -34,6 +34,7 @@ Welcome to the Spatialdata.gov.scot Metadata Portal's documentation!
    :caption: Admin Documentation
 
    ssdi_adminguidance
+   ssdi_adminguidance_zeppelin
 
 .. _privacy:
 .. toctree::
