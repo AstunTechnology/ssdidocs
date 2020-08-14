@@ -17,6 +17,7 @@ Welcome to the Spatialdata.gov.scot Metadata Portal's documentation!
    :maxdepth: 2
    :caption: User Documentation
 
+   UserDoc_Chap0_About
    UserDoc_Chap1_Intro
    UserDoc_Chap2_Search
    UserDoc_Chap3_Viewing
