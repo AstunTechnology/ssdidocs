@@ -1,77 +1,56 @@
-Introduction
-============
+Introduction to metadata
+========================
 
-About this guide
-----------------
+What is metadata?
+-----------------
 
-This guide sets out detailed instructions on the creation, publishing and maintenance of standard compliant metadata published on the
-`spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ metadata portal. It has been written using Read The Docs, and can be navigated through 
-by scrolling or clicking the sections in the navigation bar. The subsections can be explored by clicking the plus sign next to each 
-section. A PDF copy of this guidance can be exported by clicking on **'v: latest'** at the bottom of the navigation panel, which will 
-display the options to download the document in PDF and other formats.
+Metadata is essentially information about data.  It describes, among other things,  who collected it, why it was collected, the methods used to collect it and how it can be used.  Metadata provides all the information a data user needs to assess whether the data resource is fit for use. Metadata allows users to:
 
-The portal is based on the open source `GeoNetwork <https://geonetwork-opensource.org/>`__ platform. `Documentation <http://geonetwork-opensource.org/manuals/trunk/eng/users/index.html>`__ 
-on the GeoNetwork framework is also linked to within some pages of spatialdata.gov.scot. While this is more generic guidance, it may be of use if 
-you can't find your answer within this document.
+* Know who created the data and for what purpose
+* Know when the data was created
+* Know the geographic extent or coverage of the data (for geospatial data)
+* Understand how the data was created and manipulated
+* Understand the limitations of the data with respect to use
+* Understand any legal limitations to access and use of the data
+* Determine tools needed to view, manipulate, and use the data
+* Know how to access the data
 
-About SpatialData.gov.scot
---------------------------
+Metadata is important to both the dataset provider and other potential users. High quality metadata allows dataset owners to keep an inventory of datasets they have created, with the ability to locate the data and recall the circumstances and context under which it was created and analysed. When publicly available, metadata enables other interested parties the ability to discover, understand and use the data to its fullest potential.
 
-`SpatialData.gov.scot <https://www.spatialdata.gov.scot>`__ (previously referred to in short as the SSDI) 
-provides a catalogue service where users can find, share, and reuse spatial data published by Scottish public sector organisations. Information 
-available is not confined to just environmental data, but includes a variety of themes such as health, transport and administration. 
-Datasets are discoverable by text, map and programmatically based searches, can be previewed on a map interface, and can be accessed 
-directly via web service links recorded in the metadata.
 
-In addition to the catalogue service, the portal also provides editing and validation tools necessary for data publishers registered 
-on the site to create and maintain the metadata they publish. The portal employs the `UK GEMINI <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini>`__
-metadata specification to ensure metadata is recorded in a consistent manner, enhancing the access to and reusability of the data.
+What are metadata standards?
+----------------------------
 
-Good quality metadata is key to understanding whether data is fit for purpose, has value, and is reliable - particularly if it is to 
-inform policy decisions. `SpatialData.gov.scot <https://www.spatialdata.gov.scot>`__ fosters the development of good quality metadata, and underpins a range of websites and applications
-that aim to interrogate and analyse available spatial data.
+A metadata standard is a specification which establishes a common understanding of the meaning (or semantics) of data, to ensure correct and proper use and interpretation by its owners and users. Many standards begin as schemas, which group metadata elements into sets designed for a specific purpose (e.g. for geospatial data) to enable the best possible description of a data resource in that context. For every element the name and semantics are specified, along with any rules on how content must be formulated and represented, and where element values are to be identified from controlled lists.
 
-Any queries about the portal can be directed to: `SSDI.metadata@gov.scot <mailto:SSDI.metadata@gov.scot>`__
+The development of such schemas tends to be controlled through community consensus combined with a formal processes for submission, approval and publishing of new elements. Schemas that are developed and maintained by standards organisations (e.g. ISO) or organisations that have taken on such responsibility (e.g. Dublin Core Metadata Initiative) are called metadata standards.
 
-SpatialData.gov.scot and INSPIRE
---------------------------------
+The UK Geospatial Metadata Interoperability Initiative (`GEMINI <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini>`__ ) is the UK’s geographic metadata standard. It was originally produced through a collaboration between the Association for Geographic Information (AGI), the e-Government Unit (eGU) and the UK Data Archive. An application profile of ISO 19115, UK GEMINI is conformant with the INSPIRE Technical Guidance and designed to meet the requirements of INSPIRE in a UK context.
 
-In order to effectively use spatial data in the delivery of national outcomes, spatial data managed by public sector bodies should be 
-collected and shared in a manner that is open, minimises duplication and encourages re-use. A common way to achieve this is through the 
-development of a Spatial Data Infrastructure (SDI) - which is essentially a framework of connected standards, spatial datasets, metadata 
-and tools for visualisation and analysis that allow for spatial data to be used efficiently.  The main components of an SDI are:
 
-* **Repositories** (to store the information)
-* **Catalogue services** (to discover the information)
-* **Web services** (to access the information)
-* **Desktop GIS/Web Apps** (to interrogate the information)
+Why create metadata?
+--------------------
 
-The `EU Inspire Directive <https://inspire.ec.europa.eu/about-inspire>`__ aims to create a spatial data infrastructure for the European Union 
-to enable the sharing of and access to environmental spatial information across Europe and assist in policy-making across boundaries. This EU 
-SDI will be based on the infrastructures established and operated by the individual member states. The Directive came into force on 15 May 2007 
-with full implementation expected by 2021. This directive has since been `transposed into Scottish law <http://www.legislation.gov.uk/ssi/2009/440/contents/made>`__) in 2009.
+Metadata adds significant value to any organisation’s data holdings, and failure to create it can lead to hidden costs generated at a later date. Undocumented data soon loses its value as staff change and institutional knowledge is lost. Subsequent staff with little understanding of the contents and use of the data and may lose confidence in results generated by it.
 
-Scotland, in partnership with other administrations of the UK, works to fulfill its INSPIRE obligations by developing its own spatial data 
-infrastructure compliant to the standards specified by the Directive. The Scottish SDI aims to apply the principles of INSPIRE, not just to 
-environmental data, but to all spatial data maintained by the Scottish public sector.
+Beyond the individual organisation, data resources are a major national asset. Information of what data resources exist within different organisations, particularly within the public sector, is required to improve efficiencies and reduce data duplication. Metadata standards enable interoperability between organisations and platforms. Metadata from a variety of sources can be integrated into other technical systems or machine read by compatible ones. Adoption of metadata standards greatly increases the potential for data discoverability.
 
-`SpatialData.gov.scot <https://www.spatialdata.gov.scot>`__ fulfills the discovery/catalogue service component of the SDI and feeds into the UK public data publishing platform 
-`Find open data (data.gov.uk) <http://data.gov.uk/>`__ (which in turn, feeds into the `EU INSPIRE Geoportal <http://inspire-geoportal.ec.europa.eu/discovery/>`__). Harvest of the metadata on `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ 
-to `data.gov.uk <http://data.gov.uk/>`__ is performed automatically on a daily basis, therefore record amendments should appear on `data.gov.uk <http://data.gov.uk/>`__ 
-within 24 hours. Users should contact `SSDI.metadata@gov.scot <mailto:SSDI.metadata@gov.scot>`__ if they believe their records are not being 
-harvested correctly.
+Data can only be useful if it can be interpreted and understood, and can only be used if it can be found. Creating and maintaining standard compliant metadata secures the financial investment that organisations put into data by:
 
-Further information on INSPIRE, such as data specifications and implentation guidance, can be found on the `INSPIRE knowledge base <http://inspire.ec.europa.eu/>`__ pages.
-Information relevant to Scotland is also circulated on `Knowledge Hub <https://knowledgehub.local.gov.uk/>`__, within the Scottish SDI Strategy 
-Group, SDI/Inspire forum. 
+* Retaining institutional knowledge
+* Enabling better decision making through the use of appropriate data
+* Avoiding costly duplication of effort through lack of knowledge about data
+* Minimising the risk of unintentional use through good documentation
+* Increasing the value of data by unlocking its potential for re-use
+* Supporting collaboration through discoverability and simplified access
+* Inspiring trust in the data source
 
-Metadata Standards on SpatialData.gov.scot
-------------------------------------------
+When effort and resource is put into the provision of standard compliant metadata, organisations will be better placed to find, assess and make use of the data that is available to them – particularly in times of national emergency - saving time, money and lives.
 
-Metadata on the portal is compliant to the `UK GEMINI <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini>`__ specification, which defines a core set of metadata elements for UK geospatial data, and is
-compatible with the INSPIRE requirements for metadata. The current version of the standard is UK Gemini 2.3. Users should consult `Annex 2 <UserDoc_Chap9_Annex2.html#annex-2-upgrading-to-uk-gemini-2-3>`__ of this guidance to upgrade their existing metadata to Gemini 2.3 if the have not already done so.
 
-The `MEDIN Discovery Metadata Standard <http://www.oceannet.org/marine_data_standards/medin_disc_stnd.html>`__ is a profile of UK Gemini specific to marine data. It can be thought of as a superset of Gemini, including 
-the same core elements, but extending where necessary to include additional information relevant to the marine environment (e.g. marine keyword 
-term lists). MEDIN format metadata uploaded to `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ will retain these additional elements. It is recommended that Scottish orgnaisations 
-maintaining marine datasets with MEDIN format metadata submit to both `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ and the `MEDIN portal <http://portal.oceannet.org/portal/start.php>`__.
+Why use UK Gemini?
+------------------
+
+`UK GEMINI <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini>`__ is the designated standard for geographic metadata in the United Kingdom. It ensures consistency with respect to metadata across the UK through content guidance and the use of UK specific terms and code lists. UK Gemini also  simplifies the INSPIRE Technical Guidance making it easier for organisations to achieve compliance.
+
+While ensured compliance to regulations is important, the key benefit is the interoperability the standard allows across a range of platforms. Metadata in the Gemini format can be shared and consumed easily by a number of platforms and third party applications. Gemini is a requirement for the data.gov.uk portal and, with version 2.3, can now be consumed by the ESRI ArcGIS platform without the need of additional plugins.
