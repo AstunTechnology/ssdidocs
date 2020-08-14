@@ -1,5 +1,5 @@
-Introduction
-============
+About
+=====
 
 About this guide
 ----------------
