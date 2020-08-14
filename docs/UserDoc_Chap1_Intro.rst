@@ -1,5 +1,5 @@
-Introduction to metadata
-========================
+Metadata Basics
+===============
 
 What is metadata?
 -----------------
