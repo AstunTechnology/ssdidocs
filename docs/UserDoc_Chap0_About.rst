@@ -1,8 +1,5 @@
-About
-=====
-
-About this guide
-----------------
+About this Guide
+================
 
 This guide sets out detailed instructions on the creation, publishing and maintenance of standard compliant metadata published on the
 `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__ metadata portal. It has been written using Read The Docs, and can be navigated through 
@@ -14,8 +11,8 @@ The portal is based on the open source `GeoNetwork <https://geonetwork-opensourc
 on the GeoNetwork framework is also linked to within some pages of spatialdata.gov.scot. While this is more generic guidance, it may be of use if 
 you can't find your answer within this document.
 
-About SpatialData.gov.scot
---------------------------
+SpatialData.gov.scot
+--------------------
 
 `SpatialData.gov.scot <https://www.spatialdata.gov.scot>`__ (previously referred to in short as the SSDI) 
 provides a catalogue service where users can find, share, and reuse spatial data published by Scottish public sector organisations. Information 
