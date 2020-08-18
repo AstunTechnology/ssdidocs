@@ -8,9 +8,12 @@ How accessible this website is
 
 We know some parts of this website are not fully accessible:
 
--  You cannot modify the line height or spacing of text.
--  You cannot skip to the main content when using a screen reader.
--  Etc...
+-  Not all non-text content is available in text form, for example not all images have "alt" attributes
+-  Not all content can be rendered using assistive technology
+-  Some elements such as links are distinguishable only by colour
+-  Not all pages have titles or descriptions that adequately describe their purpose
+-  Not all links have a purpose that can be determined by the link text alone
+-  Entering data into controls does not always have a predictable effect, nor are consistent instructions provided on their use
 
 
 Feedback
@@ -33,19 +36,5 @@ Compliance statement
 
 The Scottish Government commits to making its websites accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018. This accessibility statement applies to `SpatialData.gov.scot <https://www.spatialdata.gov.scot/>`__ and was last reviewed on 5 August 2020.
 
-The site was reviewed using the SiteImprove Chrome plugin in August 2020. This website is not yet compliant with the `Web Content Accessibility Guidelines version 2.1 <https://www.w3.org/TR/WCAG21/>`__ (WCAG) A and AA success criteria due to the non-compliances listed below.
+The site was reviewed using the SiteImprove Chrome plugin in August 2020. This website is not yet compliant with the `Web Content Accessibility Guidelines version 2.1 <https://www.w3.org/TR/WCAG21/>`__ (WCAG) A success criteria due to the non-compliances listed above.
 
-Non-accessible content 
-----------------------
-
-The following are not currently compliant with the accessibility regulations:
-
-[List identified issues. Ideally provide suggested alternatives if they exist. Provide an indication of when the issue will be fixed.]
-
-[For example, "Date pickers are not available to or usable by screen readers. The elements are not keyboard operable. You can still enter dates using the text field. This issue will be fixed by September, 2020"
-Full list of accessibility issues including relevant standards]
-
-Content that is not within the scope of regulations 
----------------------------------------------------
-
-[List content or sections which are exempt from the regulations. For example, "PDFs or other documents published before 23 September 2018 are not in scope. If the document is essential to providing our service then we have made the PDF accessible or converted it to an accessible HTML page.""]
