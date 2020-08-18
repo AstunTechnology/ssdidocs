@@ -684,10 +684,9 @@ Spatial reference system
 	resource.
 
 :Guidance:
-	The reference system should be recorded using its associated code in the `EPSG Geodetic Parameter Registry <http://epsg-registry.org/>`__. For
-	metadata created on `spatialdata.gov.scot <https://www.spatialdata.gov.scot>`__, the two most common spatial reference systems have been pre-populated in the templates: OSGB 1936 and ETRS89. Users 
-	should select their required reference system and remove the other. If another spatial reference system is required, this can be added by 
-	accessing the `advanced editor view <UserDoc_Chap6_Edit.html#changing-the-editing-view>`__ and searching for the coordinate system tab in the search box below the element.
+	The reference system should be recorded referencing a well known common register (e.g. `EPSG Geodetic Parameter Registry <http://epsg-registry.org/>`__) in a URL link format. For INSPIRE purposes the **first entry** must be one of the reference systems listed in Annex D.4 (Default Coordinate Reference Systems) of the `INSPIRE Metadata Technical Guidelines <https://inspire.ec.europa.eu/Technical-Guidelines2/Metadata/>`__. For this reason it is recommended that ETRS89 is included as the first entry, and if desired British National Grid as a secondary entry. Failure to do so will result in a validation error.
+	
+	The box below the element can be used to search for and add additional reference systems.
 
 |userdoc_fig_7_23_1_ReferenceSystem|
 
