@@ -16,7 +16,7 @@ maintaining the portal, improving it based on how you use it, and notifying cont
 be viewed by authorised people in the Scottish Government.
 
 As noted above, we use a third party, `Astun Technology <https://astuntechnology.com/>`__, for the hosting and management of the metadata catalogue. 
-To view further details about what is collected on the site and how it is used please see their `metadata privacy policy <https://astuntechnology.com/metadata-privacy-policy/>`__. 
+To view further details about what is collected on the site and how it is used please see their `metadata privacy policy <https://www.astuntechnology.com/privacy-policy/privacy-policy-metadata/>`__. 
 Astun Technology does not retain, share, store or use this information for any secondary purposes.
 
 We will not share your information with other organisations for commercial purposes and we won’t pass on your details to other parties, unless 
