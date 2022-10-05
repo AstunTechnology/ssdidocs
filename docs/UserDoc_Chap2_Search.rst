@@ -70,24 +70,25 @@ Filter and sort options
 Search results can be limited using the options available in the left-hand panel. Each search filter shows the number of records returned next to 
 it. Filtering options available are as follows:
 
-* **Type of resource** (i.e. datasets or services)
+* **Type of resources** (i.e. datasets or services)
 * **Licence Type**
 * **Topics**
 * **INSPIRE Theme**
 * **Keywords**
 * **Contact for the resource**
-* **Year**
-* **Format**
+* **Years**
+* **Formats**
 * **Available Actions**
-* **Representation Type** (i.e. raster or vector)
-* **Update Frequency**
+* **Representation Types** (i.e. raster or vector)
+* **Update Frequencies**
+* **Service Types**
 * **Scale**
 * **Resolution**
 
 At the top right of the search results list is a menu to sort results by **title**, **relevance**, **date of change**, **rating**, **popularity**,
 and **scale**. At the top left of the results list users can select all results, all results on the current page, or none to deselect. Upon
 selection users can choose to export the results to a zip, pdf or csv file. Note that registered users will be able to perform additional actions, 
-such as `publish <UserDoc_Chap6_Edit.html#publishing-metadata>`__ or `delete <UserDoc_Chap6_Edit.html#deleting-metadata>`__, on selected records.
+such as `publish <UserDoc_Chap6_Edit.html#publishing-metadata>`__ (if they have Reviewer privileges) or `delete <UserDoc_Chap6_Edit.html#deleting-metadata>`__ (if they have Editor privileges), on selected records.
 
 |userdoc_fig_2_4_1_SortOptions| |userdoc_fig_2_4_1_SelectOptions|
 
