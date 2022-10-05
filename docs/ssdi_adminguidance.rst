@@ -70,8 +70,8 @@ In order from left to right these are:
 * Privileges- set privileges on which groups can access or edit this record
 * Edit- access the metadata editor for this record
 * Delete this record
-* Duplicate record
 * Create a child record
+* Duplicate record
 
 |image-6|
 
@@ -82,12 +82,15 @@ To act on multiple metadata records, use the select function and choose the appr
 * Export (ZIP)- exports the records in MEF format
 * Export (PDF)- exports as a combined PDF- note this will disregard any templates
 * Export (CSV)- exports as a combined CSV- note this will disregard any templates
+* Selection Only
 * Update privilges- note that this will **UPDATE** privileges rather than **APPEND** to existing ones
 * Publish/Unpublish- add or remove the "publish" privilege from the "All" group
 * Transfer Ownership
-* Update categories
 * Validate
+* Validate record links
+* Update licence
 * Delete
+* Index records
 
 
 Metadata and Templates
