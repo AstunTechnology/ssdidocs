@@ -83,11 +83,13 @@ of the metadata elements are the same for all records (e.g. points of contact, e
 
 To create a metadata record by duplicating and existing record:
 
-	**1|** Click the |button_contribute| button in the header menu. This will enable the **Contribute** board, where all records the user has access to will be listed.
-
-	**2|** Click the duplicate icon (|button_contribute_duplicate|) next to the record name.
+	**1|** Click the |button_contribute| button in the header menu. 
 	
-	**3|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the **editing** board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.html#editing-metadata>`__ for guidance on documenting the resource.
+	**2|** Click the |editor_board| button. This will enable the **Contribute** board, where all records the user has access to will be listed.
+
+	**3|** Click the duplicate icon (|button_contribute_duplicate|) next to the record name.
+	
+	**4|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the **editing** board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.html#editing-metadata>`__ for guidance on documenting the resource.
 
 	*Note: if the user is an editor for multiple groups or an administrator to the site, they will be required to select which group folder to create the duplicate metadata record in.*
 
