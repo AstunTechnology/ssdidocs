@@ -92,15 +92,17 @@ To assign or change the licence category via the contribute board:
 
 	**1|** Click on |button_contribute| in the header.
 	
-	**2|** In the record list, select the record(s) for which the licence category will assigned or amended.
+	**2|** Click the |editor_board| button. This will enable the Contribute board, where all records the user has access to will be listed.
+	
+	**3|** In the record list, select the record(s) for which the licence category will assigned or amended.
 	
 	*Note: the licence category can be updated for multiple records at a time.*
 	
-	**3|** Click the dropdown labelled 'selected' at the top left of the record list and choose 'Update licence' from the list. This will display the licence categories dialog.
+	**4|** Click the dropdown labelled 'selected' at the top left of the record list and choose 'Update licence' from the list. This will display the licence categories dialog.
 	
-	**2|** From the menu, check the appropriate licence type (Open Government, Non-commercial, INSPIRE or other).
+	**5|** From the menu, check the appropriate licence type (Open Government, Non-commercial, INSPIRE or other).
 	
-	**3|** Click |button_contribute_replace| to apply the changes.
+	**6|** Click |button_contribute_replace| to apply the changes.
 
 The licence category can also be assigned using the appropriate option when importing a record. For those organisations which harvest 
 their metadata records into the portal, a default licence type can be selected for all records, though any records that differ from the default setting
@@ -227,13 +229,17 @@ Once a metadata record has been successfully `validated <#validating-metadata>`_
 
 To publish a metadata record:
 
-	**1|** Click on |button_contribute| in the header and locate the metadata record in the list below.
+	**1|** Click on |button_contribute| in the header.
 	
-	**2|** Click on the |button_contribute_locked| next to the record name to access the Privileges dialog.
+	**2|** Click the |editor_board| button. This will enable the Contribute board, where all records the user has access to will be listed.
 	
-	**3|** To make publicly viewable, tick the 'Set all privileges' box next to the row marked 'All' in the group column.
+	**3|** Locate the metadata record in the list below.
 	
-	**4|** Click on |button_contribute_replace| to update the privileges for the record.
+	**4|** Click on the |button_contribute_locked| next to the record name to access the Privileges dialog.
+	
+	**5|** To make publicly viewable, tick the 'Set all privileges' box next to the row marked 'All' in the group column.
+	
+	**6|** Click on |button_contribute_replace| to update the privileges for the record.
 
 Once the record is published, the padlock icon displayed on the contribute menu should appear unlocked (|button_contribute_unlocked|).
 
@@ -265,11 +271,15 @@ Users with the appropriate privileges will be able to edit or delete records fro
 
 To delete a metadata record:
 
-	**1|** Click on |button_contribute| in the header and locate the metadata record in the list below.
+	**1|** Click on |button_contribute| in the header.
 	
-	**2|** Click on the |button_contribute_delete| in the row for the record.
+	**2|** Click the |editor_board| button. This will enable the Contribute board, where all records the user has access to will be listed.
 	
-	**3|** A conformation prompt will be displayed. Click 'OK' to confirm the delete.
+	**3|** Locate the metadata record in the list below.
+	
+	**4|** Click on the |button_contribute_delete| in the row for the record.
+	
+	**5|** A conformation prompt will be displayed. Click 'OK' to confirm the delete.
 
 	*Note: the record may still appear in the list until the page is refreshed.*
 	
