@@ -134,7 +134,7 @@ To print the current map:
 	
 	**5|** Check the print legend box to include the legend on the map.
 	
-	**6|** Select the desired format (either PDF, PNG or JPEG) and click |button_map_printcurrent|.
+	**6|** Select the desired format (either PDF or PNG) and click |button_map_printcurrent|.
 
 	*Note: the print area will be highlighted on the map.*
 
