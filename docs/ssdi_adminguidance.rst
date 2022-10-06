@@ -314,11 +314,12 @@ It is possible to add additional thesauri by clicking the "Add thesaurus" link. 
 * New thesaurus- build one from scratch in Geonetwork
 * From local file- upload a thesaurus in rdf (skos) format from your local hard drive
 * From URL- provide a link to a compatible thesaurus online
+* From registry
 
 Directories
 -----------
 
-Directories are snippets of information that can be pre-completed and inserted into metadata records. They are derived from subtemplates that are part of metadata standards. The available subtemplates are shown as tabs across the top of the Directory subsection- for Gemini 2.2 these are **Organizations and contacts** and **Online resources**.
+Directories are snippets of information that can be pre-completed and inserted into metadata records. They are derived from subtemplates that are part of metadata standards. The available subtemplates are shown as tabs across the top of the Directory subsection- for Gemini 2.2 these are **Organizations and contacts** and **Online resources**. The Directory section can be accessed by clicking on the Contribute button in the header menu and then on Manage directory.
 
 Selecting **Organizations and contacts** shows the metadata snippet for adding a Points of Contact subtemplate. To create a new record based on this template, click the "Duplicate" icon (|image14c|) to the right of the template name.
 
@@ -328,8 +329,9 @@ Figure 6.2.1: The Organizations and contacts interface
 
 Along the top of the entry window are, from left to right:
 
-* Group dropdown- which group should have ownership of this subtemplate
-* Sharing settings- which groups should have visibility of this subtemplate
+* Group (dropdown)- which group should have ownership of this subtemplate
+* Permissions- which groups should have visibility of this subtemplate
+* Validation status
 * Save
 * Save and close
 
