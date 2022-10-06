@@ -417,14 +417,16 @@ The settings for editing or creating a user are as follows:
 * Password (mandatory, not shown for existing users)
 * Name (mandatory)
 * Surname (mandatory)
+* Email (mandatory)
 * Organisation (optional)
 * Address fields (optional)
-* Is an administrator (default is no)- if checked the user will be a full administrator for the whole catalogue with full access to all functionality for all groups
-* Profiles per group- if not a full administrator then the user needs to be assigned at least one role or profile within the catalogue. Note that a user can be part of multiple groups and have different profiles per group
-	* Registered User: can download protected data
-	* Editor: has rights to create/delete/edit metadata within their group
-	* Reviewer: has rights to authorise publication of metadata within their own group
-	* User administrator: has rights to administer users, and create/delete/edit metadata within their group
+* Select user groups per profile fields:
+	* Is an administrator (default is no)- if checked the user will be a full administrator for the whole catalogue with full access to all functionality for all groups
+	* Profiles per group- if not a full administrator then the user needs to be assigned at least one role or profile within the catalogue. Note that a user can be part of multiple groups and have different profiles per group
+		* Registered User: can download protected data
+		* Editor: has rights to create/delete/edit metadata within their group
+		* Reviewer: has rights to authorise publication of metadata within their own group
+		* User administrator: has rights to administer users, and create/delete/edit metadata within their group
 * Records owned by this user (if any)
 
 |image22|
@@ -458,7 +460,7 @@ The various elements are described in detail in the Geonetwork documentation at 
 
 * Log levels- there are two of these, accessed via dropdown lists. The first is at the top of the settings panel, next to the "Save settings" button. The second is in the Catalog server subsection. The default for both is "Production" and this level should only be changed if increased logging is specifically requested. In that case, change to "Dev" and save settings, but remember to set it back to "Production" for normal use!
 * Catalog description- the Catalog name and Organisation are used throughout the catalogue and can be changed as required
-* Organisation- this is also used throughout the catalog and can be changed as required
+	* Organization- this is also used throughout the catalog and can be changed as required
 * Catalog- shows the version of Geonetwork in use
 * Catalog server- shows the URL and protocol (http or https) being used. **Changing these values will trigger a change to internal URLs within the metadata records**
 * Metadata Search Results- limits how many records can be selected in a single operation. **Increasing this value may have a negative impact on the performance of the server**
@@ -540,7 +542,7 @@ Tools
 
 This section contains some tools that can be run when maintenance is needed on the server. The subsections are as follows:
 
-Index admin
+Catalogue admin tools
 -----------
 
 In general it is not necessary to run these tools unless transferring a large number of metadata records, changing the catalogue's appearance, or if unexpected search results are reported. The tools are as follows:
@@ -548,7 +550,9 @@ In general it is not necessary to run these tools unless transferring a large nu
 * Rebuild index- this rebuilds the lucene search index, used in all operations that perform searches on the metadata
 * Optimize index- this is run nightly but can be run to re-optimise the index if odd search results are spotted
 * Rebuild index configuration- rebuild the index configuration if changes have been made to the catalogue, such as to the search views
-* Clear the XLink cache- if directories are added or changes have been made to the catalogue that would affect the structure of xlinks (such as to the URL or protocol), clear the cache
+* (beta) Index in remote index- index the catalogue content in a remote Elasticsearch instance
+* Clear XLink cache- if directories are added or changes have been made to the catalogue that would affect the structure of xlinks (such as to the URL or protocol), clear the cache
+* Clear JS & CSS cache- if changes have been made to the catalogue JS or CSS, clear the cache
 * Clear formatter cache- if changes have been made to the catalogue display (schematron views, or text strings), clear the cache
 
 |image30|
@@ -560,7 +564,7 @@ Batch process
 
 This subsection can be used to make xsl transformations on multiple records at once, such as to update contact information in bulk, change internal URLs or update keywords. **It is wise to request a database backup before performing a batch process as there is no way to undo the transformation once it has been started.**
 
-The processes are defined per schema, and new processes can be added as required. The records that the process should be applied to can be filtered by Group, Owner, Category or custom search term, further filtered to include/exclude templates, and then selected using the dropdown selection dialog. 
+The processes are defined per schema, and new processes can be added as required. The records that the process should be applied to can be filtered by Group, Owner, License type or custom search term, further filtered to include/exclude templates, and then selected using the dropdown selection dialog. 
 
 The available processes are accessed via a dropdown list, which then prompts you to supply the required parameters, such as the Old URL and the New URL. To run the process, click the blue "Run" button. The results of the process will be shown below. **Note that the process may take a long time if there are a large number of records to search.**
 
