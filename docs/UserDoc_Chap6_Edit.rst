@@ -92,7 +92,7 @@ To assign or change the licence category via the contribute board:
 
 	**1|** Click on |button_contribute| in the header.
 	
-	**2|** Click the |editor_board| button. This will enable the Contribute board, where all records the user has access to will be listed.
+	**2|** Click the |button_editor_board| button. This will enable the Contribute board, where all records the user has access to will be listed.
 	
 	**3|** In the record list, select the record(s) for which the licence category will assigned or amended.
 	
@@ -231,7 +231,7 @@ To publish a metadata record:
 
 	**1|** Click on |button_contribute| in the header.
 	
-	**2|** Click the |editor_board| button. This will enable the Contribute board, where all records the user has access to will be listed.
+	**2|** Click the |button_editor_board| button. This will enable the Contribute board, where all records the user has access to will be listed.
 	
 	**3|** Locate the metadata record in the list below.
 	
@@ -273,7 +273,7 @@ To delete a metadata record:
 
 	**1|** Click on |button_contribute| in the header.
 	
-	**2|** Click the |editor_board| button. This will enable the Contribute board, where all records the user has access to will be listed.
+	**2|** Click the |button_editor_board| button. This will enable the Contribute board, where all records the user has access to will be listed.
 	
 	**3|** Locate the metadata record in the list below.
 	
@@ -332,3 +332,4 @@ to have records deleted from `data.gov.uk <http://data.gov.uk/>`__.
 .. |button_view_publish| image:: media/button_view_publish.png
 .. |button_contribute_delete| image:: media/button_contribute_delete.png
 .. |button_view_delete| image:: media/button_view_delete.png
+.. |button_editor_board| image:: media/button_editor_board.png
