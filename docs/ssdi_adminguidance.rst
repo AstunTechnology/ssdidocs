@@ -554,6 +554,7 @@ In general it is not necessary to run these tools unless transferring a large nu
 * Clear XLink cache- if directories are added or changes have been made to the catalogue that would affect the structure of xlinks (such as to the URL or protocol), clear the cache
 * Clear JS & CSS cache- if changes have been made to the catalogue JS or CSS, clear the cache
 * Clear formatter cache- if changes have been made to the catalogue display (schematron views, or text strings), clear the cache
+* API doc & test- documentation and testing page for the GeoNetwork API
 
 |image30|
 
