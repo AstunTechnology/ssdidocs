@@ -57,17 +57,19 @@ Basic templates are available for users to create metadata directly on `spatiald
 
 To create a metadata record using an available template:
 
-	**1|** Click the |button_contribute| button in the header menu. This will enable the **Contribute** board, where all records the user has access to will be listed.
+	**1|** Click the |button_contribute| button in the header menu. 
 	
-	**2|** Click the |button_contribute_addrecord| button.
+	**2|** Click the |button_editor_board| button. This will enable the **Contribute** board, where all records the user has access to will be listed.
 	
-	**3|** Choose the type of record to be created based on the type of resource that is being documented, i.e. a dataset, series or service record. When selected available templates for that type are displayed.
+	**3|** Click the |button_contribute_addrecord| button.
+	
+	**4|** Choose the type of record to be created based on the type of resource that is being documented, i.e. a dataset, series or service record. When selected available templates for that type are displayed.
 	
 	*Note: templates for dataset and service metadata are slightly different. Metadata for a service has extra elements for the spatial data service type (i.e. view, download, etc.) and for coupled resources. You must choose the correct template for the type of record being documented as it is not possible to change once the record has been created.*
 	
-	**4|** Click on the template to be used.
+	**5|** Click on the template to be used.
 
-	**5|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the editing board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.html#editing-metadata>`__ for guidance on documenting the resource.
+	**6|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the editing board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.html#editing-metadata>`__ for guidance on documenting the resource.
 	
 	*Note: if the user is an editor for multiple groups or an administrator to the site, they may be presented with multiple templates of the same name. Additionally, they will be required to select which group folder to create the metadata record in.*
 
@@ -85,7 +87,7 @@ To create a metadata record by duplicating and existing record:
 
 	**1|** Click the |button_contribute| button in the header menu. 
 	
-	**2|** Click the |editor_board| button. This will enable the **Contribute** board, where all records the user has access to will be listed.
+	**2|** Click the |button_editor_board| button. This will enable the **Contribute** board, where all records the user has access to will be listed.
 
 	**3|** Click the duplicate icon (|button_contribute_duplicate|) next to the record name.
 	
@@ -140,3 +142,4 @@ To create a directory entry:
 .. |button_contribute_managedirectory| image:: media/button_contribute_managedirectory.png
 .. |button_contribute_saveclosedirectory| image:: media/button_contribute_saveclosedirectory.png
 .. |button_contribute_savedirectory| image:: media/button_contribute_savedirectory.png
+.. |button_editor_board| image:: media/button_editor_board.png
