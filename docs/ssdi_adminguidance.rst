@@ -168,8 +168,8 @@ Common configuration options are:
 * Remove records: delete records but leave harvester in place
 * Save: save changes to harvester configuration
 * Harvest: run this harvest
-* Category: set the category that the harvested records should be added to
-* Validate records before import``: Reject invalid records before importing them into the catalogue. This has the following options``:
+* License Type: set the licence under which the harvested records should be added
+* Validate records before import``: Invalid records will be rejected. Validation is based on the standard validation (ie. XSD, Schematrons). This has the following options``:
 	* Accept all metadata without validation (this option will import all records regardless of validity)
 	* Accept metadata that are XSD valid (this option will cause the harvest to fail on the first invalid record)
 	* Accept metadata that are XSD and Schematron valid (this option will cause the harvest to fail on the first invalid record)
