@@ -116,7 +116,7 @@ Formatter
 
 This allows advanced administrators/system maintainers to customise how metadata is displayed within Geonetwork. For further information on this topic see the Geonetwork help documentation at http://geonetwork-opensource.org/manuals/trunk/eng/users/customizing-application/creating-custom-view.html?highlight=formatter
 
-Schematron
+Validation
 ----------
 
 **Advanced**
