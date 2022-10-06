@@ -529,7 +529,7 @@ This subsection allows you to test various CSW requests on the standard endpoint
 
 |image29|
 
-Figure 9.4.2: Results of CSW "GetRecordById" request to the standard catalogue CSW endpoint, for record with ID 8fc49f46-2d6b-45b0-abd9-79e8aa2233cb
+Figure 9.4.2: Results of CSW "GetRecordById" request to the standard catalogue CSW endpoint, for record with ID 9d31b891-b896-49f8-bcea-9787f79dd5f8
 
 
 Map servers
