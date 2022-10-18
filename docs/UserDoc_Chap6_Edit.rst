@@ -231,7 +231,7 @@ To publish a metadata record:
 
 	**1|** Click on |button_contribute| in the header.
 	
-	**2|** Click the |button_editor_board| button. This will enable the Contribute board, where all records the user has access to will be listed.
+	**2|** Click the |button_editor_board| button. This will enable the **Editor** board, where all records the user has access to will be listed.
 	
 	**3|** Locate the metadata record in the list below.
 	
@@ -241,7 +241,7 @@ To publish a metadata record:
 	
 	**6|** Click on |button_contribute_replace| to update the privileges for the record.
 
-Once the record is published, the padlock icon displayed on the contribute menu should appear unlocked (|button_contribute_unlocked|).
+Once the record is published, the padlock icon displayed on the Editor board should appear unlocked (|button_contribute_unlocked|).
 
 |userdoc_fig_6_8_1_PrivilegesPanel|
 
@@ -273,13 +273,13 @@ To delete a metadata record:
 
 	**1|** Click on |button_contribute| in the header.
 	
-	**2|** Click the |button_editor_board| button. This will enable the Contribute board, where all records the user has access to will be listed.
+	**2|** Click the |button_editor_board| button. This will enable the **Editor** board, where all records the user has access to will be listed.
 	
 	**3|** Locate the metadata record in the list below.
 	
 	**4|** Click on the |button_contribute_delete| in the row for the record.
 	
-	**5|** A conformation prompt will be displayed. Click 'OK' to confirm the delete.
+	**5|** A conformation prompt will be displayed. Click 'OK' to confirm the deletion.
 
 	*Note: the record may still appear in the list until the page is refreshed.*
 	
