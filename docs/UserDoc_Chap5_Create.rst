@@ -102,22 +102,20 @@ To create a metadata record by duplicating an existing record:
 Harvesting metadata
 -------------------
 
-`Spatialdata.gov.scot <https://spatialdata.gov.scot>`__ has the capability to automatically consume metadata from external services on a scheduled basis. Organisations that maintain their own
-spatial data portals which are interested in having their records automatically harvested should contact `SSDI.Metadata@gov.scot <mailto:SSDI.Metadata@gov.scot>`__.
+`Spatialdata.gov.scot <https://spatialdata.gov.scot>`__ has the capability to automatically consume metadata from external services on a scheduled basis. Organisations that maintain their own spatial data portals which are interested in having their records automatically harvested should contact `SSDI.Metadata@gov.scot <mailto:SSDI.Metadata@gov.scot>`__.
 
 Creating directory metadata
 ---------------------------
 
-Directory records are a means of automatically populating fields such as those for the `point of contact <UserDoc_Chap7_Elements.html#point-of-contact>`__ section of a 
-metadata record with pre-written values. This is useful if you have to create multiple records that share the same point of contact.
+Directory records are a means of automatically populating fields such as those for the `point of contact <UserDoc_Chap7_Elements.html#point-of-contact>`__ section of a metadata record with pre-written values. This is useful if you have to create multiple records that share the same point of contact.
 
 To create a directory entry:
 
 	**1|** Click the |button_contribute| button in the header menu.
 
-	**2|** Click either |button_contribute_managedirectory| from the contribute drop down, or the button below the header of the **Contribute** board. This will bring the user to the manage directories page.
+	**2|** Click the |button_contribute_managedirectory| from the contribute drop down. This will bring the user to the manage directories page.
 
-	**3|** On the entries tab are previously created directory entries. Under the **Actions** drop menu, users can choose to edit or duplicate an existing record. Alternately, users can create a blank directory entry using a template by first clicking on the **Templates** tab, and then choosing duplicate from the **Actions** menu of the 'TEMPLATE TO DUPLICATE' entry.
+	**3|** On the entries tab are previously created directory entries. Under the **Actions** drop menu of each record, users can choose to edit or duplicate an existing record. Alternately, users can create a blank directory entry using a template by first clicking on the **Templates** tab, and then choosing duplicate from the **Actions** menu of the 'TEMPLATE TO DUPLICATE' entry.
 	
 	**4|** Amend the entry as appropriate and click |button_contribute_savedirectory| to save changes.
 	
