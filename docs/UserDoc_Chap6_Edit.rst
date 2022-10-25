@@ -92,7 +92,7 @@ To assign or change the licence category via the contribute board:
 
 	**1|** Click on |button_contribute| in the header.
 	
-	**2|** Click the |button_editor_board| button. This will enable the Contribute board, where all records the user has access to will be listed.
+	**2|** Click the |button_editor_board| button. This will enable the **Editor** board, where all records the user has access to will be listed.
 	
 	**3|** In the record list, select the record(s) for which the licence category will assigned or amended.
 	
