@@ -102,12 +102,19 @@ The Metadata and Templates button provides access to four subsections, as shown 
 
 Figure 2.2.1: Metadata and Templates subsections
 
-Metadata and Templates Standards available
-------------------------------------------
+Metadata and Templates
+----------------------
 
 This shows the metadata standards or profiles loaded onto the system. Selecting one or more of the standards activates the options to Load templates and Load samples for the selected standards. 
 
 **Note that the templates have been already loaded for iso19139.gemini22**
+
+Standards
+---------
+
+This shows information on the standards currently loaded in the catalog.
+
+In GeoNetwork 3.12.x it is no longer possible to add new metadata standards via the user interface. To load a new standard, please contact the catalog administrator.
 
 Formatter
 ---------
@@ -366,21 +373,6 @@ To add a new category, click the "New category" button shown in Figure 6.3.1 abo
 
 Figure 6.3.3: Adding a new category
 
-Standards
-=========
-
-**This section should only be used by advanced administrators and system maintainers.** It lists the metadata standards or profiles that are loaded into the installation, along with the option to remove a standard, update it, or add a new one.
-
-When adding a new standard or updating an existing one, there are three options:
-
-* Provide the path to the folder containing the standard on the server filesystem
-* Provide the UUID of a metadata record that contains a schema archive as an attached online resource
-* (Not shown in Figure 7.1.1) manually add or update the standard on the server in the schema_plugins location (found in the System Information panel) and restart the server
-
-|image18|
-
-Figure 7.1.1: The standards interface
-
 Users and groups
 ================
 
@@ -393,17 +385,17 @@ This subsection allows you to list and edit the existing groups in the catalogue
 
 |image19|
 
-Figure 8.1.1: The groups list and top half of the groups editing interface
+Figure 7.1.1: The groups list and top half of the groups editing interface
 
 |image20|
 
-Figure 8.1.2: The middle section of the groups editing interface
+Figure 7.1.2: The middle section of the groups editing interface
 
 |image21|
 
-Figure 8.1.3: The lower section of the groups editing interface (intermediate section on translations for this group name not shown)
+Figure 7.1.3: The lower section of the groups editing interface (intermediate section on translations for this group name not shown)
 
-To add a new group, click the blue "New group" button below the list (not shown in figure 8.1.1). This brings up the same dialogue shown in figures 8.1.1-8.1.3.
+To add a new group, click the blue "New group" button below the list (not shown in figure 7.1.1). This brings up the same dialogue shown in figures 7.1.1-7.1.3.
 
 Manage Users
 ------------
@@ -431,15 +423,15 @@ The settings for editing or creating a user are as follows:
 
 |image22|
 
-Figure 8.2.1: The users list and top section of user editing interface
+Figure 7.2.1: The users list and top section of user editing interface
 
 |image23|
 
-Figure 8.2.2: The middle section of the user editing interface
+Figure 7.2.2: The middle section of the user editing interface
 
 |image24|
 
-Figure 8.2.3: The lower section of the user editing interface
+Figure 7.2.3: The lower section of the user editing interface
 
 Settings
 ========
@@ -453,7 +445,7 @@ The settings subsection provides access to the main configuration for the instal
 
 |image25|
 
-Figure 9.1.1: The settings panel
+Figure 8.1.1: The settings panel
 
 
 The various elements are described in detail in the Geonetwork documentation at http://geonetwork-opensource.org/manuals/trunk/eng/users/administrator-guide/configuring-the-catalog/index.html so not all elements are described below, but there are some sections that may be useful:
@@ -483,7 +475,7 @@ This subsection is where logos are uploaded and/or deleted, and where the main c
 
 |image26|
 
-Figure 9.2.1: The logo configuration interface
+Figure 8.2.1: The logo configuration interface
 
 Sources
 -------
@@ -501,7 +493,7 @@ The CSW Service information setting allows the configuration of some of the GetC
 
 |image27|
 
-Figure 9.3.1: The CSW settings interface
+Figure 8.3.1: The CSW settings interface
 
 Virtual CSW
 -----------
@@ -516,9 +508,9 @@ To configure a new Virtual CSW endpoint, click the blue "New Virtual CSW" button
 
 |image28|
 
-Figure 9.4.1: Virtual CSW endpoint set up for Aberdeen group
+Figure 8.4.1: Virtual CSW endpoint set up for Aberdeen group
 
-Once a virtual endpoint has been saved, it's capabilities can be checked using the link shown in figure 9.3.1
+Once a virtual endpoint has been saved, it's capabilities can be checked using the link shown in figure 8.3.1
 
 **Note that the default contact information, as configured in the CSW subsection, will be used for the GetCapabilities request**
 
@@ -529,7 +521,7 @@ This subsection allows you to test various CSW requests on the standard endpoint
 
 |image29|
 
-Figure 9.4.2: Results of CSW "GetRecordById" request to the standard catalogue CSW endpoint, for record with ID 9d31b891-b896-49f8-bcea-9787f79dd5f8
+Figure 8.4.2: Results of CSW "GetRecordById" request to the standard catalogue CSW endpoint, for record with ID 9d31b891-b896-49f8-bcea-9787f79dd5f8
 
 
 Map servers
@@ -558,7 +550,7 @@ In general it is not necessary to run these tools unless transferring a large nu
 
 |image30|
 
-Figure 10.1.1: The index admin interface
+Figure 9.1.1: The index admin interface
 
 Batch process
 -------------
@@ -571,7 +563,7 @@ The available processes are accessed via a dropdown list, which then prompts you
 
 |image31|
 
-Figure 10.2.1: The batch processing interface, showing the configuration of the URL replacer for metadata records owned by Transport Scotland
+Figure 9.2.1: The batch processing interface, showing the configuration of the URL replacer for metadata records owned by Transport Scotland
 
 Transfer ownership
 ------------------
@@ -582,7 +574,7 @@ In the "Target group and editor" list choose the group that your new editor belo
 
 |image32|
 
-Figure 10.3.1: The transfer ownership interface, configured for transferring records currently owned by the Fife Council user to the Admin user.
+Figure 9.3.1: The transfer ownership interface, configured for transferring records currently owned by the Fife Council user to the Admin user.
 
 **Note that changing the ownership of a record applies only to users and does not affect group privileges.** This tool is also available in the Search panel as one of the available actions for selected results.
 
@@ -616,23 +608,23 @@ Click the edit icon for the document you wish to edit.
 
 |image33|
 
-Figure 11.1.1.: Editing in GitHub
+Figure 10.1.1.: Editing in GitHub
 
 The editing interface has two tabs, one for editing and one for previewing changes. You can use shortcuts like ctrl-f to find text in the document that you wish to change. Check your changes using the preview tab, and then in the "Propose file change" section briefly outline your change. 
 
 |image34|
 
-Figure 11.1.2: Detailing your changes
+Figure 10.1.2: Detailing your changes
 
 Click the green "Propose change" button and then in the following window, quickly review your changes and then click the green "Create pull request" button.
 
 |image35|
 
-Figure 11.1.3: Reviewing the pull request 
+Figure 10.1.3: Reviewing the pull request 
 
 |image36|
 
-Figure 11.1.4: Creating the pull request
+Figure 10.1.4: Creating the pull request
 
 In the following window, if necessary expand on your explanation of the changes and then click the green "Create pull request" button.
 
@@ -687,7 +679,6 @@ Note that the services don't return a result, just a blank page. Note also that 
 .. |image15| image:: media/adminimage16.png
 .. |image16| image:: media/adminimage17.png
 .. |image17| image:: media/adminimage18.png
-.. |image18| image:: media/adminimage19.png
 .. |image19| image:: media/adminimage20.png
 .. |image20| image:: media/adminimage21.png
 .. |image21| image:: media/adminimage22.png
