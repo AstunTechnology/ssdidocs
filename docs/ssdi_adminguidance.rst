@@ -326,9 +326,9 @@ It is possible to add additional thesauri by clicking the "Add thesaurus" link. 
 Directories
 -----------
 
-Directories are snippets of information that can be pre-completed and inserted into metadata records. They are derived from subtemplates that are part of metadata standards. The available subtemplates are shown as tabs across the top of the Directory subsection- for Gemini 2.2 these are **Organizations and contacts** and **Online resources**. The Directory section can be accessed by clicking on the Contribute button in the header menu and then on Manage directory.
+Directories are snippets of information that can be pre-completed and inserted into metadata records. They are derived from subtemplates that are part of metadata standards. The available subtemplates are shown as tabs across the top of the Directory subsection- for Gemini 2.2 and 2.3 these are **Organizations and contacts**, **Data Quality Reports (Completeness)** and **Data Quality Reports (Domain Consistency)**. The **Manage Directory** section can be accessed by clicking on the Contribute button in the header menu and then on **Manage directory**.
 
-Selecting **Organizations and contacts** shows the metadata snippet for adding a Points of Contact subtemplate. To create a new record based on this template, click the "Duplicate" icon (|image14c|) to the right of the template name.
+Selecting **Organizations and contacts** shows the metadata snippet for adding a Points of Contact subtemplate. To create a new record based on this template, click the "Duplicate" icon (|image14c|) in the **Actions** dropdown.
 
 |image14a|
 
