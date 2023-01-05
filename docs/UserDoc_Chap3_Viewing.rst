@@ -60,11 +60,11 @@ To add a layer from the main map page:
 
 	**1|** Click on |button_map| in the header menu to navigate to the main map page.
 
-	**2|** On the right-hand side of the map, click |button_map_addlayer| at the top of the menu to open the **Add a Layer** dialog.
+	**2|** On the right-hand side of the map, click |button_map_addlayer| at the top of the menu to open the **Add a Layer from** dialog.
 
-	**3|** On the **Search** tab of the **Add a Layer** dialog, enter text in the search box to find a layer. Alternately, copy and paste a URL for a service into the **WMS**, **WMTS**, or **WFS** boxes on the **Services** tab. KML can be added to the map via the **Files** tab.
+	**3|** On the **Search** tab of the **Add a Layer** dialog, enter text in the search box to find a layer. Alternatively, copy and paste a URL for a service into the **WMS**, **WMTS**, **WFS** or **ESRIREST** boxes on the **Services** tab. KML and KMZ can be added to the map via the **Files** tab.
  
-	**4|** Click |button_map_addicon| beside the layer to add it to the map. If adding from a URL, click on the layer name to add it to the map.	 
+	**4|** Click |button_map_addicon| below the layer title to add it to the map. If adding from a URL, click on the layer name or the |button_map_addlayer| next to the name to add it to the map.	 
 	
 	*Note: when adding straight from the map page, using the search tab, you may see layers with no name. This is caused by the 
 	web service layer names not being referenced properly in the associated resources part of the dataset metadata record. Contributors to spatialdata.gov.scot should 
@@ -77,7 +77,7 @@ To add a layer from the main map page:
 	
 To add a layer to the map from the metadata record view:
 
-	**1|** Scroll to the **Downloads and links** section of the record. Services that can be added to the map will have |button_view_addtomap| beside them.
+	**1|** Scroll to the **API** section of the record. Services that can be added to the map will have |button_view_addtomap| beside them.
 
 	**2|** For view services (i.e. WMS), Click on |button_view_addtomap|. The user will be automatically taken to the map page.
 
