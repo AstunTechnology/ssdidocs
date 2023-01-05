@@ -8,16 +8,15 @@ Viewing metadata records
 
 Clicking on the title of a record (from either the search results or those presented on the main page) will allow the user to view the metadata 
 record. Below the record title, the **abstract** provides a brief description of what the dataset (or service) is and what it is used for. The 
-spatial **extent** of the resource can be seen in the map to the right. Access to the data itself can be gained from the options listed in the 
-**Download and links** section.
+spatial **extent** of the resource can be seen in the map below, in the **Discover data** section. Access to the data itself can be gained from the options listed in the 
+**Links** section.
 
 |userdoc_fig_3_1_1_DefaultViewA|
 
 **Figure 3.1.1:** Default record view
 
-Scrolling down the page, the **About this resource** and **Technical information** headings provide details on topic categories and keywords, licencing 
-information, contacts, maintenance frequency, coordinate systems and data formats are provided. Information on the history of a resource and how 
-it was created can be found in the **lineage** section.
+Scrolling down the page, the **Use contraints** section provides information on licencing and the **Technical information** headings provide details on topic categories and keywords, maintenance frequency, coordinate systems and data formats are provided. Information on the history of a resource and how 
+it was created can be found in the **Lineage** section. The **Metadata information** section, as the name suggests, provides information on the metadata itself, as well as the option for the metadata record to be downloaded.
 
 Note that the default view for a metadata record displays a summary of the information in the record. To change the display view of the metadata 
 record:
