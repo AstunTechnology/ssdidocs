@@ -51,11 +51,13 @@ To sign in to an existing account:
 
 To recover a forgotten password:
 
-	**1|** Click the |button_signin_forgotten| on the right-hand side of the sign in page.
+	**1|** Click the |button_signin| in the header menu.
 	
-	**2|** Enter the account user name.
+	**2|** Click the |button_signin_forgotten| at the bottom of dropdown window.
 	
-	**3|** Click the |button_signin_sendlink| button. This will send an email to the address registered to that user account providing a link to reset the password.
+	**3|** Enter the account user name at the bottom of the page that opens (below the Sign in section).
+	
+	**4|** Click the |button_signin_sendlink| button. This will send an email to the address registered to that user account providing a link to reset the password.
 
 	*Note: user names are case sensitive. The password recovery function requires that a valid email address (accessible by the user) is registered 
 	with the user account in question. If you have not registered an email address or do not have access to the relevant mailbox, you will not be 
@@ -69,11 +71,13 @@ User account management
 -----------------------
 
 Once logged in, users can manage their account details by clicking on their profile name displayed in the header. This will take the user to the 
-account admin page. From this page users can enter contact details and reset passwords.
+account admin page. From this page users can enter or change contact details for themselves and other users and reset passwords.
+
+*Note: a user can only reset its own password, not other users' passwords.*
 
 To reset an account password:
 
-	**1|** Click on the user profile name in the header. By default the |button_account_manageusers| page should be presented. Click the user name on the left hand side under 'Users' to display the user account information.
+	**1|** Click on either the user profile name or the user name in the header. By default the |button_account_manageusers| page should be presented. Click the user name on the left hand side under 'Users' to display the user account information.
 	
 	**2|** Click the |button_account_resetpass| button.
 	
