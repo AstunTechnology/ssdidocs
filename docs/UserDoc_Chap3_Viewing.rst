@@ -35,7 +35,7 @@ Metadata records can be exported from spatialdata.gov.scot via the download icon
 
 	**1|** Click on |button_view_download| at the top right of the record.
 
-	**2|** Choose the format to export (ZIP, PDF, XML, or RDF). The permalink option will provide a URL for the record that can be copy and pasted.
+	**2|** Choose the format to export (ZIP, PDF or XML). The permalink option will provide a URL for the record that can be copy and pasted.
 
 |userdoc_fig_3_2_1_ExportMetadata|
 
