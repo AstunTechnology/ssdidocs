@@ -135,7 +135,7 @@ Metadata Identifier Templates
 
 **Advanced**
 
-By default this functionality is disabled in the admin settings, and identifiers are generated automatically by geonetwork when a record is created or imported.. When enabled in the admin settings, this section allows the customisation of the identifier. The default is a randon UUID string, but identifier templates allow a pre-configured format with a template for rendering any user-generated elements. For example:
+By default this functionality is disabled in the admin settings, and identifiers are generated automatically by geonetwork when a record is created or imported. When enabled in the admin settings, this section allows the customisation of the identifier. The default is a randon UUID string, but identifier templates allow a pre-configured format with a template for rendering any user-generated elements. For example:
 
 * scot.gov::{IDCODE} would render the IDCODE as an element to be completed during metadata creation
 * scot.gov::{SLA}:{ID} would render both SLA and ID as elements to be completed during metadata creation
@@ -145,18 +145,20 @@ When this setting is enabled, additional options are available when creating a r
 Harvesting
 ==========
 
-Harvesting allows you to consume metadata from external services on a scheduled basis. The harvester section has two subsections, as shown in the image below. It also shows any existing harvester nodes set up on the system, and their current status (running or paused). 
+Harvesting allows you to consume metadata from external services on a scheduled basis. The **Catalog harvesters** section has three subsections, as shown in the image below. It also shows any existing harvester nodes set up on the system, and their current status (running or paused). 
 
 |image3|
 
-Figure 3.1.1: Harvesting Section
+Figure 3.1.1: Catalog harvesters section
 
-Harvester Settings
+Catalog Harvesters
 ------------------
 
-From this section you can see the list of available harvesting nodes, and clone an existing node or add a new one.
+From this section you can see the list of available harvesting nodes, and clone an existing node or add a new one. You can also view and edit the settings of each harvester, see a harvester's history and a summary of the metadata records harvested by each node.
 
 To add a new harvester node, either clone an existing one by selecting it from the dropdown Clone list in the above image, or click the "Harvest from" button to access the dropdown list of harvester types. The configuration options available will depend on the type of node selected. 
+
+**Settings**
 
 |image4|
 
@@ -170,20 +172,47 @@ Common configuration options are:
 
 * Node name and logo: a unique name and optional logo for this harvesting node
 * Group: The group that the harvester should belong to
+* User: The user that owns the harvested records
 * Schedule: Should the harvester run repeatedly to a schedule or just run the once
 * Delete: delete this harvester node **and all related records**
 * Remove records: delete records but leave harvester in place
 * Save: save changes to harvester configuration
 * Harvest: run this harvest
+* Action on UUID collision: what action should be taken if the same UUID is present on a record collected by another method. This has the following options:
+	* Skip record (default)
+	* Overwrite record
+	* Create new UUID
 * License Type: set the licence under which the harvested records should be added
 * Validate records before import``: Invalid records will be rejected. Validation is based on the standard validation (ie. XSD, Schematrons). This has the following options``:
 	* Accept all metadata without validation (this option will import all records regardless of validity)
 	* Accept metadata that are XSD valid (this option will cause the harvest to fail on the first invalid record)
 	* Accept metadata that are XSD and Schematron valid (this option will cause the harvest to fail on the first invalid record)
 
-Below the configuration options is a report on the harvester history if available, and the number of records harvested in the last harvest. Note that if the configuration changes at all these will be reset.
-
 For information on the configuration options for the different harvester node types, see the Geonetwork documentation at http://geonetwork-opensource.org/manuals/trunk/eng/users/user-guide/harvesting/index.html
+
+**Harvester history**
+
+This subsection shows a history of each harvest and the number of records harvested each time the node ran.
+
+**Metadata records**
+
+This subsection displays a summary of the records. The harvested records can be filtered by Available in, Type of resources, Keywords and Indexing errors.
+
+|image5a|
+
+Figure 3.2.3: Harvested records filters, top half of the screen
+
+|image5b|
+
+Figure 3.2.4: Harvested records filters, bottom half of the screen
+
+The filter facets can be expanded by clicking on the |hide_harvester_facets_button| or collapsed by clicking on the |show_harvester_facets_button| at the top right corner of the summary box.
+
+A list of the filtered records can be reviewed in the harvested records subsection and filters can be cleared by clicking on the |remove_harvester_filter_button|.
+
+Filtered records can be removed in bulk by clicking the |remove_harvester_records| button.
+
+*Note: this will permanently delete the records from the catalog.*
 
 Harvester Reports
 -----------------
@@ -193,6 +222,21 @@ This section allows you to see the harvester history for all nodes and export th
 |image6|
 
 Figure 3.3.1: Exporting harvest history as a CSV
+
+Feature Harvesters
+------------------
+
+Here are listed the ongoing and finished jobs for indexing features from remote WFS services. Once indexed, features can then be filtered according to their attributes and the filter applied to the original map layer.
+
+|image6a|
+
+Figure 3.4.1: WFS Indexing Dashboard
+
+To add a new WFS harvester click the |add_wfs_harvester_button| button at the top right of the page.
+
+|image6b|
+
+Figure 3.4.2: Adding a WFS harvester
 
 Statistics and Status
 =====================
