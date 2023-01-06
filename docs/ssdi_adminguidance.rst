@@ -25,7 +25,7 @@ Searches
 Advanced Search
 ---------------
 
-The Advanced Search capability in the catalogue is accessed by clicking the blue magnifying glass icon on the home page or by clicking on the |button_search| button on the top menu to navigate to the Search page. 
+The Advanced Search capability in the catalogue is accessed by clicking the magnifying glass icon on the home page or by clicking on the |button_search| button on the top menu to navigate to the Search page. 
 
 |image-1|
 
@@ -37,11 +37,11 @@ Filtering options, or search facets, are available to the left of the search res
 
 Figure 1.2.2: Search facets, or further filtering options on the search page
 
-Other search options are available from the |button_search_advanced| icon to the right of the main search box. This expands to show **What** and **When** 
-options. **What** allows users to search by Categories, Keywords, and Resource Contact. **When** allows users to limit the search temporally based 
-on the metadata change date of an interactive resource (service) or dataset record.
+Other search options are available from the |button_search_advanced| icon to the right of the main search box. This expands to show **Options**, **Languages** and **Advanced** 
+options. **Options** allows users to search by Exact match, In title only, and Only my records. **Languages** allows users to limit the search based 
+on the metadata language of a record. **Advanced** allows users to limit the search based on the temporal coverage of a record.
 
-Further search capabilities can be accessed by clicking the "contribute" button on the main toolbar. This opens the "Editing dashboard", where there are also options to create or import new metadata, and also view privileges for or edit existing records. This page shows different search filtering options or facets, including group, schema, validation status, workflow status and so on.
+Further search capabilities can be accessed by clicking the |button_contribute| button on the main toolbar. This opens the **Editor board**, where there are also options to create or import new metadata, and also view privileges for or edit existing records. This page shows different search filtering options or facets, including group, schema, validation status, workflow status and so on.
 
 |image-3|
 
@@ -698,4 +698,5 @@ Note that the services don't return a result, just a blank page. Note also that 
 .. |image35| image:: media/adminimage36.png
 .. |image36| image:: media/adminimage37.png
 .. |button_search| image:: media/button_search.png
-.. |button_search_advanced| image:: media/button_search_advanced.png
+.. |button_search_advanced| image:: media/button_search_advanced.png	
+.. |button_contribute| image:: media/button_contribute.png
