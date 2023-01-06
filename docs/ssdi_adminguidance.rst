@@ -73,10 +73,6 @@ In order from left to right these are:
 * Create a child record
 * Duplicate record
 
-|image-6|
-
-Figure 2.1.2: Administrative functions that act on multiple records
-
 To act on multiple metadata records, use the select function and choose the appropriate function from the dropdown list:
 
 * Export (ZIP)- exports the records in MEF format
@@ -91,7 +87,11 @@ To act on multiple metadata records, use the select function and choose the appr
 * Update licence
 * Delete
 * Index records
+* Create collection from selection as - create a series from the selected records
 
+|image-6|
+
+Figure 2.1.2: Administrative functions that act on multiple records
 
 Metadata and Templates
 ======================
