@@ -67,7 +67,7 @@ To create a metadata record using an available template:
 	
 	**5|** Click on the template to be used.
 
-	**6|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the **Editor** board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.html#editing-metadata>`__ for guidance on documenting the resource.
+	**6|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the editing view where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.html#editing-metadata>`__ for guidance on documenting the resource.
 	
 	*Note: if the user is an editor for multiple groups or an administrator to the site, they may be presented with multiple templates of the same name. Additionally, they will be required to select which group to assign the metadata record to.*
 
