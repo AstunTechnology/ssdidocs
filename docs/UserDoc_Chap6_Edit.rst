@@ -61,7 +61,7 @@ To change the view of editing session:
 
 	**1|** Click on |button_edit_view| on the top right of the editing board.
 	
-	**2|** From the dropdown menu, choose either INSPIRE, simple, full or XML. Advanced (full) view is a more detailed version of the default (simple) view, where as XML view allows the user to edit the raw XML.
+	**2|** From the dropdown menu, choose either Default, Advanced or XML. Advanced (full) view is a more detailed version of the default (simple) view, where as XML view allows the user to edit the raw XML.
 	
 	*Note: users can also enable tool tips from the view menu.*
 	
