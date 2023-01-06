@@ -16,11 +16,11 @@ To begin an editing session:
 
 	**1|** `Sign in <UserDoc_Chap4_Users.html#signing-in>`__ using your account credentials.
 
-	**2|** Either search for a particular record direct from the home page or click |button_contribute| and search or scroll for the record.
+	**2|** Either search for a particular record direct from the home page or click |button_contribute| in the header and select |button_editor_board| to open the **Editor** board and search or scroll for the record.
 
-	*Note: if the 'only my records' box at the top left of the contribute page is checked, this will limit the record list to only those belonging to that user.*
+	*Note: if the 'only my records' box at the top left of the Editor board is checked, this will limit the record list to only those belonging to that user.*
 	
-	**3|** Click the pencil icon (|button_contribute_pencil|) visible in the search results list, or next to the record name on the contribute board. This will enter the user into an editing session.
+	**3|** Click the pencil icon (|button_contribute_pencil|) visible in the search results list, or next to the record name on the **Editor** board. This will enter the user into an editing session.
 	
 	*Note: users can also start an editing session from the record view page by clicking* |button_view_edit| *at the top of the page.*
 
