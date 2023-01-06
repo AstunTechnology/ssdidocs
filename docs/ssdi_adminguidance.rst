@@ -114,7 +114,7 @@ Standards
 
 This shows information on the standards currently loaded in the catalog.
 
-In GeoNetwork 3.12.x it is no longer possible to add new metadata standards via the user interface. To load a new standard, please contact the catalog administrator.
+In GeoNetwork 4.2.x it is no longer possible to add new metadata standards via the user interface. To load a new standard, please contact the catalog administrator.
 
 Formatter
 ---------
