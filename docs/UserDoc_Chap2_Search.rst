@@ -46,9 +46,9 @@ page is a small map view showing the geographic extents of the queried results. 
 Advanced searching
 ------------------
 
-Other search options are available from the vertical ellipses icon to the right of the main search box. This expands to show **What** and **When** 
-options. **What** allows users to search by Categories, Keywords, and Resource Contact. **When** allows users to limit the search temporally based 
-on the metadata change date of an interactive resource (service) or dataset record. 
+Other search options are available from the |button_search_advanced| icon to the right of the main search box. This expands to show **Options**, **Languages** and **Advanced** 
+options. **Options** allows users to search by Exact match, In title only, and Only my records. **Languages** allows users to limit the search based 
+on the metadata language of a record. **Advanced** allows users to limit the search based on the temporal coverage of a record.
 
 To perform an advanced search:
 
@@ -56,7 +56,7 @@ To perform an advanced search:
 
 	**2|** Click the |button_search_advanced| next to the search text box to access advanced options.
 	
-	**3|** Provide additional search criteria (e.g. constraining by category, keyword, contacts or time).
+	**3|** Provide additional search criteria (e.g. constraining by exact match, language or temporal extent).
 	
 	**4|** Click |button_search_icon| to run the search based on the selected options. Results will be displayed in the list below.
 	
