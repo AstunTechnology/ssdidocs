@@ -7,7 +7,7 @@ Overview
 
 This documentation is intended to provide guidance to administrators of the SSDI Catalogue. It assumes familiarity with the user guidance, particularly around the creation and validation of metadata.
 
-The administrative functionality within the catalogue is accessed via the Admin console, on the top menu when you log in with an administrator profile. Additional functionality, such as  downloading catalogue-wide reports, is available from the advanced search page and also the editing dashboard.
+The administrative functionality within the catalogue is accessed via the Admin console, on the top menu when you log in with an administrator profile. Additional functionality, such as  downloading catalogue-wide reports, is available from the advanced search page and also the **Editor board**.
 
 |image0|
 
@@ -49,12 +49,12 @@ Figure 1.2.3: Options to Create or Import new data
 
 |image-4|
 
-Figure 1.2.4: Search facets available from Editing dashboard
+Figure 1.2.4: Search facets available from **Editor board**
 
 Advanced Workflow
 =================
 
-The editing dashboard can be used to perform administrative functions on individual or batch metarecords. Tools for acting on individual records are represented by icons to the right of the metadata title. The validation status of a record is indicated by the colour of it's icon:
+The **Editor board** can be used to perform administrative functions on individual or batch metarecords. Tools for acting on individual records are represented by icons to the right of the metadata title. The validation status of a record is indicated by the colour of it's icon:
 
 * Green- validated and passing checks
 * Red- validated but not passing checks
@@ -63,7 +63,7 @@ The editing dashboard can be used to perform administrative functions on individ
 
 |image-5|
 
-Figure 2.1.1: Administrative functions that act on individual records, accessed from the editing dashboard
+Figure 2.1.1: Administrative functions that act on individual records, accessed from the **Editor board**
 
 In order from left to right these are:
 
