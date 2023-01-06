@@ -32,15 +32,13 @@ To import an existing XML metadata record:
 
 	**7|** Optionally, select whether to publish the record on import.
 	
-	**8|** Leave the **Assign to current catalog** option ticked.
+	**8|** Assign the record to a user group.
 	
-	**9|** Assign the record to a user group.
-	
-	**10|** Assign the record to the appropriate licence type (i.e. OGL, NCGL, INSPIRE or other). This will allow for filtered searching based on the licence conditions.
+	**9|** Assign the record to the appropriate licence type (i.e. OGL, NCGL, INSPIRE or other). This will allow for filtered searching based on the licence conditions.
 	
 	*Note: Licence types can also be amended at a later date. See* `assigning a licence category <UserDoc_Chap6_Edit.html#assigning-a-licence-category>`__.
 	
-	**11|** Click the |button_contribute_importconfirm| button.
+	**10|** Click the |button_contribute_importconfirm| button.
 	
 |userdoc_fig_5_1_1_ImportMetadata|
 
