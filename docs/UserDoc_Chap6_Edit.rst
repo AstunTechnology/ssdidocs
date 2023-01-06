@@ -279,7 +279,7 @@ To delete a metadata record:
 	
 	**4|** Click on the |button_contribute_delete| in the row for the record.
 	
-	**5|** A conformation prompt will be displayed. Click 'OK' to confirm the deletion.
+	**5|** A confirmation prompt will be displayed. Click 'OK' to confirm the deletion.
 
 	*Note: the record may still appear in the list until the page is refreshed.*
 	
@@ -287,7 +287,8 @@ To delete a metadata record:
 
 **Figure 6.10.1:** Confirmation requested to delete a metadata record
 
-Alternatively, the user can delete a record directly from the record's page by clicking the |button_view_delete| button.
+Alternatively, the user can delete a record directly from the record's page by clicking the |button_view_delete| button. 
+*Note: A confirmation prompt will be displayed. Click 'OK' to confirm the deletion.*
 
 Users should note that when deleting a record that had previously been published, that record will not be deleted from other portals which may have 
 harvested the record, such as `data.gov.uk <http://data.gov.uk/>`__. Users should contact `SSDI.Metadata@gov.scot <mailto:SSDI.Metadata@gov.scot>`__
