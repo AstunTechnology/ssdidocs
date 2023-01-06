@@ -287,7 +287,8 @@ To delete a metadata record:
 
 **Figure 6.10.1:** Confirmation requested to delete a metadata record
 
-Alternatively, the user can delete a record directly from the record's page by clicking the |button_view_delete| button. 
+Alternatively, the user can delete a record directly from the record's page by clicking the |button_view_delete| button.
+
 *Note: A confirmation prompt will be displayed. Click 'OK' to confirm the deletion.*
 
 Users should note that when deleting a record that had previously been published, that record will not be deleted from other portals which may have 
