@@ -17,7 +17,7 @@ Figure 1.1.1: SSDI catalogue main page, showing admin console link
 
 Figure 1.1.2: SSDI catalogue admin console, for a full administrator
 
-The level of functionality available in the admin console is dependent on the privileges of the logged in user. The above image shows the admin console for a full Administrator. This page also provides a quick "at a glance" view of the number of records available, and the numbers of datasets and services.
+The level of functionality available in the admin console is dependent on the privileges of the logged in user. The above image shows the admin console for a full Administrator. This page also provides a quick "at a glance" view of the number of records available.
 
 Searches
 ========
