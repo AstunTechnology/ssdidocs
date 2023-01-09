@@ -246,11 +246,11 @@ This section provides a range of metrics and information on the health of the Ge
 Status
 ------
 
-This subsection should be the first port of call if there are any problems with the Catalogue. If the catalogue is under a low load and is performing optimally then the status page should look like the one below:
+This subsection should be the first port of call if there are any problems with the catalog. If the catalog is under a low load and is performing optimally then the status page should look like the one below:
 
 |image7|
 
-Figure 4.1.1: Status page showing catalogue performing optimally
+Figure 4.1.1: Status page showing catalog performing optimally
 
 |image7a|
 
@@ -258,7 +258,15 @@ Figure 4.1.2: Status page showing error, with detailed error message accessed by
 
 *Report any errors shown here to Astun Technology.*
 
-The metrics links provide advanced information on the status of the system and should not generally be needed. The Activity "Export (zip)" provides a log file from the server. This may be requested by Astun Technology support staff. This download could be large and may take some time. The Thread Status link provides advanced information on the java installation, and should not generally be needed.
+The metrics links provide advanced information on the status of the system and should not generally be needed. The Activity "Export (zip)" provides a log file from the server. 
+This may be requested by Astun Technology support staff. This download could be large and may take some time. The Thread Status link provides advanced information on the java installation, and should not generally be needed.
+
+More detailed metadata indexing errors can be seen on the right hand side of the screen (if there are any). These can be filtered by Error types, Harvested, Indexing errors and Indexing warnings. 
+Filtering by one or more of these criteria will produce a list with the affected records in the bottom half of the page. The filter can be removed by clicking |remove_status_filter_button| in the search bar.
+
+|image7b|
+
+Figure 4.1.3: Status page showing metadata with indexing errors
 
 Record Links Analysis
 ---------------------
