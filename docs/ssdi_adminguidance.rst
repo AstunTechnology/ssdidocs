@@ -467,7 +467,7 @@ This section is where existing users and groups are managed, and new ones are ad
 Manage groups
 -------------
 
-This subsection allows you to list and edit the existing groups in the catalogue, and add new ones. Groups are listed on the left, and selecting a group brings up additional options, shown below, with the option to save any changes or delete this group.
+This subsection allows you to list and edit the existing groups in the catalog, and add new ones. Groups are listed on the left, and selecting a group brings up additional options, shown below, with the option to save any changes or delete this group.
 
 |image19|
 
@@ -481,7 +481,7 @@ Figure 7.1.2: The middle section of the groups editing interface
 
 Figure 7.1.3: The lower section of the groups editing interface (intermediate section on translations for this group name not shown)
 
-To add a new group, click the blue "New group" button below the list (not shown in figure 7.1.1). This brings up the same dialogue shown in figures 7.1.1-7.1.3.
+To add a new group, click the blue "New group" button below the list. This brings up the same dialogue shown in figures 7.1.1-7.1.3.
 
 Manage Users
 ------------
