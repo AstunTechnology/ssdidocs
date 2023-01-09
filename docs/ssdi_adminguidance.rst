@@ -115,7 +115,7 @@ Along the top of the entry window are, from left to right:
 * Save
 * Save and close
 
-It's also possible to change the view that is used for completing this subtemplate, from default to xml view by clicking the blue "eye" symbol (|image14d|).
+It's also possible to change the view that is used for completing this subtemplate, from default to xml view by clicking the "eye" symbol (|image14d|).
 
 Once saved, the contact will be available using the "search for a contact" dialogue when creating or editng a metadata record.
 
