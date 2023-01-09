@@ -183,7 +183,7 @@ Common configuration options are:
 	* Overwrite record
 	* Create new UUID
 * License Type: set the licence under which the harvested records should be added
-* Validate records before import``: Invalid records will be rejected. Validation is based on the standard validation (ie. XSD, Schematrons). This has the following options``:
+* Validate records before import: Invalid records will be rejected. Validation is based on the standard validation (ie. XSD, Schematrons). This has the following options:
 	* Accept all metadata without validation (this option will import all records regardless of validity)
 	* Accept metadata that are XSD valid (this option will cause the harvest to fail on the first invalid record)
 	* Accept metadata that are XSD and Schematron valid (this option will cause the harvest to fail on the first invalid record)
@@ -280,7 +280,7 @@ Figure 4.2.1: Record links analysis page
 At the top right of the page there are the following options:
 
 * Analyze all records
-* Remove all - *this will permanently remove all links and status history* (a confirmation prompt will be displayed)
+* Remove all- *this will permanently remove all links and status history* (a confirmation prompt will be displayed)
 * Download (CSV)
 
 The links can be filtered by Group, Published in that group (only published records in a group) and Choose a selection (Editor board or Search app selection)
@@ -288,10 +288,10 @@ The links can be filtered by Group, Published in that group (only published reco
 The links can also be sorted by the following criteria (in order from left to right):
 
 * Valid / Invalid / Unknown status first
-* URL - a specific URL can be typed or pasted in the search box. Alternatively the links can be sorted alphabetically.
+* URL- a specific URL can be typed or pasted in the search box. Alternatively the links can be sorted alphabetically.
 * Last check
 * Status
-* Associated records - a specific UUID can be typed or pasted in the search bo.x
+* Associated records- a specific UUID can be typed or pasted in the search bo.x
 
 Links can be tested all at once (by clicking the |analyze_records_button| button at the top right)
 or individually (by clicking the |test_link_button| button at the end of the record's row).
@@ -319,14 +319,14 @@ Content Statistics
 
 This subsection provides more information on content searches. The following options are available, for export as CSV:
 
-- Catalog content statistics, such as the number of harvested records, total number of records, number of public records and so on
-- Metadata records popularity, showing the most popular records searched for (clicking the blue eye icon to the right of a record will take you to it)
-- Best Rated, showing the most highly rated records (if local star ratings are being used)
-- Record statistics, this is a dropdown list with a number of available metrics, for example (but not limited to):
-	- Year
-	- Format
-	- INSPIRE theme(s)
-	- Contact for the resource
+* Catalog content statistics, such as the number of harvested records, total number of records, number of public records and so on
+* Metadata records popularity, showing the most popular records searched for (clicking the blue eye icon to the right of a record will take you to it)
+* Best Rated, showing the most highly rated records (if local star ratings are being used)
+* Record statistics, this is a dropdown list with a number of available metrics, for example (but not limited to):
+	* Year
+	* Format
+	* INSPIRE theme(s)
+	* Contact for the resource
 
 |image11|
 
@@ -371,7 +371,7 @@ Figures 4.4.1/2/3: Various elements of the search statistics interface
 Reports
 =======
 
-This section contains various downloadable reports on user activity in the catalogue. Each provide the option to choose a date range, and the option to filter by group. The resulting reports are available for download as a CSV. The following reports are available:
+This section contains various downloadable reports on user activity in the catalog. Each provide the option to choose a date range, and the option to filter by group. The resulting reports are available for download as a CSV. The following reports are available:
 
 * Updated metadata- can be used to find records that have been, or not been, updated within a specific timeframe
 * Internal metadata- can be used to find records that are only available within their group
@@ -386,25 +386,25 @@ Figure 5.1.1: The reporting section
 Classification Systems
 ======================
 
-This section provides access to the Thesauri and other directories used within the catalogue. It is split into three subsections.
+This section provides access to the Thesauri and other Categories used within the catalog. It is split into two subsections.
 
 Thesaurus
 ---------
 
-Thesauri in rdf (skos) format can be managed or added here. It is also possible to interrogate the existing thesauri loaded into the catalogue. 
+Thesauri in SKOS format (XML or RDF extensions) can be managed or added here. It is also possible to interrogate the existing thesauri loaded into the catalog. 
 
 |image14|
 
 Figure 6.1.1: The thesaurus subsection showing the customised Scottish Regions thesaurus
 
-Selecting a thesaurus from the list provides further information about it. **The settings here should not be changed as they will affect the working of the catalogue.** 
+Selecting a thesaurus from the list provides further information about it. **The settings here should not be changed as they will affect the working of the catalog.** 
 
 It is possible to add additional thesauri by clicking the "Add thesaurus" link. The options are as follows:
 
-* New thesaurus- build one from scratch in Geonetwork
-* From local file- upload a thesaurus in rdf (skos) format from your local hard drive
-* From URL- provide a link to a compatible thesaurus online
 * From registry
+* From local file - upload a thesaurus in SKOS format (XML or RDF extensions) from your local hard drive
+* From URL - provide a link to a compatible thesaurus online
+* New thesaurus - build one from scratch in Geonetwork
 
 Directories
 -----------
