@@ -271,6 +271,32 @@ Figure 4.1.3: Status page showing metadata with indexing errors
 Record Links Analysis
 ---------------------
 
+This subsection provides a list of all record links analyzed.
+
+|image-9|
+
+Figure 4.2.1: Record links analysis page
+
+At the top right of the page there are the following options:
+
+* Analyze all records
+* Remove all - *this will permanently remove all links and status history* (a confirmation prompt will be displayed)
+* Download (CSV)
+
+The links can be filtered by Group, Published in that group (only published records in a group) and Choose a selection (Editor board or Search app selection)
+
+The links can also be sorted by the following criteria (in order from left to right):
+
+* Valid / Invalid / Unknown status first
+* URL - a specific URL can be typed or pasted in the search box. Alternatively the links can be sorted alphabetically.
+* Last check
+* Status
+* Associated records - a specific UUID can be typed or pasted in the search bo.x
+
+Links can be tested all at once (by clicking the |analyze_records_button| button at the top right)
+or individually (by clicking the |test_link_button| button at the end of the record's row).
+
+
 Information
 -----------
 
@@ -340,7 +366,7 @@ This is an extensive subsection showing the following, all additionally availabl
 
 |image10|
 
-Figures 4.2.1/2/3: Various elements of the search statistics interface
+Figures 4.4.1/2/3: Various elements of the search statistics interface
 
 Reports
 =======
