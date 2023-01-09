@@ -93,6 +93,38 @@ To act on multiple metadata records, use the select function and choose the appr
 
 Figure 2.1.2: Administrative functions that act on multiple records
 
+Manage Directory
+================
+
+Directories are snippets of information that can be pre-completed and inserted into metadata records. 
+They are derived from subtemplates that are part of metadata standards. The available subtemplates are shown as tabs across the top of the Directory subsection- for Gemini 2.2 and 2.3 these are 
+**Organizations and contacts**, **Data Quality Reports (Completeness)** and **Data Quality Reports (Domain Consistency)**. 
+The **Manage Directory** section can be accessed by clicking on the Contribute button in the header menu and then on **Manage directory**.
+
+Selecting **Organizations and contacts** shows the metadata snippet for adding a Points of Contact subtemplate. To create a new record based on this template, click the "Duplicate" icon (|image14c|) in the **Actions** dropdown.
+
+|image14a|
+
+Figure 6.2.1: The Organizations and contacts interface
+
+Along the top of the entry window are, from left to right:
+
+* Group (dropdown)- which group should have ownership of this subtemplate
+* Permissions- which groups should have visibility of this subtemplate
+* Validation status
+* Save
+* Save and close
+
+It's also possible to change the view that is used for completing this subtemplate, from default to xml view by clicking the blue "eye" symbol (|image14d|).
+
+Once saved, the contact will be available using the "search for a contact" dialogue when creating or editng a metadata record.
+
+|image14b|
+
+Figure 6.2.2: Adding a point of contact snippet when editing a record
+
+The dropdown box next to the contact name allows the user to choose the element where this snippet should be inserted.
+
 Metadata and Templates
 ======================
 
@@ -405,35 +437,6 @@ It is possible to add additional thesauri by clicking the "Add thesaurus" link. 
 * From local file - upload a thesaurus in SKOS format (XML or RDF extensions) from your local hard drive
 * From URL - provide a link to a compatible thesaurus online
 * New thesaurus - build one from scratch in Geonetwork
-
-Directories
------------
-
-Directories are snippets of information that can be pre-completed and inserted into metadata records. They are derived from subtemplates that are part of metadata standards. The available subtemplates are shown as tabs across the top of the Directory subsection- for Gemini 2.2 and 2.3 these are **Organizations and contacts**, **Data Quality Reports (Completeness)** and **Data Quality Reports (Domain Consistency)**. The **Manage Directory** section can be accessed by clicking on the Contribute button in the header menu and then on **Manage directory**.
-
-Selecting **Organizations and contacts** shows the metadata snippet for adding a Points of Contact subtemplate. To create a new record based on this template, click the "Duplicate" icon (|image14c|) in the **Actions** dropdown.
-
-|image14a|
-
-Figure 6.2.1: The Organizations and contacts interface
-
-Along the top of the entry window are, from left to right:
-
-* Group (dropdown)- which group should have ownership of this subtemplate
-* Permissions- which groups should have visibility of this subtemplate
-* Validation status
-* Save
-* Save and close
-
-It's also possible to change the view that is used for completing this subtemplate, from default to xml view by clicking the blue "eye" symbol (|image14d|).
-
-Once saved, the contact will be available using the "search for a contact" dialogue when creating or editng a metadata record.
-
-|image14b|
-
-Figure 6.2.2: Adding a point of contact snippet when editing a record
-
-The dropdown box next to the contact name allows the user to choose the element where this snippet should be inserted.
 
 Categories
 ----------
