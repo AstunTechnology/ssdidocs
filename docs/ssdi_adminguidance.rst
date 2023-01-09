@@ -241,7 +241,7 @@ Figure 3.4.2: Adding a WFS harvester
 Statistics and Status
 =====================
 
-This section provides a range of metrics and information on the health of the Geonetwork installation and the activity on it. It is split into five subsections.
+This section provides a range of metrics and information on the health of the Geonetwork installation and the activity on it. It is split into several subsections.
 
 Status
 ------
@@ -260,28 +260,25 @@ Figure 4.1.2: Status page showing error, with detailed error message accessed by
 
 The metrics links provide advanced information on the status of the system and should not generally be needed. The Activity "Export (zip)" provides a log file from the server. This may be requested by Astun Technology support staff. This download could be large and may take some time. The Thread Status link provides advanced information on the java installation, and should not generally be needed.
 
-Search Statistics
------------------
+Record Links Analysis
+---------------------
 
-This is an extensive subsection showing the following, all additionally available for export as CSV:
+Information
+-----------
 
-* Search statistics, such as the number of catalogue views by day or month
-* Statistics for the CSW endpoint
-* Number of searches by timeperiod and type, shown as a graph
-* Types of services for which a search is triggered, such as export to MEF, RDF, keyword search in portal, shown as a Pie Chart
-* IP address for each search
-* Search fields and terms
-	* This allows the choice of the type of search, which then displays the criteria used and the number of searches
-	* Clicking on a criteria shows the breakdown of number of searches per term for that criteria
-	* For example, to see a breakdown of search keywords, choose "Search" from the dropdown box and then click the "Keyword" link in the list below (see Figure 4.2.3)
+This subsection provides information on the Geonetwork installation on the server. This section is for advanced administrator/system maintainer use.
 
-|image8|
+It comprises the following sections:
 
-|image9|
+* Catalog information- where the files and folders are located on the server
+* Database- the connection status and connection string for connecting to the database
+* System information- the version of java in use and the amount of memory being consumed
+* Index- information about the configuration of the search index
 
-|image10|
+Versioning
+----------
 
-Figures 4.2.1/2/3: Various elements of the search statistics interface
+If metadata versioning is enabled on the server, which it is not, by default, then this section provides information about this process. This section is for advanced administrator/system maintainer use only.
 
 Content Statistics
 ------------------
@@ -311,23 +308,31 @@ Figure 4.3.1: Catalog content statistics and Most popular records
 
 Figure 4.3.2: Record statistics by Year
 
-
-Information
------------
-
-This subsection provides information on the Geonetwork installation on the server. This section is for advanced administrator/system maintainer use.
-
-It comprises the following sections:
-
-* Catalog information- where the files and folders are located on the server
-* Database- the connection status and connection string for connecting to the database
-* System information- the version of java in use and the amount of memory being consumed
-* Index- information about the configuration of the search index
-
-Versioning
+Validation
 ----------
 
-If metadata versioning is enabled on the server, which it is not, by default, then this section provides information about this process. This section is for advanced administrator/system maintainer use only.
+Search Statistics
+-----------------
+
+This is an extensive subsection showing the following, all additionally available for export as CSV:
+
+* Search statistics, such as the number of catalogue views by day or month
+* Statistics for the CSW endpoint
+* Number of searches by timeperiod and type, shown as a graph
+* Types of services for which a search is triggered, such as export to MEF, RDF, keyword search in portal, shown as a Pie Chart
+* IP address for each search
+* Search fields and terms
+	* This allows the choice of the type of search, which then displays the criteria used and the number of searches
+	* Clicking on a criteria shows the breakdown of number of searches per term for that criteria
+	* For example, to see a breakdown of search keywords, choose "Search" from the dropdown box and then click the "Keyword" link in the list below (see Figure 4.2.3)
+
+|image8|
+
+|image9|
+
+|image10|
+
+Figures 4.2.1/2/3: Various elements of the search statistics interface
 
 Reports
 =======
