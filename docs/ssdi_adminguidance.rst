@@ -29,13 +29,13 @@ The Advanced Search capability in the catalogue is accessed by clicking the magn
 
 |image-1|
 
-Figure 1.2.1: Search icon on main catalogue page
+Figure 2.1.1: Search icon on main catalogue page
 
 Filtering options, or search facets, are available to the left of the search results, as a series of check boxes. The results can be sorted by Title, Relevancy, Rating and Popularity, and either lowest or highest scale first.
 
 |image-2|
 
-Figure 1.2.2: Search facets, or further filtering options on the search page
+Figure 2.1.2: Search facets, or further filtering options on the search page
 
 Other search options are available from the |button_search_advanced| icon to the right of the main search box. This expands to show **Options**, **Languages** and **Advanced** 
 options. **Options** allows users to search by Exact match, In title only, and Only my records. **Languages** allows users to limit the search based 
@@ -45,11 +45,11 @@ Further search capabilities can be accessed by clicking the |button_contribute| 
 
 |image-3|
 
-Figure 1.2.3: Options to Create or Import new data
+Figure 2.1.3: Options to Create or Import new data
 
 |image-4|
 
-Figure 1.2.4: Search facets available from **Editor board**
+Figure 2.1.4: Search facets available from **Editor board**
 
 Advanced Workflow
 =================
@@ -63,7 +63,7 @@ The **Editor board** can be used to perform administrative functions on individu
 
 |image-5|
 
-Figure 2.1.1: Administrative functions that act on individual records, accessed from the **Editor board**
+Figure 3.1.1: Administrative functions that act on individual records, accessed from the **Editor board**
 
 In order from left to right these are:
 
@@ -91,7 +91,7 @@ To act on multiple metadata records, use the select function and choose the appr
 
 |image-6|
 
-Figure 2.1.2: Administrative functions that act on multiple records
+Figure 3.1.2: Administrative functions that act on multiple records
 
 Manage Directory
 ================
@@ -105,7 +105,7 @@ Selecting **Organizations and contacts** shows the metadata snippet for adding a
 
 |image14a|
 
-Figure 6.2.1: The Organizations and contacts interface
+Figure 4.1.1: The Organizations and contacts interface
 
 Along the top of the entry window are, from left to right:
 
@@ -121,7 +121,7 @@ Once saved, the contact will be available using the "search for a contact" dialo
 
 |image14b|
 
-Figure 6.2.2: Adding a point of contact snippet when editing a record
+Figure 4.1.2: Adding a point of contact snippet when editing a record
 
 The dropdown box next to the contact name allows the user to choose the element where this snippet should be inserted.
 
@@ -138,7 +138,7 @@ The available processes are accessed via a dropdown list, which then prompts you
 
 |image31|
 
-Figure 9.2.1: The batch processing interface, showing the configuration of the URL replacer for metadata records owned by Transport Scotland
+Figure 5.1.1: The batch processing interface, showing the configuration of the URL replacer for metadata records owned by Transport Scotland
 
 Metadata and Templates
 ======================
@@ -147,7 +147,7 @@ The Metadata and Templates button provides access to four subsections, as shown 
 
 |image2|
 
-Figure 2.2.1: Metadata and Templates subsections
+Figure 6.1.1: Metadata and Templates subsections
 
 Metadata and Templates
 ----------------------
@@ -196,7 +196,7 @@ Harvesting allows you to consume metadata from external services on a scheduled 
 
 |image3|
 
-Figure 3.1.1: Catalog harvesters section
+Figure 7.1.1: Catalog harvesters section
 
 Catalog Harvesters
 ------------------
@@ -209,11 +209,11 @@ To add a new harvester node, either clone an existing one by selecting it from t
 
 |image4|
 
-Figure 3.2.1: Common harvester node configuration options, top half of screen
+Figure 7.2.1: Common harvester node configuration options, top half of screen
 
 |image5|
 
-Figure 3.2.2: Common harvester node configuration options, bottom half of screen
+Figure 7.2.2: Common harvester node configuration options, bottom half of screen
 
 Common configuration options are:
 
@@ -247,11 +247,11 @@ This subsection displays a summary of the records. The harvested records can be 
 
 |image5a|
 
-Figure 3.2.3: Harvested records filters, top half of the screen
+Figure 7.3.3: Harvested records filters, top half of the screen
 
 |image5b|
 
-Figure 3.2.4: Harvested records filters, bottom half of the screen
+Figure 7.3.4: Harvested records filters, bottom half of the screen
 
 The filter facets can be expanded by clicking on the |hide_harvester_facets_button| or collapsed by clicking on the |show_harvester_facets_button| at the top right corner of the summary box.
 
@@ -268,7 +268,7 @@ This section allows you to see the harvester history for all nodes and export th
 
 |image6|
 
-Figure 3.3.1: Exporting harvest history as a CSV
+Figure 7.4.1: Exporting harvest history as a CSV
 
 Feature Harvesters
 ------------------
@@ -277,13 +277,13 @@ Here are listed the ongoing and finished jobs for indexing features from remote 
 
 |image6a|
 
-Figure 3.4.1: WFS Indexing Dashboard
+Figure 7.5.1: WFS Indexing Dashboard
 
 To add a new WFS harvester click the |add_wfs_harvester_button| button at the top right of the page.
 
 |image6b|
 
-Figure 3.4.2: Adding a WFS harvester
+Figure 7.5.2: Adding a WFS harvester
 
 Statistics and Status
 =====================
@@ -297,11 +297,11 @@ This subsection should be the first port of call if there are any problems with 
 
 |image7|
 
-Figure 4.1.1: Status page showing catalog performing optimally
+Figure 8.1.1: Status page showing catalog performing optimally
 
 |image7a|
 
-Figure 4.1.2: Status page showing error, with detailed error message accessed by clicking on red link
+Figure 8.1.2: Status page showing error, with detailed error message accessed by clicking on red link
 
 *Report any errors shown here to Astun Technology.*
 
@@ -313,7 +313,7 @@ Filtering by one or more of these criteria will produce a list with the affected
 
 |image7b|
 
-Figure 4.1.3: Status page showing metadata with indexing errors
+Figure 8.1.3: Status page showing metadata with indexing errors
 
 Record Links Analysis
 ---------------------
@@ -322,7 +322,7 @@ This subsection provides a list of all record links analyzed.
 
 |image-9|
 
-Figure 4.2.1: Record links analysis page
+Figure 8.2.1: Record links analysis page
 
 At the top right of the page there are the following options:
 
@@ -377,7 +377,7 @@ This subsection provides more information on content searches. The following opt
 
 |image11|
 
-Figure 4.3.1: Catalog content statistics and Most popular records
+Figure 8.3.1: Catalog content statistics and Most popular records
 
 * A number of pie charts, showing the following metrics, where hovering over a slice will provide the actual number of records:
 	* Category
@@ -387,7 +387,7 @@ Figure 4.3.1: Catalog content statistics and Most popular records
 
 |image12|
 
-Figure 4.3.2: Record statistics by Year
+Figure 8.3.2: Record statistics by Year
 
 Validation
 ----------
@@ -413,7 +413,7 @@ This is an extensive subsection showing the following, all additionally availabl
 
 |image10|
 
-Figures 4.4.1/2/3: Various elements of the search statistics interface
+Figures 8.4.1/2/3: Various elements of the search statistics interface
 
 Reports
 =======
@@ -428,7 +428,7 @@ This section contains various downloadable reports on user activity in the catal
 
 |image13|
 
-Figure 5.1.1: The reporting section
+Figure 9.1.1: The reporting section
 
 Classification Systems
 ======================
@@ -442,7 +442,7 @@ Thesauri in SKOS format (XML or RDF extensions) can be managed or added here. It
 
 |image14|
 
-Figure 6.1.1: The thesaurus subsection showing the customised Scottish Regions thesaurus
+Figure 10.1.1: The thesaurus subsection showing the customised Scottish Regions thesaurus
 
 Selecting a thesaurus from the list provides further information about it. **The settings here should not be changed as they will affect the working of the catalog.** 
 
@@ -460,19 +460,20 @@ This subsection lists the categories that records can be added to, and provides 
 
 |image15|
 
-Figure 6.3.1: Category list
+Figure 10.2.1: Category list
 
 Selecting a category from the list brings up a dialogue where it's display name can be edited in each of the languages enabled in the catalogue, along with the options to save changes or delete the category.
 
 |image16|
 
-Figure 6.3.2: Selecting a category and displaying additional options
+Figure 10.2.2: Selecting a category and displaying additional options
 
-To add a new category, click the "New category" button shown in Figure 6.3.1 above. Add an unique name for the category and save it. To change it's display name in any of the available languages, select it from the category list and edit as shown in Figure 6.3.2 above.
+To add a new category, click the "New category" button shown in Figure 10.2.1 above. Add an unique name for the category and save it. 
+To change it's display name in any of the available languages, select it from the category list and edit as shown in Figure 10.2.2 above.
 
 |image17|
 
-Figure 6.3.3: Adding a new category
+Figure 10.2.3: Adding a new category dialogue window
 
 Users and groups
 ================
@@ -486,17 +487,17 @@ This subsection allows you to list and edit the existing groups in the catalog, 
 
 |image19|
 
-Figure 7.1.1: The groups list and top half of the groups editing interface
+Figure 11.1.1: The groups list and top half of the groups editing interface
 
 |image20|
 
-Figure 7.1.2: The middle section of the groups editing interface
+Figure 11.1.2: The middle section of the groups editing interface
 
 |image21|
 
-Figure 7.1.3: The lower section of the groups editing interface (intermediate section on translations for this group name not shown)
+Figure 11.1.3: The lower section of the groups editing interface (intermediate section on translations for this group name not shown)
 
-To add a new group, click the blue "New group" button below the list. This brings up the same dialogue shown in figures 7.1.1-7.1.3.
+To add a new group, click the blue "New group" button below the list. This brings up the same dialogue shown in figures 11.1.1-11.1.3.
 
 Manage Users
 ------------
@@ -524,20 +525,21 @@ The settings for editing or creating a user are as follows:
 
 |image22|
 
-Figure 7.2.1: The users list and top section of user editing interface
+Figure 11.2.1: The users list and top section of user editing interface
 
 |image23|
 
-Figure 7.2.2: The middle section of the user editing interface
+Figure 11.2.2: The middle section of the user editing interface
 
 |image24|
 
-Figure 7.2.3: The lower section of the user editing interface
+Figure 11.2.3: The lower section of the user editing interface
 
 Settings
 ========
 
-**This section should be used only by advanced administrators and system maintainers**. This section is where the main configuration of for the installation is set up. It contains a number of subsections, as described below, but in general settings should only be changed by experienced staff as they can have an adverse effect on the running of the site.
+**This section should be used only by advanced administrators and system maintainers**. This section is where the main configuration of for the installation is set up. 
+It contains a number of subsections, as described below, but in general settings should only be changed by experienced staff as they can have an adverse effect on the running of the site.
 
 Settings
 --------
@@ -546,7 +548,7 @@ The settings subsection provides access to the main configuration for the instal
 
 |image25|
 
-Figure 8.1.1: The settings panel
+Figure 12.1.1: The settings panel
 
 
 The various elements are described in detail in the Geonetwork documentation at http://geonetwork-opensource.org/manuals/trunk/eng/users/administrator-guide/configuring-the-catalog/index.html so not all elements are described below, but there are some sections that may be useful:
@@ -576,7 +578,7 @@ This subsection is where logos are uploaded and/or deleted, and where the main c
 
 |image26|
 
-Figure 8.2.1: The logo configuration interface
+Figure 12.2.1: The logo configuration interface
 
 Sources
 -------
@@ -594,7 +596,7 @@ The CSW Service information setting allows the configuration of some of the GetC
 
 |image27|
 
-Figure 8.3.1: The CSW settings interface
+Figure 12.3.1: The CSW settings interface
 
 Virtual CSW
 -----------
@@ -609,20 +611,22 @@ To configure a new Virtual CSW endpoint, click the blue "New Virtual CSW" button
 
 |image28|
 
-Figure 8.4.1: Virtual CSW endpoint set up for Aberdeen group
+Figure 12.4.1: Virtual CSW endpoint set up for Aberdeen group
 
-Once a virtual endpoint has been saved, it's capabilities can be checked using the link shown in figure 8.3.1
+Once a virtual endpoint has been saved, it's capabilities can be checked using the link shown below in figure 12.5.1
 
 **Note that the default contact information, as configured in the CSW subsection, will be used for the GetCapabilities request**
 
 CSW test
 --------
 
-This subsection allows you to test various CSW requests on the standard endpoints or any virtual endpoints configured. The endpoints are displayed as radio boxes and the available requests are accessible from a dropdown list. Where it is necessary to adjust a parameter, such as a search term or record ID, this can be done in the XML section. To run the request click the green "Send CSW request" button. The response will appear below.
+This subsection allows you to test various CSW requests on the standard endpoints or any virtual endpoints configured. 
+The endpoints are displayed as radio boxes and the available requests are accessible from a dropdown list. 
+Where it is necessary to adjust a parameter, such as a search term or record ID, this can be done in the XML section. To run the request click the green "Send CSW request" button. The response will appear below.
 
 |image29|
 
-Figure 8.4.2: Results of CSW "GetRecordById" request to the standard catalogue CSW endpoint, for record with ID 9d31b891-b896-49f8-bcea-9787f79dd5f8
+Figure 12.5.1: Results of CSW "GetRecordById" request to the standard catalogue CSW endpoint, for record with ID 9d31b891-b896-49f8-bcea-9787f79dd5f8
 
 
 Map servers
@@ -652,7 +656,7 @@ In general it is not necessary to run these tools unless transferring a large nu
 
 |image30|
 
-Figure 9.1.1: The index admin interface
+Figure 13.1.1: The index admin interface
 
 Transfer ownership
 ------------------
@@ -663,7 +667,7 @@ The "Target group and editor" dropdown list will then show all users with editor
 
 |image32|
 
-Figure 9.3.1: The transfer ownership interface, configured for transferring records currently owned by the Fife Council user to the Admin user.
+Figure 13.2.1: The transfer ownership interface, configured for transferring records currently owned by the Fife Council user to the Admin user.
 
 **Note that changing the ownership of a record applies only to users and does not affect group privileges.** This tool is also available in the Search panel and the Editor board as one of the available actions for selected results.
 
@@ -697,23 +701,23 @@ Click the edit icon for the document you wish to edit.
 
 |image33|
 
-Figure 10.1.1.: Editing in GitHub
+Figure 14.1.1.: Editing in GitHub
 
 The editing interface has two tabs, one for editing and one for previewing changes. You can use shortcuts like ctrl-f to find text in the document that you wish to change. Check your changes using the preview tab, and then in the "Propose file change" section briefly outline your change. 
 
 |image34|
 
-Figure 10.1.2: Detailing your changes
+Figure 14.1.2: Detailing your changes
 
 Click the green "Propose change" button and then in the following window, quickly review your changes and then click the green "Create pull request" button.
 
 |image35|
 
-Figure 10.1.3: Reviewing the pull request 
+Figure 14.1.3: Reviewing the pull request 
 
 |image36|
 
-Figure 10.1.4: Creating the pull request
+Figure 14.1.4: Creating the pull request
 
 In the following window, if necessary expand on your explanation of the changes and then click the green "Create pull request" button.
 
