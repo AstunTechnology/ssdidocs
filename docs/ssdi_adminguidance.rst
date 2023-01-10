@@ -125,6 +125,21 @@ Figure 6.2.2: Adding a point of contact snippet when editing a record
 
 The dropdown box next to the contact name allows the user to choose the element where this snippet should be inserted.
 
+Batch editing
+=============
+
+The **Batch editing** section can be accessed by clicking on the Contribute button in the header menu and then on **Batch editing**.
+
+This section can be used to make xsl transformations on multiple records at once, such as to update contact information in bulk, change internal URLs or update keywords. **It is wise to request a database backup before performing a batch edit as there is no way to undo the transformation once it has been started.**
+
+The processes are defined per schema, and new processes can be added as required. The records that the process should be applied to can be filtered by Group, Owner, License type or custom search term, further filtered to include/exclude templates, and then selected using the dropdown selection dialog. 
+
+The available processes are accessed via a dropdown list, which then prompts you to supply the required parameters, such as the Old URL and the New URL. To run the process, click the blue "Run" button. The results of the process will be shown below. **Note that the process may take a long time if there are a large number of records to search.**
+
+|image31|
+
+Figure 9.2.1: The batch processing interface, showing the configuration of the URL replacer for metadata records owned by Transport Scotland
+
 Metadata and Templates
 ======================
 
@@ -557,7 +572,7 @@ The remaining settings are generally only configured on installation and should 
 Logo
 ----
 
-This subsection is where logos are uploaded and/or deleted, and where the main catalogue logo is set. New logos can be uploaded using the green "Choose or drop images here" button, and the current catalog logo is shown on the left. For logos that have been uploaded, there are options (icons, from left to right) to set as the catalogue logo, set as the favicon, or delete.
+This subsection is where logos are uploaded and/or deleted, and where the main catalog logo is set. New logos can be uploaded using the green "Choose or drop images here" button, and the current catalog logo is shown on the left. For logos that have been uploaded, there are options (icons, from left to right) to set as the catalog logo, set as the favicon, or delete.
 
 |image26|
 
@@ -621,35 +636,23 @@ Tools
 This section contains some tools that can be run when maintenance is needed on the server. The subsections are as follows:
 
 Catalogue admin tools
------------
+---------------------
 
-In general it is not necessary to run these tools unless transferring a large number of metadata records, changing the catalogue's appearance, or if unexpected search results are reported. The tools are as follows:
+In general it is not necessary to run these tools unless transferring a large number of metadata records, changing the catalog's appearance, or if unexpected search results are reported. The tools are as follows:
 
-* Rebuild index- this rebuilds the lucene search index, used in all operations that perform searches on the metadata
-* Optimize index- this is run nightly but can be run to re-optimise the index if odd search results are spotted
-* Rebuild index configuration- rebuild the index configuration if changes have been made to the catalogue, such as to the search views
-* (beta) Index in remote index- index the catalogue content in a remote Elasticsearch instance
-* Clear XLink cache- if directories are added or changes have been made to the catalogue that would affect the structure of xlinks (such as to the URL or protocol), clear the cache
-* Clear JS & CSS cache- if changes have been made to the catalogue JS or CSS, clear the cache
-* Clear formatter cache- if changes have been made to the catalogue display (schematron views, or text strings), clear the cache
+* Reindex records- if changes have been made to the database. **Note: While rebuilding index, the search may return incomplete results and the CSW GetRecords operation is disabled**
+* Delete index and reindex
+* Commit index changes- use only if indexing task is hanging
+* Delete and create data index- completely remove the index containing data and recreate it
+* Clear XLink cache- if directories are added or changes have been made to the catalog that would affect the structure of xlinks (such as to the URL or protocol), clear the cache
+* Clear Formatter cache- if changes have been made to the catalog's display (schematron views, or text strings), clear the cache
+* Clear JS & CSS cache- if changes have been made to the catalog's JS or CSS, clear the cache
+* Clear translation packs cache- if changes have been made to the catalog's JSON translation files of the Javascript application in catalog/locale, database translations or schema JSON translations, clear the cache 
 * API doc & test- documentation and testing page for the GeoNetwork API
 
 |image30|
 
 Figure 9.1.1: The index admin interface
-
-Batch process
--------------
-
-This subsection can be used to make xsl transformations on multiple records at once, such as to update contact information in bulk, change internal URLs or update keywords. **It is wise to request a database backup before performing a batch process as there is no way to undo the transformation once it has been started.**
-
-The processes are defined per schema, and new processes can be added as required. The records that the process should be applied to can be filtered by Group, Owner, License type or custom search term, further filtered to include/exclude templates, and then selected using the dropdown selection dialog. 
-
-The available processes are accessed via a dropdown list, which then prompts you to supply the required parameters, such as the Old URL and the New URL. To run the process, click the blue "Run" button. The results of the process will be shown below. **Note that the process may take a long time if there are a large number of records to search.**
-
-|image31|
-
-Figure 9.2.1: The batch processing interface, showing the configuration of the URL replacer for metadata records owned by Transport Scotland
 
 Transfer ownership
 ------------------
