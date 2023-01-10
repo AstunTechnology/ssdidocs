@@ -127,7 +127,7 @@ To print the current map:
 
 	**2|** In the appropriate boxes, enter text for the title of the map and a description or credit for the map if desired.
 	
-	**3|** Choose the desired layout (landscape, portrait or thumbnail).
+	**3|** Choose the desired layout (landscape, overview or portrait).
 	
 	**4|** Choose the auto option for scale, or uncheck and select the desired scale from the dropdown list.
 	
