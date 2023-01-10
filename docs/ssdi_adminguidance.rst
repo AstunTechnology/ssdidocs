@@ -659,13 +659,13 @@ Transfer ownership
 
 This subsection allows you to change the owner (user) of a set of records. Choose the user from the dropdown list, noting that this list contains only users with profiles of editor and above.
 
-In the "Target group and editor" list choose the group that your new editor belongs to. The "Target editor" dropdown list will then show all users with editor profile and above in that group, and additionally full administrators for the catalogue. Select the appropriate editor and then click the blue "Transfer" button.
+The "Target group and editor" dropdown list will then show all users with editor profile and above, and additionally full administrators for the catalog. Select the appropriate editor and then click the blue "Transfer" button.
 
 |image32|
 
 Figure 9.3.1: The transfer ownership interface, configured for transferring records currently owned by the Fife Council user to the Admin user.
 
-**Note that changing the ownership of a record applies only to users and does not affect group privileges.** This tool is also available in the Search panel as one of the available actions for selected results.
+**Note that changing the ownership of a record applies only to users and does not affect group privileges.** This tool is also available in the Search panel and the Editor board as one of the available actions for selected results.
 
 Editing online documentation
 ============================
