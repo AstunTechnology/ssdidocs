@@ -113,13 +113,7 @@ To manage layers displayed in the map:
 **Figure 3.4.1:** Manage layers menu
 
 Print the map
--------------
-
-Note that there is a known issue with the print fuction wherein service layers that include spaces in the name will not display correctly in the map.
-
-|userdoc_fig_3_5_1_PrintLayersError|
-
-**Figure 3.5.1:** Error message regarding layer names	
+-------------	
 
 To print the current map:
 
@@ -137,9 +131,9 @@ To print the current map:
 
 	*Note: the print area will be highlighted on the map.*
 
-|userdoc_fig_3_5_2_PrintMap|
+|userdoc_fig_3_5_1_PrintMap|
 
-**Figure 3.5.2:** Printing the current map	
+**Figure 3.5.1:** Printing the current map	
 	
 Other map functions
 -------------------
@@ -159,8 +153,7 @@ Other functionality available from the tabs on the main map page is as follows:
 .. |userdoc_fig_3_3_2_AddtoMapRecordView| image:: media/userdoc_fig_3_3_2_AddtoMapRecordView.png
 .. |userdoc_fig_3_3_3_AddtoMapMapPage| image:: media/userdoc_fig_3_3_3_AddtoMapMapPage.png
 .. |userdoc_fig_3_4_1_ManageLayers| image:: media/userdoc_fig_3_4_1_ManageLayers.png
-.. |userdoc_fig_3_5_1_PrintLayersError| image:: media/error_PrintLayers.png
-.. |userdoc_fig_3_5_2_PrintMap| image:: media/userdoc_fig_3_5_2_PrintMap.png
+.. |userdoc_fig_3_5_1_PrintMap| image:: media/userdoc_fig_3_5_2_PrintMap.png
 .. |button_view_display| image:: media/button_view_display.png
 .. |button_view_download| image:: media/button_view_download.png
 .. |button_view_globe| image:: media/button_view_globe.png
