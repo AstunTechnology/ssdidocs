@@ -153,7 +153,7 @@ Other functionality available from the tabs on the main map page is as follows:
 .. |userdoc_fig_3_3_2_AddtoMapRecordView| image:: media/userdoc_fig_3_3_2_AddtoMapRecordView.png
 .. |userdoc_fig_3_3_3_AddtoMapMapPage| image:: media/userdoc_fig_3_3_3_AddtoMapMapPage.png
 .. |userdoc_fig_3_4_1_ManageLayers| image:: media/userdoc_fig_3_4_1_ManageLayers.png
-.. |userdoc_fig_3_5_1_PrintMap| image:: media/userdoc_fig_3_5_2_PrintMap.png
+.. |userdoc_fig_3_5_1_PrintMap| image:: media/userdoc_fig_3_5_1_PrintMap.png
 .. |button_view_display| image:: media/button_view_display.png
 .. |button_view_download| image:: media/button_view_download.png
 .. |button_view_globe| image:: media/button_view_globe.png
