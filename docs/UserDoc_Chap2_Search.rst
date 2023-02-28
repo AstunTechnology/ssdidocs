@@ -46,9 +46,11 @@ page is a small map view showing the geographic extents of the queried results. 
 Advanced searching
 ------------------
 
-Other search options are available from the |button_search_advanced| icon to the right of the main search box. This expands to show **Options**, **Languages** and **Advanced** 
-options. **Options** allows users to search by Exact match, In title only, and Only my records. **Languages** allows users to limit the search based 
-on the metadata language of a record. **Advanced** allows users to limit the search based on the temporal coverage of a record.
+Other search options are available from the |button_search_advanced| icon to the right of the main search box. This expands to show **Options**, **Languages** and **Advanced**.
+
+* **Options** allows users to search by "Exact match", "In title only", and "Only my records" (if the user is logged in) 
+* **Languages** allows users to limit the search based on the metadata language of a record by searching "in all languages", "in detected language", or "in UI language" 
+* **Advanced** allows users to limit the search based on the temporal coverage of a record.
 
 To perform an advanced search:
 
@@ -72,22 +74,20 @@ Filter and sort options
 Search results can be limited using the options available in the left-hand panel. Each search filter shows the number of records returned next to 
 it. Filtering options available are as follows:
 
-* **Type of resources** (i.e. datasets or services)
+* **Type of resources** (e.g. datasets or services)
 * **Licence Type**
 * **Topics**
 * **INSPIRE Theme**
 * **Keywords**
-* **Contact for the resource**
-* **Years**
+* **Organizations**
+* **Years** (grouped in 5-year intervals)
 * **Formats**
-* **Available Actions**
-* **Representation Types** (i.e. raster or vector)
+* **Available in**
+* **Spatial Representation Type** (i.e. raster or vector)
 * **Update Frequencies**
-* **Service Types**
-* **Scale**
-* **Resolution**
+* **Scales**
 
-At the top right of the search results list is a menu to sort results by **title**, **relevance**, **date of change**, **rating**, **popularity**,
+At the top right of the search results list, there is a menu to sort the results by **title**, **relevance**, **date of change**, **rating**, **popularity**,
 and **scale**. At the top left of the results list users can select all results, all results on the current page, or none to deselect. Upon
 selection users can choose to export the results to a zip, pdf or csv file. Note that registered users will be able to perform additional actions, 
 such as `publish <UserDoc_Chap6_Edit.html#publishing-metadata>`__ (if they have Reviewer privileges) or `delete <UserDoc_Chap6_Edit.html#deleting-metadata>`__ 
