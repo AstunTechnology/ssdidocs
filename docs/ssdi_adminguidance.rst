@@ -128,17 +128,119 @@ The dropdown box next to the contact name allows the user to choose the element 
 Batch editing
 =============
 
-The **Batch editing** section can be accessed by clicking on the Contribute button in the header menu and then on **Batch editing**.
+The **Batch editing** section can be accessed by clicking the |button_contribute| button in the header menu and then on **Batch editing**.
 
-This section can be used to make xsl transformations on multiple records at once, such as to update contact information in bulk, change internal URLs or update keywords. **It is wise to request a database backup before performing a batch edit as there is no way to undo the transformation once it has been started.**
+This section can be used to make XSL transformations on multiple records at once, such as to update contact information in bulk, change internal URLs or update keywords. 
+**It is wise to request a database backup before performing a batch edit as there is no way to undo the transformation once it has been started.**
 
-The processes are defined per schema, and new processes can be added as required. The records that the process should be applied to can be filtered by Group, Owner, License type or custom search term, further filtered to include/exclude templates, and then selected using the dropdown selection dialog. 
+This process has three steps to it, each represented by a different tab at the top of the **Batch editing** page: 
+* Choose a set of records
+* Define edits
+* Apply changes
 
-The available processes are accessed via a dropdown list, which then prompts you to supply the required parameters, such as the Old URL and the New URL. To run the process, click the blue "Run" button. The results of the process will be shown below. **Note that the process may take a long time if there are a large number of records to search.**
+Choose a set of records
+-----------------------
 
-|image31|
+|image-7|
+Figure 5.1.1: Batch editing tool showing search results for "National Scenic"
 
-Figure 5.1.1: The batch processing interface, showing the configuration of the URL replacer for metadata records owned by Transport Scotland
+As well as searching for a record by title (as in Figure 5.1.1), a user can also filter the records using the facets on the left-hand side of the screen. 
+
+The options available for filtering are:
+* Type of resources
+* Status
+* Validation status
+* Record groups
+* Published in that group
+* Standards
+* Harvested
+* Record types
+* Access
+
+The Filter and Search term can be cleared by clicking on the |button_clear| button at the right of the search bar.
+
+|image-7a|
+Figure 5.1.2: Search bar showing the available buttons
+
+Once the desired records have been located and selected using the tick box next to their title, an option for the user to View selection only becomes available at the right of the search bar.
+Once the user is happy with the selection of records that are going to be changed, the next steps become available to be selected.
+
+Define edits
+------------
+
+Three distinct types of edits are available to the user, each represented by a radio button:
+
+* Search and replace
+* XPath editing
+* Form editing
+
+**Search and replace**
+
+The fields available are:
+
+* Value- the value to be replaced
+* Replacement- the new value
+* Regular expression flags- dropdown menu options include: 
+	* i: enables case insensitive matching
+	* c: disables case insensitive matching
+	* n: allows the period to match the newline character
+	* m: enables multiline mode
+
+|image-7b|
+Figure 5.2.1: Batch editing tool showing the available **Search and replace** options
+
+**XPath editing**
+
+*Note: XPath stands for XML Path Language. It uses a non-XML syntax to provide a flexible way of addressing (pointing to) different parts of an XML document. 
+It can also be used to test addressed nodes within a document to determine whether they match a pattern or not. 
+A good summary of its syntax can be found `here <https://www.w3schools.com/xml/xpath_syntax.asp>`__.*
+
+|image-7c|
+Figure 5.2.2: Batch editing tool showing the available **XPath editing** options
+
+The fields available are:
+
+* Title (optional)
+* Replacement mode- dropdown menu options include:
+	* Add the element or value (in the first matching parent) or create it
+	* Replace the element or value (in the first matching parent)
+	* Remove all matching elements
+* Xpath- the Xpath to the element or value to be replaced
+* Text or XML value- the new value or element
+
+Once the fields have been filled in accordingly, the user needs to click the |button_edit_plus| button to confirm the change.
+
+At this point the user has a few options:
+
+* Fill the top fields again and click the |button_edit_plus| button to add another batch edit to the same set of records
+* Click the |button_contribute_pencil| button to edit an existing batch edit
+* Click the |button_contribute_delete| button to remove an existing batch edit
+* Click the |button_batch_copy| button to copy the contents of an existing batch edit
+
+**Form editing**
+
+*Note: Depending on the type of records selected, the list of fields you can update may change. When editing a mandatory field like the title, the field is updated. When editing a field which can contain multiple values, a new value is added.*
+
+Each of the sections can be expanded to show the available fields to edit and a new value can be inserted in the relevant fields.
+
+There is also the option to reset all the changes, by clicking on the |button_batch_reset| button at the bottom of the page.
+
+|image-7d|
+Figure 5.2.3: Batch editing tool showing an example of an expanded section and the Reset changes button
+
+Apply changes
+-------------
+
+Once the user is happy with the set of records that will be changed and the modifications that will be applied, they can navigate to the last step - applying the changes.
+
+This tab shows a summary of the changes that will be applied, as well as a list of records that will be changed and an option to “Update the modification date in the metadata document“.
+
+Once the |button_batch_save| button has been clicked the changes will be applied and can't be reverted!
+
+A report will be displayed showing the number of records processed and any errors or issues.
+
+|image-7e|
+Figure 5.3.1: Batch editing tool showing the “Apply changes“ tab after changes have been applied
 
 Metadata and Templates
 ======================
@@ -769,6 +871,12 @@ Note that the services don't return a result, just a blank page. Note also that 
 .. |image-4| image:: media/adminimage-4.png
 .. |image-5| image:: media/adminimage-5.png
 .. |image-6| image:: media/adminimage-6.png
+.. |image-7| image:: media/adminimage-7.png
+.. |image-7a| image:: media/adminimage-7a.png
+.. |image-7b| image:: media/adminimage-7b.png
+.. |image-7c| image:: media/adminimage-7c.png
+.. |image-7d| image:: media/adminimage-7d.png
+.. |image-7e| image:: media/adminimage-7e.png
 .. |image15| image:: media/adminimage16.png
 .. |image16| image:: media/adminimage17.png
 .. |image17| image:: media/adminimage18.png
@@ -793,3 +901,10 @@ Note that the services don't return a result, just a blank page. Note also that 
 .. |button_search| image:: media/button_search.png
 .. |button_search_advanced| image:: media/button_search_advanced.png	
 .. |button_contribute| image:: media/button_contribute.png
+.. |button_clear| image:: media/button_clear.png
+.. |button_edit_plus| image:: media/button_edit_plus.png
+.. |button_contribute_pencil| image:: media/button_contribute_pencil.png
+.. |button_contribute_delete| image:: media/button_contribute_delete.png
+.. |button_batch_copy| image:: media/button_batch_copy.png
+.. |button_batch_reset| image:: media/button_batch_reset.png
+.. |button_batch_save| image:: media/button_batch_save.png
