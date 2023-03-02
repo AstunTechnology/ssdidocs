@@ -133,7 +133,7 @@ The **Batch editing** section can be accessed by clicking the |button_contribute
 This section can be used to make XSL transformations on multiple records at once, such as to update contact information in bulk, change internal URLs or update keywords. 
 **It is wise to request a database backup before performing a batch edit as there is no way to undo the transformation once it has been started.**
 
-This process has three steps to it, each represented by a different tab at the top of the **Batch editing** page: 
+This process has three steps to it, each represented by a different tab at the top of the **Batch editing** page:
 * Choose a set of records
 * Define edits
 * Apply changes
