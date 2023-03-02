@@ -182,7 +182,8 @@ The fields available are:
 
 * Value- the value to be replaced
 * Replacement- the new value
-* Regular expression flags- dropdown menu options include: 
+* Regular expression flags- dropdown menu options include:
+
 	* i: enables case insensitive matching
 	* c: disables case insensitive matching
 	* n: allows the period to match the newline character
@@ -204,9 +205,11 @@ The fields available are:
 
 * Title (optional)
 * Replacement mode- dropdown menu options include:
+
 	* Add the element or value (in the first matching parent) or create it
 	* Replace the element or value (in the first matching parent)
 	* Remove all matching elements
+	
 * Xpath- the Xpath to the element or value to be replaced
 * Text or XML value- the new value or element
 
