@@ -209,7 +209,7 @@ The fields available are:
 	* Add the element or value (in the first matching parent) or create it
 	* Replace the element or value (in the first matching parent)
 	* Remove all matching elements
-	
+
 * Xpath- the Xpath to the element or value to be replaced
 * Text or XML value- the new value or element
 
@@ -333,11 +333,14 @@ Common configuration options are:
 * Save: save changes to harvester configuration
 * Harvest: run this harvest
 * Action on UUID collision: what action should be taken if the same UUID is present on a record collected by another method. This has the following options:
+
 	* Skip record (default)
 	* Overwrite record
 	* Create new UUID
+
 * License Type: set the licence under which the harvested records should be added
 * Validate records before import: Invalid records will be rejected. Validation is based on the standard validation (ie. XSD, Schematrons). This has the following options:
+
 	* Accept all metadata without validation (this option will import all records regardless of validity)
 	* Accept metadata that are XSD valid (this option will cause the harvest to fail on the first invalid record)
 	* Accept metadata that are XSD and Schematron valid (this option will cause the harvest to fail on the first invalid record)
@@ -477,6 +480,7 @@ This subsection provides more information on content searches. The following opt
 * Metadata records popularity, showing the most popular records searched for (clicking the blue eye icon to the right of a record will take you to it)
 * Best Rated, showing the most highly rated records (if local star ratings are being used)
 * Record statistics, this is a dropdown list with a number of available metrics, for example (but not limited to):
+
 	* Year
 	* Format
 	* INSPIRE theme(s)
@@ -487,6 +491,7 @@ This subsection provides more information on content searches. The following opt
 Figure 8.3.1: Catalog content statistics and Most popular records
 
 * A number of pie charts, showing the following metrics, where hovering over a slice will provide the actual number of records:
+
 	* Category
 	* Owner
 	* Workflow Status
@@ -510,6 +515,7 @@ This is an extensive subsection showing the following, all additionally availabl
 * Types of services for which a search is triggered, such as export to MEF, RDF, keyword search in portal, shown as a Pie Chart
 * IP address for each search
 * Search fields and terms
+
 	* This allows the choice of the type of search, which then displays the criteria used and the number of searches
 	* Clicking on a criteria shows the breakdown of number of searches per term for that criteria
 	* For example, to see a breakdown of search keywords, choose "Search" from the dropdown box and then click the "Keyword" link in the list below (see Figure 4.2.3)
@@ -622,12 +628,15 @@ The settings for editing or creating a user are as follows:
 * Organisation (optional)
 * Address fields (optional)
 * Select user groups per profile fields:
+
 	* Is an administrator (default is no)- if checked the user will be a full administrator for the whole catalogue with full access to all functionality for all groups
 	* Profiles per group- if not a full administrator then the user needs to be assigned at least one role or profile within the catalogue. Note that a user can be part of multiple groups and have different profiles per group
+
 		* Registered User: can download protected data
 		* Editor: has rights to create/delete/edit metadata within their group
 		* Reviewer: has rights to authorise publication of metadata within their own group
 		* User administrator: has rights to administer users, and create/delete/edit metadata within their group
+
 * Records owned by this user (if any)
 
 |image22|
@@ -662,7 +671,9 @@ The various elements are described in detail in the Geonetwork documentation at 
 
 * Log levels- there are two of these, accessed via dropdown lists. The first is at the top of the settings panel, next to the "Save settings" button. The second is in the Catalog server subsection. The default for both is "Production" and this level should only be changed if increased logging is specifically requested. In that case, change to "Dev" and save settings, but remember to set it back to "Production" for normal use!
 * Catalog description- the Catalog name and Organisation are used throughout the catalogue and can be changed as required
+
 	* Organization- this is also used throughout the catalog and can be changed as required
+	
 * Catalog- shows the version of Geonetwork in use
 * Catalog server- shows the URL and protocol (http or https) being used. **Changing these values will trigger a change to internal URLs within the metadata records**
 * Metadata Search Results- limits how many records can be selected in a single operation. **Increasing this value may have a negative impact on the performance of the server**
