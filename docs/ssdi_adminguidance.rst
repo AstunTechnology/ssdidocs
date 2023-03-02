@@ -91,7 +91,11 @@ To act on multiple metadata records, use the select function and choose the appr
 
 |image-6|
 
-Figure 3.1.2: Administrative functions that act on multiple records
+Figure 3.1.2: Administrative functions that act on multiple records- top options
+
+|image-6a|
+
+Figure 3.1.3: Administrative functions that act on multiple records- bottom options
 
 Manage Directory
 ================
@@ -888,6 +892,7 @@ Note that the services don't return a result, just a blank page. Note also that 
 .. |image-4| image:: media/adminimage-4.png
 .. |image-5| image:: media/adminimage-5.png
 .. |image-6| image:: media/adminimage-6.png
+.. |image-6a| image:: media/adminimage-6a.png
 .. |image-7| image:: media/adminimage-7.png
 .. |image-7a| image:: media/adminimage-7a.png
 .. |image-7b| image:: media/adminimage-7b.png
