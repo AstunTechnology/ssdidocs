@@ -196,7 +196,7 @@ Figure 5.2.1: Batch editing tool showing the available **Search and replace** op
 
 *Note: XPath stands for XML Path Language. It uses a non-XML syntax to provide a flexible way of addressing (pointing to) different parts of an XML document. 
 It can also be used to test addressed nodes within a document to determine whether they match a pattern or not. 
-A good summary of its syntax can be found `here <https://www.w3schools.com/xml/xpath_syntax.asp>`__.*
+A good summary of its syntax can be found here: https://www.w3schools.com/xml/xpath_syntax.asp *
 
 |image-7c|
 Figure 5.2.2: Batch editing tool showing the available **XPath editing** options
@@ -673,7 +673,7 @@ The various elements are described in detail in the Geonetwork documentation at 
 * Catalog description- the Catalog name and Organisation are used throughout the catalogue and can be changed as required
 
 	* Organization- this is also used throughout the catalog and can be changed as required
-	
+
 * Catalog- shows the version of Geonetwork in use
 * Catalog server- shows the URL and protocol (http or https) being used. **Changing these values will trigger a change to internal URLs within the metadata records**
 * Metadata Search Results- limits how many records can be selected in a single operation. **Increasing this value may have a negative impact on the performance of the server**
