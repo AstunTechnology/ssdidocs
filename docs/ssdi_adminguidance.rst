@@ -419,7 +419,7 @@ The metrics links provide advanced information on the status of the system and s
 This may be requested by Astun Technology support staff. This download could be large and may take some time. The Thread Status link provides advanced information on the java installation, and should not generally be needed.
 
 More detailed metadata indexing errors can be seen on the right hand side of the screen (if there are any). These can be filtered by Error types, Harvested, Indexing errors and Indexing warnings. 
-Filtering by one or more of these criteria will produce a list with the affected records in the bottom half of the page. The filter can be removed by clicking |remove_status_filter_button| in the search bar.
+Filtering by one or more of these criteria will produce a list with the affected records in the bottom half of the page. The filter can be removed by clicking |button_clear| in the search bar.
 
 |image7b|
 
@@ -781,7 +781,7 @@ Transfer ownership
 
 This subsection allows you to change the owner (user) of a set of records. Choose the user from the dropdown list, noting that this list contains only users with profiles of editor and above.
 
-The "Target group and editor" dropdown list will then show all users with editor profile and above, and additionally full administrators for the catalog. Select the appropriate editor and then click the blue "Transfer" button.
+The "Target group and editor" dropdown list will then show all users with editor profile and above, and additionally full administrators for the catalog. Select the appropriate editor and then click the |button_transfer| button.
 
 |image32|
 
@@ -870,6 +870,7 @@ Note that the services don't return a result, just a blank page. Note also that 
 .. |image6| image:: media/adminimage07.png
 .. |image7| image:: media/adminimage08.png
 .. |image7a| image:: media/adminimage08a.png
+.. |image7b| image:: media/adminimage08b.png
 .. |image8| image:: media/adminimage09.png
 .. |image9| image:: media/adminimage10.png
 .. |image10| image:: media/adminimage11.png
@@ -924,3 +925,4 @@ Note that the services don't return a result, just a blank page. Note also that 
 .. |button_batch_copy| image:: media/button_batch_copy.png
 .. |button_batch_reset| image:: media/button_batch_reset.png
 .. |button_batch_save| image:: media/button_batch_save.png
+.. |button_transfer| image:: media/button_transfer.png
