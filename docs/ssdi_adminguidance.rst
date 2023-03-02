@@ -134,6 +134,7 @@ This section can be used to make XSL transformations on multiple records at once
 **It is wise to request a database backup before performing a batch edit as there is no way to undo the transformation once it has been started.**
 
 This process has three steps to it, each represented by a different tab at the top of the **Batch editing** page:
+
 * Choose a set of records
 * Define edits
 * Apply changes
@@ -147,6 +148,7 @@ Figure 5.1.1: Batch editing tool showing search results for "National Scenic"
 As well as searching for a record by title (as in Figure 5.1.1), a user can also filter the records using the facets on the left-hand side of the screen. 
 
 The options available for filtering are:
+
 * Type of resources
 * Status
 * Validation status
