@@ -894,6 +894,7 @@ Note that the services don't return a result, just a blank page. Note also that 
 .. |image-7c| image:: media/adminimage-7c.png
 .. |image-7d| image:: media/adminimage-7d.png
 .. |image-7e| image:: media/adminimage-7e.png
+.. |image-9| image:: media/adminimage-9.png
 .. |image15| image:: media/adminimage16.png
 .. |image16| image:: media/adminimage17.png
 .. |image17| image:: media/adminimage18.png
@@ -926,3 +927,5 @@ Note that the services don't return a result, just a blank page. Note also that 
 .. |button_batch_reset| image:: media/button_batch_reset.png
 .. |button_batch_save| image:: media/button_batch_save.png
 .. |button_transfer| image:: media/button_transfer.png
+.. |analyze_records_button| image:: media/analyze_records_button.png
+.. |test_link_button| image:: media/test_link_button.png
