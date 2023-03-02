@@ -196,7 +196,7 @@ Figure 5.2.1: Batch editing tool showing the available **Search and replace** op
 
 *Note: XPath stands for XML Path Language. It uses a non-XML syntax to provide a flexible way of addressing (pointing to) different parts of an XML document. 
 It can also be used to test addressed nodes within a document to determine whether they match a pattern or not. 
-A good summary of its syntax can be found here: https://www.w3schools.com/xml/xpath_syntax.asp *
+A good summary of its syntax can be found here: https://www.w3schools.com/xml/xpath_syntax.asp*
 
 |image-7c|
 Figure 5.2.2: Batch editing tool showing the available **XPath editing** options
