@@ -16,11 +16,11 @@ To begin an editing session:
 
 	**1|** `Sign in <UserDoc_Chap4_Users.html#signing-in>`__ using your account credentials.
 
-	**2|** Either search for a particular record direct from the home page or click |button_contribute| and search or scroll for the record.
+	**2|** Either search for a particular record direct from the home page or click |button_contribute| in the header and select |button_editor_board| to open the **Editor** board and search or scroll for the record.
 
-	*Note: if the 'only my records' box at the top left of the contribute page is checked, this will limit the record list to only those belonging to that user.*
+	*Note: if the 'only my records' box at the top left of the Editor board is checked, this will limit the record list to only those belonging to that user.*
 	
-	**3|** Click the pencil icon (|button_contribute_pencil|) visible in the search results list, or next to the record name on the contribute board. This will enter the user into an editing session.
+	**3|** Click the pencil icon (|button_contribute_pencil|) visible in the search results list, or next to the record name on the **Editor** board. This will enter the user into an editing session.
 	
 	*Note: users can also start an editing session from the record view page by clicking* |button_view_edit| *at the top of the page.*
 
@@ -61,7 +61,7 @@ To change the view of editing session:
 
 	**1|** Click on |button_edit_view| on the top right of the editing board.
 	
-	**2|** From the dropdown menu, choose either INSPIRE, simple, full or XML. Advanced (full) view is a more detailed version of the default (simple) view, where as XML view allows the user to edit the raw XML.
+	**2|** From the dropdown menu, choose either Default, Advanced or XML. Advanced (full) view is a more detailed version of the default (simple) view, where as XML view allows the user to edit the raw XML.
 	
 	*Note: users can also enable tool tips from the view menu.*
 	
@@ -92,15 +92,17 @@ To assign or change the licence category via the contribute board:
 
 	**1|** Click on |button_contribute| in the header.
 	
-	**2|** In the record list, select the record(s) for which the licence category will assigned or amended.
+	**2|** Click the |button_editor_board| button. This will enable the **Editor** board, where all records the user has access to will be listed.
+	
+	**3|** In the record list, select the record(s) for which the licence category will assigned or amended.
 	
 	*Note: the licence category can be updated for multiple records at a time.*
 	
-	**3|** Click the dropdown labelled 'selected' at the top left of the record list and choose 'Update licence' from the list. This will display the licence categories dialog.
+	**4|** Click the dropdown labelled 'selected' at the top left of the record list and choose 'Update licence' from the list. This will display the licence categories dialog.
 	
-	**2|** From the menu, check the appropriate licence type (Open Government, Non-commercial, INSPIRE or other).
+	**5|** From the menu, check the appropriate licence type (Open Government, Non-commercial, INSPIRE or other).
 	
-	**3|** Click |button_contribute_replace| to apply the changes.
+	**6|** Click |button_contribute_replace| to apply the changes.
 
 The licence category can also be assigned using the appropriate option when importing a record. For those organisations which harvest 
 their metadata records into the portal, a default licence type can be selected for all records, though any records that differ from the default setting
@@ -227,15 +229,19 @@ Once a metadata record has been successfully `validated <#validating-metadata>`_
 
 To publish a metadata record:
 
-	**1|** Click on |button_contribute| in the header and locate the metadata record in the list below.
+	**1|** Click on |button_contribute| in the header.
 	
-	**2|** Click on the |button_contribute_locked| next to the record name to access the Privileges dialog.
+	**2|** Click the |button_editor_board| button. This will enable the **Editor** board, where all records the user has access to will be listed.
 	
-	**3|** To make publicly viewable, tick the 'Set all privileges' box next to the row marked 'All' in the group column.
+	**3|** Locate the metadata record in the list below.
 	
-	**4|** Click on |button_contribute_replace| to update the privileges for the record.
+	**4|** Click on the |button_contribute_locked| next to the record name to access the Privileges dialog.
+	
+	**5|** To make publicly viewable, tick the 'Set all privileges' box next to the row marked 'All' in the group column.
+	
+	**6|** Click on |button_contribute_replace| to update the privileges for the record.
 
-Once the record is published, the padlock icon displayed on the contribute menu should appear unlocked (|button_contribute_unlocked|).
+Once the record is published, the padlock icon displayed on the Editor board should appear unlocked (|button_contribute_unlocked|).
 
 |userdoc_fig_6_8_1_PrivilegesPanel|
 
@@ -256,7 +262,7 @@ Alternatively, there is a shortcut method to publish a record directly from the 
 Batch editing
 -------------
 
-Administrators will have the privileges to perform batch editing on records. See the `Administrator Guidance <ssdi_adminguidance.html#batch-process>`__ for more information.
+Administrators will have the privileges to perform batch editing on records. See the `Administrator Guidance <ssdi_adminguidance.html#batch-editing>`__ for more information.
 
 Deleting metadata
 -----------------
@@ -265,11 +271,15 @@ Users with the appropriate privileges will be able to edit or delete records fro
 
 To delete a metadata record:
 
-	**1|** Click on |button_contribute| in the header and locate the metadata record in the list below.
+	**1|** Click on |button_contribute| in the header.
 	
-	**2|** Click on the |button_contribute_delete| in the row for the record.
+	**2|** Click the |button_editor_board| button. This will enable the **Editor** board, where all records the user has access to will be listed.
 	
-	**3|** A conformation prompt will be displayed. Click 'OK' to confirm the delete.
+	**3|** Locate the metadata record in the list below.
+	
+	**4|** Click on the |button_contribute_delete| in the row for the record.
+	
+	**5|** A confirmation prompt will be displayed. Click 'OK' to confirm the deletion.
 
 	*Note: the record may still appear in the list until the page is refreshed.*
 	
@@ -278,6 +288,8 @@ To delete a metadata record:
 **Figure 6.10.1:** Confirmation requested to delete a metadata record
 
 Alternatively, the user can delete a record directly from the record's page by clicking the |button_view_delete| button.
+
+*Note: A confirmation prompt will be displayed. Click 'OK' to confirm the deletion.*
 
 Users should note that when deleting a record that had previously been published, that record will not be deleted from other portals which may have 
 harvested the record, such as `data.gov.uk <http://data.gov.uk/>`__. Users should contact `SSDI.Metadata@gov.scot <mailto:SSDI.Metadata@gov.scot>`__
@@ -322,3 +334,4 @@ to have records deleted from `data.gov.uk <http://data.gov.uk/>`__.
 .. |button_view_publish| image:: media/button_view_publish.png
 .. |button_contribute_delete| image:: media/button_contribute_delete.png
 .. |button_view_delete| image:: media/button_view_delete.png
+.. |button_editor_board| image:: media/button_editor_board.png

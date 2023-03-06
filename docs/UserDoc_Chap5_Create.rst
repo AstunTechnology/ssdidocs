@@ -32,15 +32,13 @@ To import an existing XML metadata record:
 
 	**7|** Optionally, select whether to publish the record on import.
 	
-	**8|** Leave the **Assign to current catalog** option ticked.
+	**8|** Assign the record to a user group.
 	
-	**9|** Assign the record to a user group.
-	
-	**10|** Assign the record to the appropriate licence type (i.e. OGL, NCGL, INSPIRE or other). This will allow for filtered searching based on the licence conditions.
+	**9|** Assign the record to the appropriate licence type (i.e. OGL, NCGL, INSPIRE or other). This will allow for filtered searching based on the licence conditions.
 	
 	*Note: Licence types can also be amended at a later date. See* `assigning a licence category <UserDoc_Chap6_Edit.html#assigning-a-licence-category>`__.
 	
-	**11|** Click the |button_contribute_importconfirm| button.
+	**10|** Click the |button_contribute_importconfirm| button.
 	
 |userdoc_fig_5_1_1_ImportMetadata|
 
@@ -57,19 +55,21 @@ Basic templates are available for users to create metadata directly on `spatiald
 
 To create a metadata record using an available template:
 
-	**1|** Click the |button_contribute| button in the header menu. This will enable the **Contribute** board, where all records the user has access to will be listed.
+	**1|** Click the |button_contribute| button in the header menu. 
 	
-	**2|** Click the |button_contribute_addrecord| button.
+	**2|** Click the |button_editor_board| button. This will enable the **Editor** board, where all records the user has access to will be listed.
 	
-	**3|** Choose the type of record to be created based on the type of resource that is being documented, i.e. a dataset, series or service record. When selected available templates for that type are displayed.
+	**3|** Click the |button_contribute_addrecord| button.
+	
+	**4|** Choose the type of record to be created based on the type of resource that is being documented, i.e. a dataset, series or service record. When selected available templates for that type are displayed.
 	
 	*Note: templates for dataset and service metadata are slightly different. Metadata for a service has extra elements for the spatial data service type (i.e. view, download, etc.) and for coupled resources. You must choose the correct template for the type of record being documented as it is not possible to change once the record has been created.*
 	
-	**4|** Click on the template to be used.
+	**5|** Click on the template to be used.
 
-	**5|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the editing board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.html#editing-metadata>`__ for guidance on documenting the resource.
+	**6|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the editing view where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.html#editing-metadata>`__ for guidance on documenting the resource.
 	
-	*Note: if the user is an editor for multiple groups or an administrator to the site, they may be presented with multiple templates of the same name. Additionally, they will be required to select which group folder to create the metadata record in.*
+	*Note: if the user is an editor for multiple groups or an administrator to the site, they may be presented with multiple templates of the same name. Additionally, they will be required to select which group to assign the metadata record to.*
 
 |userdoc_fig_5_2_1_CreateTemplate|
 
@@ -81,15 +81,17 @@ Duplicating existing metadata
 One of the easiest ways to create metadata on the portal is to duplicate an existing record. This is particularly useful for organisations where many
 of the metadata elements are the same for all records (e.g. points of contact, etc.)
 
-To create a metadata record by duplicating and existing record:
+To create a metadata record by duplicating an existing record:
 
-	**1|** Click the |button_contribute| button in the header menu. This will enable the **Contribute** board, where all records the user has access to will be listed.
-
-	**2|** Click the duplicate icon (|button_contribute_duplicate|) next to the record name.
+	**1|** Click the |button_contribute| button in the header menu. 
 	
-	**3|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the **editing** board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.html#editing-metadata>`__ for guidance on documenting the resource.
+	**2|** Click the |button_editor_board| button. This will enable the **Editor** board, where all records the user has access to will be listed.
 
-	*Note: if the user is an editor for multiple groups or an administrator to the site, they will be required to select which group folder to create the duplicate metadata record in.*
+	**3|** Click the duplicate icon (|button_contribute_duplicate|) next to the record name.
+	
+	**4|** Click the |button_contribute_create| button to create the new record. This will automatically take the user to the **Editor** board where elements of the new record can be modified. See `Editing a metadata record <UserDoc_Chap6_Edit.html#editing-metadata>`__ for guidance on documenting the resource.
+
+	*Note: if the user is an editor for multiple groups or an administrator to the site, they will be required to select which group to assign the duplicate metadata record to.*
 
 |userdoc_fig_5_3_1_Duplicate|
 
@@ -98,22 +100,20 @@ To create a metadata record by duplicating and existing record:
 Harvesting metadata
 -------------------
 
-`Spatialdata.gov.scot <https://spatialdata.gov.scot>`__ has the capability to automatically consume metadata from external services on a scheduled basis. Organisations that maintain their own
-spatial data portals which are interested in having their records automatically harvested should contact `SSDI.Metadata@gov.scot <mailto:SSDI.Metadata@gov.scot>`__.
+`Spatialdata.gov.scot <https://spatialdata.gov.scot>`__ has the capability to automatically consume metadata from external services on a scheduled basis. Organisations that maintain their own spatial data portals which are interested in having their records automatically harvested should contact `SSDI.Metadata@gov.scot <mailto:SSDI.Metadata@gov.scot>`__.
 
 Creating directory metadata
 ---------------------------
 
-Directory records are a means of automatically populating fields such as those for the `point of contact <UserDoc_Chap7_Elements.html#point-of-contact>`__ section of a 
-metadata record with pre-written values. This is useful if you have to create multiple records that share the same point of contact.
+Directory records are a means of automatically populating fields such as those for the `point of contact <UserDoc_Chap7_Elements.html#point-of-contact>`__ section of a metadata record with pre-written values. This is useful if you have to create multiple records that share the same point of contact.
 
 To create a directory entry:
 
 	**1|** Click the |button_contribute| button in the header menu.
 
-	**2|** Click either |button_contribute_managedirectory| from the contribute drop down, or the button below the header of the **Contribute** board. This will bring the user to the manage directories page.
+	**2|** Click the |button_contribute_managedirectory| from the contribute drop down. This will bring the user to the manage directories page.
 
-	**3|** On the entries tab are previously created directory entries. Under the **Actions** drop menu, users can choose to edit or duplicate an existing record. Alternately, users can create a blank directory entry using a template by first clicking on the **Templates** tab, and then choosing duplicate from the **Actions** menu of the 'TEMPLATE TO DUPLICATE' entry.
+	**3|** On the entries tab are previously created directory entries. Under the **Actions** drop menu of each record, users can choose to edit or duplicate an existing record. Alternately, users can create a blank directory entry using a template by first clicking on the **Templates** tab, and then choosing duplicate from the **Actions** menu of the 'TEMPLATE TO DUPLICATE' entry.
 	
 	**4|** Amend the entry as appropriate and click |button_contribute_savedirectory| to save changes.
 	
@@ -138,3 +138,4 @@ To create a directory entry:
 .. |button_contribute_managedirectory| image:: media/button_contribute_managedirectory.png
 .. |button_contribute_saveclosedirectory| image:: media/button_contribute_saveclosedirectory.png
 .. |button_contribute_savedirectory| image:: media/button_contribute_savedirectory.png
+.. |button_editor_board| image:: media/button_editor_board.png

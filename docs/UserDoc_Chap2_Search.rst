@@ -20,7 +20,9 @@ return the user to the home page.
 **Figure 2.1.1:** Home page
 
 When logged in, registered users of the site will be presented with further buttons on the header menu for |button_contribute| and |button_adminconsole| (for user and site administrators). 
-The |button_contribute| menu gives options to `add a new record <UserDoc_Chap5_Create.html#creating-metadata-from-a-template>`__, `import new records <UserDoc_Chap5_Create.html#importing-existing-metadata>`__, `manage directory <UserDoc_Chap5_Create.html#creating-directory-metadata>`__, and `batch editing <UserDoc_Chap6_Edit.html#batch-editing>`__.
+The |button_contribute| menu gives options to navigate to the **Editor board**, `add a new record <UserDoc_Chap5_Create.html#creating-metadata-from-a-template>`__, 
+`import new records <UserDoc_Chap5_Create.html#importing-existing-metadata>`__, `manage directory <UserDoc_Chap5_Create.html#creating-directory-metadata>`__, 
+`batch editing <UserDoc_Chap6_Edit.html#batch-editing>`__ and access rights.
 
 Basic searching
 ---------------
@@ -44,9 +46,11 @@ page is a small map view showing the geographic extents of the queried results. 
 Advanced searching
 ------------------
 
-Other search options are available from the vertical ellipses icon to the right of the main search box. This expands to show **What** and **When** 
-options. **What** allows users to search by Categories, Keywords, and Resource Contact. **When** allows users to limit the search temporally based 
-on the metadata change date of an interactive resource (service) or dataset record. 
+Other search options are available from the |button_search_advanced| icon to the right of the main search box. This expands to show **Options**, **Languages** and **Advanced**.
+
+* **Options** allows users to search by "Exact match", "In title only", and "Only my records" (if the user is logged in) 
+* **Languages** allows users to limit the search based on the metadata language of a record by searching "in all languages", "in detected language", or "in UI language" 
+* **Advanced** allows users to limit the search based on the temporal coverage of a record.
 
 To perform an advanced search:
 
@@ -54,7 +58,7 @@ To perform an advanced search:
 
 	**2|** Click the |button_search_advanced| next to the search text box to access advanced options.
 	
-	**3|** Provide additional search criteria (e.g. constraining by category, keyword, contacts or time).
+	**3|** Provide additional search criteria (e.g. constraining by exact match, language or temporal extent).
 	
 	**4|** Click |button_search_icon| to run the search based on the selected options. Results will be displayed in the list below.
 	
@@ -70,24 +74,24 @@ Filter and sort options
 Search results can be limited using the options available in the left-hand panel. Each search filter shows the number of records returned next to 
 it. Filtering options available are as follows:
 
-* **Type of resource** (i.e. datasets or services)
+* **Type of resources** (e.g. datasets or services)
 * **Licence Type**
 * **Topics**
 * **INSPIRE Theme**
 * **Keywords**
-* **Contact for the resource**
-* **Year**
-* **Format**
-* **Available Actions**
-* **Representation Type** (i.e. raster or vector)
-* **Update Frequency**
-* **Scale**
-* **Resolution**
+* **Organizations**
+* **Years** (grouped in 5-year intervals)
+* **Formats**
+* **Available in**
+* **Spatial Representation Type** (i.e. raster or vector)
+* **Update Frequencies**
+* **Scales**
 
-At the top right of the search results list is a menu to sort results by **title**, **relevance**, **date of change**, **rating**, **popularity**,
+At the top right of the search results list, there is a menu to sort the results by **title**, **relevance**, **date of change**, **rating**, **popularity**,
 and **scale**. At the top left of the results list users can select all results, all results on the current page, or none to deselect. Upon
 selection users can choose to export the results to a zip, pdf or csv file. Note that registered users will be able to perform additional actions, 
-such as `publish <UserDoc_Chap6_Edit.html#publishing-metadata>`__ or `delete <UserDoc_Chap6_Edit.html#deleting-metadata>`__, on selected records.
+such as `publish <UserDoc_Chap6_Edit.html#publishing-metadata>`__ (if they have Reviewer privileges) or `delete <UserDoc_Chap6_Edit.html#deleting-metadata>`__ 
+(if they have Editor privileges), on selected records.
 
 |userdoc_fig_2_4_1_SortOptions| |userdoc_fig_2_4_1_SelectOptions|
 
