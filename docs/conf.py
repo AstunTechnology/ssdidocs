@@ -49,7 +49,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Scottish SDI Metadata Portal Documentation'
-copyright = u'2016, Astun Technology'
+copyright = u'2024, Astun Technology'
 author = u'Astun Technology'
 
 # The version info for the project you're documenting, acts as replacement for
