@@ -15,7 +15,7 @@ spatial **extent** of the resource can be seen in the map below, in the **Discov
 
 **Figure 3.1.1:** Default record view
 
-Scrolling down the page, the **Use contraints** section provides information on licencing and the **Technical information** headings provide details on topic categories and keywords, maintenance frequency, coordinate systems and data formats are provided. Information on the history of a resource and how
+Scrolling down the page, the **Use constraints** section provides information on licensing. The **Technical information** headings provide details on topic categories and keywords, maintenance frequency, coordinate systems and data formats. Information on the history of a resource and how
 it was created can be found in the **Lineage** section. The **Metadata information** section, as the name suggests, provides information on the metadata itself, as well as the option for the metadata record to be downloaded.
 
 Note that the default view for a metadata record displays a summary of the information in the record. To change the display view of the metadata
@@ -89,7 +89,7 @@ To add a layer to the map from the metadata record view:
 
 	*Note: with respect to WFS, users may experience occasions where the layer appears to have been added to the map, yet does not display. This
 	occurs when the Access-Control-Allow-Orgin header (CORS access policy) is missing from the remote server, and thus the request is blocked by
-	the browser. This is out of the control of the portal as it is dependent on the organisations' server configuration, however, an error message shall be displayed.*
+	the browser. This is out of the control of the portal as it is dependent on the organisations' server configuration, however, an error message will be displayed.*
 
 Managing layers in the map
 --------------------------
