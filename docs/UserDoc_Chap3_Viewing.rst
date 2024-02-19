@@ -140,12 +140,17 @@ Other map functions
 
 Other functionality available from the tabs on the main map page is as follows:
 
-:|button_map_default| Default Map: via the manage layers tab, allows the user to reload the default map settings (removes all layers, etc.).
-:|button_map_measure| Measure: allows the user to draw a line on the map to measure it's length. Single-click to create a node and double-click to finish.
-:|button_map_graticules| Projection Switcher: change the projection of the map to one of the supported projections in the dropdown list.
-:|button_map_zoomin| |button_map_zoomout| Zoom in and out: zoom in or out on the map.
-:|button_map_zoomextent| Zoom to initial map extent: zoom to the full extent of the map.
-:|button_map_graticules| Graticule: adds a grid to the map (in lat/long).
+|button_map_default| **Default Map:** via the manage layers tab, allows the user to reload the default map settings (removes all layers, etc.).
+
+|button_map_measure| **Measure:** allows the user to draw a line on the map to measure it's length. Single-click to create a node and double-click to finish.
+
+|button_map_graticules| **Projection Switcher:** change the projection of the map to one of the supported projections in the dropdown list.
+
+|button_map_zoomin| |button_map_zoomout| **Zoom in and out:** zoom in or out on the map.
+
+|button_map_zoomextent| **Zoom to initial map extent:** zoom to the full extent of the map.
+
+|button_map_graticules| **Graticule:** adds a grid to the map (in lat/long).
 
 .. |userdoc_fig_3_1_1_DefaultViewA| image:: media/userdoc_fig_3_1_1_DefaultViewA.png
 .. |userdoc_fig_3_2_1_ExportMetadata| image:: media/userdoc_fig_3_2_1_ExportMetadata.png
