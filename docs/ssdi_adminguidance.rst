@@ -25,7 +25,7 @@ Searches
 Advanced Search
 ---------------
 
-The Advanced Search capability in the catalogue is accessed by clicking the magnifying glass icon on the home page or by clicking on the |button_search| button on the top menu to navigate to the Search page. 
+The Advanced Search capability in the catalogue is accessed by clicking the magnifying glass icon on the home page or by clicking on the |button_search| button on the top menu to navigate to the Search page.
 
 |image-1|
 
@@ -37,8 +37,8 @@ Filtering options, or search facets, are available to the left of the search res
 
 Figure 2.1.2: Search facets, or further filtering options on the search page
 
-Other search options are available from the |button_search_advanced| icon to the right of the main search box. This expands to show **Options**, **Languages** and **Advanced** 
-options. **Options** allows users to search by Exact match, In title only, and Only my records. **Languages** allows users to limit the search based 
+Other search options are available from the |button_search_advanced| icon to the right of the main search box. This expands to show **Options**, **Languages** and **Advanced**
+options. **Options** allows users to search by Exact match, In title only, and Only my records. **Languages** allows users to limit the search based
 on the metadata language of a record. **Advanced** allows users to limit the search based on the temporal coverage of a record.
 
 Further search capabilities can be accessed by clicking the |button_contribute| button on the main toolbar. This opens the **Editor board**, where there are also options to create or import new metadata, and also view privileges for or edit existing records. This page shows different search filtering options or facets, including group, schema, validation status, workflow status and so on.
@@ -100,9 +100,9 @@ Figure 3.1.3: Administrative functions that act on multiple records- bottom opti
 Manage Directory
 ================
 
-Directories are snippets of information that can be pre-completed and inserted into metadata records. 
-They are derived from subtemplates that are part of metadata standards. The available subtemplates are shown as tabs across the top of the Directory subsection- for Gemini 2.2 and 2.3 these are 
-**Organizations and contacts**, **Data Quality Reports (Completeness)** and **Data Quality Reports (Domain Consistency)**. 
+Directories are snippets of information that can be pre-completed and inserted into metadata records.
+They are derived from subtemplates that are part of metadata standards. The available subtemplates are shown as tabs across the top of the Directory subsection- for Gemini 2.2 and 2.3 these are
+**Organizations and contacts**, **Data Quality Reports (Completeness)** and **Data Quality Reports (Domain Consistency)**.
 The **Manage Directory** section can be accessed by clicking on the Contribute button in the header menu and then on **Manage directory**.
 
 Selecting **Organizations and contacts** shows the metadata snippet for adding a Points of Contact subtemplate. To create a new record based on this template, click the "Duplicate" icon (|image14c|) in the **Actions** dropdown.
@@ -134,7 +134,7 @@ Batch editing
 
 The **Batch editing** section can be accessed by clicking the |button_contribute| button in the header menu and then on **Batch editing**.
 
-This section can be used to make XSL transformations on multiple records at once, such as to update contact information in bulk, change internal URLs or update keywords. 
+This section can be used to make XSL transformations on multiple records at once, such as to update contact information in bulk, change internal URLs or update keywords.
 **It is wise to request a database backup before performing a batch edit as there is no way to undo the transformation once it has been started.**
 
 This process has three steps to it, each represented by a different tab at the top of the **Batch editing** page:
@@ -149,7 +149,7 @@ Choose a set of records
 |image-7|
 Figure 5.1.1: Batch editing tool showing search results for "National Scenic"
 
-As well as searching for a record by title (as in Figure 5.1.1), a user can also filter the records using the facets on the left-hand side of the screen. 
+As well as searching for a record by title (as in Figure 5.1.1), a user can also filter the records using the facets on the left-hand side of the screen.
 
 The options available for filtering are:
 
@@ -198,8 +198,8 @@ Figure 5.2.1: Batch editing tool showing the available **Search and replace** op
 
 **XPath editing**
 
-*Note: XPath stands for XML Path Language. It uses a non-XML syntax to provide a flexible way of addressing (pointing to) different parts of an XML document. 
-It can also be used to test addressed nodes within a document to determine whether they match a pattern or not. 
+*Note: XPath stands for XML Path Language. It uses a non-XML syntax to provide a flexible way of addressing (pointing to) different parts of an XML document.
+It can also be used to test addressed nodes within a document to determine whether they match a pattern or not.
 A good summary of its syntax can be found here: https://www.w3schools.com/xml/xpath_syntax.asp*
 
 |image-7c|
@@ -263,7 +263,7 @@ Figure 6.1.1: Metadata and Templates subsections
 Metadata and Templates
 ----------------------
 
-This shows the metadata standards or profiles loaded onto the system. Selecting one or more of the standards activates the options to Load templates and Load samples for the selected standards. 
+This shows the metadata standards or profiles loaded onto the system. Selecting one or more of the standards activates the options to Load templates and Load samples for the selected standards.
 
 **Note that the templates have been already loaded for iso19139.gemini22**
 
@@ -286,7 +286,7 @@ Validation
 
 **Advanced**
 
-This section allows advanced administrators/system maintainers to see which schematron rules are in place for specific schemas and to edit them as required. **It is not recommended that changes are made in this section as it will impact on how records are validated**. 
+This section allows advanced administrators/system maintainers to see which schematron rules are in place for specific schemas and to edit them as required. **It is not recommended that changes are made in this section as it will impact on how records are validated**.
 
 Metadata Identifier Templates
 -----------------------------
@@ -303,7 +303,7 @@ When this setting is enabled, additional options are available when creating a r
 Harvesting
 ==========
 
-Harvesting allows you to consume metadata from external services on a scheduled basis. The **Catalog harvesters** section has three subsections, as shown in the image below. It also shows any existing harvester nodes set up on the system, and their current status (running or paused). 
+Harvesting allows you to consume metadata from external services on a scheduled basis. The **Catalog harvesters** section has three subsections, as shown in the image below. It also shows any existing harvester nodes set up on the system, and their current status (running or paused).
 
 |image3|
 
@@ -314,7 +314,7 @@ Catalog Harvesters
 
 From this section you can see the list of available harvesting nodes, and clone an existing node or add a new one. You can also view and edit the settings of each harvester, see a harvester's history and a summary of the metadata records harvested by each node.
 
-To add a new harvester node, either clone an existing one by selecting it from the dropdown Clone list in the above image, or click the "Harvest from" button to access the dropdown list of harvester types. The configuration options available will depend on the type of node selected. 
+To add a new harvester node, either clone an existing one by selecting it from the dropdown Clone list in the above image, or click the "Harvest from" button to access the dropdown list of harvester types. The configuration options available will depend on the type of node selected.
 
 **Settings**
 
@@ -419,10 +419,10 @@ Figure 8.1.2: Status page showing error, with detailed error message accessed by
 
 *Report any errors shown here to Astun Technology.*
 
-The metrics links provide advanced information on the status of the system and should not generally be needed. The Activity "Export (zip)" provides a log file from the server. 
+The metrics links provide advanced information on the status of the system and should not generally be needed. The Activity "Export (zip)" provides a log file from the server.
 This may be requested by Astun Technology support staff. This download could be large and may take some time. The Thread Status link provides advanced information on the java installation, and should not generally be needed.
 
-More detailed metadata indexing errors can be seen on the right hand side of the screen (if there are any). These can be filtered by Error types, Harvested, Indexing errors and Indexing warnings. 
+More detailed metadata indexing errors can be seen on the right hand side of the screen (if there are any). These can be filtered by Error types, Harvested, Indexing errors and Indexing warnings.
 Filtering by one or more of these criteria will produce a list with the affected records in the bottom half of the page. The filter can be removed by clicking |button_clear| in the search bar.
 
 |image7b|
@@ -555,13 +555,13 @@ This section provides access to the Thesauri and other Categories used within th
 Thesaurus
 ---------
 
-Thesauri in SKOS format (XML or RDF extensions) can be managed or added here. It is also possible to interrogate the existing thesauri loaded into the catalog. 
+Thesauri in SKOS format (XML or RDF extensions) can be managed or added here. It is also possible to interrogate the existing thesauri loaded into the catalog.
 
 |image14|
 
 Figure 10.1.1: The thesaurus subsection showing the customised Scottish Regions thesaurus
 
-Selecting a thesaurus from the list provides further information about it. **The settings here should not be changed as they will affect the working of the catalog.** 
+Selecting a thesaurus from the list provides further information about it. **The settings here should not be changed as they will affect the working of the catalog.**
 
 It is possible to add additional thesauri by clicking the "Add thesaurus" link. The options are as follows:
 
@@ -585,7 +585,7 @@ Selecting a category from the list brings up a dialogue where it's display name 
 
 Figure 10.2.2: Selecting a category and displaying additional options
 
-To add a new category, click the "New category" button shown in Figure 10.2.1 above. Add an unique name for the category and save it. 
+To add a new category, click the "New category" button shown in Figure 10.2.1 above. Add an unique name for the category and save it.
 To change it's display name in any of the available languages, select it from the category list and edit as shown in Figure 10.2.2 above.
 
 |image17|
@@ -658,13 +658,13 @@ Figure 11.2.3: The lower section of the user editing interface
 Settings
 ========
 
-**This section should be used only by advanced administrators and system maintainers**. This section is where the main configuration of for the installation is set up. 
+**This section should be used only by advanced administrators and system maintainers**. This section is where the main configuration of for the installation is set up.
 It contains a number of subsections, as described below, but in general settings should only be changed by experienced staff as they can have an adverse effect on the running of the site.
 
 Settings
 --------
 
-The settings subsection provides access to the main configuration for the installation. 
+The settings subsection provides access to the main configuration for the installation.
 
 |image25|
 
@@ -685,13 +685,13 @@ The various elements are described in detail in the Geonetwork documentation at 
 * User self-registration- if this option is set (default is no) then visitors to the catalogue can register as users (with the Registered User profile)
 * User feedback- deprecated in version 3.0.0 onwards
 * Search statistics- if enabled (default is yes) then Geonetwork will save statistics on searches in the database
-* INSPIRE Directive configuration- this section enables INSPIRE options in the CSW response from the catalogue and enables the INSPIRE search options in the advanced search panel. 
+* INSPIRE Directive configuration- this section enables INSPIRE options in the CSW response from the catalogue and enables the INSPIRE search options in the advanced search panel.
 * Harvesters- allow editing on harvested records- if this is set (default is no) then records harvested from a remote location can be edited. **Note that, if set, any changes would be overwritten by subsequent harvests**
 * Harvester- this section contains settings to alert if a harvest has succeeded or failed. It is not configured by default
 * Metadata configuration- this section contains settings on which views are available, which is the default, and whether group logos should be used for records. The default values are generally sufficient
 * Metadata workflow- this section includes sections on the publication of invalid metadata. If the publication of invalid metadata is disabled, it is also possible to automatically set the status of invalid records to unpublished, and to force validation when a metadata record is saved.
 
-The remaining settings are generally only configured on installation and should only be changed by experienced administrators or system maintainers. 
+The remaining settings are generally only configured on installation and should only be changed by experienced administrators or system maintainers.
 
 Logo
 ----
@@ -701,6 +701,59 @@ This subsection is where logos are uploaded and/or deleted, and where the main c
 |image26|
 
 Figure 12.2.1: The logo configuration interface
+
+How various logos are pulled across in GeoNetwork
+-------------------------------------------------
+
+**Contact for the resource- Organisation logo**
+
+This appears on the record’s default view in the **Contact for the resource** section, below the **Technical information** and **Lineage/Specification conformance** sections.
+
+|image26a|
+
+Figure 12.2.2: A logo displayed in a record's Contact for the resource section
+
+The information displayed here comes from the record’s `gmd:pointOfContact/gmd:CI_ResponsibleParty` information like so:
+
+* `gmd:role/gmd:CI_RoleCode` determines the role (in the example above- Publisher)
+* `gmd:organisationName` determines the organisation name (in the example above- Scottish Government)
+* `gmd:electronicMailAddress` determines the logo- the domain has to match a logo name loaded in the catalog (in the example above the domain is gov.scot so the logo name has to be gov.scot.png)
+
+**NB:** It’s important to note that the file extension for the logo **has to be PNG**, otherwise the logo **won’t** be associated with the resource and thus **won’t** be displayed.
+
+**Metadata information- Organisation logo**
+
+This appears on the record’s default view in the **Metadata information** section, below the **Contact for the resource** section.
+
+|image26b|
+
+Figure 12.2.3: A logo displayed in a record's Metadata information section
+
+The information displayed here comes from the record’s `gmd:contact/gmd:CI_ResponsibleParty` information like so:
+
+* `gmd:role/gmd:CI_RoleCode` determines the role (in the example above- Point of Contact)
+* `gmd:organisationName` determines the organization name (in the example above- Scottish Government)
+* `gmd:electronicMailAddress` determines the logo- the domain has to match a logo name loaded in the catalog (in the example above the domain is gov.scot so the logo name has to be gov.scot.png)
+
+**NB:** It’s important to note that the file extension for the logo **has to be PNG**, otherwise the logo **won’t** be associated with the resource and thus **won’t** be displayed.
+
+**Provided by- Group logo**
+
+This appears on the record’s default view within the **Metadata information** section in the **Provided by** sub-section, below the **Metadata language** sub-section.
+
+|image26c|
+
+Figure 12.2.4: A logo displayed in a record's Metadata information section, in the Provided by sub-section
+
+The information displayed here comes from the record’s group information.
+
+The name of the group is displayed if the mouse hovers over the logo. Both the name and the logo for the group can be set in **Admin console > Users and groups > Manage groups**.
+
+The group owning a record can be changed from the record’s editing view by selecting a group from the **Group** dropdown menu in the toolbar.
+
+|image26d|
+
+Figure 12.2.5: The roup dropdown on the record's editing view
 
 Sources
 -------
@@ -723,7 +776,7 @@ Figure 12.3.1: The CSW settings interface
 Virtual CSW
 -----------
 
-This subsection allows the configuration of Virtual CSW endpoints. These allow for different CSW URLs to be used within the catalogue, such as for different groups or metadata categories. 
+This subsection allows the configuration of Virtual CSW endpoints. These allow for different CSW URLs to be used within the catalogue, such as for different groups or metadata categories.
 
 To configure a new Virtual CSW endpoint, click the blue "New Virtual CSW" button and then configure the following settings:
 
@@ -742,8 +795,8 @@ Once a virtual endpoint has been saved, it's capabilities can be checked using t
 CSW test
 --------
 
-This subsection allows you to test various CSW requests on the standard endpoints or any virtual endpoints configured. 
-The endpoints are displayed as radio boxes and the available requests are accessible from a dropdown list. 
+This subsection allows you to test various CSW requests on the standard endpoints or any virtual endpoints configured.
+The endpoints are displayed as radio boxes and the available requests are accessible from a dropdown list.
 Where it is necessary to adjust a parameter, such as a search term or record ID, this can be done in the XML section. To run the request click the green "Send CSW request" button. The response will appear below.
 
 |image29|
@@ -773,7 +826,7 @@ In general it is not necessary to run these tools unless transferring a large nu
 * Clear XLink cache- if directories are added or changes have been made to the catalog that would affect the structure of xlinks (such as to the URL or protocol), clear the cache
 * Clear Formatter cache- if changes have been made to the catalog's display (schematron views, or text strings), clear the cache
 * Clear JS & CSS cache- if changes have been made to the catalog's JS or CSS, clear the cache
-* Clear translation packs cache- if changes have been made to the catalog's JSON translation files of the Javascript application in catalog/locale, database translations or schema JSON translations, clear the cache 
+* Clear translation packs cache- if changes have been made to the catalog's JSON translation files of the Javascript application in catalog/locale, database translations or schema JSON translations, clear the cache
 * API doc & test- documentation and testing page for the GeoNetwork API
 
 |image30|
@@ -825,7 +878,7 @@ Click the edit icon for the document you wish to edit.
 
 Figure 14.1.1.: Editing in GitHub
 
-The editing interface has two tabs, one for editing and one for previewing changes. You can use shortcuts like ctrl-f to find text in the document that you wish to change. Check your changes using the preview tab, and then in the "Propose file change" section briefly outline your change. 
+The editing interface has two tabs, one for editing and one for previewing changes. You can use shortcuts like ctrl-f to find text in the document that you wish to change. Check your changes using the preview tab, and then in the "Propose file change" section briefly outline your change.
 
 |image34|
 
@@ -835,7 +888,7 @@ Click the green "Propose change" button and then in the following window, quickl
 
 |image35|
 
-Figure 14.1.3: Reviewing the pull request 
+Figure 14.1.3: Reviewing the pull request
 
 |image36|
 
@@ -911,6 +964,10 @@ Note that the services don't return a result, just a blank page. Note also that 
 .. |image24| image:: media/adminimage25.png
 .. |image25| image:: media/adminimage26.png
 .. |image26| image:: media/adminimage27.png
+.. |image26a| image:: media/contact-for-resource-logo.png
+.. |image26b| image:: media/metadata-contact-logo.png
+.. |image26c| image:: media/provided-by-group-logo.png
+.. |image26d| image:: media/records-group-dropdown.png
 .. |image27| image:: media/adminimage28.png
 .. |image28| image:: media/adminimage29.png
 .. |image29| image:: media/adminimage30.png
@@ -922,7 +979,7 @@ Note that the services don't return a result, just a blank page. Note also that 
 .. |image35| image:: media/adminimage36.png
 .. |image36| image:: media/adminimage37.png
 .. |button_search| image:: media/button_search.png
-.. |button_search_advanced| image:: media/button_search_advanced.png	
+.. |button_search_advanced| image:: media/button_search_advanced.png
 .. |button_contribute| image:: media/button_contribute.png
 .. |button_clear| image:: media/button_clear.png
 .. |button_edit_plus| image:: media/button_edit_plus.png
