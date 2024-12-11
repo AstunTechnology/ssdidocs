@@ -25,7 +25,7 @@ A metadata standard is a specification which establishes a common understanding 
 
 The development of such schemas tends to be controlled through community consensus combined with a formal processes for submission, approval and publishing of new elements. Schemas that are developed and maintained by standards organisations (e.g. ISO) or organisations that have taken on such responsibility (e.g. Dublin Core Metadata Initiative) are called metadata standards.
 
-The UK Geospatial Metadata Interoperability Initiative (`GEMINI <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini>`__ ) is the UK’s geographic metadata standard. It was originally produced through a collaboration between the Association for Geographic Information (AGI), the e-Government Unit (eGU) and the UK Data Archive. An application profile of ISO 19115, UK GEMINI is conformant with the INSPIRE Technical Guidance and designed to meet the requirements of INSPIRE in a UK context.
+The UK Geospatial Metadata Interoperability Initiative (`GEMINI <https://www.agi.org.uk/groups/agi-gemini>`__ ) is the UK’s geographic metadata standard. It was originally produced through a collaboration between the Association for Geographic Information (AGI), the e-Government Unit (eGU) and the UK Data Archive. An application profile of ISO 19115, UK GEMINI is conformant with the INSPIRE Technical Guidance and designed to meet the requirements of INSPIRE in a UK context.
 
 
 Why create metadata?
@@ -51,6 +51,6 @@ When effort and resource is put into the provision of standard compliant metadat
 Why use UK Gemini?
 ------------------
 
-`UK GEMINI <https://www.agi.org.uk/agi-groups/standards-committee/uk-gemini>`__ is the designated standard for geographic metadata in the United Kingdom. It ensures consistency with respect to metadata across the UK through content guidance and the use of UK specific terms and code lists. UK Gemini also  simplifies the INSPIRE Technical Guidance making it easier for organisations to achieve compliance.
+`UK GEMINI <https://agiorguk.github.io/gemini/1037-uk-gemini-introduction.html>`__ is the designated standard for geographic metadata in the United Kingdom. It ensures consistency with respect to metadata across the UK through content guidance and the use of UK specific terms and code lists. UK Gemini also  simplifies the INSPIRE Technical Guidance making it easier for organisations to achieve compliance.
 
 While ensured compliance to regulations is important, the key benefit is the interoperability the standard allows across a range of platforms. Metadata in the Gemini format can be shared and consumed easily by a number of platforms and third party applications. Gemini is a requirement for the data.gov.uk portal and, with version 2.3, can now be consumed by the ESRI ArcGIS platform without the need of additional plugins.

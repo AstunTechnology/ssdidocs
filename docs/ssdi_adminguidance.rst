@@ -65,7 +65,7 @@ The **Editor board** can be used to perform administrative functions on individu
 
 Figure 3.1.1: Administrative functions that act on individual records, accessed from the **Editor board**
 
-In order from left to right these are:
+In order from left to right these are:show_harvester_facets_button
 
 * Privileges- set privileges on which groups can access or edit this record
 * Edit- access the metadata editor for this record
@@ -367,13 +367,13 @@ Figure 7.3.3: Harvested records filters, top half of the screen
 
 Figure 7.3.4: Harvested records filters, bottom half of the screen
 
-The filter facets can be expanded by clicking on the |hide_harvester_facets_button| or collapsed by clicking on the |show_harvester_facets_button| at the top right corner of the summary box.
+The filter facets can be expanded by clicking on the |show_harvester_facets_button| or collapsed by clicking on the |hide_harvester_facets_button| at the top right corner of the summary box.
 
 A list of the filtered records can be reviewed in the harvested records subsection and filters can be cleared by clicking on the |remove_harvester_filter_button|.
 
 Filtered records can be removed in bulk by clicking the |remove_harvester_records| button.
 
-*Note: this will permanently delete the records from the catalog.*
+**Note: this will PERMANENTLY delete the records from the catalog.**
 
 Harvester Reports
 -----------------
@@ -388,6 +388,8 @@ Feature Harvesters
 ------------------
 
 Here are listed the ongoing and finished jobs for indexing features from remote WFS services. Once indexed, features can then be filtered according to their attributes and the filter applied to the original map layer.
+
+**Note: This feature is not currently being used in this implementation.**
 
 |image6a|
 
@@ -417,7 +419,7 @@ Figure 8.1.1: Status page showing catalog performing optimally
 
 Figure 8.1.2: Status page showing error, with detailed error message accessed by clicking on red link
 
-*Report any errors shown here to Astun Technology.*
+**Report any errors shown here to Astun Technology.**
 
 The metrics links provide advanced information on the status of the system and should not generally be needed. The Activity "Export (zip)" provides a log file from the server.
 This may be requested by Astun Technology support staff. This download could be large and may take some time. The Thread Status link provides advanced information on the java installation, and should not generally be needed.
@@ -719,7 +721,7 @@ The information displayed here comes from the record’s `gmd:pointOfContact/gmd
 * `gmd:organisationName` determines the organisation name (in the example above- Scottish Government)
 * `gmd:electronicMailAddress` determines the logo- the domain has to match a logo name loaded in the catalog (in the example above the domain is gov.scot so the logo name has to be gov.scot.png)
 
-**NB:** It’s important to note that the file extension for the logo **has to be PNG**, otherwise the logo **won’t** be associated with the resource and thus **won’t** be displayed.
+**Note: It’s important to note that the file extension for the logo has to be PNG, otherwise the logo won’t be associated with the resource and thus won’t be displayed.**
 
 **Metadata information- Organisation logo**
 
@@ -735,7 +737,7 @@ The information displayed here comes from the record’s `gmd:contact/gmd:CI_Res
 * `gmd:organisationName` determines the organization name (in the example above- Scottish Government)
 * `gmd:electronicMailAddress` determines the logo- the domain has to match a logo name loaded in the catalog (in the example above the domain is gov.scot so the logo name has to be gov.scot.png)
 
-**NB:** It’s important to note that the file extension for the logo **has to be PNG**, otherwise the logo **won’t** be associated with the resource and thus **won’t** be displayed.
+**Note: It’s important to note that the file extension for the logo has to be PNG, otherwise the logo won’t be associated with the resource and thus won’t be displayed.**
 
 **Provided by- Group logo**
 
@@ -772,25 +774,6 @@ The CSW Service information setting allows the configuration of some of the GetC
 |image27|
 
 Figure 12.3.1: The CSW settings interface
-
-Virtual CSW
------------
-
-This subsection allows the configuration of Virtual CSW endpoints. These allow for different CSW URLs to be used within the catalogue, such as for different groups or metadata categories.
-
-To configure a new Virtual CSW endpoint, click the blue "New Virtual CSW" button and then configure the following settings:
-
-* Name- This will be used as the URL endpoint for the virtual CSW. **This must begin with csw-**
-* Description
-* Filters/Query- the filter that should be used to decide on the records that should be published under this endpoint. Choose from the dropdown list, or use the advanced query option. The figure below shows an example endpoint for records belonging to the Aberdeen group
-
-|image28|
-
-Figure 12.4.1: Virtual CSW endpoint set up for Aberdeen group
-
-Once a virtual endpoint has been saved, it's capabilities can be checked using the link shown below in figure 12.5.1
-
-**Note that the default contact information, as configured in the CSW subsection, will be used for the GetCapabilities request**
 
 CSW test
 --------
@@ -924,7 +907,11 @@ Note that the services don't return a result, just a blank page. Note also that 
 .. |image3| image:: media/adminimage04.png
 .. |image4| image:: media/adminimage05.png
 .. |image5| image:: media/adminimage06.png
+.. |image5a| image:: media/adminimage06a.png
+.. |image5b| image:: media/adminimage06b.png
 .. |image6| image:: media/adminimage07.png
+.. |image6a| image:: media/adminimage07a.png
+.. |image6b| image:: media/adminimage07b.png
 .. |image7| image:: media/adminimage08.png
 .. |image7a| image:: media/adminimage08a.png
 .. |image7b| image:: media/adminimage08b.png
@@ -991,3 +978,8 @@ Note that the services don't return a result, just a blank page. Note also that 
 .. |button_transfer| image:: media/button_transfer.png
 .. |analyze_records_button| image:: media/analyze_records_button.png
 .. |test_link_button| image:: media/test_link_button.png
+.. |show_harvester_facets_button| image:: media/show_harvester_facets_button.png
+.. |hide_harvester_facets_button| image:: media/hide_harvester_facets_button.png
+.. |remove_harvester_filter_button| image:: media/remove_harvester_filter_button.png
+.. |remove_harvester_records| image:: media/remove_harvester_records.png
+.. |add_wfs_harvester_button| image:: media/add_wfs_harvester_button.png
